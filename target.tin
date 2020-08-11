@@ -1,0 +1,32 @@
+#var {target} {*elf*}
+
+
+#alias {tar} { setTarget %0 }
+#alias {tb} { setTarget *bear* }
+#alias {td} { setTarget *dwarf* }
+#alias {te} { setTarget *elf* }
+#alias {th} { setTarget *hobbit* }
+#alias {tm} { setTarget *man* }
+#alias {to} { setTarget *orc* }
+#alias {tt} { setTarget *troll* }
+
+
+#alias {kt} {
+  #send {kill $target};
+  #echo {kill $target}
+}
+
+#alias {sho} { #send {sho $target} }
+#alias {lb} { #send {lb $target} }
+#alias {bh} { #send {bh $target} }
+
+
+#alias {setTarget} {
+  #if { "%0" == "" } {
+    #echo {You must specify a target...}
+  };
+  #else {
+    #var {target} {%0};
+    #echo {target set to: $target}
+  }
+}

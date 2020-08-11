@@ -1,0 +1,36 @@
+#var {auto_open} {off}
+#var {door} {door}
+
+#action {^The %w {is|are} {open|closed}.$} {#var {door} {%1}; #echo {door set to: $door}}
+#action {^You skillfully discover a hidden %w.$} {#var {door} {%1}; #echo {door set to: $door}}
+#action {^The %w {seem|seems} to be closed.$} {#var {door} {%1}; #echo {door set to: $door}}
+
+#action {^%+ opens the %w.$} {
+  #var {door} {%2};
+  #echo {door set to: $door}
+}
+
+#action {^%+ closes the %w.$} {
+  #var {door} {%2};
+  #echo {door set to: $door};
+  
+  #if {"$auto_open" == "on"} {
+    #send {open $door}; flee
+  }
+}
+
+
+
+#alias {ld} {lock $door}
+#alias {pd} {pick $door}
+#alias {ud} {unlock $door}
+#alias {cd} {close $door}
+#alias {od} {open $door}
+
+#alias {fd} {unlock $door;open $door;flee}
+
+#alias {auto} {
+  #if {"$auto_open" == "off"} {#var {auto_open} {on}};
+  #else {#var {auto_open} {off}};
+  #echo {Auto Open $auto_open}
+}

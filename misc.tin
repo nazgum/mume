@@ -1,0 +1,17 @@
+#alias {shoes} {
+  remove boots; get shoes backpack; wear shoes; put boots backpack
+}
+
+#alias {boots} {
+  remove shoes; get boots backpack; wear boots; put shoes backpack
+}
+
+
+#alias {md} {
+  remove axe; get kit pack; wear kit;
+  get tail pack; put tail kit;
+  get fur pack; put fur kit;
+  get leaves pack; put leaves kit;
+  get vial pack; put vial kit;
+  mix kit; remove kit; put kit pack; wear axe
+}

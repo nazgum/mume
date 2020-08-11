@@ -1,0 +1,55 @@
+#var {battle} {off}
+
+#MACRO {^1} {
+  #if {"$battle" == "on"} {
+  
+    #UNMACRO {^,} {n};
+    #UNMACRO {^o} {s};
+    #UNMACRO {^j} {d};
+    #UNMACRO {^a} {w};
+    #UNMACRO {^.} {u};
+    #UNMACRO {^e} {e};
+    #UNMACRO {^u} {kt};
+    #UNMACRO {^y} {f};
+    #UNMACRO {^k} {od};
+    #UNMACRO {^x} {cd};
+    #UNMACRO {^h} {smo};
+    #UNMACRO {^t} {de};
+    #UNMACRO {^n} {harm};
+    #UNMACRO {^s} {bl};
+    #UNMACRO {^f} {tb};
+    #UNMACRO {^g} {tm};
+    #UNMACRO {^c} {te};
+    #UNMACRO {^r} {td};
+    #UNMACRO {^l} {th};
+    
+    #var {battle} {off};
+    #echo {Battle mode: disabled};
+  };
+  #else {
+  
+    #MACRO {^,} {n};
+    #MACRO {^o} {s};
+    #MACRO {^j} {d};
+    #MACRO {^a} {w};
+    #MACRO {^.} {u};
+    #MACRO {^e} {e};
+    #MACRO {^u} {kt};
+    #MACRO {^y} {f};
+    #MACRO {^k} {od};
+    #MACRO {^x} {cd};
+    #MACRO {^h} {smo};
+    #MACRO {^t} {de};
+    #MACRO {^n} {harm};
+    #MACRO {^s} {bl};
+    #MACRO {^f} {tb};
+    #MACRO {^g} {tm};
+    #MACRO {^c} {te};
+    #MACRO {^r} {td};
+    #MACRO {^l} {th};
+    
+    #var {battle} {on};
+    #echo {Battle mode: enabled};
+  }
+  
+}

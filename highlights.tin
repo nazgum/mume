@@ -1,0 +1,26 @@
+#nop Equipment State
+#highlight {(flawless)} {light blue}
+#highlight {(well-maintained)} {cyan}
+#highlight {(satisfactory)} {yellow}
+#highlight {(used)} {white}
+#highlight {(worn)} {white}
+#highlight {(neglected)} {black}
+#highlight {(marred)} {magenta}
+#highlight {(unavailing)} {magenta}
+#highlight {(deteriorating)} {red}
+#highlight {(worn out)} {red}
+
+#nop Important Gear
+#highlight {an enruned robe} {magenta}
+#highlight {a ragged, blackened cloak} {magenta}
+#highlight {a bright red amulet} {magenta}
+#highlight {a smelly piece of worm hide} {magenta}
+#highlight {a bejewelled shield} {magenta}
+#highlight {a gleaming belt} {magenta}
+#highlight {a broad silver belt} {magenta}
+#highlight {a mithril circlet} {magenta}
+
+#nop Bad Effects
+#highlight {^You have been blinded!} {red}
+#highlight {^You suddenly notice %1} {red}
+#highlight {^You feel a hidden presence.} {red}

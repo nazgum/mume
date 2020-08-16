@@ -26,6 +26,7 @@
 #alias {ud} {unlock $door}
 #alias {cd} {close $door}
 #alias {od} {open $door}
+#alias {bd} {cast 'break' $door}
 
 #alias {fd} {unlock $door;open $door;flee}
 

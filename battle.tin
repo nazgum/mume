@@ -13,15 +13,15 @@
     #UNMACRO {^y} {f};
     #UNMACRO {^k} {od};
     #UNMACRO {^x} {cd};
-    #UNMACRO {^h} {smo};
-    #UNMACRO {^t} {de};
-    #UNMACRO {^n} {harm};
-    #UNMACRO {^s} {bl};
-    #UNMACRO {^f} {tb};
+    #UNMACRO {^h} {qde $target};
+    #UNMACRO {^t} {de $target};
+    #UNMACRO {^n} {harm $target};
+    #UNMACRO {^s} {bl $target};
+    #UNMACRO {^f} {f};
     #UNMACRO {^g} {tm};
-    #UNMACRO {^c} {te};
-    #UNMACRO {^r} {td};
-    #UNMACRO {^l} {th};
+    #UNMACRO {^c} {to};
+    #UNMACRO {^r} {tt};
+    #UNMACRO {^l} {tm};
     
     #var {battle} {off};
     #echo {Battle mode: disabled};
@@ -38,15 +38,15 @@
     #MACRO {^y} {f};
     #MACRO {^k} {od};
     #MACRO {^x} {cd};
-    #MACRO {^h} {smo};
-    #MACRO {^t} {de};
-    #MACRO {^n} {harm};
-    #MACRO {^s} {bl};
-    #MACRO {^f} {tb};
+    #MACRO {^h} {qde $target};
+    #MACRO {^t} {de $target};
+    #MACRO {^n} {harm $target};
+    #MACRO {^s} {bl $target};
+    #MACRO {^f} {f};
     #MACRO {^g} {tm};
-    #MACRO {^c} {te};
-    #MACRO {^r} {td};
-    #MACRO {^l} {th};
+    #MACRO {^c} {to};
+    #MACRO {^r} {tt};
+    #MACRO {^l} {tm};
     
     #var {battle} {on};
     #echo {Battle mode: enabled};

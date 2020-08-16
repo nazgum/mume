@@ -1,0 +1,26 @@
+#var {lastkey} {none}
+#var {key1} {none}
+#var {key2} {none}
+#var {key3} {none}
+
+#alias key1 {
+  #var {key1} {%0};
+  #echo {key1 set to: $key1}
+}
+#alias key2 {
+  #var {key2} {%0};
+  #echo {key2 set to: $key2}
+}
+#alias key3 {
+  #var {key3} {%0};
+  #echo {key3 set to: $key3}
+}
+
+#alias tp1 {cast 'teleport' $key1}
+#alias tp2 {cast 'teleport' $key2}
+#alias tp3 {cast 'teleport' $key3}
+
+#action {key: '%w'} {
+  #var {lastkey} {%1};
+  #echo {lastkey set to: $lastkey}
+}

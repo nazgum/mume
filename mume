@@ -62,7 +62,7 @@
 #read highlights.tin
 #read secrets.tin
 #read prompt.tin
-#read aliases.tin
+#read locate.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4000}

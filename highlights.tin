@@ -13,12 +13,18 @@
 #nop Important Gear
 #highlight {an enruned robe} {magenta}
 #highlight {a ragged, blackened cloak} {magenta}
+#highlight {a roughly stitched cloak} {magenta}
 #highlight {a bright red amulet} {magenta}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
 #highlight {a gleaming belt} {magenta}
 #highlight {a broad silver belt} {magenta}
 #highlight {a mithril circlet} {magenta}
+#highlight {a red ruby; it has a soft glowing aura} {magenta}
+#highlight {a golden ruby ring} {magenta}
+#highlight {a mighty dwarven axe} {magenta}
+#highlight {a yew longbow} {magenta}
+#highlight {a bejewelled oak staff; it has a soft glowing aura} {magenta}
 
 #nop Bad Effects
 #highlight {^You have been blinded!} {red}

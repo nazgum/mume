@@ -1,26 +1,42 @@
-#var {lastkey} {none}
+#var {key} {none}
 #var {key1} {none}
 #var {key2} {none}
 #var {key3} {none}
 
 #alias key1 {
   #var {key1} {%0};
-  #echo {key1 set to: $key1}
+  #echo {\$key1 set to: $key1}
 }
 #alias key2 {
   #var {key2} {%0};
-  #echo {key2 set to: $key2}
+  #echo {\$key2 set to: $key2}
 }
 #alias key3 {
   #var {key3} {%0};
-  #echo {key3 set to: $key3}
+  #echo {\$key3 set to: $key3}
 }
 
+#alias scry {cast 'scry' $key}
+#alias scry1 {cast 'scry' $key1}
+#alias scry2 {cast 'scry' $key2}
+#alias scry3 {cast 'scry' $key3}
+
+#alias wr {cast 'watch room' $key}
+#alias wr1 {cast 'watch room' $key1}
+#alias wr2 {cast 'watch room' $key2}
+#alias wr3 {cast 'watch room' $key3}
+
+#alias tp {cast 'teleport' $key}
 #alias tp1 {cast 'teleport' $key1}
 #alias tp2 {cast 'teleport' $key2}
 #alias tp3 {cast 'teleport' $key3}
 
+#alias portal {cast 'portal' $key}
+#alias portal1 {cast 'portal' $key1}
+#alias portal2 {cast 'portal' $key2}
+#alias portal3 {cast 'portal' $key3}
+
 #action {key: '%w'} {
-  #var {lastkey} {%1};
-  #echo {lastkey set to: $lastkey}
+  #var {key} {%1};
+  #echo {\$key set to: $key}
 }

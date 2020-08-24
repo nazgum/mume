@@ -52,9 +52,8 @@
 #split
 
 #nop gameplay scripts
+#read combat-tumdit.tin
 #read doors.tin
-#read combat.tin
-#read battle.tin
 #read subs_keys.tin
 #read subs_lockpicks.tin
 #read misc.tin

@@ -10,10 +10,22 @@
 #highlight {(deteriorating)} {red}
 #highlight {(worn out)} {red}
 
+
+#highlight {it glows blue} {cyan}
+#highlight {(blue aura)} {cyan}
+#highlight {Traces of %w white tones %1} {cyan}
+#highlight {[blue]} {cyan}
+
+#highlight {it glows red} {red}
+#highlight {(red aura)} {red}
+#highlight {Traces of %w red tones %1} {red}
+
 #nop Important Gear
 #highlight {an enruned robe} {magenta}
 #highlight {a ragged, blackened cloak} {magenta}
 #highlight {a roughly stitched cloak} {magenta}
+#highlight {a black cape} {magenta}
+#highlight {a pale blue stone} {magenta}
 #highlight {a bright red amulet} {magenta}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
@@ -23,8 +35,14 @@
 #highlight {a red ruby; it has a soft glowing aura} {magenta}
 #highlight {a golden ruby ring} {magenta}
 #highlight {a mighty dwarven axe} {magenta}
+#highlight {a blackened dwarven axe} {magenta}
+#highlight {a pair of black arm wrappings} {magenta}
 #highlight {a yew longbow} {magenta}
-#highlight {a bejewelled oak staff; it has a soft glowing aura} {magenta}
+#highlight {an embellished longbow} {magenta}
+#highlight {a laced quiver} {magenta}
+#highlight {a bejewelled oak staff} {magenta}
+#highlight {a sable pouch} {magenta}
+
 
 #nop Bad Effects
 #highlight {^You have been blinded!} {red}

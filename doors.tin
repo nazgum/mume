@@ -20,7 +20,10 @@
 }
 
 
-
+#alias {door} {
+  #var {door} {%1};
+  #echo {\$door set to: $door}
+}
 #alias {ld} {lock $door}
 #alias {pd} {pick $door}
 #alias {ud} {unlock $door}

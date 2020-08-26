@@ -14,7 +14,3 @@
   get vial pack; put vial kit;
   mix kit; remove kit; put kit pack; wear axe
 }
-
-#action {^ZBLAM! %1 doesn't want you riding him anymore.$} {
-  stand;ride
-}

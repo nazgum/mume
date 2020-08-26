@@ -16,8 +16,8 @@
 }
 
 #alias {ht} { #send {harm $target} }
-#alias {bt} { #send {backstab $target} }
-#alias {sht} { #send {shoot $target} }
+#alias {bt} { #send {backstab $target}; #echo {backstab $target} }
+#alias {sht} { #send {shoot $target}; #echo {shoot $target} }
 
 #alias {det} {
   #echo {cast 'detect magic'};

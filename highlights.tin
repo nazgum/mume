@@ -42,6 +42,10 @@
 #highlight {a laced quiver} {magenta}
 #highlight {a bejewelled oak staff} {magenta}
 #highlight {a sable pouch} {magenta}
+#highlight {a shining chain mail shirt} {magenta}
+#highlight {a shining pair of chain mail sleeves} {magenta}
+#highlight {a shining pair of chain mail leggings} {magenta}
+#highlight {an iron ring} {magenta}
 
 
 #nop Bad Effects

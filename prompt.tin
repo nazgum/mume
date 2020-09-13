@@ -2,17 +2,15 @@
 
 #prompt {^%+>$} {@prompt{%0}}
 
-
 #function {prompt} {
-  #var {prompt_data} {%1};
+  #var {prompt_data} {%0};
   
   #if {"$battle" == "on"} {
-    #return <049>$target<099> $prompt_data
+    #return <119>SPEEDWALK<099> $prompt_data
   } {
     #return $prompt_data
   }
 }
-
 
 #nop Gag blank lines.
 #gag {^{(?:[\s]*)}$}

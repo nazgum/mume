@@ -1,0 +1,135 @@
+#var {target} {*man*}
+
+#alias {tar} { setTarget %0 }
+#alias {tb} { setTarget *bear* }
+#alias {td} { setTarget *dwarf* }
+#alias {te} { setTarget *elf* }
+#alias {th} { setTarget *hobbit* }
+#alias {tm} { setTarget *man* }
+#alias {to} { setTarget *orc* }
+
+#alias {setTarget} {
+  #if {"%1" == ""} {
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  } {
+    #var {target} {%0};
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  }
+}
+
+#alias {kt} { kill $target; #echo {kill $target} }
+#alias {bt} { backstab $target; #echo {backstab $target} }
+#alias {sh} { shoot $target; #echo {shoot $target} }
+#alias {tt} { track $target; #echo {track $target} }
+#alias {wt} { where $target; #echo {where $target} }
+
+#alias {shoes} { remove boots; wear shoes }
+#alias {boots} { remove shoes; wear boots }
+#alias {cloak} { remove fur; wear cloak }
+#alias {fur} {remove cloak; wear fur }
+
+#alias {brd} {get runed sable; wield runed; put nimble sable}
+#alias {nim} {get nimble sable; wield nimble; put runed sable}
+#alias {iron} {remove rubyring; put rubyring sable; get ironring sable; wear ironring}
+#alias {ruby} {remove ironring; put ironring sable; get rubyring sable; wear rubyring}
+
+
+#alias {md} {
+  get tail all; get fur all; get leaves all; get vial all;
+  put tail kit; put fur kit; put leaves kit; put vial kit;
+  mix kit
+}
+
+#alias {arach} {
+  get tail sable; get fur sable; get grey sable;
+  put tail kit; put fur kit; put grey kit;
+  mix kit
+}
+
+#alias {venom} {
+  get tail sable; get fur sable; get small sable;
+  put tail kit; put fur kit; put small kit;
+  mix kit
+}
+
+#alias {psylonia} {
+  get inkberries sable; get red-mushroom sable; get sickly sable;
+  put inkberries kit; put red-mushroom kit; put sickly kit;
+  mix kit
+}
+
+#alias {arr} {
+  sheath; get %1.arrow quiver; wield arrow; poison; remove arrow; put arrow quiver; draw
+}
+
+
+#var {battle} {off}
+
+#MACRO {^1} {
+  #if {"$battle" == "on"} {
+    disableBattle
+  };
+  #else {
+    enableBattle
+  }
+}
+
+#alias {disableBattle} {
+  #var {battle} {off};
+  #showme {$prompt_data} {0};
+  
+  #UNMACRO {^,} {#echo {n}; n};
+  #UNMACRO {^o} {#echo {s}; s};
+  #UNMACRO {^e} {#echo {e}; e};
+  #UNMACRO {^a} {#echo {w}; w};
+  #UNMACRO {^.} {#echo {u}; u};
+  #UNMACRO {^;} {#echo {d}; d};
+  
+  #UNMACRO {^y} {#echo {f}; f};
+  #UNMACRO {^'} {#echo {f}; f};
+  #UNMACRO {^f} {#echo {f}; f};
+  
+  #UNMACRO {^j} {od};
+  #UNMACRO {^q} {ud};
+  #UNMACRO {^k} {cd};
+  #UNMACRO {^x} {ld};
+  
+  #UNMACRO {^u} {kt};
+  #UNMACRO {^i} {bt};
+  #UNMACRO {^p} {sh};
+  
+  #UNMACRO {^g} {setTarget *man*};
+  #UNMACRO {^c} {setTarget *elf*};
+  #UNMACRO {^r} {setTarget *dwarf*};
+  #UNMACRO {^l} {setTarget *hobbit*};
+}
+
+#alias {enableBattle} {
+  #var {battle} {on};
+  #showme {$prompt_data} {0};
+  
+  #MACRO {^,} {#echo {n}; n};
+  #MACRO {^o} {#echo {s}; s};
+  #MACRO {^e} {#echo {e}; e};
+  #MACRO {^a} {#echo {w}; w};
+  #MACRO {^.} {#echo {u}; u};
+  #MACRO {^;} {#echo {d}; d};
+  
+  #MACRO {^y} {#echo {f}; f};
+  #MACRO {^'} {#echo {f}; f};
+  #MACRO {^f} {#echo {f}; f};
+  
+  #MACRO {^j} {od};
+  #MACRO {^q} {ud};
+  #MACRO {^k} {cd};
+  #MACRO {^x} {ld};
+  
+  #MACRO {^u} {kt};
+  #MACRO {^i} {bt};
+  #MACRO {^p} {sh};
+  
+  #MACRO {^g} {setTarget *man*};
+  #MACRO {^c} {setTarget *elf*};
+  #MACRO {^r} {setTarget *dwarf*};
+  #MACRO {^l} {setTarget *hobbit*};
+}

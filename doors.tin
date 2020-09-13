@@ -1,35 +1,37 @@
 #var {auto_open} {off}
 #var {door} {door}
 
-#action {^The %w {is|are} {open|closed}.$} {#var {door} {%1}; #echo {door set to: $door}}
-#action {^You skillfully discover a hidden %w.$} {#var {door} {%1}; #echo {door set to: $door}}
-#action {^The %w {seem|seems} to be closed.$} {#var {door} {%1}; #echo {door set to: $door}}
+#action {^The %w {is|are} {open|closed}.$} {#var {door} {%1}; #echo {<109>\$door<099> set to: <059>$door<099>}}
+#action {^You skillfully discover a hidden %w.$} {#var {door} {%1}; #echo {<109>\$door<099> set to: <059>$door<099>}}
+#action {^The %w {seem|seems} to be closed.$} {#var {door} {%1}; #echo {<109>\$door<099> set to: <059>$door<099>}}
 
 #action {^%+ opens the %w.$} {
   #var {door} {%2};
-  #echo {door set to: $door}
+  #echo {\$door set to: <059>$door<099>}
 }
 
 #action {^%+ closes the %w.$} {
   #var {door} {%2};
-  #echo {door set to: $door};
+  #echo {<109>\$door<099> set to: <059>$door<099>};
   
   #if {"$auto_open" == "on"} {
     #send {open $door}; flee
   }
 }
 
-
 #alias {door} {
-  #var {door} {%1};
-  #echo {\$door set to: $door}
+  #if {"%1" == ""} {
+    #echo {<109>\$door<099> set to: <059>$door<099>}
+  } {
+    #var {door} {%1};
+    #echo {<109>\$door<099> set to: <059>$door<099>}
+  }
 }
-#alias {ld} {lock $door}
-#alias {pd} {pick $door}
-#alias {ud} {unlock $door}
-#alias {cd} {close $door}
-#alias {od} {open $door}
-#alias {bd} {cast 'break' $door}
+#alias {ld} {lock $door; #echo {lock $door}}
+#alias {pd} {pick $door; #echo {pick $door}}
+#alias {ud} {unlock $door; #echo {unlock $door}}
+#alias {cd} {close $door; #echo {close $door}}
+#alias {od} {open $door; #echo {open $door}}
 
 #alias {fd} {unlock $door;open $door;flee}
 

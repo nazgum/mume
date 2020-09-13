@@ -1,16 +1,15 @@
-#alias {shoes} {
-  remove boots; get shoes backpack; wear shoes; put boots backpack
-}
+#alias {shoes} { remove boots;wear shoes }
+#alias {boots} { remove shoes; wear boots }
+#alias {cloak} { remove fur; wear cloak }
+#alias {fur} {remove cloak; wear fur }
 
-#alias {boots} {
-  remove shoes; get boots backpack; wear boots; put shoes backpack
-}
+#alias {brd} {get runed sable; wield runed; put nimble sable}
+#alias {nim} {get nimble sable; wield nimble; put runed sable}
 
 #alias {md} {
-  remove axe; get kit pack; wear kit;
-  get tail pack; put tail kit;
-  get fur pack; put fur kit;
-  get leaves pack; put leaves kit;
-  get vial pack; put vial kit;
-  mix kit; remove kit; put kit pack; wear axe
+  get tail all; put tail kit;
+  get fur all; put fur kit;
+  get leaves all; put leaves kit;
+  get vial all; put vial kit;
+  mix kit
 }

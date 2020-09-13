@@ -116,7 +116,7 @@
 #sub {^a pry-bar$} {%0 [tombstone, Amon Othar, crazed dwarf]}
 #sub {^an old iron key$} {%0 [rockdoor, GC, wraith]}
 #sub {^a tarnished metal key$} {%0 [doors in VT, guards]}
-#sub {^a tiny stonekey$} {%0 [stonedoor+prisondoor, Barbaras castle, prisonguard]}
+#sub {^a tiny stone key$} {%0 [stonedoor+prisondoor, Barbaras castle, prisonguard]}
 #sub {^a small silver key$} {%0 [AM quest item + AM chest, Malardil; blackdoor, Sage's treasury, Sage; AM quest item + AM chest, Malardil; blackdoor, Sage's treasury, Sage?]}
 #sub {^a slimy metal key$} {%0 [3 irondoors in Shaghosh area, lurg leader at Shaghosh]}
 #sub {^a castle key$} {%0 [irondoor, Malardils castle, rogue/Malardil]}

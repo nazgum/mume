@@ -1,0 +1,99 @@
+#var {target} {*man*}
+
+#alias {tar} { setTarget %0 }
+#alias {tm} { setTarget *man* }
+#alias {to} { setTarget *orc* }
+#alias {tt} { setTarget *troll* }
+
+
+#alias {kt} {
+  #send {kill $target};
+  #echo {kill $target}
+}
+
+#alias {dt} { #send {de $target} }
+#alias {ht} { #send {harm $target} }
+#alias {bt} { #send {bl $target} }
+
+
+#alias {setTarget} {
+  #if { "%0" == "" } {
+    #echo {You must specify a target...}
+  };
+  #else {
+    #var {target} {%0};
+    #echo {target set to: <049>$target<099>}
+  };;
+}
+
+
+#var {battle} {off}
+
+#MACRO {^1} {
+  #if {"$battle" == "on"} {
+    disableBattle
+  };
+  #else {
+    enableBattle
+  }
+}
+
+#alias {disableBattle} {
+  #var {battle} {off};
+  #echo {-- BATTLE OFF --};
+  
+  #UNMACRO {^,} {#echo {n}; n};
+  #UNMACRO {^o} {#echo {s}; s};
+  #UNMACRO {^e} {#echo {e}; e};
+  #UNMACRO {^a} {#echo {w}; w};
+  #UNMACRO {^.} {#echo {u}; u};
+  #UNMACRO {^;} {#echo {d}; d};
+  
+  #UNMACRO {^y} {#echo {f}; f};
+  #UNMACRO {^'} {#echo {f}; f};
+  #UNMACRO {^f} {#echo {f}; f};
+  
+  #UNMACRO {^j} {#echo {open $door}; od};
+  #UNMACRO {^q} {#echo {unlock $door}; ud};
+  #UNMACRO {^k} {#echo {close $door}; cd};
+  #UNMACRO {^x} {#echo {lock $door}; ld};
+  
+  #UNMACRO {^u} {kt};
+  #UNMACRO {^i} {dt};
+  #UNMACRO {^p} {bt};
+  
+  #UNMACRO {^g} {setTarget *man*};
+  #UNMACRO {^c} {setTarget *orc*};
+  #UNMACRO {^r} {setTarget *troll*};
+  #UNMACRO {^l} {setTarget *troll*};
+}
+
+#alias {enableBattle} {
+  #var {battle} {on};
+  #echo {<049>-- BATTLE ON --<099>};
+  
+  #MACRO {^,} {#echo {n}; n};
+  #MACRO {^o} {#echo {s}; s};
+  #MACRO {^e} {#echo {e}; e};
+  #MACRO {^a} {#echo {w}; w};
+  #MACRO {^.} {#echo {u}; u};
+  #MACRO {^;} {#echo {d}; d};
+  
+  #MACRO {^y} {#echo {f}; f};
+  #MACRO {^'} {#echo {f}; f};
+  #MACRO {^f} {#echo {f}; f};
+  
+  #MACRO {^j} {#echo {open $door}; od};
+  #MACRO {^q} {#echo {unlock $door}; ud};
+  #MACRO {^k} {#echo {close $door}; cd};
+  #MACRO {^x} {#echo {lock $door}; ld};
+  
+  #MACRO {^u} {kt};
+  #MACRO {^i} {dt};
+  #MACRO {^p} {bt};
+  
+  #MACRO {^g} {setTarget *man*};
+  #MACRO {^c} {setTarget *orc*};
+  #MACRO {^r} {setTarget *troll*};
+  #MACRO {^l} {setTarget *troll*};
+ }

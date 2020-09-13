@@ -13,12 +13,12 @@
 
 #highlight {it glows blue} {cyan}
 #highlight {(blue aura)} {cyan}
-#highlight {Traces of %w white tones %1} {cyan}
+#highlight {^Traces %1 white tones %2} {cyan}
 #highlight {[blue]} {cyan}
 
 #highlight {it glows red} {red}
 #highlight {(red aura)} {red}
-#highlight {Traces of %w red tones %1} {red}
+#highlight {^Traces %1 red tones %2} {red}
 
 #nop Important Gear
 #highlight {an enruned robe} {magenta}
@@ -30,6 +30,7 @@
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
 #highlight {a gleaming belt} {magenta}
+#highlight {a golden belt} {magenta}
 #highlight {a broad silver belt} {magenta}
 #highlight {a mithril circlet} {magenta}
 #highlight {a red ruby; it has a soft glowing aura} {magenta}
@@ -46,9 +47,38 @@
 #highlight {a shining pair of chain mail sleeves} {magenta}
 #highlight {a shining pair of chain mail leggings} {magenta}
 #highlight {an iron ring} {magenta}
+#highlight {a ruby ring} {magenta}
+#highlight {a nimble blade} {magenta}
+#highlight {a black runed dagger} {magenta}
+#highlight {a twisted crown} {magenta}
+#highlight {an ornate, steel-shafted warhammer} {magenta}
+#highlight {an old length of iron chain} {magenta}
+#highlight {a black amulet} {magenta}
+#highlight {a scorched, grisly fur} {magenta}
+#highlight {a wide silvery wristband} {magenta}
+#highlight {an archer's wrist guard} {magenta}
+#highlight {a lambent amulet} {magenta}
+#highlight {a fine grey cloak} {magenta}
+#highlight {an enhanced herbal kit} {magenta}
+#highlight {a strange set of lock picks} {magenta}
+
+#highlight {a wooden ring} {red}
+#highlight {a green stinking vial} {red}
+#highlight {a dark violet vial} {red}
+#highlight {a dirty reddish vial} {red}
+#highlight {a mildew covered vial} {red}
+#highlight {a foetid green vial} {red}
+
+
+#highlight {- armour} {pink}
+#highlight {- detect magic} {pink}
+#highlight {- breath of briskness} {pink}
 
 
 #nop Bad Effects
 #highlight {^You have been blinded!} {red}
 #highlight {^You suddenly notice %1} {red}
 #highlight {^You feel a hidden presence.} {red}
+
+#nop Poison
+#highlight {some sort of liquid is smeared on it} {light green}

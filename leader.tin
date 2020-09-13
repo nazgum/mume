@@ -1,0 +1,13 @@
+#var {leader} {Nodoz}
+
+#alias {leader} {
+  #if { "%0" == "" } {
+    #echo {You must specify a leader...}
+  };
+  #else {
+    #var {leader} {%0};
+    #echo {leader set to: <049>$leader<099>}
+  };;
+}
+
+#action {^%+ joins $leader's fight.$} { assist }

@@ -19,9 +19,11 @@
 
 #alias {kt} { kill $target; #echo {kill $target} }
 #alias {bt} { backstab $target; #echo {backstab $target} }
-#alias {sh} { shoot $target; #echo {shoot $target} }
 #alias {tt} { track $target; #echo {track $target} }
 #alias {wt} { where $target; #echo {where $target} }
+
+#alias {2} {kt}
+#alias {3} {kt}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
@@ -30,8 +32,10 @@
 
 #alias {brd} {get runed sable; wield runed; put nimble sable}
 #alias {nim} {get nimble sable; wield nimble; put runed sable}
-#alias {iron} {remove rubyring; put rubyring sable; get ironring sable; wear ironring}
-#alias {ruby} {remove ironring; put ironring sable; get rubyring sable; wear rubyring}
+#alias {iron} {remove ring; put ring sable; get ironring sable; wear ironring}
+#alias {ruby} {remove ring; put ring sable; get rubyring sable; wear rubyring}
+#alias {topaz} {remove ring; put ring sable; get topaz-ring sable; wear topaz-ring}
+#alias {str} {remove ring; get topaz-ring sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring sable; wear ring}
 
 
 #alias {md} {
@@ -58,14 +62,9 @@
   mix kit
 }
 
-#alias {arr} {
-  sheath; get %1.arrow quiver; wield arrow; poison; remove arrow; put arrow quiver; draw
-}
-
-
 #var {battle} {off}
 
-#MACRO {^1} {
+#MACRO {^=} {
   #if {"$battle" == "on"} {
     disableBattle
   };
@@ -87,7 +86,6 @@
   
   #UNMACRO {^y} {#echo {f}; f};
   #UNMACRO {^'} {#echo {f}; f};
-  #UNMACRO {^f} {#echo {f}; f};
   
   #UNMACRO {^j} {od};
   #UNMACRO {^q} {ud};
@@ -96,12 +94,6 @@
   
   #UNMACRO {^u} {kt};
   #UNMACRO {^i} {bt};
-  #UNMACRO {^p} {sh};
-  
-  #UNMACRO {^g} {setTarget *man*};
-  #UNMACRO {^c} {setTarget *elf*};
-  #UNMACRO {^r} {setTarget *dwarf*};
-  #UNMACRO {^l} {setTarget *hobbit*};
 }
 
 #alias {enableBattle} {
@@ -117,7 +109,6 @@
   
   #MACRO {^y} {#echo {f}; f};
   #MACRO {^'} {#echo {f}; f};
-  #MACRO {^f} {#echo {f}; f};
   
   #MACRO {^j} {od};
   #MACRO {^q} {ud};
@@ -126,10 +117,4 @@
   
   #MACRO {^u} {kt};
   #MACRO {^i} {bt};
-  #MACRO {^p} {sh};
-  
-  #MACRO {^g} {setTarget *man*};
-  #MACRO {^c} {setTarget *elf*};
-  #MACRO {^r} {setTarget *dwarf*};
-  #MACRO {^l} {setTarget *hobbit*};
 }

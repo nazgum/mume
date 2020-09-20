@@ -14,6 +14,8 @@
 #alias {dt} { #send {de $target} }
 #alias {ht} { #send {harm $target} }
 #alias {bt} { #send {bl $target} }
+#alias {tt} { track $target; #echo {track $target} }
+#alias {wt} { where $target; #echo {where $target} }
 
 
 #alias {setTarget} {
@@ -40,7 +42,7 @@
 
 #alias {disableBattle} {
   #var {battle} {off};
-  #echo {-- BATTLE OFF --};
+  #showme {$prompt_data} {0};
   
   #UNMACRO {^,} {#echo {n}; n};
   #UNMACRO {^o} {#echo {s}; s};
@@ -53,10 +55,10 @@
   #UNMACRO {^'} {#echo {f}; f};
   #UNMACRO {^f} {#echo {f}; f};
   
-  #UNMACRO {^j} {#echo {open $door}; od};
-  #UNMACRO {^q} {#echo {unlock $door}; ud};
-  #UNMACRO {^k} {#echo {close $door}; cd};
-  #UNMACRO {^x} {#echo {lock $door}; ld};
+  #UNMACRO {^j} {od};
+  #UNMACRO {^q} {ud};
+  #UNMACRO {^k} {cd};
+  #UNMACRO {^x} {ld};
   
   #UNMACRO {^u} {kt};
   #UNMACRO {^i} {dt};
@@ -70,7 +72,7 @@
 
 #alias {enableBattle} {
   #var {battle} {on};
-  #echo {<049>-- BATTLE ON --<099>};
+  #showme {$prompt_data} {0};
   
   #MACRO {^,} {#echo {n}; n};
   #MACRO {^o} {#echo {s}; s};
@@ -83,10 +85,10 @@
   #MACRO {^'} {#echo {f}; f};
   #MACRO {^f} {#echo {f}; f};
   
-  #MACRO {^j} {#echo {open $door}; od};
-  #MACRO {^q} {#echo {unlock $door}; ud};
-  #MACRO {^k} {#echo {close $door}; cd};
-  #MACRO {^x} {#echo {lock $door}; ld};
+  #MACRO {^j} {od};
+  #MACRO {^q} {ud};
+  #MACRO {^k} {cd};
+  #MACRO {^x} {ld};
   
   #MACRO {^u} {kt};
   #MACRO {^i} {dt};

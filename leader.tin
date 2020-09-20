@@ -11,3 +11,6 @@
 }
 
 #action {^%+ joins $leader's fight.$} { assist }
+
+#action {^$leader dismounts} {lead}
+#action {^$leader picks up} {ride}

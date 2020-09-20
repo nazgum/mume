@@ -37,6 +37,7 @@
 #highlight {a golden ruby ring} {magenta}
 #highlight {a mighty dwarven axe} {magenta}
 #highlight {a blackened dwarven axe} {magenta}
+#highlight {a darkened orkish axe} {magenta}
 #highlight {a pair of black arm wrappings} {magenta}
 #highlight {a yew longbow} {magenta}
 #highlight {an embellished longbow} {magenta}
@@ -48,6 +49,7 @@
 #highlight {a shining pair of chain mail leggings} {magenta}
 #highlight {an iron ring} {magenta}
 #highlight {a ruby ring} {magenta}
+#highlight {a golden topaz ring} {magenta}
 #highlight {a nimble blade} {magenta}
 #highlight {a black runed dagger} {magenta}
 #highlight {a twisted crown} {magenta}
@@ -70,15 +72,24 @@
 #highlight {a foetid green vial} {red}
 
 
+#highlight {a flask of orkish draught} {pink}
+#highlight {%w flasks of orkish draught} {pink}
+
+#highlight {^%w %w scroll} {violet}
+#highlight {^%w %w scrolls} {violet}
+
 #highlight {- armour} {pink}
 #highlight {- detect magic} {pink}
 #highlight {- breath of briskness} {pink}
+#highlight {- strength} {pink}
+
 
 
 #nop Bad Effects
 #highlight {^You have been blinded!} {red}
 #highlight {^You suddenly notice %1} {red}
 #highlight {^You feel a hidden presence.} {red}
+#highlight {^You feel weaker.} {red}
 
 #nop Poison
 #highlight {some sort of liquid is smeared on it} {light green}

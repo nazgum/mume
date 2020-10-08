@@ -53,11 +53,11 @@
 
 #nop gameplay scripts
 #read nazgum.tin
+#read doors.tin
 #read leader.tin
 #read subs_keys.tin
 #read subs_lockpicks.tin
 #read highlights.tin
-#read secrets.tin
 #read prompt.tin
 
 #event {PROGRAM START} {

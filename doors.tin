@@ -1,0 +1,22 @@
+#var {door} {door}
+
+#alias {door} {
+  #if {"%1" == ""} {
+    #echo {<109>\$door<099> set to: <059>$door<099>}
+  } {
+    #var {door} {%1};
+    #echo {<109>\$door<099> set to: <059>$door<099>}
+  }
+}
+#alias {ld} {lock $door; #echo {lock $door}}
+#alias {pd} {pick $door; #echo {pick $door}}
+#alias {ud} {unlock $door; #echo {unlock $door}}
+#alias {cd} {close $door; #echo {close $door}}
+#alias {od} {open $door; #echo {open $door}}
+
+#alias {os} {_open}
+#alias {cs} {_close}
+#alias {us} {_unlock}
+#alias {ls} {_lock}
+#alias {ps} {_pick}
+#alias {bs} {_break}

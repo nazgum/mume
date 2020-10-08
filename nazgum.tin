@@ -19,23 +19,29 @@
 
 #alias {kt} { kill $target; #echo {kill $target} }
 #alias {bt} { backstab $target; #echo {backstab $target} }
+#alias {ht} { cast 'harm' $target; #echo {cast 'harm' $target} }
+#alias {qht} { cast q 'harm' $target; #echo {cast q 'harm' $target} }
+#alias {hqt} { cast q 'harm' $target; #echo {cast q 'harm' $target} }
 #alias {tt} { track $target; #echo {track $target} }
 #alias {wt} { where $target; #echo {where $target} }
 
-#alias {2} {kt}
-#alias {3} {kt}
+#alias {3} {ht}
+#alias {4} {qht}
+#alias {5} {qht}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
 #alias {cloak} { remove fur; wear cloak }
 #alias {fur} {remove cloak; wear fur }
 
-#alias {brd} {get runed sable; wield runed; put nimble sable}
-#alias {nim} {get nimble sable; wield nimble; put runed sable}
 #alias {iron} {remove ring; put ring sable; get ironring sable; wear ironring}
 #alias {ruby} {remove ring; put ring sable; get rubyring sable; wear rubyring}
 #alias {topaz} {remove ring; put ring sable; get topaz-ring sable; wear topaz-ring}
 #alias {str} {remove ring; get topaz-ring sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring sable; wear ring}
+#alias {pipe} {sheath; wield pipe; smoke pipe; draw }
+#alias {smoke} {sheath; wield pipe; smoke pipe; draw }
+#alias {wooden} {remove 2.ring; get wooden sable; wear wooden}
+#alias {candle} {sheath; get candle all; wield candle; use candle; draw}
 
 
 #alias {md} {

@@ -14,3 +14,4 @@
 
 #action {^$leader dismounts} {lead}
 #action {^$leader picks up} {ride}
+#action {^$leader grabs on} {ride}

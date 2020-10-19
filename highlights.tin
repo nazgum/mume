@@ -63,6 +63,7 @@
 #highlight {a fine grey cloak} {magenta}
 #highlight {an enhanced herbal kit} {magenta}
 #highlight {a strange set of lock picks} {magenta}
+#highlight {a black horn shortbow} {magenta}
 
 #highlight {a wooden ring} {red}
 #highlight {a green stinking vial} {red}
@@ -75,7 +76,8 @@
 #highlight {a flask of orkish draught} {pink}
 #highlight {%w flasks of orkish draught} {pink}
 
-#highlight {^%w %w scroll} {violet}
+#highlight {^a %w scroll} {violet}
+#highlight {^an %w scroll} {violet}
 #highlight {^%w %w scrolls} {violet}
 
 #highlight {- armour} {pink}

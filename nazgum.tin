@@ -19,29 +19,51 @@
 
 #alias {kt} { kill $target; #echo {kill $target} }
 #alias {bt} { backstab $target; #echo {backstab $target} }
-#alias {ht} { cast 'harm' $target; #echo {cast 'harm' $target} }
-#alias {qht} { cast q 'harm' $target; #echo {cast q 'harm' $target} }
-#alias {hqt} { cast q 'harm' $target; #echo {cast q 'harm' $target} }
 #alias {tt} { track $target; #echo {track $target} }
 #alias {wt} { where $target; #echo {where $target} }
 
-#alias {3} {ht}
-#alias {4} {qht}
-#alias {5} {qht}
+#alias {ht} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#alias {qh} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {hq} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {3} {of assist}
+#alias {4} {of bash}
+#alias {5} {of rescue}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
 #alias {cloak} { remove fur; wear cloak }
 #alias {fur} {remove cloak; wear fur }
 
-#alias {iron} {remove ring; put ring sable; get ironring sable; wear ironring}
-#alias {ruby} {remove ring; put ring sable; get rubyring sable; wear rubyring}
-#alias {topaz} {remove ring; put ring sable; get topaz-ring sable; wear topaz-ring}
-#alias {str} {remove ring; get topaz-ring sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring sable; wear ring}
-#alias {pipe} {sheath; wield pipe; smoke pipe; draw }
-#alias {smoke} {sheath; wield pipe; smoke pipe; draw }
-#alias {wooden} {remove 2.ring; get wooden sable; wear wooden}
-#alias {candle} {sheath; get candle all; wield candle; use candle; draw}
+#alias {iron} {remove ring; put ring 2.sable; get ironring 2.sable; wear ironring}
+#alias {ruby} {remove ring; put ring 2.sable; get rubyring 2.sable; wear rubyring}
+#alias {topaz} {remove ring; put ring 2.sable; get topaz-ring 2.sable; wear topaz-ring}
+#alias {str} {remove ring; get topaz-ring 2.sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring 2.sable; wear ring}
+#alias {wooden} {remove 2.ring; get wooden all; wear wooden}
+#alias {candle} {get candle all; wield candle; use candle; wield dagger}
 
 
 #alias {md} {
@@ -51,19 +73,19 @@
 }
 
 #alias {arach} {
-  get tail sable; get fur sable; get grey sable;
+  get tail all; get fur all; get grey all;
   put tail kit; put fur kit; put grey kit;
   mix kit
 }
 
 #alias {venom} {
-  get tail sable; get fur sable; get small sable;
+  get tail all; get fur all; get small all;
   put tail kit; put fur kit; put small kit;
   mix kit
 }
 
 #alias {psylonia} {
-  get inkberries sable; get red-mushroom sable; get sickly sable;
+  get inkberries all; get red-mushroom all; get sickly all;
   put inkberries kit; put red-mushroom kit; put sickly kit;
   mix kit
 }

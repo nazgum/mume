@@ -1,0 +1,42 @@
+                                  LOCKPICK IMPROVES
+
+
+Plain (non-upgraded) set adds 25% to pick skill, each upgrade (they all same) adds 3% more.
+
+
+1) Assassin Guildmaster. (Anyone)
+Price: 15 gold.
+   Description: Two of the lockpicks have shallow notches on them.
+
+
+2) Master Assassin. (Anyone)
+The Master Assassin will improve lockpicks as a reward to the person who kills Malardil and brings the silver key to him.
+Just approach the Master Assassin with the key in your inventory, give him key after he asks for it, and remember to stay
+cool. Remember that you must be neither invisible nor sneaking while passing doorguards and entering MA. His reward is 
+random: he always gives you 3 gold, then sometimes he gives you small pouch of paralyse, sometimes offers you picks upgrade
+(give him picks _after_ that).
+   Description: A couple lockpicks have a small bump near the tip.
+
+3) Angdil.
+Price: an evil artifact weapon (HBM, ElfHewer, Morgul Blade, HFS, Black Many-Tailed Whip) or Morgul Blade's sheath.
+   Description: The edges of most picks have been carefully sharpened.
+
+4) Dwarven Locksmith (Dwarf only).
+Price: pure Truesilver: a piece of mithril (silvery metal), mithril key (Muranog cabinet) or shining mail piece.
+   Description: The lockpicks are extremely well tempered.
+
+5) Kraksh the Orcish Scout Guildmaster (Orc only).
+Price: a precious jewel.
+   Description: There is a strange lockpick, with a sharp protrusion on one side, in the set.
+
+6) Grey Cloaked Man (BN only).
+Price - oak staff from a slain whitie.
+   Description: The lockpicks feel oddly light in your hand.
+
+7) Half-elven cut-throat. (Anyone)
+To get upgrade, give lockpicks to him and then kill him (or steal) toget picks back.
+   Description: Several of the picks have long, smooth grooves along their length.
+
+8) Saruman (Anyone)
+Bring Saruman a poweritem, tho rewards are random. Usualy claymore should be fine to get picks.
+   Description: A finely shaped lockpick has been engraved with a white hand.

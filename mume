@@ -52,7 +52,7 @@
 #split
 
 #nop gameplay scripts
-#read nazgum.tin
+#read gagzik.tin
 #read doors.tin
 #read leader.tin
 #read subs_keys.tin

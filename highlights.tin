@@ -22,6 +22,7 @@
 
 #nop Important Gear
 #highlight {an enruned robe} {magenta}
+#highlight {an engraved broadsword} {magenta}
 #highlight {a ragged, blackened cloak} {magenta}
 #highlight {a roughly stitched cloak} {magenta}
 #highlight {a black cape} {magenta}
@@ -29,6 +30,7 @@
 #highlight {a bright red amulet} {magenta}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
+#highlight {a leaf-embossed shield} {magenta}
 #highlight {a gleaming belt} {magenta}
 #highlight {a golden belt} {magenta}
 #highlight {a broad silver belt} {magenta}
@@ -64,6 +66,8 @@
 #highlight {an enhanced herbal kit} {magenta}
 #highlight {a strange set of lock picks} {magenta}
 #highlight {a black horn shortbow} {magenta}
+#highlight {an ashen blade} {magenta}
+#highlight {a coarse dusky robe} {magenta}
 
 #highlight {a wooden ring} {red}
 #highlight {a green stinking vial} {red}
@@ -92,6 +96,7 @@
 #highlight {^You suddenly notice %1} {red}
 #highlight {^You feel a hidden presence.} {red}
 #highlight {^You feel weaker.} {red}
+#highlight {^You failed to control an %1.} {red}
 
 #nop Poison
 #highlight {some sort of liquid is smeared on it} {light green}

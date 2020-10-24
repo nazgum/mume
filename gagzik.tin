@@ -1,0 +1,149 @@
+#var {target} {*man*}
+
+#alias {tar} { setTarget %0 }
+#alias {tb} { setTarget *bear* }
+#alias {td} { setTarget *dwarf* }
+#alias {te} { setTarget *elf* }
+#alias {th} { setTarget *hobbit* }
+#alias {tm} { setTarget *man* }
+#alias {to} { setTarget *orc* }
+
+#alias {setTarget} {
+  #if {"%1" == ""} {
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  } {
+    #var {target} {%0};
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  }
+}
+
+#alias {kt} { kill $target; #echo {kill $target} }
+#alias {bt} { bl $target; #echo {bl $target} }
+#alias {tt} { track $target; #echo {track $target} }
+#alias {wt} { where $target; #echo {where $target} }
+
+#alias {ht} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#alias {qh} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {hq} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {2} {of kill $target}
+#alias {3} {of assist}
+#alias {4} {of bash}
+#alias {5} {of rescue}
+
+#alias {shoes} { remove boots; wear shoes }
+#alias {boots} { remove shoes; wear boots }
+#alias {cloak} { remove fur; wear cloak }
+#alias {fur} {remove cloak; wear fur }
+
+#alias {iron} {remove ring; put ring 2.sable; get ironring 2.sable; wear ironring}
+#alias {ruby} {remove ring; put ring 2.sable; get rubyring 2.sable; wear rubyring}
+#alias {topaz} {remove ring; put ring 2.sable; get topaz-ring 2.sable; wear topaz-ring}
+#alias {str} {remove ring; get topaz-ring 2.sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring 2.sable; wear ring}
+#alias {wooden} {remove 2.ring; get wooden all; wear wooden}
+#alias {candle} {get candle all; wield candle; use candle; wield dagger}
+
+
+#alias {md} {
+  get tail all; get fur all; get leaves all; get vial all;
+  put tail kit; put fur kit; put leaves kit; put vial kit;
+  mix kit
+}
+
+#alias {arach} {
+  get tail all; get fur all; get grey all;
+  put tail kit; put fur kit; put grey kit;
+  mix kit
+}
+
+#alias {venom} {
+  get tail all; get fur all; get small all;
+  put tail kit; put fur kit; put small kit;
+  mix kit
+}
+
+#alias {psylonia} {
+  get inkberries all; get red-mushroom all; get sickly all;
+  put inkberries kit; put red-mushroom kit; put sickly kit;
+  mix kit
+}
+
+#var {battle} {off}
+
+#MACRO {^=} {
+  #if {"$battle" == "on"} {
+    disableBattle
+  };
+  #else {
+    enableBattle
+  }
+}
+
+#alias {disableBattle} {
+  #var {battle} {off};
+  #showme {$prompt_data} {0};
+  
+  #UNMACRO {^,} {#echo {n}; n};
+  #UNMACRO {^o} {#echo {s}; s};
+  #UNMACRO {^e} {#echo {e}; e};
+  #UNMACRO {^a} {#echo {w}; w};
+  #UNMACRO {^.} {#echo {u}; u};
+  #UNMACRO {^;} {#echo {d}; d};
+  
+  #UNMACRO {^y} {#echo {f}; f};
+  #UNMACRO {^'} {#echo {f}; f};
+  
+  #UNMACRO {^j} {od};
+  #UNMACRO {^q} {ud};
+  #UNMACRO {^k} {cd};
+  #UNMACRO {^x} {ld};
+  
+  #UNMACRO {^u} {kt};
+  #UNMACRO {^i} {bt};
+}
+
+#alias {enableBattle} {
+  #var {battle} {on};
+  #showme {$prompt_data} {0};
+  
+  #MACRO {^,} {#echo {n}; n};
+  #MACRO {^o} {#echo {s}; s};
+  #MACRO {^e} {#echo {e}; e};
+  #MACRO {^a} {#echo {w}; w};
+  #MACRO {^.} {#echo {u}; u};
+  #MACRO {^;} {#echo {d}; d};
+  
+  #MACRO {^y} {#echo {f}; f};
+  #MACRO {^'} {#echo {f}; f};
+  
+  #MACRO {^j} {od};
+  #MACRO {^q} {ud};
+  #MACRO {^k} {cd};
+  #MACRO {^x} {ld};
+  
+  #MACRO {^u} {kt};
+  #MACRO {^i} {bt};
+}

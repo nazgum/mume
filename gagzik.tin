@@ -18,9 +18,17 @@
 }
 
 #alias {kt} { kill $target; #echo {kill $target} }
-#alias {bt} { bl $target; #echo {bl $target} }
 #alias {tt} { track $target; #echo {track $target} }
 #alias {wt} { where $target; #echo {where $target} }
+
+#alias {bt} {
+  #if { "%0" == "" } {
+    cast 'blind' $target; #echo {cast 'blind' $target}
+  };
+  #else {
+    cast 'blind' %0; #echo {cast 'blind' %0}
+  };
+}
 
 #alias {ht} {
   #if { "%0" == "" } {
@@ -53,6 +61,8 @@
 #alias {3} {of assist}
 #alias {4} {of bash}
 #alias {5} {of rescue}
+#alias {8} {ch $target}
+#alias {9} {burn $target}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
@@ -68,8 +78,8 @@
 
 
 #alias {md} {
-  get tail all; get fur all; get leaves all; get vial all;
-  put tail kit; put fur kit; put leaves kit; put vial kit;
+  get tail all; get fur all; get tarragon all; get vial all;
+  put tail kit; put fur kit; put tarragon kit; put vial kit;
   mix kit
 }
 

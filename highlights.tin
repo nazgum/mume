@@ -23,6 +23,7 @@
 #nop Important Gear
 #highlight {an enruned robe} {magenta}
 #highlight {an engraved broadsword} {magenta}
+#highlight {a steel claymore} {magenta}
 #highlight {a ragged, blackened cloak} {magenta}
 #highlight {a roughly stitched cloak} {magenta}
 #highlight {a black cape} {magenta}
@@ -85,6 +86,7 @@
 #highlight {^%w %w scrolls} {violet}
 
 #highlight {- armour} {pink}
+#highlight {- shield} {pink}
 #highlight {- detect magic} {pink}
 #highlight {- breath of briskness} {pink}
 #highlight {- strength} {pink}

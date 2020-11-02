@@ -57,17 +57,20 @@
   };
 }
 
-#alias {2} {of kill $target}
-#alias {3} {of assist}
-#alias {4} {of bash}
-#alias {5} {of rescue}
-#alias {8} {ch $target}
-#alias {9} {burn $target}
+#alias {^2$} {of kill $target}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue gagzik}
+#alias {^7$} {shoot $target; #echo {shoot $target} }
+#alias {^8$} {burn $target}
+#alias {^9$} {lb $target}
 
+#alias {smite} { remove shield; sheath; wield claymore 2; cha mood agg }
+#alias {slash} { draw; wear shield; cha mood wimpy }
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove fur; wear cloak }
-#alias {fur} {remove cloak; wear fur }
+#alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
+#alias {tra} {order followers flush t; track}
 
 #alias {iron} {remove ring; put ring 2.sable; get ironring 2.sable; wear ironring}
 #alias {ruby} {remove ring; put ring 2.sable; get rubyring 2.sable; wear rubyring}

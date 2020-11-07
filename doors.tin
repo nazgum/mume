@@ -1,3 +1,22 @@
+#var {door} {door}
+
+#alias {door} {
+  #if { "%0" == "" } {
+    #echo {door set to: <049>$door<099>}
+  };
+  #else {
+    #var {door} {%0};
+    #echo {door set to: <049>$door<099>}
+  };;
+}
+
+#alias {od} {open $door}
+#alias {cd} {close $door}
+#alias {ud} {unlock $door}
+#alias {ld} {lock $door}
+#alias {pd} {pick $door}
+#alias {bd} {cast 'break' $door; #echo {cast 'break' $door} }
+
 #alias {os} {_open}
 #alias {cs} {_close}
 #alias {us} {_unlock}

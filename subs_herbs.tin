@@ -1,0 +1,14 @@
+#sub {scented crushed leaves} {%0 (thyme, clearthoughts)}
+#sub {grey-green leaves} {%0 (sage, clearthoughts, healing)}
+#sub {dried mauve petals} {%0 (mauve, clearthoughts)}
+#sub {yellow petals} {%0 (foxtail, healing)}
+#sub {long, slender green leaves} {%0 (athelas, healing)}
+#sub {grey-brown powder} {%0 (cardamom, orc-balm)}
+#sub {white petals} {%0 (water-lily, orc-balm)}
+#sub {grey petals} {%0 (figwort, antidote)}
+#sub {foul-smelling %w} {%0 (valerian, drake-slumber)}
+#sub {pungent red powder} {%0 (paprika, skillful)}
+#sub {needlelike leaves} {%0 (rosemary, skillful)}
+#sub {pale-green, crushed leaves} {%0 (marjoram)}
+#sub {splayed leaves} {%0 (coriander)}
+#sub {bulbous %w} {%0 (comfrey)}

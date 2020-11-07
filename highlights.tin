@@ -19,6 +19,7 @@
 #highlight {it glows red} {red}
 #highlight {(red aura)} {red}
 #highlight {^Traces %1 red tones %2} {red}
+#highlight {^You failed to control %1} {red}
 
 #nop Important Gear
 #highlight {an enruned robe} {magenta}

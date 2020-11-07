@@ -30,6 +30,24 @@
   };
 }
 
+#alias {bbt} {
+  #if { "%0" == "" } {
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
+  };
+  #else {
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
+  };
+}
+
+#alias {lt} {
+  #if { "%0" == "" } {
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+  };
+  #else {
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+  };
+}
+
 #alias {ht} {
   #if { "%0" == "" } {
     cast 'harm' $target; #echo {cast 'harm' $target}
@@ -57,11 +75,12 @@
   };
 }
 
+#alias {^1$} {of bash $target}
 #alias {^2$} {of kill $target}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue gagzik}
-#alias {^7$} {shoot $target; #echo {shoot $target} }
+#alias {^7$} {bb $target}
 #alias {^8$} {burn $target}
 #alias {^9$} {lb $target}
 

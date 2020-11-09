@@ -20,29 +20,28 @@
 #alias {be} {cast 'break' exit; #echo {cast 'break' exit} }
 
 
+#alias {pve} {
+  #var {pk} {off};
+  #showme {$prompt_data} {0};
+  #echo {mapper secrets are now: <049>enabled<099>};
+    
+  #alias {os} {_open};
+  #alias {cs} {_close};
+  #alias {us} {_unlock};
+  #alias {ls} {_lock};
+  #alias {ps} {_pick};
+  #alias {bs} {_break};
+}
+
 #alias {pk} {
-  #if { "$pk" == "on" } {
-    #var {pk} {off};
-    #showme {$prompt_data} {0};
-    #echo {mapper secrets are now: <049>enabled<099>};
+  #var {pk} {on};
+  #showme {$prompt_data} {0};
+  #echo {mapper secrets are now: <049>disabled<099>};
     
-    #alias {os} {_open};
-    #alias {cs} {_close};
-    #alias {us} {_unlock};
-    #alias {ls} {_lock};
-    #alias {ps} {_pick};
-    #alias {bs} {_break};
-  };
-  #else {
-    #var {pk} {on};
-    #showme {$prompt_data} {0};
-    #echo {mapper secrets are now: <049>disabled<099>};
-    
-    #alias {os} {oe};
-    #alias {cs} {ce};
-    #alias {us} {ue};
-    #alias {ls} {le};
-    #alias {ps} {pe};
-    #alias {bs} {cast 'break' exit; #echo {cast 'break' exit}};
-  };;
+  #alias {os} {oe};
+  #alias {cs} {ce};
+  #alias {us} {ue};
+  #alias {ls} {le};
+  #alias {ps} {pe};
+  #alias {bs} {cast 'break' exit; #echo {cast 'break' exit}};
 }

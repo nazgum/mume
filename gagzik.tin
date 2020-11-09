@@ -91,10 +91,7 @@
 #alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
 #alias {tra} {order followers flush t; track}
 
-#alias {iron} {remove ring; put ring 2.sable; get ironring 2.sable; wear ironring}
-#alias {ruby} {remove ring; put ring 2.sable; get rubyring 2.sable; wear rubyring}
-#alias {topaz} {remove ring; put ring 2.sable; get topaz-ring 2.sable; wear topaz-ring}
-#alias {str} {remove ring; get topaz-ring 2.sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring 2.sable; wear ring}
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield sword; put pipe pack }
 #alias {wooden} {remove 2.ring; get wooden all; wear wooden}
 #alias {candle} {get candle all; wield candle; use candle; wield dagger}
 

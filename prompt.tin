@@ -6,9 +6,17 @@
   #var {prompt_data} {%0};
   
   #if {"$battle" == "on"} {
-    #return <119>SPEEDWALK<099> $prompt_data
+    #if {"$pk" == "on"} {
+      #return <019>spd<099> <059>pk<099> $prompt_data
+    } {
+      #return <019>spd<099> $prompt_data
+    }
   } {
-    #return $prompt_data
+    #if {"$pk" == "on"} {
+      #return <059>pk<099> $prompt_data
+    } {
+      #return $prompt_data
+    }
   }
 }
 

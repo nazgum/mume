@@ -57,8 +57,6 @@
 #read leader.tin
 #read subs_keys.tin
 #read subs_lockpicks.tin
-#read subs_plants.tin
-#read subs_herbs.tin
 #read highlights.tin
 #read prompt.tin
 

@@ -82,6 +82,12 @@
 #highlight {a flask of orkish draught} {pink}
 #highlight {%w flasks of orkish draught} {pink}
 
+#highlight {%1 handfuls of narrow leaves} {orange}
+#highlight {%1 short, moist tails} {orange}
+#highlight {%1 piles of short, black fur} {orange}
+#highlight {%1 vials of preserved blood} {orange}
+
+
 #highlight {^a %w scroll} {violet}
 #highlight {^an %w scroll} {violet}
 #highlight {^%w %w scrolls} {violet}

@@ -11,11 +11,11 @@
   };;
 }
 
-#alias {od} {open $door}
-#alias {cd} {close $door}
-#alias {ud} {unlock $door}
-#alias {ld} {lock $door}
-#alias {pd} {pick $door}
+#alias {od} {open $door; #echo {open $door}}
+#alias {cd} {close $door; #echo {close $door}}
+#alias {ud} {unlock $door; #echo {unlock $door}}
+#alias {ld} {lock $door; #echo {lock $door}}
+#alias {pd} {pick $door; #echo {pick $door}}
 #alias {bd} {cast 'break' $door; #echo {cast 'break' $door} }
 #alias {be} {cast 'break' exit; #echo {cast 'break' exit} }
 
@@ -45,3 +45,10 @@
   #alias {ps} {pe};
   #alias {bs} {cast 'break' exit; #echo {cast 'break' exit}};
 }
+
+#alias {os} {oe};
+#alias {cs} {ce};
+#alias {us} {ue};
+#alias {ls} {le};
+#alias {ps} {pe};
+#alias {bs} {cast 'break' exit; #echo {cast 'break' exit}};

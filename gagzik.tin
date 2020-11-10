@@ -80,8 +80,9 @@
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue gagzik}
+#alias {^6$} {bl $target}
 #alias {^7$} {bb $target}
-#alias {^8$} {burn $target}
+#alias {^8$} {lb $target}
 #alias {^9$} {lb $target}
 
 #alias {smite} { remove shield; sheath; wield claymore 2; cha mood agg }

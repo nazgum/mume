@@ -93,7 +93,8 @@ Rune "Y"                     Sanctuary
 +Tarnished copper wristband  45  Magic, Anti-good, Anti-neutral, +10 mana (+5 mana with shining mail, +0 mana shining plate)
 +Black-thorned wristband     11  Magic, +2ob, -1 HP regen (breaks apart after 5th wear)
 +Black metal wristband       25  Magic, Bless, +2ob/-3db if aggressive, -2ob/+2db if wimpy
-*Silvery wristband	     10  Magic, Saving spell -10, Move regen -1, Eff vs spell
+*Slim Silvery wristband      10  Magic, Saving spell -10, Move regen -1, Eff vs spell
+*Wide Silver wristband       10  Magic, Saving spell -10, Move regen +2, Mana regen -1
 +Wolfskin wristband           6
 
 

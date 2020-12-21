@@ -1,0 +1,23 @@
+#var {target} {*man*}
+
+#alias {tar} { setTarget %0 }
+#alias {tb} { setTarget *bear* }
+#alias {td} { setTarget *dwarf* }
+#alias {te} { setTarget *elf* }
+#alias {th} { setTarget *hobbit* }
+#alias {tm} { setTarget *man* }
+#alias {to} { setTarget *orc* }
+#alias {tt} { setTarget *troll* }
+
+#alias {setTarget} {
+  #if {"%1" == ""} {
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  } {
+    #var {target} {%0};
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  }
+}
+
+#alias {kt} { kill $target; #echo {kill $target} }
+#alias {tt} { track $target; #echo {track $target} }
+#alias {wt} { where $target; #echo {where $target} }

@@ -1,31 +1,24 @@
-#var {target} {*man*}
-
-#alias {tar} { setTarget %0 }
-#alias {tm} { setTarget *man* }
-#alias {to} { setTarget *orc* }
-#alias {tt} { setTarget *troll* }
-
-
-#alias {kt} {
-  #send {kill $target};
-  #echo {kill $target}
-}
-
 #alias {dt} { #send {de $target} }
 #alias {ht} { #send {harm $target} }
 #alias {bt} { #send {bl $target} }
-#alias {tt} { track $target; #echo {track $target} }
-#alias {wt} { where $target; #echo {where $target} }
-
 
 #alias {setTarget} {
+  #if {"%1" == ""} {
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  } {
+    #var {target} {%0};
+    #echo {<109>\$target<099> set to: <219>$target<099>}
+  }
+}
+
+
+#alias {bt} {
   #if { "%0" == "" } {
-    #echo {You must specify a target...}
+    cast 'blind' $target; #echo {cast 'blind' $target}
   };
   #else {
-    #var {target} {%0};
-    #echo {target set to: <049>$target<099>}
-  };;
+    cast 'blind' %0; #echo {cast 'blind' %0}
+  };
 }
 
 
@@ -60,8 +53,7 @@
   #UNMACRO {^x} {ld};
   
   #UNMACRO {^u} {kt};
-  #UNMACRO {^i} {dt};
-  #UNMACRO {^p} {bt};
+  #UNMACRO {^i} {bt};
 }
 
 #alias {enableBattle} {
@@ -84,6 +76,5 @@
   #MACRO {^x} {ld};
   
   #MACRO {^u} {kt};
-  #MACRO {^i} {dt};
-  #MACRO {^p} {bt};
+  #MACRO {^i} {bt};
  }

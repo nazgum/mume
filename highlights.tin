@@ -22,8 +22,13 @@
 #highlight {^You failed to control %1} {red}
 
 #nop Important Gear
+#highlight {the great black scimitar} {violet}
+#highlight {a defiled dwarven shield} {violet}
 #highlight {an enruned robe} {magenta}
+#highlight {a wightblade} {magenta}
 #highlight {an engraved broadsword} {magenta}
+#highlight {a fell blade} {magenta}
+#highlight {a war mattock} {magenta}
 #highlight {a steel claymore} {magenta}
 #highlight {a ragged, blackened cloak} {magenta}
 #highlight {a roughly stitched cloak} {magenta}
@@ -35,10 +40,14 @@
 #highlight {a leaf-embossed shield} {magenta}
 #highlight {a gleaming belt} {magenta}
 #highlight {a golden belt} {magenta}
+#highlight {a belt of fell hide} {magenta}
 #highlight {a broad silver belt} {magenta}
 #highlight {a mithril circlet} {magenta}
 #highlight {a red ruby; it has a soft glowing aura} {magenta}
 #highlight {a golden ruby ring} {magenta}
+#highlight {a copper ring} {magenta}
+#highlight {an icy ring} {violet}
+#highlight {a root ring} {violet}
 #highlight {a mighty dwarven axe} {magenta}
 #highlight {a blackened dwarven axe} {magenta}
 #highlight {a darkened orkish axe} {magenta}
@@ -60,11 +69,14 @@
 #highlight {an ornate, steel-shafted warhammer} {magenta}
 #highlight {an old length of iron chain} {magenta}
 #highlight {a black amulet} {magenta}
+#highlight {a smoky obsidian amulet} {magenta}
 #highlight {a scorched, grisly fur} {magenta}
 #highlight {a wide silvery wristband} {magenta}
+#highlight {a black-thorned wristband} {magenta}
 #highlight {an archer's wrist guard} {magenta}
 #highlight {a lambent amulet} {magenta}
 #highlight {a fine grey cloak} {magenta}
+#highlight {a soot-black bear hide} {magenta}
 #highlight {an enhanced herbal kit} {magenta}
 #highlight {a strange set of lock picks} {magenta}
 #highlight {a black horn shortbow} {magenta}
@@ -87,17 +99,28 @@
 #highlight {%1 piles of short, black fur} {orange}
 #highlight {%1 vials of preserved blood} {orange}
 
+#highlight {%1 piles of grey-green leaves} {azure}
+#highlight {%1 scented crushed leaves} {azure}
+#highlight {%1 clusters of hard, round, black berries} {azure}
+#highlight {%1 piles of sweet-smelling dried mauve petals} {azure}
 
 #highlight {^a %w scroll} {violet}
 #highlight {^an %w scroll} {violet}
 #highlight {^%w %w scrolls} {violet}
+#highlight {a pungent brew} {pink}
 
 #highlight {- armour} {pink}
 #highlight {- shield} {pink}
 #highlight {- detect magic} {pink}
 #highlight {- breath of briskness} {pink}
 #highlight {- strength} {pink}
+#highlight {- shroud} {pink}
+#highlight {- sanctuary} {violet}
 
+
+#nop Spells Down
+#highlight {^Your magical shield wears off.} {red}
+#highlight {^You feel less protected.} {red}
 
 
 #nop Bad Effects
@@ -108,4 +131,4 @@
 #highlight {^You failed to control an %1.} {red}
 
 #nop Poison
-#highlight {some sort of liquid is smeared on it} {light green}
+#highlight {some sort of liquid is smeared on it} {green}

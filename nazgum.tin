@@ -1,26 +1,4 @@
-#var {target} {*man*}
-
-#alias {tar} { setTarget %0 }
-#alias {tb} { setTarget *bear* }
-#alias {td} { setTarget *dwarf* }
-#alias {te} { setTarget *elf* }
-#alias {th} { setTarget *hobbit* }
-#alias {tm} { setTarget *man* }
-#alias {to} { setTarget *orc* }
-
-#alias {setTarget} {
-  #if {"%1" == ""} {
-    #echo {<109>\$target<099> set to: <219>$target<099>}
-  } {
-    #var {target} {%0};
-    #echo {<109>\$target<099> set to: <219>$target<099>}
-  }
-}
-
-#alias {kt} { kill $target; #echo {kill $target} }
 #alias {bt} { backstab $target; #echo {backstab $target} }
-#alias {tt} { track $target; #echo {track $target} }
-#alias {wt} { where $target; #echo {where $target} }
 
 #alias {ht} {
   #if { "%0" == "" } {
@@ -55,13 +33,14 @@
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove fur; wear cloak }
-#alias {fur} {remove cloak; wear fur }
+#alias {cloak} { remove bear-hide; wear cloak }
+#alias {fur} {remove cloak; wear bear-hide }
 
-#alias {iron} {remove ring; put ring 2.sable; get ironring 2.sable; wear ironring}
-#alias {ruby} {remove ring; put ring 2.sable; get rubyring 2.sable; wear rubyring}
-#alias {topaz} {remove ring; put ring 2.sable; get topaz-ring 2.sable; wear topaz-ring}
-#alias {str} {remove ring; get topaz-ring 2.sable; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring 2.sable; wear ring}
+
+#alias {iron} {remove ring; put ring pack; get ironring pack; wear ironring}
+#alias {ruby} {remove ring; put ring pack; get rubyring pack; wear rubyring}
+#alias {topaz} {remove ring; put ring pack; get topaz-ring pack; wear topaz-ring}
+#alias {str} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
 #alias {wooden} {remove 2.ring; get wooden all; wear wooden}
 #alias {candle} {get candle all; wield candle; use candle; wield dagger}
 

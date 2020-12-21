@@ -52,6 +52,7 @@
 #split
 
 #nop gameplay scripts
+#read target.tin
 #read gagzik.tin
 #read doors.tin
 #read leader.tin

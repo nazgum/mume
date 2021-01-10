@@ -1,4 +1,5 @@
 #var {target} {*man*}
+#var {mount}  {pony}
 
 #alias {tar} { setTarget %0 }
 #alias {tb} { setTarget *bear* }
@@ -19,5 +20,17 @@
 }
 
 #alias {kt} { kill $target; #echo {kill $target} }
-#alias {tt} { track $target; #echo {track $target} }
-#alias {wt} { where $target; #echo {where $target} }
+
+#alias {setMount} {
+  #if {"%1" == ""} {
+    #echo {<109>\$mount<099> set to: <219>$mount<099>}
+  } {
+    #var {mount} {%0};
+    #echo {<109>\$mount<099> set to: <219>$mount<099>}
+  }
+}
+
+#alias {mo} { setMount %0 }
+#alias {wm} { where $mount; #echo {where $mount} }
+#alias {tt} { track $mount; #echo {track $mount} }
+#alias {wt} { where $mount; #echo {where $mount} }

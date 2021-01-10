@@ -48,6 +48,7 @@
 #highlight {a copper ring} {magenta}
 #highlight {an icy ring} {violet}
 #highlight {a root ring} {violet}
+#highlight {a slim silvery wristband} {violet}
 #highlight {a mighty dwarven axe} {magenta}
 #highlight {a blackened dwarven axe} {magenta}
 #highlight {a darkened orkish axe} {magenta}
@@ -103,13 +104,14 @@
 #highlight {%1 scented crushed leaves} {azure}
 #highlight {%1 clusters of hard, round, black berries} {azure}
 #highlight {%1 piles of sweet-smelling dried mauve petals} {azure}
+#highlight {A low, many-branched shrub covers the ground here.} {azure}
 
 #highlight {^a %w scroll} {violet}
 #highlight {^an %w scroll} {violet}
 #highlight {^%w %w scrolls} {violet}
 #highlight {a pungent brew} {pink}
 
-#highlight {- armour} {pink}
+#highlight {- armour} {violet}
 #highlight {- shield} {pink}
 #highlight {- detect magic} {pink}
 #highlight {- breath of briskness} {pink}

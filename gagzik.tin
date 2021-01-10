@@ -65,16 +65,21 @@
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
 #alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
+#alias {grey} { remove cloak; get grey-cloak pack; wear grey-cloak; put cloak pack }
+#alias {stitched} { remove cloak; get stitched pack; wear stitched; put cloak pack }
 #alias {shirt} { remove robe; get shirt pack; wear shirt; put robe pack }
 #alias {robe} { remove shirt; get robe pack; wear robe; put shirt pack }
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield sword; put pipe sable }
-#alias {wooden} {remove 2.ring; get wooden sable; wear wooden}
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield sword; put pipe pack }
+#alias {wooden} {remove 2.ring; get wooden pack; wear wooden}
 #alias {candle} {get candle all; wield candle; use candle; wield dagger}
-#alias {mana} {remove ring; get ruby-ring sable; wear ring; put ring sable}
-#alias {copper} {remove ring; get copperring sable; wear ring; put ring sable}
-#alias {iron} {remove ring; get ironring sable; wear ring; put ring sable}
-#alias {icy} {remove 2.ring; get icyring sable; wear ring; put ring sable}
-#alias {root} {remove 2.ring; get rootring sable; wear ring; put ring sable}
+#alias {mana} {remove ring; get ruby-ring pack; wear ring; put ring pack}
+#alias {copper} {remove ring; get copperring pack; wear ring; put ring pack}
+#alias {iron} {remove ring; get ironring pack; wear ring; put ring pack}
+#alias {icy} {remove 2.ring; get icyring pack; wear ring; put ring pack}
+#alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
+#alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
+#alias {stun} {get small-pouch all; use small-pouch}
+#alias {str} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
 
 #alias {md} {
   get tail all; get fur all; get tarragon all; get vial all;

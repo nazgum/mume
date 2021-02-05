@@ -55,6 +55,7 @@
 #read target.tin
 #read rent.tin
 #read gagzik.tin
+#read battle.tin
 #read doors.tin
 #read leader.tin
 #read spell_timers.tin

@@ -6,17 +6,9 @@
   #var {prompt_data} {%0};
   
   #if {"$battle" == "on"} {
-    #if {"$pk" == "off"} {
-      #return <019>walk<099> <059>pve<099> $prompt_data
-    } {
-      #return <019>walk<099> $prompt_data
-    }
+    #return <019>walk<099> $prompt_data
   } {
-    #if {"$pk" == "off"} {
-      #return <059>pve<099> $prompt_data
-    } {
-      #return $prompt_data
-    }
+    #return $prompt_data
   }
 }
 

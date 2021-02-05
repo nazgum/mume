@@ -1,0 +1,56 @@
+#var {battle} {off}
+
+#MACRO {^=} {
+  #if {"$battle" == "on"} {
+    disableBattle
+  };
+  #else {
+    enableBattle
+  }
+}
+
+#alias {disableBattle} {
+  #var {battle} {off};
+  #showme {$prompt_data} {0};
+  
+  #UNMACRO {^,} {#echo {n}; n};
+  #UNMACRO {^o} {#echo {s}; s};
+  #UNMACRO {^e} {#echo {e}; e};
+  #UNMACRO {^a} {#echo {w}; w};
+  #UNMACRO {^.} {#echo {u}; u};
+  #UNMACRO {^;} {#echo {d}; d};
+  
+  #UNMACRO {^y} {#echo {f}; f};
+  #UNMACRO {^'} {#echo {f}; f};
+  
+  #UNMACRO {^j} {od};
+  #UNMACRO {^q} {ud};
+  #UNMACRO {^k} {cd};
+  #UNMACRO {^x} {ld};
+  
+  #UNMACRO {^u} {kt};
+  #UNMACRO {^i} {bt};
+}
+
+#alias {enableBattle} {
+  #var {battle} {on};
+  #showme {$prompt_data} {0};
+  
+  #MACRO {^,} {#echo {n}; n};
+  #MACRO {^o} {#echo {s}; s};
+  #MACRO {^e} {#echo {e}; e};
+  #MACRO {^a} {#echo {w}; w};
+  #MACRO {^.} {#echo {u}; u};
+  #MACRO {^;} {#echo {d}; d};
+  
+  #MACRO {^y} {#echo {f}; f};
+  #MACRO {^'} {#echo {f}; f};
+  
+  #MACRO {^j} {od};
+  #MACRO {^q} {ud};
+  #MACRO {^k} {cd};
+  #MACRO {^x} {ld};
+  
+  #MACRO {^u} {kt};
+  #MACRO {^i} {bt};
+}

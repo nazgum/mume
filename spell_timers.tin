@@ -130,7 +130,7 @@
 	#line {gag}
 }
 
-#action {^You feel a sudden loss of energy as the power that once mingled with your own has now vanished.$} {spellTimerSet lethargy}
+#action {^You feel a sudden loss of energy as the power that once mingled with your own vanishes.$} {spellTimerSet lethargy}
 #action {^You feel your magic energy coming back to you.$} {spellTimerUnset lethargy}
 #action {^- lethargy$} {
 	spellTimerStatus lethargy;

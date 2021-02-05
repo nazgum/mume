@@ -7,15 +7,6 @@
   };
 }
 
-#alias {lt} {
-  #if { "%0" == "" } {
-    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
-  };
-  #else {
-    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
-  };
-}
-
 #alias {gg} {
   #if { "%0" == "" } {
     cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
@@ -57,10 +48,10 @@
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue gagzik}
-#alias {^6$} {bl $target}
-#alias {^7$} {sg $target}
-#alias {^8$} {ht $target}
-#alias {^9$} {qh $target}
+#alias {^6$} {bt}
+#alias {^7$} {gg}
+#alias {^8$} {ht}
+#alias {^9$} {qh}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
@@ -78,8 +69,11 @@
 #alias {icy} {remove 2.ring; get icyring pack; wear ring; put ring pack}
 #alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
 #alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
-#alias {stun} {get small-pouch all; use small-pouch}
+#alias {stun} {use small-pouch}
+#alias {pouch} {get small-pouch all; wear small-pouch}
+#alias {pow} {get small-pouch all; wear small-pouch}
 #alias {str} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
+#alias {sil} {get ebony all; recite ebony $target}
 
 #alias {md} {
   get tail all; get fur all; get tarragon all; get vial all;
@@ -97,63 +91,4 @@
   get juniper all; get mauve all; get sage all; get thyme all;
   put juniper kit; put mauve kit; put sage kit; put thyme kit;
   mix kit
-}
-
-
-
-#var {battle} {off}
-
-#MACRO {^=} {
-  #if {"$battle" == "on"} {
-    disableBattle
-  };
-  #else {
-    enableBattle
-  }
-}
-
-#alias {disableBattle} {
-  #var {battle} {off};
-  #showme {$prompt_data} {0};
-  
-  #UNMACRO {^,} {#echo {n}; n};
-  #UNMACRO {^o} {#echo {s}; s};
-  #UNMACRO {^e} {#echo {e}; e};
-  #UNMACRO {^a} {#echo {w}; w};
-  #UNMACRO {^.} {#echo {u}; u};
-  #UNMACRO {^;} {#echo {d}; d};
-  
-  #UNMACRO {^y} {#echo {f}; f};
-  #UNMACRO {^'} {#echo {f}; f};
-  
-  #UNMACRO {^j} {od};
-  #UNMACRO {^q} {ud};
-  #UNMACRO {^k} {cd};
-  #UNMACRO {^x} {ld};
-  
-  #UNMACRO {^u} {kt};
-  #UNMACRO {^i} {gg};
-}
-
-#alias {enableBattle} {
-  #var {battle} {on};
-  #showme {$prompt_data} {0};
-  
-  #MACRO {^,} {#echo {n}; n};
-  #MACRO {^o} {#echo {s}; s};
-  #MACRO {^e} {#echo {e}; e};
-  #MACRO {^a} {#echo {w}; w};
-  #MACRO {^.} {#echo {u}; u};
-  #MACRO {^;} {#echo {d}; d};
-  
-  #MACRO {^y} {#echo {f}; f};
-  #MACRO {^'} {#echo {f}; f};
-  
-  #MACRO {^j} {od};
-  #MACRO {^q} {ud};
-  #MACRO {^k} {cd};
-  #MACRO {^x} {ld};
-  
-  #MACRO {^u} {kt};
-  #MACRO {^i} {gg};
 }

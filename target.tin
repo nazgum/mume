@@ -34,3 +34,8 @@
 #alias {wm} { where $mount; #echo {where $mount} }
 #alias {tt} { track $mount; #echo {track $mount} }
 #alias {wt} { where $mount; #echo {where $mount} }
+
+#alias {mt} {
+  #var {mount} {$target};
+  #echo {<109>\$mount<099> set to: <219>$mount<099>}
+}

@@ -1,4 +1,4 @@
-#var {door} {door}
+#var {door} {exit}
 
 #alias {door} {
   #if { "%0" == "" } {
@@ -16,4 +16,4 @@
 #alias {ld} {lock $door; #echo {lock $door}}
 #alias {pd} {pick $door; #echo {pick $door}}
 
-#alias {rock} {get rock all; throw rock $door}
+#alias {rock} {get rock all; use rock $door}

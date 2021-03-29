@@ -1,9 +1,18 @@
-#alias {bt} {
+#alias {k} {
   #if { "%0" == "" } {
-    cast 'blind' $target; #echo {cast 'blind' $target}
+    kill $target; #echo {kill $target}
   };
   #else {
-    cast 'blind' %0; #echo {cast 'blind' %0}
+    kill %0; #echo {kill %0}
+  };
+}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+  };
+  #else {
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
   };
 }
 
@@ -16,72 +25,25 @@
   };
 }
 
-#alias {gg} {
+#alias {bt} {
   #if { "%0" == "" } {
-    cast 'smother' $target; #echo {cast 'smother' $target}
+    cast 'blind' $target; #echo {cast 'blind' $target}
   };
   #else {
-    cast 'smother' %0; #echo {cast 'smother' %0}
+    cast 'blind' %0; #echo {cast 'blind' %0}
   };
 }
 
-#alias {rr} {
-  #if { "%0" == "" } {
-    cast q 'smother' $target; #echo {cast q 'smother' $target}
-  };
-  #else {
-    cast q 'smother' %0; #echo {cast q 'smother' %0}
-  };
-}
-
-#alias {lt} {
-  #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
-  };
-  #else {
-    cast 'lightning bolt' %0; #echo {cast 'harm' %0}
-  };
-}
-
-#alias {ht} {
-  #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
-  };
-  #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
-  };
-}
-
-#alias {qh} {
-  #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
-  };
-  #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
-  };
-}
-
-#alias {hq} {
-  #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
-  };
-  #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
-  };
-}
 
 #alias {^1$} {of bash $target}
 #alias {^2$} {of kill $target}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
-#alias {^5$} {of rescue gagzik}
+#alias {^5$} {of rescue itzit}
 #alias {^6$} {bt}
-#alias {^7$} {ht}
-#alias {^8$} {qh}
-#alias {^9$} {rr}
-
-#alias {1h} { wield 1; wear defiled }
-#alias {2h} { remove defiled; wield 2 }
+#alias {^7$} {g}
+#alias {^8$} {g}
+#alias {^9$} {bb}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
@@ -96,6 +58,7 @@
 #alias {mana} {remove ring; get ruby-ring pack; wear ring; put ring pack}
 #alias {copper} {remove ring; get copperring pack; wear ring; put ring pack}
 #alias {iron} {remove ring; get ironring pack; wear ring; put ring pack}
+#alias {ruby} {remove ring; get rubyring pack; wear ring; put ring pack}
 #alias {icy} {remove 2.ring; get icyring pack; wear ring; put ring pack}
 #alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
 #alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
@@ -103,6 +66,7 @@
 #alias {stun} {get small-pouch all; wear small-pouch}
 #alias {strr} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
 #alias {sil} {get ebony all; recite ebony $target}
+#alias {vial} {rm vial; wear 2.vial}
 
 #alias {md} {
   get tail all; get bat-fur all; get tarragon all; get blood-vial all;
@@ -147,7 +111,15 @@
 }
 
 #alias {pp} {
-  of remove wicked; of give wicked gagzik;
-  wield wicked; poison; wield sword;
-  give wicked rawr; of wield wicked
+  get wicked pack; wield wicked; poi; dra;
+  give wicked rawr; of wield wicked; of give wicked itzit
+}
+
+#alias {arr} {
+  #if { "%0" == "" } {
+    get arrow quiver; wield arrow; poison, put arrow quiver
+  };
+  #else {
+    get %0.arrow quiver; wield arrow; poison; dra; put arrow quiver
+  };
 }

@@ -52,5 +52,5 @@
   #MACRO {^x} {ld};
   
   #MACRO {^u} {kt};
-  #MACRO {^i} {bt};
+  #MACRO {^i} {shoot $target};
 }

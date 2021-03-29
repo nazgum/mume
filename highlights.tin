@@ -1,5 +1,5 @@
 #nop Equipment State
-#highlight {(flawless)} {light blue}
+#unhighlight {(flawless)} {light blue}
 #highlight {(well-maintained)} {cyan}
 #highlight {(satisfactory)} {yellow}
 #highlight {(used)} {white}
@@ -23,6 +23,7 @@
 
 #nop Important Gear
 #highlight {the great black scimitar} {violet}
+#highlight {a dark curved sword} {violet}
 #highlight {a defiled dwarven shield} {violet}
 #highlight {an enruned robe} {magenta}
 #highlight {a wightblade} {magenta}
@@ -36,6 +37,7 @@
 #highlight {a black cape} {magenta}
 #highlight {a pale blue stone} {magenta}
 #highlight {a bright red amulet} {magenta}
+#highlight {an opaque amulet} {magenta}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
 #highlight {a leaf-embossed shield} {magenta}
@@ -52,6 +54,7 @@
 #highlight {a slim silvery wristband} {violet}
 #highlight {an archaic copper wristband} {violet}
 #highlight {a tarnished copper wristband} {violet}
+#highlight {a black-thorned wristband} {violet}
 #highlight {a mighty dwarven axe} {magenta}
 #highlight {a blackened dwarven axe} {magenta}
 #highlight {a darkened orkish axe} {magenta}
@@ -72,7 +75,8 @@
 #highlight {a ruby ring} {magenta}
 #highlight {a golden topaz ring} {magenta}
 #highlight {a nimble blade} {magenta}
-#highlight {a black runed dagger} {magenta}
+#highlight {a black runed dagger} {magenta} 
+#highlight {a slender dagger} {magenta}
 #highlight {a twisted crown} {magenta}
 #highlight {an ornate, steel-shafted warhammer} {magenta}
 #highlight {an old length of iron chain} {magenta}
@@ -80,7 +84,6 @@
 #highlight {a smoky obsidian amulet} {magenta}
 #highlight {a scorched, grisly fur} {magenta}
 #highlight {a wide silvery wristband} {magenta}
-#highlight {a black-thorned wristband} {magenta}
 #highlight {an archer's wrist guard} {magenta}
 #highlight {a lambent amulet} {magenta}
 #highlight {a fine grey cloak} {magenta}
@@ -90,6 +93,10 @@
 #highlight {a black horn shortbow} {magenta}
 #highlight {an ashen blade} {magenta}
 #highlight {a coarse dusky robe} {magenta}
+#highlight {a white chain mail coif} {azure}
+#highlight {a white chain mail jerkin} {azure}
+#highlight {a pair of white chain mail sleeves} {azure}
+#highlight {a pair of white chain mail leggings} {azure}
 
 #highlight {a wooden ring} {red}
 #highlight {a green stinking vial} {red}
@@ -141,3 +148,4 @@
 
 #nop Poison
 #highlight {some sort of liquid is smeared on it} {green}
+#highlight {sleeping} {violet}

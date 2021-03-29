@@ -2,6 +2,7 @@
 #var {mount}  {pony}
 
 #alias {tar} { setTarget %0 }
+#alias {ta} { setTarget %0 }
 #alias {tb} { setTarget *bear* }
 #alias {td} { setTarget *dwarf* }
 #alias {te} { setTarget *elf* }
@@ -9,6 +10,7 @@
 #alias {tm} { setTarget *man* }
 #alias {to} { setTarget *orc* }
 #alias {tt} { setTarget *troll* }
+#alias {dd} { label dead; setTarget dead}
 
 #alias {setTarget} {
   #if {"%1" == ""} {

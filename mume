@@ -54,7 +54,7 @@
 #nop gameplay scripts
 #read target.tin
 #read rent.tin
-#read gagzik.tin
+#read itzit.tin
 #read battle.tin
 #read doors.tin
 #read leader.tin

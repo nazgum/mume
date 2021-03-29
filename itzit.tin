@@ -110,11 +110,6 @@
   mix kit
 }
 
-#alias {pp} {
-  get wicked pack; wield wicked; poi; dra;
-  give wicked rawr; of wield wicked; of give wicked itzit
-}
-
 #alias {arr} {
   #if { "%0" == "" } {
     get arrow quiver; wield arrow; poison, put arrow quiver

@@ -1,0 +1,50 @@
+#alias {md} {
+  get tail all; get bat-fur all; get tarragon all; get blood-vial all;
+  put tail kit; put bat-fur kit; put tarragon kit; put blood-vial kit;
+  mix kit
+}
+
+#alias {mdark} {
+  get bat-fur all; get tail all; get blood-vial all; get blackflower all;
+  put bat-fur kit; put tail kit; put blood-vial kit; put blackflower kit;
+  mix kit
+}
+
+#alias {clear} {
+  get juniper all; get mauve all; get sage all; get thyme all;
+  put juniper kit; put mauve kit; put sage kit; put thyme kit;
+  mix kit
+}
+
+#alias {blight} {
+  get tarragon all; get tarragon all; get cardamom all; get blighted all;
+  put tarragon kit; put tarragon kit; put cardamom kit; put blighted kit;
+  mix kit
+}
+
+#alias {arach} {
+  get tail all; get bat-fur all; get grey all;
+  put tail kit; put bat-fur kit; put grey kit;
+  mix kit
+}
+
+#alias {venom} {
+  get tail all; get bat-fur all; get small all;
+  put tail kit; put bat-fur kit; put small kit;
+  mix kit
+}
+
+#alias {psylonia} {
+  get inkberries all; get red-mushroom all; get sickly all;
+  put inkberries kit; put red-mushroom kit; put sickly kit;
+  mix kit
+}
+
+#alias {arr} {
+  #if { "%0" == "" } {
+    get arrow quiver; wield arrow; poison, put arrow quiver
+  };
+  #else {
+    get %0.arrow quiver; wield arrow; poison; dra; put arrow quiver
+  };
+}

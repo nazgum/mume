@@ -18,6 +18,15 @@
 
 #alias {bb} {
   #if { "%0" == "" } {
+    cast q 'black breath' $target; #echo {cast q 'black breath' $target}
+  };
+  #else {
+    cast q 'black breath' %0; #echo {cast q 'black breath' %0}
+  };
+}
+
+#alias {br} {
+  #if { "%0" == "" } {
     cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
@@ -41,9 +50,9 @@
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue itzit}
 #alias {^6$} {bt}
-#alias {^7$} {g}
-#alias {^8$} {g}
-#alias {^9$} {bb}
+#alias {^7$} {bb}
+#alias {^8$} {bb}
+#alias {^9$} {br}
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
@@ -59,62 +68,11 @@
 #alias {copper} {remove ring; get copperring pack; wear ring; put ring pack}
 #alias {iron} {remove ring; get ironring pack; wear ring; put ring pack}
 #alias {ruby} {remove ring; get rubyring pack; wear ring; put ring pack}
-#alias {icy} {remove 2.ring; get icyring pack; wear ring; put ring pack}
 #alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
 #alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
 #alias {pow} {use small-pouch}
-#alias {stun} {get small-pouch all; wear small-pouch}
+#alias {stun} {use small-pouch}
 #alias {strr} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
-#alias {sil} {get ebony all; recite ebony $target}
-#alias {vial} {rm vial; wear 2.vial}
-
-#alias {md} {
-  get tail all; get bat-fur all; get tarragon all; get blood-vial all;
-  put tail kit; put bat-fur kit; put tarragon kit; put blood-vial kit;
-  mix kit
-}
-
-#alias {mdark} {
-  get bat-fur all; get tail all; get blood-vial all; get blackflower all;
-  put bat-fur kit; put tail kit; put blood-vial kit; put blackflower kit;
-  mix kit
-}
-
-#alias {clear} {
-  get juniper all; get mauve all; get sage all; get thyme all;
-  put juniper kit; put mauve kit; put sage kit; put thyme kit;
-  mix kit
-}
-
-#alias {blight} {
-  get tarragon all; get tarragon all; get cardamom all; get blighted all;
-  put tarragon kit; put tarragon kit; put cardamom kit; put blighted kit;
-  mix kit
-}
-
-#alias {arach} {
-  get tail all; get bat-fur all; get grey all;
-  put tail kit; put bat-fur kit; put grey kit;
-  mix kit
-}
-
-#alias {venom} {
-  get tail all; get bat-fur all; get small all;
-  put tail kit; put bat-fur kit; put small kit;
-  mix kit
-}
-
-#alias {psylonia} {
-  get inkberries all; get red-mushroom all; get sickly all;
-  put inkberries kit; put red-mushroom kit; put sickly kit;
-  mix kit
-}
-
-#alias {arr} {
-  #if { "%0" == "" } {
-    get arrow quiver; wield arrow; poison, put arrow quiver
-  };
-  #else {
-    get %0.arrow quiver; wield arrow; poison; dra; put arrow quiver
-  };
-}
+#alias {skin} {rm vial; wear skin}
+#alias {vial} {rm skin; wear vial}
+#alias {swap} {rm vial; wear 2.vial}

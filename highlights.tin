@@ -38,6 +38,7 @@
 #highlight {a pale blue stone} {magenta}
 #highlight {a bright red amulet} {magenta}
 #highlight {an opaque amulet} {magenta}
+#highlight {a small pouch} {violet}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
 #highlight {a leaf-embossed shield} {magenta}
@@ -87,6 +88,7 @@
 #highlight {an archer's wrist guard} {magenta}
 #highlight {a lambent amulet} {magenta}
 #highlight {a fine grey cloak} {magenta}
+#highlight {a black, hooded cloak} {magenta}
 #highlight {a soot-black bear hide} {magenta}
 #highlight {an enhanced herbal kit} {magenta}
 #highlight {a strange set of lock picks} {magenta}

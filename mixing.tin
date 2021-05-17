@@ -40,6 +40,12 @@
   mix kit
 }
 
+#alias {hemlock} {
+  get tongue all; get hemlock all; get inkberries all;
+  put tongue kit; put hemlock kit; put inkberries kit;
+  mix kit
+}
+
 #alias {arr} {
   #if { "%0" == "" } {
     get arrow quiver; wield arrow; poison, put arrow quiver

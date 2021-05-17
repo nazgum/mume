@@ -55,11 +55,13 @@
 #read target.tin
 #read rent.tin
 #read itzit.tin
+#read items.tin
 #read battle.tin
 #read doors.tin
 #read leader.tin
 #read mixing.tin
 #read spell_timers.tin
+#read subs_time.tin
 #read subs_keys.tin
 #read subs_lockpicks.tin
 #read subs_herbalkit.tin

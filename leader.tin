@@ -2,7 +2,7 @@
 
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {You must specify a leader...}
+    #echo {leader set to: <049>$leader<099>}
   };
   #else {
     #var {leader} {%0};

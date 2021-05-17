@@ -22,9 +22,11 @@
 #highlight {^You failed to control %1} {red}
 
 #nop Important Gear
+#highlight {the Dragonhelm} {violet}
 #highlight {the great black scimitar} {violet}
 #highlight {a dark curved sword} {violet}
 #highlight {a defiled dwarven shield} {violet}
+#highlight {a crude orkish horn} {violet}
 #highlight {an enruned robe} {magenta}
 #highlight {a wightblade} {magenta}
 #highlight {an engraved broadsword} {magenta}

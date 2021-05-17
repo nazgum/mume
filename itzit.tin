@@ -9,10 +9,10 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+    shoot $target; #echo {shoot $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    shoot %0; #echo {shoot %0}
   };
 }
 
@@ -54,25 +54,4 @@
 #alias {^8$} {bb}
 #alias {^9$} {br}
 
-#alias {shoes} { remove boots; wear shoes }
-#alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
-#alias {grey} { remove cloak; get grey-cloak pack; wear grey-cloak; put cloak pack }
-#alias {stitched} { remove cloak; get stitched pack; wear stitched; put cloak pack }
-#alias {shirt} { remove robe; get shirt pack; wear shirt; put robe pack }
-#alias {robe} { remove shirt; get robe pack; wear robe; put shirt pack }
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield sword; put pipe pack }
-#alias {wooden} {remove 2.ring; get wooden pack; wear wooden}
-#alias {candle} {get candle all; wield candle; use candle; wield dagger}
-#alias {mana} {remove ring; get ruby-ring pack; wear ring; put ring pack}
-#alias {copper} {remove ring; get copperring pack; wear ring; put ring pack}
-#alias {iron} {remove ring; get ironring pack; wear ring; put ring pack}
-#alias {ruby} {remove ring; get rubyring pack; wear ring; put ring pack}
-#alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
-#alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
-#alias {pow} {use small-pouch}
-#alias {stun} {use small-pouch}
-#alias {strr} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
-#alias {skin} {rm vial; wear skin}
-#alias {vial} {rm skin; wear vial}
-#alias {swap} {rm vial; wear 2.vial}
+#alias {mush} {get wafer elven;eat wafer}

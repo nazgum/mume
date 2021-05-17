@@ -52,22 +52,22 @@
 #split
 
 #nop gameplay scripts
-#read target.tin
-#read rent.tin
-#read itzit.tin
-#read items.tin
-#read battle.tin
-#read doors.tin
-#read leader.tin
-#read mixing.tin
-#read spell_timers.tin
-#read subs_time.tin
-#read subs_keys.tin
-#read subs_lockpicks.tin
-#read subs_herbalkit.tin
-#read subs_herbs.tin
-#read highlights.tin
-#read prompt.tin
+#read scripts/target.tin
+#read scripts/rent.tin
+#read chars/itzit.tin
+#read scripts/items.tin
+#read scripts/battle.tin
+#read scripts/doors.tin
+#read scripts/leader.tin
+#read scripts/mixing.tin
+#read scripts/spell_timers.tin
+#read subs/time.tin
+#read subs/keys.tin
+#read subs/lockpicks.tin
+#read subs/herbalkit.tin
+#read subs/herbs.tin
+#read scripts/highlights.tin
+#read scripts/prompt.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4000}

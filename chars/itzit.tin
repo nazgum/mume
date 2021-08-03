@@ -34,24 +34,31 @@
   };
 }
 
-#alias {bt} {
+#alias {pp} {
   #if { "%0" == "" } {
-    cast 'blind' $target; #echo {cast 'blind' $target}
+    cast q 'hold' $target; #echo {cast q 'hold' $target}
   };
   #else {
-    cast 'blind' %0; #echo {cast 'blind' %0}
+    cast q 'hold' %0; #echo {cast q 'hold' %0}
   };
 }
 
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'hold' $target; #echo {cast 'hold' $target}
+  };
+  #else {
+    cast 'hold' %0; #echo {cast 'hold' %0}
+  };
+}
 
-#alias {^1$} {of bash $target}
-#alias {^2$} {of kill $target}
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue itzit}
 #alias {^6$} {bt}
 #alias {^7$} {bb}
-#alias {^8$} {bb}
-#alias {^9$} {br}
-
-#alias {mush} {get wafer elven;eat wafer}
+#alias {^8$} {pp}
+#alias {^9$} {pp}
+#alias {^.$} {bash $target; #echo {bash $target}}

@@ -15,5 +15,3 @@
 #alias {ud} {unlock $door; #echo {unlock $door}}
 #alias {ld} {lock $door; #echo {lock $door}}
 #alias {pd} {pick $door; #echo {pick $door}}
-
-#alias {rock} {get rock all; use rock $door}

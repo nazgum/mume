@@ -46,6 +46,12 @@
   mix kit
 }
 
+#alias {travel} {
+  get tarragon all; get ginseng all; get clover all;
+  put tarragon kit; put ginseng kit; put clover kit;
+  mix kit
+}
+
 #alias {arr} {
   #if { "%0" == "" } {
     get arrow quiver; wield arrow; poison, put arrow quiver

@@ -1,0 +1,33 @@
+#alias {k} {
+  #if { "%0" == "" } {
+    kill $target; #echo {kill $target}
+  };
+  #else {
+    kill %0; #echo {kill %0}
+  };
+}
+
+#alias {bt} {
+  #if { "%0" == "" } {
+    bash $target; #echo {bash $target}
+  };
+  #else {
+    bash %0; #echo {bash %0}
+  };
+}
+
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue atzot}
+#alias {^6$} {ear}
+#alias {^7$} {qear}
+#alias {^8$} {qear}
+#alias {^9$} {ear}
+#alias {^.$} {bash $target; #echo {bash $target}}
+
+
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
+#alias {circ} {rm helmet; put helmet pack; get circlet pack; wear circlet }
+#alias {helm} {rm circlet; put circlet pack; get helmet pack; wear helmet }

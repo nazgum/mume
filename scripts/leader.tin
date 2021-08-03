@@ -1,4 +1,20 @@
 #var {leader} {none}
+#var {auto_ride} {on}
+#var {auto_ass} {off}
+
+#alias {autoass} {
+  #if {("%1" == "on") || ("%1" == "off")} {#var {auto_ass} {%1}};
+  #elseif {"$auto_ass" == "off"} {#var {auto_ass} {on}};
+  #else {#var {auto_ass} {off}};
+  #echo {auto assist: <049>$auto_ass<099>}
+}
+
+#alias {autoride} {
+  #if {("%1" == "on") || ("%1" == "off")} {#var {auto_ride} {%1}};
+  #elseif {"$auto_ride" == "off"} {#var {auto_ride} {on}};
+  #else {#var {auto_ride} {off}};
+  #echo {auto ride: <049>$auto_ride<099>}
+}
 
 #alias {leader} {
   #if { "%0" == "" } {
@@ -10,8 +26,13 @@
   };;
 }
 
-#action {^%+ joins $leader's fight.$} { assist }
+#action {^%+ joins $leader's fight.$} { 
+  #if { "$auto_ass" == "on" } { assist }
+}
 
-#action {^$leader dismounts} {lead}
-#action {^$leader picks up} {ride}
-#action {^$leader grabs on} {ride}
+#action {^$leader dismounts} { #if { "$auto_ride" == "on" }  { lead } }
+#action {^$leader picks up} { #if { "$auto_ride" == "on" }  { ride } }
+#action {^$leader grabs on} { #if { "$auto_ride" == "on" }  { ride } }
+
+#action {%w tells you 'trans'} {gr %1 trans}
+

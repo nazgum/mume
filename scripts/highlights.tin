@@ -1,5 +1,5 @@
 #nop Equipment State
-#unhighlight {(flawless)} {light blue}
+#highlight {(flawless)} {light blue}
 #highlight {(well-maintained)} {cyan}
 #highlight {(satisfactory)} {yellow}
 #highlight {(used)} {white}
@@ -15,6 +15,7 @@
 #highlight {(blue aura)} {cyan}
 #highlight {^Traces %1 white tones %2} {cyan}
 #highlight {[blue]} {cyan}
+#highlight {(glowing)} {light blue}
 
 #highlight {it glows red} {red}
 #highlight {(red aura)} {red}
@@ -23,7 +24,11 @@
 
 #nop Important Gear
 #highlight {the Dragonhelm} {violet}
+#highlight {the Morgul blade} {bold red}
+#highlight {the black sheath} {bold red}
 #highlight {the great black scimitar} {violet}
+#highlight {a crown of bones} {violet}
+#highlight {the black buckler} {violet}
 #highlight {a dark curved sword} {violet}
 #highlight {a defiled dwarven shield} {violet}
 #highlight {a crude orkish horn} {violet}
@@ -61,24 +66,30 @@
 #highlight {a mighty dwarven axe} {magenta}
 #highlight {a blackened dwarven axe} {magenta}
 #highlight {a darkened orkish axe} {magenta}
+#highlight {a wicked Durbûk-hai axe} {violet}
 #highlight {a pair of black arm wrappings} {magenta}
 #highlight {a yew longbow} {magenta}
 #highlight {an embellished longbow} {magenta}
 #highlight {a laced quiver} {magenta}
 #highlight {a bejewelled oak staff} {magenta}
 #highlight {a sable pouch} {magenta}
-#highlight {a shining chain mail shirt} {magenta}
-#highlight {a shining pair of chain mail sleeves} {magenta}
-#highlight {a shining pair of chain mail leggings} {magenta}
+#highlight {a shining chain mail shirt} {violet}
+#highlight {a shining pair of chain mail sleeves} {violet}
+#highlight {a shining pair of chain mail leggings} {violet}
 #highlight {a shining breastplate} {violet}
 #highlight {a shining pair of vambraces} {violet}
 #highlight {a shining pair of greaves} {violet}
 #highlight {a metal-shod staff} {violet}
+#highlight {an ancient, jewelled helmet} {violet}
+#highlight {an ancient dwarven shield} {violet}
+#highlight {a large visored helmet} {violet}
+#highlight {a small crystal phial} {violet}
+#highlight {a supple pair of leather gloves} {violet}
 #highlight {an iron ring} {magenta}
 #highlight {a ruby ring} {magenta}
 #highlight {a golden topaz ring} {magenta}
 #highlight {a nimble blade} {magenta}
-#highlight {a black runed dagger} {magenta} 
+#highlight {a black runed dagger} {violet} 
 #highlight {a slender dagger} {magenta}
 #highlight {a twisted crown} {magenta}
 #highlight {an ornate, steel-shafted warhammer} {magenta}
@@ -86,6 +97,7 @@
 #highlight {a black amulet} {magenta}
 #highlight {a smoky obsidian amulet} {magenta}
 #highlight {a scorched, grisly fur} {magenta}
+#highlight {an imposing, golden mantle} {magenta}
 #highlight {a wide silvery wristband} {magenta}
 #highlight {an archer's wrist guard} {magenta}
 #highlight {a lambent amulet} {magenta}
@@ -112,6 +124,8 @@
 
 #highlight {a flask of orkish draught} {pink}
 #highlight {%w flasks of orkish draught} {pink}
+#highlight {a scorched leather flask} {bold pink}
+#highlight {%w scorched leather flasks} {bold pink}
 
 #highlight {%1 handfuls of narrow leaves} {orange}
 #highlight {%1 short, moist tails} {orange}
@@ -153,3 +167,4 @@
 #nop Poison
 #highlight {some sort of liquid is smeared on it} {green}
 #highlight {sleeping} {violet}
+#highlight {sitting} {magenta}

@@ -54,20 +54,22 @@
 #nop gameplay scripts
 #read scripts/target.tin
 #read scripts/rent.tin
-#read chars/itzit.tin
 #read scripts/items.tin
 #read scripts/battle.tin
 #read scripts/doors.tin
 #read scripts/leader.tin
 #read scripts/mixing.tin
 #read scripts/spell_timers.tin
+#read scripts/xp.tin
+#read scripts/highlights.tin
+#read scripts/prompt.tin
 #read subs/time.tin
 #read subs/keys.tin
 #read subs/lockpicks.tin
 #read subs/herbalkit.tin
 #read subs/herbs.tin
-#read scripts/highlights.tin
-#read scripts/prompt.tin
+#read hidden/ignore.tin
+#read chars/atzot.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4000}

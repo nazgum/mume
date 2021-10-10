@@ -32,6 +32,7 @@
 #highlight {a dark curved sword} {violet}
 #highlight {a defiled dwarven shield} {violet}
 #highlight {a crude orkish horn} {violet}
+#highlight {a ceremonial dagger} {violet}
 #highlight {an enruned robe} {magenta}
 #highlight {a wightblade} {magenta}
 #highlight {an engraved broadsword} {magenta}
@@ -42,12 +43,13 @@
 #highlight {a roughly stitched cloak} {magenta}
 #highlight {a russet cloak} {magenta}
 #highlight {a black cape} {magenta}
-#highlight {a pale blue stone} {magenta}
+#highlight {a pale blue stone} {violet}
 #highlight {a bright red amulet} {magenta}
 #highlight {an opaque amulet} {magenta}
 #highlight {a small pouch} {violet}
 #highlight {a smelly piece of worm hide} {magenta}
 #highlight {a bejewelled shield} {magenta}
+#highlight {a tower shield} {magenta}
 #highlight {a leaf-embossed shield} {magenta}
 #highlight {a gleaming belt} {magenta}
 #highlight {a golden belt} {magenta}
@@ -56,7 +58,7 @@
 #highlight {a mithril circlet} {magenta}
 #highlight {a red ruby; it has a soft glowing aura} {magenta}
 #highlight {a golden ruby ring} {magenta}
-#highlight {a copper ring} {magenta}
+#highlight {a copper ring} {violet}
 #highlight {an icy ring} {violet}
 #highlight {a root ring} {violet}
 #highlight {a slim silvery wristband} {violet}
@@ -71,7 +73,7 @@
 #highlight {a yew longbow} {magenta}
 #highlight {an embellished longbow} {magenta}
 #highlight {a laced quiver} {magenta}
-#highlight {a bejewelled oak staff} {magenta}
+#highlight {a bejewelled oak staff} {pink}
 #highlight {a sable pouch} {magenta}
 #highlight {a shining chain mail shirt} {violet}
 #highlight {a shining pair of chain mail sleeves} {violet}
@@ -80,7 +82,8 @@
 #highlight {a shining pair of vambraces} {violet}
 #highlight {a shining pair of greaves} {violet}
 #highlight {a metal-shod staff} {violet}
-#highlight {an ancient, jewelled helmet} {violet}
+#highlight {an ancient, jewelled helmet} {pink}
+#highlight {a sapphire ring} {pink}
 #highlight {an ancient dwarven shield} {violet}
 #highlight {a large visored helmet} {violet}
 #highlight {a small crystal phial} {violet}
@@ -93,7 +96,8 @@
 #highlight {a slender dagger} {magenta}
 #highlight {a twisted crown} {magenta}
 #highlight {an ornate, steel-shafted warhammer} {magenta}
-#highlight {an old length of iron chain} {magenta}
+#highlight {an old length of iron chain} {violet}
+#highlight {a necklace} {violet}
 #highlight {a black amulet} {magenta}
 #highlight {a smoky obsidian amulet} {magenta}
 #highlight {a scorched, grisly fur} {magenta}
@@ -131,6 +135,8 @@
 #highlight {%1 short, moist tails} {orange}
 #highlight {%1 piles of short, black fur} {orange}
 #highlight {%1 vials of preserved blood} {orange}
+#highlight {%1 handfuls of clover} {orange}
+#highlight {%1 man-like roots} {orange}
 
 #highlight {%1 piles of grey-green leaves} {azure}
 #highlight {%1 scented crushed leaves} {azure}

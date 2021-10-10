@@ -1,13 +1,6 @@
-#alias {k} {
-  #if { "%0" == "" } {
-    kill $target; #echo {kill $target}
-  };
-  #else {
-    kill %0; #echo {kill %0}
-  };
-}
+#read scripts/blind.tin
 
-#alias {bt} {
+#alias {b} {
   #if { "%0" == "" } {
     cast 'blind' $target; #echo {cast 'blind' $target}
   };
@@ -16,16 +9,7 @@
   };
 }
 
-#alias {bb} {
-  #if { "%0" == "" } {
-    cast 'black breath' $target; #echo {cast 'black breath' $target}
-  };
-  #else {
-    cast 'black breath' %0; #echo {cast 'black breath' %0}
-  };
-}
-
-#alias {gg} {
+#alias {g} {
   #if { "%0" == "" } {
     cast 'smother' $target; #echo {cast 'smother' $target}
   };
@@ -34,49 +18,36 @@
   };
 }
 
-#alias {rr} {
-  #if { "%0" == "" } {
-    cast q 'smother' $target; #echo {cast q 'smother' $target}
-  };
-  #else {
-    cast q 'smother' %0; #echo {cast q 'smother' %0}
-  };
-}
-
-#alias {lt} {
+#alias {h} {
   #if { "%0" == "" } {
     cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'harm' %0}
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
   };
 }
 
-#alias {ht} {
+#alias {qb} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
+    cast q 'lightning bolt' %0; #echo {cast q 'lightning bolt' %0}
   };
 }
 
 #alias {qh} {
   #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
+    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
   };
   #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
+    cast q 'lightning bolt' %0; #echo {cast q 'lightning bolt' %0}
   };
 }
 
-#alias {hq} {
-  #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
-  };
-  #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
-  };
+
+#alias {break} {
+  cast 'break door' $door; #echo {cast 'break door' $door}
 }
 
 #alias {^1$} {of bash $target}
@@ -87,8 +58,5 @@
 #alias {^6$} {ear}
 #alias {^7$} {qear}
 #alias {^8$} {qear}
-#alias {^9$} {fear}
-
-#alias {1h} { wield 1; wear defiled }
-#alias {2h} { remove defiled; wield 2 }
+#alias {^9$} {ear}
 

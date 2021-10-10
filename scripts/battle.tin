@@ -29,7 +29,7 @@
   #UNMACRO {^x} {ld};
   
   #UNMACRO {^u} {kt};
-  #UNMACRO {^i} {bt};
+  #UNMACRO {^i} {g};
 }
 
 #alias {enableBattle} {
@@ -52,5 +52,5 @@
   #MACRO {^x} {ld};
   
   #MACRO {^u} {kt};
-  #MACRO {^i} {shoot $target; #echo {shoot $target}};
+  #MACRO {^i} {g};
 }

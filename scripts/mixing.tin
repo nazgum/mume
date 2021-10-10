@@ -23,14 +23,14 @@
 }
 
 #alias {arach} {
-  get tail all; get bat-fur all; get grey all;
-  put tail kit; put bat-fur kit; put grey kit;
+  get tail all; get bat-fur all; get greyfluid-sack all;
+  put tail kit; put bat-fur kit; put greyfluid-sack kit;
   mix kit
 }
 
 #alias {venom} {
-  get tail all; get bat-fur all; get small all;
-  put tail kit; put bat-fur kit; put small kit;
+  get tail all; get bat-fur all; get smallfluid-sack all;
+  put tail kit; put bat-fur kit; put smallfluid-sack kit;
   mix kit
 }
 
@@ -54,9 +54,9 @@
 
 #alias {arr} {
   #if { "%0" == "" } {
-    get arrow quiver; wield arrow; poison, put arrow quiver
+    get bolt case; wield bolt; poison; dra; put bolt case
   };
   #else {
-    get %0.arrow quiver; wield arrow; poison; dra; put arrow quiver
+    get %0.bolt case; wield bolt; poison; dra; put bolt case
   };
 }

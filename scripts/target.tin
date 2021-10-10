@@ -20,6 +20,10 @@
   }
 }
 
+#alias {de} {
+  label dead;
+  setTarget dead
+}
 #alias {kt} { kill $target; #echo {kill $target} }
 
 #alias {setMount} {
@@ -39,4 +43,13 @@
 #alias {mt} {
   #var {mount} {$target};
   #echo {<109>\$mount<099> set to: <219>$mount<099>}
+}
+
+#alias {k} {
+  #if { "%0" == "" } {
+    kill $target; #echo {kill $target}
+  };
+  #else {
+    kill %0; #echo {kill %0}
+  };
 }

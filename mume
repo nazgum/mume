@@ -57,19 +57,21 @@
 #read scripts/items.tin
 #read scripts/battle.tin
 #read scripts/doors.tin
+#read scripts/locate.tin
 #read scripts/leader.tin
 #read scripts/mixing.tin
 #read scripts/spell_timers.tin
 #read scripts/xp.tin
 #read scripts/highlights.tin
 #read scripts/prompt.tin
+#read scripts/azra.tin
 #read subs/time.tin
 #read subs/keys.tin
 #read subs/lockpicks.tin
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/atzot.tin
+#read chars/gagzik.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4000}

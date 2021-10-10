@@ -1,0 +1,59 @@
+#alias {g} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
+#alias {sg} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
+#alias {ht} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#alias {qh} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {hq} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
+#alias {break} {
+  cast 'break door' $door; #echo {cast 'break door' $door}
+}
+
+#alias {^1$} {of bash $target}
+#alias {^2$} {of kill $target}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue balsam}
+#alias {^6$} {ear}
+#alias {^7$} {qear}
+#alias {^8$} {qear}
+#alias {^9$} {ear}
+

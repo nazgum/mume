@@ -3,38 +3,68 @@
 #var {key2} {none}
 #var {key3} {none}
 
-#alias key1 {
-  #var {key1} {%0};
-  #echo {\$key1 set to: $key1}
-}
-#alias key2 {
-  #var {key2} {%0};
-  #echo {\$key2 set to: $key2}
-}
-#alias key3 {
-  #var {key3} {%0};
-  #echo {\$key3 set to: $key3}
+
+#alias {key} {
+  #if { "%0" == "" } {
+    #echo {\$key set to: <049>$key<099>}
+  };
+  #else {
+    #var {key} {%0};
+    #echo {\$key set to: <049>$key<099>}
+  };;
 }
 
-#alias scry {cast 'scry' $key}
-#alias scry1 {cast 'scry' $key1}
-#alias scry2 {cast 'scry' $key2}
-#alias scry3 {cast 'scry' $key3}
+#alias {key1} {
+  #if { "%0" == "" } {
+    #echo {\$key1 set to: <049>$key1<099>}
+  };
+  #else {
+    #var {key1} {%0};
+    #echo {\$key1 set to: <049>$key1<099>}
+  };;
+}
 
-#alias wr {cast 'watch room' $key}
-#alias wr1 {cast 'watch room' $key1}
-#alias wr2 {cast 'watch room' $key2}
-#alias wr3 {cast 'watch room' $key3}
+#alias {key2} {
+  #if { "%0" == "" } {
+    #echo {\$key2 set to: <049>$key2<099>}
+  };
+  #else {
+    #var {key2} {%0};
+    #echo {\$key2 set to: <049>$key2<099>}
+  };;
+}
 
-#alias tp {cast 'teleport' $key}
-#alias tp1 {cast 'teleport' $key1}
-#alias tp2 {cast 'teleport' $key2}
-#alias tp3 {cast 'teleport' $key3}
+#alias {key3} {
+  #if { "%0" == "" } {
+    #echo {\$key3 set to: <049>$key3<099>}
+  };
+  #else {
+    #var {key3} {%0};
+    #echo {\$key3 set to: <049>$key3<099>}
+  };;
+}
 
-#alias portal {cast 'portal' $key}
-#alias portal1 {cast 'portal' $key1}
-#alias portal2 {cast 'portal' $key2}
-#alias portal3 {cast 'portal' $key3}
+
+
+#alias scry {cast n 'scry' $key}
+#alias scry1 {cast n 'scry' $key1}
+#alias scry2 {cast n 'scry' $key2}
+#alias scry3 {cast n 'scry' $key3}
+
+#alias wr {cast n 'watch room' $key}
+#alias wr1 {cast n 'watch room' $key1}
+#alias wr2 {cast n 'watch room' $key2}
+#alias wr3 {cast n 'watch room' $key3}
+
+#alias tp {cast n 'teleport' $key}
+#alias tp1 {cast n 'teleport' $key1}
+#alias tp2 {cast n 'teleport' $key2}
+#alias tp3 {cast n 'teleport' $key3}
+
+#alias portal {cast n 'portal' $key}
+#alias portal1 {cast n 'portal' $key1}
+#alias portal2 {cast n 'portal' $key2}
+#alias portal3 {cast n 'portal' $key3}
 
 #action {key: '%w'} {
   #var {key} {%1};

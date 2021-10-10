@@ -1,0 +1,21 @@
+#alias {g} {
+  #if { "%0" == "" } {
+    shoot $target; #echo {shoot $target}
+  };
+  #else {
+    shoot %0; #echo {shoot %0}
+  };
+}
+
+#alias {b} {
+  #if { "%0" == "" } {
+    back $target; #echo {back $target}
+  };
+  #else {
+    back %0; #echo {back %0}
+  };
+}
+
+#alias {reload} {get all.bolt pack; put all.bolt case}
+#alias {sh} {rm stick; wear shield}
+#alias {sti} {rm shield; wear stick}

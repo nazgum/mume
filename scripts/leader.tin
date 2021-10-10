@@ -2,6 +2,11 @@
 #var {auto_ride} {on}
 #var {auto_ass} {off}
 
+#alias {auto} {
+  #echo {auto ride: <049>$auto_ride<099>};
+  #echo {auto assist: <049>$auto_ass<099>}
+}
+
 #alias {autoass} {
   #if {("%1" == "on") || ("%1" == "off")} {#var {auto_ass} {%1}};
   #elseif {"$auto_ass" == "off"} {#var {auto_ass} {on}};

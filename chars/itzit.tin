@@ -1,12 +1,3 @@
-#alias {k} {
-  #if { "%0" == "" } {
-    kill $target; #echo {kill $target}
-  };
-  #else {
-    kill %0; #echo {kill %0}
-  };
-}
-
 #alias {g} {
   #if { "%0" == "" } {
     shoot $target; #echo {shoot $target}
@@ -34,31 +25,18 @@
   };
 }
 
-#alias {pp} {
-  #if { "%0" == "" } {
-    cast q 'hold' $target; #echo {cast q 'hold' $target}
-  };
-  #else {
-    cast q 'hold' %0; #echo {cast q 'hold' %0}
-  };
-}
-
-#alias {h} {
-  #if { "%0" == "" } {
-    cast 'hold' $target; #echo {cast 'hold' $target}
-  };
-  #else {
-    cast 'hold' %0; #echo {cast 'hold' %0}
-  };
-}
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue itzit}
-#alias {^6$} {bt}
+#alias {^6$} {br}
 #alias {^7$} {bb}
-#alias {^8$} {pp}
-#alias {^9$} {pp}
-#alias {^.$} {bash $target; #echo {bash $target}}
+#alias {^8$} {bb}
+#alias {^9$} {br}
+#alias {^.$} {of bash $target; #echo {of bash $target}}
+
+
+#alias {cloak} { remove scorched-fur; get cloak pack; wear cloak; put scorched-fur pack }
+#alias {fur} { remove cloak; get scorched-fur pack; wear scorched-fur; put cloak pack }

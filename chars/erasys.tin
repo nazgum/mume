@@ -1,0 +1,49 @@
+#alias {g} {
+  #if { "%0" == "" } {
+    shoot $target; #echo {shoot $target}
+  };
+  #else {
+    shoot %0; #echo {shoot %0}
+  };
+}
+
+#alias {de} {
+  #if { "%0" == "" } {
+    cast 'dispel evil' $target; #echo {cast 'dispel evil' $target}
+  };
+  #else {
+    cast 'dispel evil' %0; #echo {cast 'dispel evil' %0}
+  };
+}
+
+#alias {qd} {
+  #if { "%0" == "" } {
+    cast q 'dispel evil' $target; #echo {cast q 'dispel evil' $target}
+  };
+  #else {
+    cast q 'dispel evil' %0; #echo {cast q 'dispel evil' %0}
+  };
+}
+
+#alias {dr} {
+  #if { "%0" == "" } {
+    use staff $target; #echo {use staff $target}
+  };
+  #else {
+    use staff %0; #echo {use staff %0}
+  };
+}
+
+
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue erasys}
+#alias {^6$} {b}
+#alias {^7$} {de}
+#alias {^8$} {de}
+#alias {^9$} {qd}
+#alias {^.$} {bash $target; #echo {bash $target}}
+
+#alias {reload} {get all.bolt pack; put all.bolt case}

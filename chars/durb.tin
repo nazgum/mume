@@ -1,0 +1,3 @@
+#var {bag} {pack}
+
+#alias {^.$} {bash $target; #echo {bash $target}}

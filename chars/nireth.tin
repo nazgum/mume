@@ -1,9 +1,18 @@
 #alias {g} {
   #if { "%0" == "" } {
-    shoot $target; #echo {shoot $target}
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
   };
   #else {
-    shoot %0; #echo {shoot %0}
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
+  };
+  #else {
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
 
@@ -16,6 +25,11 @@
   };
 }
 
-#alias {reload} {get all.bolt pack; put all.bolt case}
-#alias {sh} {rm stick; wear shield}
-#alias {sti} {rm shield; wear stick}
+
+#var {bag} {sable}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {reload} {get all.bolt $bag; put all.bolt case}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
+#alias {cc} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use emerald-ring}

@@ -1,28 +1,34 @@
+#var {bag} {pack}
+
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove mantle; get cloak pack; wear cloak; put mantle pack }
-#alias {fur} { remove cloak; get mantle pack; wear mantle; put cloak pack }
-#alias {shirt} { remove robe; get shirt pack; wear shirt; put robe pack }
-#alias {robe} { remove shirt; get robe pack; wear robe; put shirt pack }
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe pack }
-#alias {wooden} {remove 2.ring; get woodenring pack; wear woodenring}
+#alias {cloak} { remove mantle; get cloak $bag; wear cloak; put mantle $bag }
+#alias {crown} { remove coif; get crown $bag; wear crown; put coif $bag }
+#alias {twisted} {crown}
+#alias {coif} { remove crown; get coif $bag; wear coif; put crown $bag }
+#alias {fur} { remove cloak; get mantle $bag; wear mantle; put cloak $bag }
+#alias {tunic} { remove robe; get tunic $bag; wear tunic; put robe $bag }
+#alias {robe} { remove tunic; get robe $bag; wear robe; put tunic $bag }
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
 #alias {can} {get candle all; dra candle; use candle; dra; drop candle}
 #alias {rock} {get rock all; use rock $door}
-#alias {mana} {remove ring; get ruby-ring pack; wear ring; put ring pack}
-#alias {copper} {remove ring; get copperring pack; wear ring; put ring pack}
-#alias {iron} {remove ring; get ironring pack; wear ring; put ring pack}
-#alias {ruby} {remove ring; get rubyring pack; wear ring; put ring pack}
-#alias {root} {remove 2.ring; get rootring pack; wear ring; put ring pack}
-#alias {arda} {remove 2.ring; get arda pack; wear arda; put ring pack}
+#alias {mana} {remove ring; get ruby-ring $bag; wear ring; put ring $bag}
+#alias {copper} {remove ring; get copperring $bag; wear ring; put ring $bag}
+#alias {iron} {remove ring; get ironring $bag; wear ring; put ring $bag}
+#alias {ruby} {remove ring; get rubyring $bag; wear ring; put ring $bag}
+#alias {root} {remove 2.ring; get rootring $bag; wear ring; put ring $bag}
+#alias {arda} {remove 2.ring; get arda $bag; wear arda; put ring $bag}
+#alias {icy} {remove 2.ring; get icyring $bag; wear ring; put ring $bag}
+#alias {wooden} {remove 2.ring; get woodenring $bag; wear woodenring; put ring $bag}
 #alias {pow} {use small-pouch}
 #alias {stun} {use small-pouch}
-#alias {reload} {get small-pouch pack; wear small-pouch}
-#alias {str} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
+#alias {reload} {get small-pouch $bag; wear small-pouch}
+#alias {str} {remove ring; get topaz-ring $bag; wear topaz-ring; put ring $bag; use topaz-ring}
 #alias {kit} {rm vial; wear kit}
 #alias {vial} {rm kit; wear vial}
 #alias {swap} {rm vial; wear 2.vial}
-#alias {scorch} {get scorched pack; quaff flask}
-#alias {scorched} {get scorched pack; quaff flask}
-#alias {morgul} {get sheath pack; wear sheath; draw}
-#alias {morg} {get sheath pack; wear sheath; draw}
-#alias {nomorg} {draw; rm 2.sheath; put sheath pack}
+#alias {scorch} {get scorched $bag; quaff flask}
+#alias {scorched} {get scorched $bag; quaff flask}
+#alias {morgul} {get sheath $bag; wear sheath; draw}
+#alias {morg} {get sheath $bag; wear sheath; draw}
+#alias {nomorg} {draw; rm 2.sheath; put sheath $bag}

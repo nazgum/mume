@@ -7,6 +7,16 @@
   };
 }
 
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'colour spray' $target; #echo {cast 'colour spray' $target}
+  };
+  #else {
+    cast 'colour spray' %0; #echo {cast 'colour spray' %0}
+  };
+}
+
+
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}

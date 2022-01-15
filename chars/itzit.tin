@@ -1,3 +1,5 @@
+#read scripts/blind.tin
+
 #alias {g} {
   #if { "%0" == "" } {
     shoot $target; #echo {shoot $target}

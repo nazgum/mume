@@ -10,6 +10,25 @@
   };
 }
 
+#alias {block} {
+  #if { "%0" == "" } {
+    cast 'block door' $door; #echo {cast 'block door' $door}
+  };
+  #else {
+    cast 'block door' %0; #echo {cast 'block door' %0}
+  };
+}
+
+#alias {break} {
+  #if { "%0" == "" } {
+    cast 'break door' $door; #echo {cast 'break door' $door}
+  };
+  #else {
+    cast 'break door' %0; #echo {cast 'break door' %0}
+  };
+}
+
+
 #alias {od} {open $door; #echo {open $door}}
 #alias {cd} {close $door; #echo {close $door}}
 #alias {ud} {unlock $door; #echo {unlock $door}}

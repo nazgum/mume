@@ -28,7 +28,7 @@
   #else {
     #var {leader} {%0};
     #echo {leader set to: <049>$leader<099>}
-  };;
+  };
 }
 
 #action {^%+ joins $leader's fight.$} { 

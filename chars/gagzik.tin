@@ -9,21 +9,22 @@
   };
 }
 
-#alias {g} {
-  #if { "%0" == "" } {
-    cast 'smother' $target; #echo {cast 'smother' $target}
-  };
-  #else {
-    cast 'smother' %0; #echo {cast 'smother' %0}
-  };
-}
-
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
+  };
+}
+#alias {bb} {h}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
 
@@ -45,18 +46,31 @@
   };
 }
 
-
 #alias {break} {
   cast 'break door' $door; #echo {cast 'break door' $door}
 }
+
+#alias {curse} {
+  #if { "%0" == "" } {
+    cast 'curse' $target; #echo {cast 'curse' $target}
+  };
+  #else {
+    cast 'curse' %0; #echo {cast 'curse' %0}
+  };
+}
+#alias {curs} {curse}
+#alias {crs} {curse}
+#alias {cr} {curse}
 
 #alias {^1$} {of bash $target}
 #alias {^2$} {of kill $target}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue gagzik}
-#alias {^6$} {ear}
+#alias {^6$} {qear}
 #alias {^7$} {qear}
-#alias {^8$} {qear}
+#alias {^8$} {ear}
 #alias {^9$} {ear}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
 

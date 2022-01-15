@@ -16,11 +16,30 @@
   };
 }
 
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#alias {ht} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
-#alias {^5$} {of rescue atzot}
+#alias {^5$} {of rescue pugzuk}
 #alias {^6$} {ear}
 #alias {^7$} {qear}
 #alias {^8$} {qear}

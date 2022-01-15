@@ -33,6 +33,8 @@
 #highlight {a defiled dwarven shield} {violet}
 #highlight {a crude orkish horn} {violet}
 #highlight {a ceremonial dagger} {violet}
+#highlight {a frayed tunic} {violet}
+#highlight {the Axe of Durin} {violet}
 #highlight {an enruned robe} {magenta}
 #highlight {a wightblade} {magenta}
 #highlight {an engraved broadsword} {magenta}
@@ -65,10 +67,11 @@
 #highlight {an archaic copper wristband} {violet}
 #highlight {a tarnished copper wristband} {violet}
 #highlight {a black-thorned wristband} {violet}
-#highlight {a mighty dwarven axe} {magenta}
+#highlight {a mighty dwarven axe} {violet}
 #highlight {a blackened dwarven axe} {magenta}
-#highlight {a darkened orkish axe} {magenta}
+#highlight {a darkened orkish axe} {violet}
 #highlight {a wicked Durbûk-hai axe} {violet}
+#highlight {a crossbow} {violet}
 #highlight {a pair of black arm wrappings} {magenta}
 #highlight {a yew longbow} {magenta}
 #highlight {an embellished longbow} {magenta}
@@ -82,6 +85,7 @@
 #highlight {a shining pair of vambraces} {violet}
 #highlight {a shining pair of greaves} {violet}
 #highlight {a metal-shod staff} {violet}
+#highlight {a staff inlaid with gems} {pink}
 #highlight {an ancient, jewelled helmet} {pink}
 #highlight {a sapphire ring} {pink}
 #highlight {an ancient dwarven shield} {violet}
@@ -102,7 +106,7 @@
 #highlight {a smoky obsidian amulet} {magenta}
 #highlight {a scorched, grisly fur} {magenta}
 #highlight {an imposing, golden mantle} {magenta}
-#highlight {a wide silvery wristband} {magenta}
+#highlight {a wide silvery wristband} {violet}
 #highlight {an archer's wrist guard} {magenta}
 #highlight {a lambent amulet} {magenta}
 #highlight {a fine grey cloak} {magenta}

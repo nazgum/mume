@@ -1,127 +1,37 @@
-#alias {bt} { backstab $target; #echo {backstab $target} }
+#read scripts/blind.tin
 
-#alias {ht} {
+#alias {g} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast 'blind' $target; #echo {cast 'blind' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
+    cast 'blind' %0; #echo {cast 'blind' %0}
   };
 }
 
-#alias {qh} {
+#alias {h} {
   #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
+    cast 'hold' $target; #echo {cast 'hold' $target}
   };
   #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
+    cast 'hold' %0; #echo {cast 'hold' %0}
   };
 }
 
-#alias {hq} {
+#alias {b} {
   #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
+    back $target; #echo {back $target}
   };
   #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
+    back %0; #echo {back %0}
   };
 }
 
-#alias {3} {of assist}
-#alias {4} {of bash}
-#alias {5} {of rescue}
 
-#alias {shoes} { remove boots; wear shoes }
-#alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove bear-hide; wear cloak }
-#alias {fur} {remove cloak; wear bear-hide }
+#var {bag} {pack}
 
-
-#alias {iron} {remove ring; put ring pack; get ironring pack; wear ironring}
-#alias {ruby} {remove ring; put ring pack; get rubyring pack; wear rubyring}
-#alias {topaz} {remove ring; put ring pack; get topaz-ring pack; wear topaz-ring}
-#alias {str} {remove ring; get topaz-ring pack; wear topaz-ring; use topaz-ring; remove topaz-ring; put topaz-ring pack; wear ring}
-#alias {wooden} {remove 2.ring; get wooden all; wear wooden}
-#alias {candle} {get candle all; wield candle; use candle; wield dagger}
-
-
-#alias {md} {
-  get tail all; get fur all; get leaves all; get vial all;
-  put tail kit; put fur kit; put leaves kit; put vial kit;
-  mix kit
-}
-
-#alias {arach} {
-  get tail all; get fur all; get grey all;
-  put tail kit; put fur kit; put grey kit;
-  mix kit
-}
-
-#alias {venom} {
-  get tail all; get fur all; get small all;
-  put tail kit; put fur kit; put small kit;
-  mix kit
-}
-
-#alias {psylonia} {
-  get inkberries all; get red-mushroom all; get sickly all;
-  put inkberries kit; put red-mushroom kit; put sickly kit;
-  mix kit
-}
-
-#var {battle} {off}
-
-#MACRO {^=} {
-  #if {"$battle" == "on"} {
-    disableBattle
-  };
-  #else {
-    enableBattle
-  }
-}
-
-#alias {disableBattle} {
-  #var {battle} {off};
-  #showme {$prompt_data} {0};
-  
-  #UNMACRO {^,} {#echo {n}; n};
-  #UNMACRO {^o} {#echo {s}; s};
-  #UNMACRO {^e} {#echo {e}; e};
-  #UNMACRO {^a} {#echo {w}; w};
-  #UNMACRO {^.} {#echo {u}; u};
-  #UNMACRO {^;} {#echo {d}; d};
-  
-  #UNMACRO {^y} {#echo {f}; f};
-  #UNMACRO {^'} {#echo {f}; f};
-  
-  #UNMACRO {^j} {od};
-  #UNMACRO {^q} {ud};
-  #UNMACRO {^k} {cd};
-  #UNMACRO {^x} {ld};
-  
-  #UNMACRO {^u} {kt};
-  #UNMACRO {^i} {bt};
-}
-
-#alias {enableBattle} {
-  #var {battle} {on};
-  #showme {$prompt_data} {0};
-  
-  #MACRO {^,} {#echo {n}; n};
-  #MACRO {^o} {#echo {s}; s};
-  #MACRO {^e} {#echo {e}; e};
-  #MACRO {^a} {#echo {w}; w};
-  #MACRO {^.} {#echo {u}; u};
-  #MACRO {^;} {#echo {d}; d};
-  
-  #MACRO {^y} {#echo {f}; f};
-  #MACRO {^'} {#echo {f}; f};
-  
-  #MACRO {^j} {od};
-  #MACRO {^q} {ud};
-  #MACRO {^k} {cd};
-  #MACRO {^x} {ld};
-  
-  #MACRO {^u} {kt};
-  #MACRO {^i} {bt};
-}
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {reload} {get all.bolt $bag; put all.bolt case}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
+#alias {curec} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use emerald-ring}

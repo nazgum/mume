@@ -116,6 +116,13 @@
 	#line {gag}
 }
 
+#action {^You feel your Master's strength join your own.$} {spellTimerSet shadow veil}
+#action {^Your Master's strength leaves you.$} {spellTimerUnset shadow veil}
+#action {^- shadow veil$} {
+	spellTimerStatus shadow veil;
+	#line {gag}
+}
+
 #action {^You feel your muscles relax and your pulse slow as the strength that welled within you subsides.$} {spellTimerSet tiredness}
 #action {^You feel your muscles regain some of their former energy.$} {spellTimerUnset tiredness}
 #action {^- tiredness$} {

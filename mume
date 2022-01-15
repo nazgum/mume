@@ -74,7 +74,7 @@
 #read chars/gagzik.tin
 
 #event {PROGRAM START} {
-  #session {mume} {localhost} {4000}
+  #session {mume} {localhost} {4242}
 }
 
 #event {SESSION DISCONNECTED} {

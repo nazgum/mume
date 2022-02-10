@@ -10,20 +10,6 @@
 #highlight {(deteriorating)} {<f565f89>}
 #highlight {(worn out)} {<f565f89>}
 
-#nop Glows
-#highlight {it glows blue} {<f2ac3de>}
-#highlight {(blue aura)} {<f2ac3de>}
-#highlight {^Traces %1 white tones %2} {<f2ac3de>}
-#highlight {[blue]} {<f2ac3de>}
-#highlight {(glowing)} {<f2ac3de>}
-
-#nop Auras
-#highlight {it glows red} {<ff7768e>}
-#highlight {(red aura)} {<ff7768e>}
-#highlight {^Traces %1 red tones %2} {<ff7768e>}
-#highlight {^You failed to control %1} {<ff7768e>}
-
-
 #nop Artifacts
 #highlight {the Dragonhelm} {<ff7768e>}
 #highlight {the Morgul blade} {<ff7768e>}
@@ -38,7 +24,6 @@
 #highlight {a soft pair of padded boots} {<ff7768e>}
 #highlight {a wooden ring} {<ff7768e>}
 
-
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
 #highlight {a staff inlaid with gems} {<fcfc9c2>}
@@ -46,14 +31,12 @@
 #highlight {a sapphire ring} {<fcfc9c2>}
 #highlight {a small crystal phial} {<fcfc9c2>}
 
-
 #nop Spell Save Items
 #highlight {an old length of iron chain} {<fff9e64>}
 #highlight {a necklace} {<fff9e64>}
 #highlight {an icy ring} {<fff9e64>}
 #highlight {a root ring} {<fff9e64>}
 #highlight {a coarse dusky robe} {<fff9e64>}
-
 
 #nop Important Gear
 #highlight {a black runed dagger} {<fbb9af7>} 
@@ -74,9 +57,6 @@
 #highlight {a black-thorned wristband} {<fbb9af7>}
 #highlight {a wide silvery wristband} {<fbb9af7>}
 #highlight {a supple pair of leather gloves} {<fbb9af7>}
-
-
-
 
 #nop Good Gear
 #highlight {a ceremonial dagger} {<f7aa2f7>}
@@ -185,6 +165,19 @@
 #highlight {^Your magical shield wears off.} {<ff7768e>}
 #highlight {^You feel less protected.} {<ff7768e>}
 
+#nop Glows
+#highlight {it glows blue} {<f2ac3de>}
+#highlight {(blue aura)} {<f2ac3de>}
+#highlight {^Traces %1 white tones %2} {<f2ac3de>}
+#highlight {[blue]} {<f2ac3de>}
+#highlight {(glowing)} {<f2ac3de>}
+
+#nop Auras
+#highlight {it glows red} {<ff7768e>}
+#highlight {(red aura)} {<ff7768e>}
+#highlight {^Traces %1 red tones %2} {<ff7768e>}
+#highlight {^You failed to control %1} {<ff7768e>}
+
 #nop Bad Effects
 #highlight {^You have been blinded!} {<ff7768e>}
 #highlight {^You suddenly notice %1} {<ff7768e>}
@@ -192,7 +185,7 @@
 #highlight {^You feel weaker.} {<ff7768e>}
 #highlight {^You failed to control an %1.} {<ff7768e>}
 
-#nop Poison
+#nop Item Effects
 #highlight {some sort of liquid is smeared on it} {<f9ece6a>}
 #highlight {it has a soft glowing aura} {<fc9d2f6>}
 

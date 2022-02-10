@@ -9,6 +9,7 @@
 #var {key_khuzur} {none}
 #var {key_epriest} {none}
 #var {key_lb} {none}
+#var {key_moria} {none}
 
 
 #alias {key} {
@@ -66,6 +67,10 @@
   #else { #var {key_epriest} {%0}; #echo {\$key_epriest set to: <049>$key_epriest<099>} };
 }
 
+#alias {key_moria} {
+  #if { "%0" == "" } { #echo {\$key_moria set to: <049>$key_moria<099>} };
+  #else { #var {key_moria} {%0}; #echo {\$key_moria set to: <049>$key_moria<099>} };
+}
 
 #alias scry {cast n 'scry' $key; #echo {cast n 'scry' $key}}
 #alias scry1 {cast n 'scry' $key1; #echo {cast n 'scry' $key1}}
@@ -78,6 +83,7 @@
 #alias scry_brolg {cast n 'scry' $key_brolg; #echo {cast n 'scry' $key_brolg}}
 #alias scry_khuzur {cast n 'scry' $key_khuzur; #echo {cast n 'scry' $key_khuzur}}
 #alias scry_epriest {cast n 'scry' $key_epriest; #echo {cast n 'scry' $key_epriest}}
+#alias scry_moria {cast n 'scry' $key_moria; #echo {cast n 'scry' $key_moria}}
 
 #alias wr {cast n 'watch room' $key; #echo {cast n 'watch room' $key}}
 #alias wr1 {cast n 'watch room' $key1; #echo {cast n 'watch room' $key1}}
@@ -90,6 +96,7 @@
 #alias wr_brolg {cast n 'watch room' $key_brolg; #echo {cast n 'watch room' $key_brolg}}
 #alias wr_khuzur {cast n 'watch room' $key_khuzur; #echo {cast n 'watch room' $key_khuzur}}
 #alias wr_epriest {cast n 'watch room' $key_epriest; #echo {cast n 'watch room' $key_epriest}}
+#alias wr_moria {cast n 'watch room' $key_moria; #echo {cast n 'watch room' $key_moria}}
 
 #alias tp {cast n 'teleport' $key; #echo {cast n 'teleport' $key}}
 #alias tp1 {cast n 'teleport' $key1; #echo {cast n 'teleport' $key1}}
@@ -102,6 +109,7 @@
 #alias tp_brolg {cast n 'teleport' $key_brolg; #echo {cast n 'teleport' $key_brolg}}
 #alias tp_khuzur {cast n 'teleport' $key_khuzur; #echo {cast n 'teleport' $key_khuzur}}
 #alias tp_epriest {cast n 'teleport' $key_epriest; #echo {cast n 'teleport' $key_epriest}}
+#alias tp_moria {cast n 'teleport' $key_moria; #echo {cast n 'teleport' $key_moria}}
 
 
 #alias portal {cast n 'portal' $key; #echo {cast n 'portal' $key}}
@@ -115,9 +123,36 @@
 #alias portal_brolg {cast n 'portal' $key_brolg; #echo {cast n 'portal' $key_brolg}}
 #alias portal_khuzur {cast n 'portal' $key_khuzur; #echo {cast n 'portal' $key_khuzur}}
 #alias portal_epriest {cast n 'portal' $key_epriest; #echo {cast n 'portal' $key_epriest}}
+#alias portal_moria {cast n 'portal' $key_moria; #echo {cast n 'portal' $key_moria}}
 
 
 #action {key: '%w'} {
   #var {key} {%1};
   #echo {\$key set to: $key}
+}
+
+#alias keys {
+  #if { "$key_dt" == "none" } { #echo {\$key_dt set to: <099>$key_dt<099> } };
+  #else { #echo {\$key_dt set to: <049>$key_dt<099> } };
+  
+  #if { "$key_vt" == "none" } { #echo {\$key_vt set to: <099>$key_vt<099> } };
+  #else { #echo {\$key_vt set to: <049>$key_vt<099> } };
+  
+  #if { "$key_lb" == "none" } { #echo {\$key_lb set to: <099>$key_lb<099> } };
+  #else { #echo {\$key_lb set to: <049>$key_lb<099> } };
+  
+  #if { "$key_cave" == "none" } { #echo {\$key_cave set to: <099>$key_cave<099> } };
+  #else { #echo {\$key_cave set to: <049>$key_cave<099> } };
+  
+  #if { "$key_brolg" == "none" } { #echo {\$key_brolg set to: <099>$key_brolg<099> } };
+  #else { #echo {\$key_brolg set to: <049>$key_brolg<099> } };
+  
+  #if { "$key_khuzur" == "none" } { #echo {\$key_khuzur set to: <099>$key_khuzur<099> } };
+  #else { #echo {\$key_khuzur set to: <049>$key_khuzur<099> } };
+  
+  #if { "$key_epriest" == "none" } { #echo {\$key_epriest set to: <099>$key_epriest<099> } };
+  #else { #echo {\$key_epriest set to: <049>$key_epriest<099> } };
+  
+  #if { "$key_moria" == "none" } { #echo {\$key_moria set to: <099>$key_moria<099> } };
+  #else { #echo {\$key_moria set to: <049>$key_moria<099> } };
 }

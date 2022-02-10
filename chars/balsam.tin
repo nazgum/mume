@@ -7,45 +7,16 @@
   };
 }
 
-#alias {sg} {
+#alias {h} {
   #if { "%0" == "" } {
-    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
   };
   #else {
-    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
 
-#alias {ht} {
-  #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
-  };
-  #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
-  };
-}
-
-#alias {qh} {
-  #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
-  };
-  #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
-  };
-}
-
-#alias {hq} {
-  #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
-  };
-  #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
-  };
-}
-
-#alias {break} {
-  cast 'break door' $door; #echo {cast 'break door' $door}
-}
+#var {bag} {pack}
 
 #alias {^1$} {of bash $target}
 #alias {^2$} {of kill $target}

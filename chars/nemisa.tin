@@ -1,22 +1,77 @@
-#alias {g} {
+#alias {sil} {
   #if { "%0" == "" } {
-    shoot $target; #echo {shoot $target}
+    cast 'silence' $target; #echo {cast 'silence' $target}
   };
   #else {
-    shoot %0; #echo {shoot %0}
+    cast 'silence' %0; #echo {cast 'silence' %0}
+  };
+}
+#alias {g} {sil}
+
+#alias {dm} {
+  #if { "%0" == "" } {
+    cast 'dispel magic' $target; #echo {cast 'dispel magic' $target}
+  };
+  #else {
+    cast 'dispel magic' %0; #echo {cast 'dispel magic' %0}
+  };
+}
+#alias {h} {dm}
+
+#alias {sleep} {
+  #if { "%0" == "" } {
+    cast 'sleep' $target; #echo {cast 'sleep' $target}
+  };
+  #else {
+    cast 'sleep' %0; #echo {cast 'sleep' %0}
+  };
+}
+#alias {b} {sleep}
+
+#alias {charm} {
+  #if { "%0" == "" } {
+    cast 'charm' $target; #echo {cast 'charm' $target}
+  };
+  #else {
+    cast 'charm' %0; #echo {cast 'charm' %0}
+  };
+}
+#alias {ch} {charm}
+
+
+#var {bag} {sable}
+#var {basher} {followers}
+#var {protector} {followers}
+
+#alias {basher} {
+  #if { "%0" == "" } {
+    #echo {basher set to: <049>$basher<099>}
+  };
+  #else {
+    #var {basher} {%0};
+    #echo {basher set to: <049>$basher<099>}
   };
 }
 
+#alias {protector} {
+  #if { "%0" == "" } {
+    #echo {protector set to: <049>$protector<099>}
+  };
+  #else {
+    #var {protector} {%0};
+    #echo {protector set to: <049>$protector<099>}
+  };
+}
 
-#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {fur} { remove cloak; get wargfur $bag; wear wargfur; put cloak $bag }
+#alias {cloak} { remove wargfur; get cloak $bag; wear cloak; put wargfur $bag }
+#alias {rec} {get all.bolt all.corpse; get all.bolt; put all.bolt case}
+#alias {reload} {get all.bolt sable; put all.bolt case}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+
+#alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
-#alias {^4$} {of bash}
-#alias {^5$} {of rescue nemisa}
-#alias {^6$} {b}
-#alias {^7$} {de}
-#alias {^8$} {de}
-#alias {^9$} {qd}
-#alias {^.$} {bash $target; #echo {bash $target}}
-
-#alias {reload} {get all.bolt pack; put all.bolt case}
+#alias {^4$} {order $basher bash; #echo {order $basher bash}}
+#alias {^5$} {order $protector rescue nemisa; #echo {order $protector rescue nemisa}}

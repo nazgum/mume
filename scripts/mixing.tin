@@ -52,6 +52,12 @@
   mix kit
 }
 
+#alias {mstr} {
+  get clover all; get paprika all; get comfrey all;
+  put clover kit; put paprika kit; put comfrey kit;
+  mix kit
+}
+
 #alias {arr} {
   #if { "%0" == "" } {
     get bolt case; wield bolt; poison; dra; put bolt case

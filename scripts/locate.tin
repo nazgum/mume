@@ -132,27 +132,27 @@
 }
 
 #alias keys {
-  #if { "$key_dt" == "none" } { #echo {\$key_dt set to: <099>$key_dt<099> } };
-  #else { #echo {\$key_dt set to: <049>$key_dt<099> } };
+  #if { "$key_dt" == "none" } { #echo {\$key_dt set to: <fff9e64>$key_dt<099> } };
+  #else { #echo {\$key_dt set to: <fff9e64>$key_dt<099> } };
   
-  #if { "$key_vt" == "none" } { #echo {\$key_vt set to: <099>$key_vt<099> } };
-  #else { #echo {\$key_vt set to: <049>$key_vt<099> } };
+  #if { "$key_vt" == "none" } { #echo {\$key_vt set to: <fff9e64>$key_vt<099> } };
+  #else { #echo {\$key_vt set to: <fff9e64>$key_vt<099> } };
   
-  #if { "$key_lb" == "none" } { #echo {\$key_lb set to: <099>$key_lb<099> } };
-  #else { #echo {\$key_lb set to: <049>$key_lb<099> } };
+  #if { "$key_lb" == "none" } { #echo {\$key_lb set to: <fff9e64>$key_lb<099> } };
+  #else { #echo {\$key_lb set to: <fff9e64>$key_lb<099> } };
   
-  #if { "$key_cave" == "none" } { #echo {\$key_cave set to: <099>$key_cave<099> } };
-  #else { #echo {\$key_cave set to: <049>$key_cave<099> } };
+  #if { "$key_cave" == "none" } { #echo {\$key_cave set to: <fff9e64>$key_cave<099> } };
+  #else { #echo {\$key_cave set to: <fff9e64>$key_cave<099> } };
   
-  #if { "$key_brolg" == "none" } { #echo {\$key_brolg set to: <099>$key_brolg<099> } };
-  #else { #echo {\$key_brolg set to: <049>$key_brolg<099> } };
+  #if { "$key_brolg" == "none" } { #echo {\$key_brolg set to: <fff9e64>$key_brolg<099> } };
+  #else { #echo {\$key_brolg set to: <fff9e64>$key_brolg<099> } };
   
-  #if { "$key_khuzur" == "none" } { #echo {\$key_khuzur set to: <099>$key_khuzur<099> } };
-  #else { #echo {\$key_khuzur set to: <049>$key_khuzur<099> } };
+  #if { "$key_khuzur" == "none" } { #echo {\$key_khuzur set to: <fff9e64>$key_khuzur<099> } };
+  #else { #echo {\$key_khuzur set to: <fff9e64>$key_khuzur<099> } };
   
-  #if { "$key_epriest" == "none" } { #echo {\$key_epriest set to: <099>$key_epriest<099> } };
-  #else { #echo {\$key_epriest set to: <049>$key_epriest<099> } };
+  #if { "$key_epriest" == "none" } { #echo {\$key_epriest set to: <fff9e64>$key_epriest<099> } };
+  #else { #echo {\$key_epriest set to: <fff9e64>$key_epriest<099> } };
   
-  #if { "$key_moria" == "none" } { #echo {\$key_moria set to: <099>$key_moria<099> } };
-  #else { #echo {\$key_moria set to: <049>$key_moria<099> } };
+  #if { "$key_moria" == "none" } { #echo {\$key_moria set to: <fff9e64>$key_moria<099> } };
+  #else { #echo {\$key_moria set to: <fff9e64>$key_moria<099> } };
 }

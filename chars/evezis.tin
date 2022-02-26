@@ -1,6 +1,0 @@
-#var {bag} {sable}
-
-#alias {^.$} {shoot $target; #echo {shoot $target}}
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
-#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
-#alias {cc} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use emerald-ring}

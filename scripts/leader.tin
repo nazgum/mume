@@ -1,6 +1,7 @@
 #var {leader} {none}
+#var {assister} {none}
 #var {auto_ride} {on}
-#var {auto_ass} {off}
+#var {auto_ass} {on}
 
 #alias {auto} {
   #echo {auto ride: <049>$auto_ride<099>};
@@ -23,15 +24,25 @@
 
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {leader set to: <049>$leader<099>}
+    #echo {leader set to: <fff9e64>$leader<099>}
   };
   #else {
     #var {leader} {%0};
-    #echo {leader set to: <049>$leader<099>}
+    #echo {leader set to: <fff9e64>$leader<099>}
   };
 }
 
-#action {^%+ joins $leader's fight.$} { 
+#alias {assister} {
+  #if { "%0" == "" } {
+    #echo {assister set to: <fff9e64>$assister<099>}
+  };
+  #else {
+    #var {assister} {%0};
+    #echo {assister set to: <fff9e64>$assister<099>}
+  };
+}
+
+#action {^$assister joins} { 
   #if { "$auto_ass" == "on" } { assist }
 }
 

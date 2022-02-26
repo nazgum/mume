@@ -1,6 +1,6 @@
 #nop Equipment State
 #highlight {(flawless)} {<f2ac3de>}
-#highlight {(well-maintained)} {<f2ac3de>}
+#highlight {(well-maintained)} {<f73daca>}
 #highlight {(satisfactory)} {<f73daca>}
 #highlight {(used)} {<f73daca>}
 #highlight {(worn)} {<f73daca>}
@@ -40,6 +40,10 @@
 
 #nop Important Gear
 #highlight {a black runed dagger} {<fbb9af7>} 
+#highlight {a blackened spear} {<fbb9af7>} 
+#highlight {a burnished hewing-spear} {<fbb9af7>}
+#highlight {a great warsword} {<fbb9af7>}
+#highlight {a steel claymore} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
 #highlight {an ancient dwarven shield} {<fbb9af7>}
 #highlight {a smelly piece of worm hide} {<fbb9af7>}
@@ -65,7 +69,6 @@
 #highlight {an engraved broadsword} {<f7aa2f7>}
 #highlight {a fell blade} {<f7aa2f7>}
 #highlight {a war mattock} {<f7aa2f7>}
-#highlight {a steel claymore} {<f7aa2f7>}
 #highlight {a ragged, blackened cloak} {<f7aa2f7>}
 #highlight {a roughly stitched cloak} {<f7aa2f7>}
 #highlight {a russet cloak} {<f7aa2f7>}
@@ -75,12 +78,14 @@
 #highlight {a bejewelled shield} {<f7aa2f7>}
 #highlight {a tower shield} {<f7aa2f7>}
 #highlight {a leaf-embossed shield} {<f7aa2f7>}
+#highlight {a spiked horsehide buckler} {<f7aa2f7>}
 #highlight {a gleaming belt} {<f7aa2f7>}
 #highlight {a golden belt} {<f7aa2f7>}
 #highlight {a belt of fell hide} {<f7aa2f7>}
 #highlight {a broad silver belt} {<f7aa2f7>}
 #highlight {a red ruby} {<f7aa2f7>}
 #highlight {a golden ruby ring} {<f7aa2f7>}
+#highlight {a golden garnet ring} {<f7aa2f7>}
 #highlight {a mighty dwarven axe} {<fff9e64>}
 #highlight {a blackened dwarven axe} {<f7aa2f7>}
 #highlight {a darkened orkish axe} {<f7aa2f7>}
@@ -185,6 +190,7 @@
 #highlight {^You feel weaker.} {<ff7768e>}
 #highlight {^You failed to control an %1.} {<ff7768e>}
 
+
 #nop Item Effects
 #highlight {some sort of liquid is smeared on it} {<f9ece6a>}
 #highlight {it has a soft glowing aura} {<fc9d2f6>}
@@ -193,3 +199,7 @@
 #highlight {sleeping} {<fcfc9c2>}
 #highlight {sitting} {<fcfc9c2>}
 #highlight {The %1 blurs for a while.} {<ff7768e>}
+
+#nop Bash
+#highlight {%1 sprawling with a powerful bash.} {<fbb9af7>}
+#highlight {%1 seems to have recovered his senses.} {<fff9e64>}

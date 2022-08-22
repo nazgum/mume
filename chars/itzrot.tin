@@ -1,0 +1,49 @@
+#var {bag} {sable}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast n 'smother' $target; #echo {cast n 'smother' $target}
+  };
+  #else {
+    cast n 'smother' %0; #echo {cast n 'smother' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#alias {b} {
+  #if { "%0" == "" } {
+    cast 'blind' $target; #echo {cast 'blind' $target}
+  };
+  #else {
+    cast 'blind' %0; #echo {cast 'blind' %0}
+  };
+}
+#alias {b2} { cast 'blind' 2.$target; #echo {cast 'blind' 2.$target} }
+#alias {b3} { cast 'blind' 3.$target; #echo {cast 'blind' 3.$target} }
+#alias {b4} { cast 'blind' 4.$target; #echo {cast 'blind' 4.$target} }
+#alias {b5} { cast 'blind' 5.$target; #echo {cast 'blind' 5.$target} }
+#alias {b6} { cast 'blind' 6.$target; #echo {cast 'blind' 6.$target} }
+#alias {b7} { cast 'blind' 7.$target; #echo {cast 'blind' 7.$target} }
+
+
+#alias {str} {
+  #if { "%0" == "" } {
+    cast t 'strength' $target; #echo {cast t 'strength' $target}
+  };
+  #else {
+    cast t 'strength' %0; #echo {cast t 'strength' %0}
+  };
+}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
+#alias {cc} {cast n 'cure critic'; #echo {cast n 'cure critic'}}
+#alias {arr} {get all.arrow all.corpse;get all.arrow; put all.arrow quiver}

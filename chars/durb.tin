@@ -1,3 +1,6 @@
 #var {bag} {pack}
 
 #alias {^.$} {bash $target; #echo {bash $target}}
+
+#alias {g} {shoot $target; #echo {shoot $target}}
+#alias {arr} {get all.arrow all.corpse; get all.arrow; put all.arrow quiver}

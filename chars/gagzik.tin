@@ -69,7 +69,15 @@
 #alias {crs} {curse}
 #alias {cr} {curse}
 
-#alias {str} { cast t 'strength'; #echo {cast t 'strength'} }
+
+#alias {str} {
+  #if { "%0" == "" } {
+    cast t 'strength'; #echo {cast t 'strength'}
+  };
+  #else {
+    cast t 'strength' %0; #echo {cast t 'strength' %0}
+  };
+}
 
 #alias {^1$} {of bash $target}
 #alias {^2$} {of kill $target}

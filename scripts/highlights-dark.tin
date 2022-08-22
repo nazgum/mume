@@ -1,0 +1,205 @@
+#nop Equipment State
+#highlight {(flawless)} {<f2ac3de>}
+#highlight {(well-maintained)} {<f73daca>}
+#highlight {(satisfactory)} {<f73daca>}
+#highlight {(used)} {<f73daca>}
+#highlight {(worn)} {<f73daca>}
+#highlight {(neglected)} {<f565f89>}
+#highlight {(marred)} {<f565f89>}
+#highlight {(unavailing)} {<f565f89>}
+#highlight {(deteriorating)} {<f565f89>}
+#highlight {(worn out)} {<f565f89>}
+
+#nop Artifacts
+#highlight {the Dragonhelm} {<ff7768e>}
+#highlight {the Morgul blade} {<ff7768e>}
+#highlight {the black sheath} {<ff7768e>}
+#highlight {the great black scimitar} {<ff7768e>}
+#highlight {a crown of bones} {<ff7768e>}
+#highlight {the black buckler} {<ff7768e>}
+#highlight {a dark curved sword} {<ff7768e>}
+#highlight {the Axe of Durin} {<ff7768e>}
+#highlight {a large visored helmet} {<ff7768e>}
+#highlight {a crude orkish horn} {<ff7768e>}
+#highlight {a soft pair of padded boots} {<ff7768e>}
+#highlight {a wooden ring} {<ff7768e>}
+
+#nop Focus
+#highlight {a metal-shod staff} {<fcfc9c2>}
+#highlight {a staff inlaid with gems} {<fcfc9c2>}
+#highlight {an ancient, jewelled helmet} {<fcfc9c2>}
+#highlight {a sapphire ring} {<fcfc9c2>}
+#highlight {a small crystal phial} {<fcfc9c2>}
+
+#nop Spell Save Items
+#highlight {an old length of iron chain} {<fff9e64>}
+#highlight {a necklace} {<fff9e64>}
+#highlight {an icy ring} {<fff9e64>}
+#highlight {a root ring} {<fff9e64>}
+#highlight {a coarse dusky robe} {<fff9e64>}
+
+#nop Important Gear
+#highlight {a black runed dagger} {<fbb9af7>} 
+#highlight {a blackened spear} {<fbb9af7>} 
+#highlight {a burnished hewing-spear} {<fbb9af7>}
+#highlight {a great warsword} {<fbb9af7>}
+#highlight {a steel claymore} {<fbb9af7>}
+#highlight {a defiled dwarven shield} {<fbb9af7>}
+#highlight {an ancient dwarven shield} {<fbb9af7>}
+#highlight {a smelly piece of worm hide} {<fbb9af7>}
+#highlight {a bejewelled oak staff} {<fbb9af7>}
+#highlight {a pale blue stone} {<fbb9af7>}
+#highlight {a small pouch} {<fbb9af7>}
+#highlight {a copper ring} {<fbb9af7>}
+#highlight {a frayed tunic} {<fbb9af7>}
+#highlight {a grey tunic} {<fbb9af7>}
+#highlight {a mithril circlet} {<fbb9af7>}
+#highlight {a twisted crown} {<fbb9af7>}
+#highlight {a slim silvery wristband} {<fbb9af7>}
+#highlight {an archaic copper wristband} {<fbb9af7>}
+#highlight {a tarnished copper wristband} {<fbb9af7>}
+#highlight {a black-thorned wristband} {<fbb9af7>}
+#highlight {a wide silvery wristband} {<fbb9af7>}
+#highlight {a supple pair of leather gloves} {<fbb9af7>}
+
+#nop Good Gear
+#highlight {a ceremonial dagger} {<f7aa2f7>}
+#highlight {an enruned robe} {<f7aa2f7>}
+#highlight {a wightblade} {<f7aa2f7>}
+#highlight {an engraved broadsword} {<f7aa2f7>}
+#highlight {a fell blade} {<f7aa2f7>}
+#highlight {a war mattock} {<f7aa2f7>}
+#highlight {a ragged, blackened cloak} {<f7aa2f7>}
+#highlight {a roughly stitched cloak} {<f7aa2f7>}
+#highlight {a russet cloak} {<f7aa2f7>}
+#highlight {a black cape} {<f7aa2f7>}
+#highlight {a bright red amulet} {<f7aa2f7>}
+#highlight {an opaque amulet} {<f7aa2f7>}
+#highlight {a bejewelled shield} {<f7aa2f7>}
+#highlight {a tower shield} {<f7aa2f7>}
+#highlight {a leaf-embossed shield} {<f7aa2f7>}
+#highlight {a spiked horsehide buckler} {<f7aa2f7>}
+#highlight {a gleaming belt} {<f7aa2f7>}
+#highlight {a golden belt} {<f7aa2f7>}
+#highlight {a belt of fell hide} {<f7aa2f7>}
+#highlight {a broad silver belt} {<f7aa2f7>}
+#highlight {a red ruby} {<f7aa2f7>}
+#highlight {a golden ruby ring} {<f7aa2f7>}
+#highlight {a golden garnet ring} {<f7aa2f7>}
+#highlight {a mighty dwarven axe} {<fff9e64>}
+#highlight {a blackened dwarven axe} {<f7aa2f7>}
+#highlight {a darkened orkish axe} {<f7aa2f7>}
+#highlight {a wicked Durbûk-hai axe} {<f7aa2f7>}
+#highlight {a crossbow} {<f7aa2f7>}
+#highlight {a pair of black arm wrappings} {<f7aa2f7>}
+#highlight {a yew longbow} {<f7aa2f7>}
+#highlight {an embellished longbow} {<f7aa2f7>}
+#highlight {a laced quiver} {<f7aa2f7>}
+#highlight {a sable pouch} {<f7aa2f7>}
+#highlight {a shining chain mail shirt} {<f7aa2f7>}
+#highlight {a shining pair of chain mail sleeves} {<f7aa2f7>}
+#highlight {a shining pair of chain mail leggings} {<f7aa2f7>}
+#highlight {a shining breastplate} {<f7aa2f7>}
+#highlight {a shining pair of vambraces} {<f7aa2f7>}
+#highlight {a shining pair of greaves} {<f7aa2f7>}
+#highlight {an iron ring} {<f7aa2f7>}
+#highlight {a ruby ring} {<f7aa2f7>}
+#highlight {a golden topaz ring} {<f7aa2f7>}
+#highlight {a nimble blade} {<f7aa2f7>}
+#highlight {a slender dagger} {<f7aa2f7>}
+#highlight {an ornate, steel-shafted warhammer} {<f7aa2f7>}
+#highlight {a black amulet} {<f7aa2f7>}
+#highlight {a smoky obsidian amulet} {<f7aa2f7>}
+#highlight {a scorched, grisly fur} {<f7aa2f7>}
+#highlight {an imposing, golden mantle} {<f7aa2f7>}
+#highlight {an archer's wrist guard} {<f7aa2f7>}
+#highlight {a lambent amulet} {<f7aa2f7>}
+#highlight {a fine grey cloak} {<f7aa2f7>}
+#highlight {a black, hooded cloak} {<f7aa2f7>}
+#highlight {a soot-black bear hide} {<f7aa2f7>}
+#highlight {an enhanced herbal kit} {<f7aa2f7>}
+#highlight {a strange set of lock picks} {<f7aa2f7>}
+#highlight {a black horn shortbow} {<f7aa2f7>}
+#highlight {an ashen blade} {<f7aa2f7>}
+#highlight {a white chain mail coif} {<f7aa2f7>}
+#highlight {a white chain mail jerkin} {<f7aa2f7>}
+#highlight {a pair of white chain mail sleeves} {<f7aa2f7>}
+#highlight {a pair of white chain mail leggings} {<f7aa2f7>}
+
+#nop Poisons
+#highlight {a green stinking vial} {<ff7768e>}
+#highlight {a dark violet vial} {<ff7768e>}
+#highlight {a dirty reddish vial} {<ff7768e>}
+#highlight {a mildew covered vial} {<ff7768e>}
+#highlight {a foetid green vial} {<ff7768e>}
+
+#nop Draughts
+#highlight {a flask of orkish draught} {<ff7768e>}
+#highlight {%w flasks of orkish draught} {<ff7768e>}
+#highlight {a scorched leather flask} {<ff7768e>}
+#highlight {%w scorched leather flasks} {<ff7768e>}
+
+#nop Herbs
+#highlight {%1 handfuls of narrow leaves} {<fcfc9c2>}
+#highlight {%1 short, moist tails} {<fcfc9c2>}
+#highlight {%1 piles of short, black fur} {<fcfc9c2>}
+#highlight {%1 vials of preserved blood} {<fcfc9c2>}
+#highlight {%1 handfuls of clover} {<fcfc9c2>}
+#highlight {%1 man-like roots} {<fcfc9c2>}
+#highlight {%1 piles of grey-green leaves} {<fcfc9c2>}
+#highlight {%1 scented crushed leaves} {<fcfc9c2>}
+#highlight {%1 clusters of hard, round, black berries} {<fcfc9c2>}
+#highlight {%1 piles of sweet-smelling dried mauve petals} {<fcfc9c2>}
+#highlight {A low, many-branched shrub covers the ground here.} {<fcfc9c2>}
+
+#nop Scrolls
+#highlight {^a %w scroll} {<fff9e64>}
+#highlight {^an %w scroll} {<fff9e64>}
+#highlight {^%w %w scrolls} {<fff9e64>}
+
+#nop Spells
+#highlight {- armour} {<f9ece6a>}
+#highlight {- shield} {<f9ece6a>}
+#highlight {- detect magic} {<f9ece6a>}
+#highlight {- breath of briskness} {<f9ece6a>}
+#highlight {- strength} {<f9ece6a>}
+#highlight {- shroud} {<f9ece6a>}
+#highlight {- sanctuary} {<f9ece6a>}
+
+#nop Spells Down
+#highlight {^Your magical shield wears off.} {<ff7768e>}
+#highlight {^You feel less protected.} {<ff7768e>}
+
+#nop Glows
+#highlight {it glows blue} {<f2ac3de>}
+#highlight {(blue aura)} {<f2ac3de>}
+#highlight {^Traces %1 white tones %2} {<f2ac3de>}
+#highlight {[blue]} {<f2ac3de>}
+#highlight {(glowing)} {<f2ac3de>}
+
+#nop Auras
+#highlight {it glows red} {<ff7768e>}
+#highlight {(red aura)} {<ff7768e>}
+#highlight {^Traces %1 red tones %2} {<ff7768e>}
+#highlight {^You failed to control %1} {<ff7768e>}
+
+#nop Bad Effects
+#highlight {^You have been blinded!} {<ff7768e>}
+#highlight {^You suddenly notice %1} {<ff7768e>}
+#highlight {^You feel a hidden presence.} {<ff7768e>}
+#highlight {^You feel weaker.} {<ff7768e>}
+#highlight {^You failed to control an %1.} {<ff7768e>}
+
+
+#nop Item Effects
+#highlight {some sort of liquid is smeared on it} {<f9ece6a>}
+#highlight {it has a soft glowing aura} {<fc9d2f6>}
+
+#nop Notice
+#highlight {sleeping} {<fcfc9c2>}
+#highlight {sitting} {<fcfc9c2>}
+#highlight {The %1 blurs for a while.} {<ff7768e>}
+
+#nop Bash
+#highlight {%1 sprawling with a powerful bash.} {<fbb9af7>}
+#highlight {%1 seems to have recovered %2 senses.} {<fff9e64>}

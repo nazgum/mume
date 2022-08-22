@@ -1,0 +1,75 @@
+A Cowled Sorcerer can teach you any of these spells:
+armour                0/16
+block door            0/ 8
+burning hands         0/11
+call lightning        0/16
+charm                 0/ 9
+chill touch           0/ 8
+create light          0/ 3
+detect invisibility   0/11
+detect magic          0/ 8
+dispel magic          0/19
+earthquake            0/16
+enchant               0/13
+fireball              0/16
+identify              0/16
+lightning bolt        0/16
+locate                0/12
+locate life           0/12
+magic blast           0/22
+magic missile         0/ 8
+night vision          0/ 9
+portal                0/22
+scry                  0/12
+shield                0/16
+shocking grasp        0/11
+shroud                0/12
+silence               0/11
+sleep                 0/13
+store                 0/16
+teleport              0/13
+ventriloquate         0/ 5
+watch room            0/ 8
+
+A dark-robed man can teach you any of these spells:
+blindness             0/18
+break door            0/ 9
+breath of briskness   0/16
+create food           0/ 6
+create water          0/ 6
+cure critic           0/ 8
+cure serious          0/ 6
+darkness              0/12
+energy drain          0/18
+harm                  0/15
+poison                0/10
+remove curse          0/ 3
+remove poison         0/ 6
+sanctuary             0/18
+sense life            0/ 8
+smother               0/ 9
+strength              0/ 8
+summon                0/11
+
+
+A grey-cloaked man can teach you any of these skills:
+backstab              0/23
+dodge                 0/18
+escape                0/13
+hide                  0/16
+missile               0/ 5
+pick                  0/ 5
+search                0/ 5
+sneak                 0/23
+steal                 0/12
+
+A gaunt man can teach you any of these skills:
+awareness             0/27
+climb                 0/13
+command               0/27
+Bandage               0/18
+leadership            0/27
+ride                  0/13
+swim                  0/13
+track                 0/27
+wilderness            0/27

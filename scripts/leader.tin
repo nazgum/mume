@@ -24,21 +24,21 @@
 
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {leader set to: <fff9e64>$leader<099>}
+    #echo {leader set to: <fCD6069>$leader<099>}
   };
   #else {
     #var {leader} {%0};
-    #echo {leader set to: <fff9e64>$leader<099>}
+    #echo {leader set to: <fCD6069>$leader<099>}
   };
 }
 
 #alias {assister} {
   #if { "%0" == "" } {
-    #echo {assister set to: <fff9e64>$assister<099>}
+    #echo {assister set to: <fCD6069>$assister<099>}
   };
   #else {
     #var {assister} {%0};
-    #echo {assister set to: <fff9e64>$assister<099>}
+    #echo {assister set to: <fCD6069>$assister<099>}
   };
 }
 

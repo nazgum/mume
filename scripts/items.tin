@@ -10,7 +10,7 @@
 #alias {fur} { remove cloak; get mantle $bag; wear mantle; put cloak $bag }
 #alias {tunic} { remove robe; get tunic $bag; wear tunic; put robe $bag }
 #alias {robe} { remove tunic; get robe $bag; wear robe; put tunic $bag }
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra blade; drop candle}
 #alias {can} {candle}
 #alias {rock} {get rock all; use rock $door}

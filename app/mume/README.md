@@ -5,6 +5,9 @@ New idea for character creation for MUME.
 ## Installation
 
 First install ruby on your system (I used 3.1, but anything over 2.7 works).
+https://www.ruby-lang.org/en/documentation/installation/
+
+    $ sudo dnf install ruby
 
 Then clone this repo, and inside of it type:
 

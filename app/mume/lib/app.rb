@@ -21,9 +21,8 @@ class App
       @screen.mume()
     
     # just rescue any error cause im lazy then restart
-    #rescue
-    #  if input other than expected answers, restart char select
-    #  retry 
+    rescue
+      retry 
     end
   end
 end

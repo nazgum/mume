@@ -42,7 +42,6 @@
 #highlight {a smelly piece of worm hide} {<f7C4DFF>}
 #highlight {a bejewelled oak staff} {<f7C4DFF>}
 #highlight {a pale blue stone} {<f7C4DFF>}
-#highlight {a small pouch} {<f7C4DFF>}
 #highlight {a copper ring} {<f7C4DFF>}
 #highlight {a frayed tunic} {<f7C4DFF>}
 #highlight {a grey tunic} {<f7C4DFF>}
@@ -132,16 +131,42 @@
 #highlight {a mildew covered vial} {<f4E9A06>}
 #highlight {a foetid green vial} {<f4E9A06>}
 
-#nop Draughts
-#highlight {a flask of orkish draught} {<fc43b7c>}
-#highlight {%w flasks of orkish draught} {<fc43b7c>}
-#highlight {a scorched leather flask} {<fc43b7c>}
-#highlight {%w scorched leather flasks} {<fc43b7c>}
+#nop Poison Ingr
+#highlight {a sickly green mushroom} {<f4E9A06>}
+#highlight {%w sickly green mushrooms} {<f4E9A06>}
+#highlight {a bright red mushroom} {<f4E9A06>}
+#highlight {%w bright red mushrooms} {<f4E9A06>}
+#highlight {a grey fluid-sack} {<f4E9A06>}
+#highlight {%w grey fluid-sacks} {<f4E9A06>}
+#highlight {a short, moist tail} {<f4E9A06>}
+#highlight {%w short, moist tails} {<f4E9A06>}
+#highlight {some short, black fur} {<f4E9A06>}
+#highlight {%w piles of short, black fur} {<f4E9A06>}
+#highlight {a few inkberries} {<f4E9A06>}
+#highlight {%w piles of inkberries} {<f4E9A06>}
 
-#nop Scrolls
+# Orc Draughts, Dark Draughts
+#highlight {a black, corrupted flower} {<fb84b1c>}
+#highlight {%w black, corrupted flowers} {<fb84b1c>}
+#highlight {a handful of narrow leaves} {<fb84b1c>}
+#highlight {%w handfuls of narrow leaves} {<fb84b1c>}
+#highlight {a vial of preserved blood} {<fb84b1c>}
+#highlight {%w vials of preserved blood} {<fb84b1c>}
+
+
+#nop Draughts
+#highlight {a flask of orkish draught} {<fa4390b>}
+#highlight {%w flasks of orkish draught} {<fa4390b>}
+#highlight {a scorched leather flask} {<fa4390b>}
+#highlight {%w scorched leather flasks} {<fa4390b>}
+
+#nop Scrolls, Rocks, Pouches
 #highlight {^a %w scroll} {<f454545>}
 #highlight {^an %w scroll} {<f454545>}
 #highlight {^%w %w scrolls} {<f454545>}
+#highlight {a twisted rock fragment} {<f454545>}
+#highlight {a small pouch} {<f454545>}
+#highlight {%w small pouches} {<f454545>}
 
 #nop Spells
 #highlight {- armour} {<f9ece6a>}

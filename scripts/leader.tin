@@ -24,21 +24,21 @@
 
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {leader set to: <fCD6069>$leader<099>}
+    #echo {<f437AED>\$leader<099> set to: <f7C4DFF>$leader<099>}
   };
   #else {
     #var {leader} {%0};
-    #echo {leader set to: <fCD6069>$leader<099>}
+    #echo {<f437AED>\$leader<099> set to: <f7C4DFF>$leader<099>}
   };
 }
 
 #alias {assister} {
   #if { "%0" == "" } {
-    #echo {assister set to: <fCD6069>$assister<099>}
+    #echo {<f437AED>\$assister<099> set to: <f7C4DFF>$assister<099>}
   };
   #else {
     #var {assister} {%0};
-    #echo {assister set to: <fCD6069>$assister<099>}
+    #echo {<f437AED>\$assister<099> set to: <f7C4DFF>$assister<099>}
   };
 }
 

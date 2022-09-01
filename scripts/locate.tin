@@ -13,63 +13,63 @@
 
 
 #alias {key} {
-  #if { "%0" == "" } { #echo {\$key set to: <049>$key<099>} };
-  #else { #var {key} {%0}; #echo {\$key set to: <049>$key<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key<099> set to: <f7C4DFF>$key<099>} };
+  #else { #var {key} {%0}; #echo {<f437AED>\$key<099> set to: <f7C4DFF>$key<099>} };
 }
 
 #alias {key1} {
-  #if { "%0" == "" } { #echo {\$key1 set to: <049>$key1<099>} };
-  #else { #var {key1} {%0}; #echo {\$key1 set to: <049>$key1<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key1<099> set to: <f7C4DFF>$key1<099>} };
+  #else { #var {key1} {%0}; #echo {<f437AED>\$key1<099> set to: <f7C4DFF>$key1<099>>} };
 }
 
 #alias {key2} {
-  #if { "%0" == "" } { #echo {\$key2 set to: <049>$key2<099>} };
-  #else { #var {key2} {%0}; #echo {\$key2 set to: <049>$key2<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key2<099> set to: <f7C4DFF>$key2<099>} };
+  #else { #var {key2} {%0}; #echo {<f437AED>\$key2<099> set to: <f7C4DFF>$key2<099>} };
 }
 
 #alias {key3} {
-  #if { "%0" == "" } { #echo {\$key3 set to: <049>$key3<099>} };
-  #else { #var {key3} {%0}; #echo {\$key3 set to: <049>$key3<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key3<099> set to: <f7C4DFF>$key3<099>} };
+  #else { #var {key3} {%0}; #echo {<f437AED>\$key3<099> set to: <f7C4DFF>$key3<099>} };
 }
 
 #alias {key_dt} {
-  #if { "%0" == "" } { #echo {\$key_dt set to: <049>$key_dt<099>} };
-  #else { #var {key_dt} {%0}; #echo {\$key_dt set to: <049>$key_dt<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_dt<099> set to: <f7C4DFF>$key_dt<099>} };
+  #else { #var {key_dt} {%0}; #echo {<f437AED>\$key_dt<099> set to: <f7C4DFF>$key_dt<099>} };
 }
 
 #alias {key_vt} {
-  #if { "%0" == "" } { #echo {\$key_vt set to: <049>$key_vt<099>} };
-  #else { #var {key_vt} {%0}; #echo {\$key_vt set to: <049>$key_vt<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_vt<099> set to: <f7C4DFF>$key_vt<099>} };
+  #else { #var {key_vt} {%0}; #echo {<f437AED>\$key_vt<099> set to: <f7C4DFF>$key_vt<099>} };
 }
 
 #alias {key_lb} {
-  #if { "%0" == "" } { #echo {\$key_dt set to: <049>$key_lb<099>} };
-  #else { #var {key_lb} {%0}; #echo {\$key_lb set to: <049>$key_lb<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_lb<099> set to: <f7C4DFF>$key_lb<099>} };
+  #else { #var {key_lb} {%0}; #echo {<f437AED>\$key_lb<099> set to: <f7C4DFF>$key_lb<099>} };
 }
 
 #alias {key_cave} {
-  #if { "%0" == "" } { #echo {\$key_dt set to: <049>$key_cave<099>} };
-  #else { #var {key_cave} {%0}; #echo {\$key_cave set to: <049>$key_cave<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_cave<099> set to: <f7C4DFF>$key_cave<099>} };
+  #else { #var {key_cave} {%0}; #echo {<f437AED>\$key_cave<099> set to: <f7C4DFF>$key_cave<099>} };
 }
 
 #alias {key_brolg} {
-  #if { "%0" == "" } { #echo {\$key_brolg set to: <049>$key_brolg<099>} };
-  #else { #var {key_brolg} {%0}; #echo {\$key_brolg set to: <049>$key_brolg<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_brolg<099> set to: <f7C4DFF>$key_brolg<099>} };
+  #else { #var {key_brolg} {%0}; #echo {<f437AED>\$key_brolg<099> set to: <f7C4DFF>$key_brolg<099>} };
 }
 
 #alias {key_khuzur} {
-  #if { "%0" == "" } { #echo {\$key_khuzur set to: <049>$key_khuzur<099>} };
-  #else { #var {key_khuzur} {%0}; #echo {\$key_khuzur set to: <049>$key_khuzur<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_khuzur<099> set to: <f7C4DFF>$key_khuzur<099>} };
+  #else { #var {key_khuzur} {%0}; #echo {<f437AED>\$key_khuzur<099> set to: <f7C4DFF>$key_khuzur<099>} };
 }
 
 #alias {key_epriest} {
-  #if { "%0" == "" } { #echo {\$key_epriest set to: <049>$key_epriest<099>} };
-  #else { #var {key_epriest} {%0}; #echo {\$key_epriest set to: <049>$key_epriest<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_epriest<099> set to: <f7C4DFF>$key_epriest<099>} };
+  #else { #var {key_epriest} {%0}; #echo {<f437AED>\$key_epriest<099> set to: <f7C4DFF>$key_epriest<099>} };
 }
 
 #alias {key_moria} {
-  #if { "%0" == "" } { #echo {\$key_moria set to: <049>$key_moria<099>} };
-  #else { #var {key_moria} {%0}; #echo {\$key_moria set to: <049>$key_moria<099>} };
+  #if { "%0" == "" } { #echo {<f437AED>\$key_moria<099> set to: <f7C4DFF>$key_moria<099>} };
+  #else { #var {key_moria} {%0}; #echo {<f437AED>\$key_moria<099> set to: <f7C4DFF>$key_moria<099>} };
 }
 
 #alias scry {cast n 'scry' $key; #echo {cast n 'scry' $key}}
@@ -128,31 +128,16 @@
 
 #action {key: '%w'} {
   #var {key} {%1};
-  #echo {\$key set to: $key}
+  #echo {<f437AED>\$key<099> set to: <f7C4DFF>$key<099>}
 }
 
 #alias keys {
-  #if { "$key_dt" == "none" } { #echo {\$key_dt set to: <fff9e64>$key_dt<099> } };
-  #else { #echo {\$key_dt set to: <fff9e64>$key_dt<099> } };
-  
-  #if { "$key_vt" == "none" } { #echo {\$key_vt set to: <fff9e64>$key_vt<099> } };
-  #else { #echo {\$key_vt set to: <fff9e64>$key_vt<099> } };
-  
-  #if { "$key_lb" == "none" } { #echo {\$key_lb set to: <fff9e64>$key_lb<099> } };
-  #else { #echo {\$key_lb set to: <fff9e64>$key_lb<099> } };
-  
-  #if { "$key_cave" == "none" } { #echo {\$key_cave set to: <fff9e64>$key_cave<099> } };
-  #else { #echo {\$key_cave set to: <fff9e64>$key_cave<099> } };
-  
-  #if { "$key_brolg" == "none" } { #echo {\$key_brolg set to: <fff9e64>$key_brolg<099> } };
-  #else { #echo {\$key_brolg set to: <fff9e64>$key_brolg<099> } };
-  
-  #if { "$key_khuzur" == "none" } { #echo {\$key_khuzur set to: <fff9e64>$key_khuzur<099> } };
-  #else { #echo {\$key_khuzur set to: <fff9e64>$key_khuzur<099> } };
-  
-  #if { "$key_epriest" == "none" } { #echo {\$key_epriest set to: <fff9e64>$key_epriest<099> } };
-  #else { #echo {\$key_epriest set to: <fff9e64>$key_epriest<099> } };
-  
-  #if { "$key_moria" == "none" } { #echo {\$key_moria set to: <fff9e64>$key_moria<099> } };
-  #else { #echo {\$key_moria set to: <fff9e64>$key_moria<099> } };
+  #echo {<f437AED>\$key_dt<099>      set to: <f7C4DFF>$key_dt<099> };
+  #echo {<f437AED>\$key_vt<099>      set to: <f7C4DFF>$key_vt<099> };
+  #echo {<f437AED>\$key_lb<099>      set to: <f7C4DFF>$key_lb<099> };
+  #echo {<f437AED>\$key_cave<099>    set to: <f7C4DFF>$key_cave<099> };
+  #echo {<f437AED>\$key_brolg<099>   set to: <f7C4DFF>$key_brolg<099> };
+  #echo {<f437AED>\$key_khuzur<099>  set to: <f7C4DFF>$key_khuzur<099> };
+  #echo {<f437AED>\$key_epriest<099> set to: <f7C4DFF>$key_epriest<099> };
+  #echo {<f437AED>\$key_moria<099>   set to: <f7C4DFF>$key_moria<099> };
 }

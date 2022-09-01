@@ -28,10 +28,10 @@
 
 #alias {setMount} {
   #if {"%1" == ""} {
-    #echo {<f437AED>\$mount<099> set to: <fCD6069>$mount<099>}
+    #echo {<f437AED>\$mount<099> set to: <f7C4DFF>$mount<099>}
   } {
     #var {mount} {%0};
-    #echo {<f437AED>\$mount<099> set to: <fCD6069>$mount<099>}
+    #echo {<f437AED>\$mount<099> set to: <f7C4DFF>$mount<099>}
   }
 }
 
@@ -42,7 +42,7 @@
 
 #alias {mt} {
   #var {mount} {$target};
-  #echo {<f437AED>\$mount<099> set to: <fCD6069>$mount<099>}
+  #echo {<f437AED>\$mount<099> set to: <f7C4DFF>$mount<099>}
 }
 
 #alias {k} {

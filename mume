@@ -59,7 +59,7 @@
 #read scripts/doors.tin
 #read scripts/locate.tin
 #read scripts/leader.tin
-#read scripts/mixing.tin
+#nop read scripts/mixing.tin
 #read scripts/spell_timers.tin
 #read scripts/xp.tin
 #read scripts/highlights.tin

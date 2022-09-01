@@ -54,4 +54,4 @@
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {order $basher bash; #echo {order $basher bash}}
-#alias {^5$} {order $protector rescue lilura; #echo {order $protector rescue lilura}}
+#alias {^5$} {order $protector rescue saith; #echo {order $protector rescue saith}}

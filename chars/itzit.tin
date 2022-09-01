@@ -1,11 +1,11 @@
 #read scripts/blind.tin
 
-#alias {g} {
+#alias {br} {
   #if { "%0" == "" } {
-    shoot $target; #echo {shoot $target}
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
-    shoot %0; #echo {shoot %0}
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
   };
 }
 
@@ -17,15 +17,8 @@
     cast q 'black breath' %0; #echo {cast q 'black breath' %0}
   };
 }
-
-#alias {br} {
-  #if { "%0" == "" } {
-    cast 'black breath' $target; #echo {cast 'black breath' $target}
-  };
-  #else {
-    cast 'black breath' %0; #echo {cast 'black breath' %0}
-  };
-}
+#alias {g} {br}
+#alias {h} {bb}
 
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
@@ -42,3 +35,4 @@
 
 #alias {cloak} { remove scorched-fur; get cloak pack; wear cloak; put scorched-fur pack }
 #alias {fur} { remove cloak; get scorched-fur pack; wear scorched-fur; put cloak pack }
+#alias {robe} { remove robe; get robe pack; wear robe; put robe pack }

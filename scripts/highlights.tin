@@ -145,7 +145,7 @@
 #highlight {a few inkberries} {<f4E9A06>}
 #highlight {%w piles of inkberries} {<f4E9A06>}
 
-# Orc Draughts, Dark Draughts
+#nop Orc Draughts, Dark Draughts
 #highlight {a black, corrupted flower} {<fb84b1c>}
 #highlight {%w black, corrupted flowers} {<fb84b1c>}
 #highlight {a handful of narrow leaves} {<fb84b1c>}

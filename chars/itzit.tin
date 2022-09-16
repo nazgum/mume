@@ -1,5 +1,15 @@
 #read scripts/blind.tin
 
+#alias {burn} {
+  #if { "%0" == "" } {
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+  };
+  #else {
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+  };
+}
+#alias {g} {burn}
+
 #alias {br} {
   #if { "%0" == "" } {
     cast 'black breath' $target; #echo {cast 'black breath' $target}
@@ -17,8 +27,7 @@
     cast q 'black breath' %0; #echo {cast q 'black breath' %0}
   };
 }
-#alias {g} {br}
-#alias {h} {bb}
+#alias {h} {br}
 
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}

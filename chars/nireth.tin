@@ -1,9 +1,9 @@
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'silence' $target; #echo {cast 'silence' $target}
+    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
   };
   #else {
-    cast 'silence' %0; #echo {cast 'silence' %0}
+    cast q 'lightning bolt' %0; #echo {cast q 'lightning bolt' %0}
   };
 }
 
@@ -16,19 +16,9 @@
   };
 }
 
-#alias {b} {
-  #if { "%0" == "" } {
-    back $target; #echo {back $target}
-  };
-  #else {
-    back %0; #echo {back %0}
-  };
-}
-
-
 #var {bag} {sable}
 
-#alias {rec} {get all.bolt all.corpse; get all.bolt; put all.bolt case}
+#alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
 #alias {reload} {get all.bolt $bag; put all.bolt case}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}

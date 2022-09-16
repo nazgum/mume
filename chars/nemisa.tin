@@ -1,22 +1,4 @@
-#alias {sil} {
-  #if { "%0" == "" } {
-    cast 'silence' $target; #echo {cast 'silence' $target}
-  };
-  #else {
-    cast 'silence' %0; #echo {cast 'silence' %0}
-  };
-}
-#alias {g} {sil}
-
-#alias {dm} {
-  #if { "%0" == "" } {
-    cast 'dispel magic' $target; #echo {cast 'dispel magic' $target}
-  };
-  #else {
-    cast 'dispel magic' %0; #echo {cast 'dispel magic' %0}
-  };
-}
-#alias {h} {dm}
+#read scripts/sleep.tin
 
 #alias {sleep} {
   #if { "%0" == "" } {
@@ -63,9 +45,6 @@
   };
 }
 
-#alias {fur} { remove cloak; get wargfur $bag; wear wargfur; put cloak $bag }
-#alias {cloak} { remove wargfur; get cloak $bag; wear cloak; put wargfur $bag }
-#alias {rec} {get all.bolt all.corpse; get all.bolt; put all.bolt case}
 #alias {reload} {get all.bolt sable; put all.bolt case}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}

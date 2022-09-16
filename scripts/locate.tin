@@ -19,7 +19,7 @@
 
 #alias {key1} {
   #if { "%0" == "" } { #echo {<f437AED>\$key1<099> set to: <f7C4DFF>$key1<099>} };
-  #else { #var {key1} {%0}; #echo {<f437AED>\$key1<099> set to: <f7C4DFF>$key1<099>>} };
+  #else { #var {key1} {%0}; #echo {<f437AED>\$key1<099> set to: <f7C4DFF>$key1<099>} };
 }
 
 #alias {key2} {
@@ -98,32 +98,32 @@
 #alias wr_epriest {cast n 'watch room' $key_epriest; #echo {cast n 'watch room' $key_epriest}}
 #alias wr_moria {cast n 'watch room' $key_moria; #echo {cast n 'watch room' $key_moria}}
 
-#alias tp {cast n 'teleport' $key; #echo {cast n 'teleport' $key}}
-#alias tp1 {cast n 'teleport' $key1; #echo {cast n 'teleport' $key1}}
-#alias tp2 {cast n 'teleport' $key2; #echo {cast n 'teleport' $key2}}
-#alias tp3 {cast n 'teleport' $key3; #echo {cast n 'teleport' $key3}}
-#alias tp_dt {cast n 'teleport' $key_dt; #echo {cast n 'teleport' $key_dt}}
-#alias tp_vt {cast n 'teleport' $key_vt; #echo {cast n 'teleport' $key_vt}}
-#alias tp_lb {cast n 'teleport' $key_lb; #echo {cast n 'teleport' $key_lb}}
-#alias tp_cave {cast n 'teleport' $key_cave; #echo {cast n 'teleport' $key_cave}}
-#alias tp_brolg {cast n 'teleport' $key_brolg; #echo {cast n 'teleport' $key_brolg}}
-#alias tp_khuzur {cast n 'teleport' $key_khuzur; #echo {cast n 'teleport' $key_khuzur}}
-#alias tp_epriest {cast n 'teleport' $key_epriest; #echo {cast n 'teleport' $key_epriest}}
-#alias tp_moria {cast n 'teleport' $key_moria; #echo {cast n 'teleport' $key_moria}}
+#alias tp {cast 'teleport' $key; #echo {cast 'teleport' $key}}
+#alias tp1 {cast 'teleport' $key1; #echo {cast 'teleport' $key1}}
+#alias tp2 {cast 'teleport' $key2; #echo {cast 'teleport' $key2}}
+#alias tp3 {cast 'teleport' $key3; #echo {cast 'teleport' $key3}}
+#alias tp_dt {cast 'teleport' $key_dt; #echo {cast 'teleport' $key_dt}}
+#alias tp_vt {cast 'teleport' $key_vt; #echo {cast 'teleport' $key_vt}}
+#alias tp_lb {cast 'teleport' $key_lb; #echo {cast 'teleport' $key_lb}}
+#alias tp_cave {cast 'teleport' $key_cave; #echo {cast 'teleport' $key_cave}}
+#alias tp_brolg {cast 'teleport' $key_brolg; #echo {cast 'teleport' $key_brolg}}
+#alias tp_khuzur {cast 'teleport' $key_khuzur; #echo {cast 'teleport' $key_khuzur}}
+#alias tp_epriest {cast 'teleport' $key_epriest; #echo {cast 'teleport' $key_epriest}}
+#alias tp_moria {cast 'teleport' $key_moria; #echo {cast 'teleport' $key_moria}}
 
 
-#alias portal {cast n 'portal' $key; #echo {cast n 'portal' $key}}
-#alias portal1 {cast n 'portal' $key1; #echo {cast n 'portal' $key1}}
-#alias portal2 {cast n 'portal' $key2; #echo {cast n 'portal' $key2}}
-#alias portal3 {cast n 'portal' $key3; #echo {cast n 'portal' $key3}}
-#alias portal_dt {cast n 'portal' $key_dt; #echo {cast n 'portal' $key_dt}}
-#alias portal_vt {cast n 'portal' $key_vt; #echo {cast n 'portal' $key_vt}}
-#alias portal_lb {cast n 'portal' $key_lb; #echo {cast n 'portal' $key_lb}}
-#alias portal_cave {cast n 'portal' $key_cave; #echo {cast n 'portal' $key_cave}}
-#alias portal_brolg {cast n 'portal' $key_brolg; #echo {cast n 'portal' $key_brolg}}
-#alias portal_khuzur {cast n 'portal' $key_khuzur; #echo {cast n 'portal' $key_khuzur}}
-#alias portal_epriest {cast n 'portal' $key_epriest; #echo {cast n 'portal' $key_epriest}}
-#alias portal_moria {cast n 'portal' $key_moria; #echo {cast n 'portal' $key_moria}}
+#alias portal {cast n 'portal' down $key; #echo {cast n 'portal' down $key}}
+#alias portal1 {cast n 'portal' down $key1; #echo {cast n 'portal' down $key1}}
+#alias portal2 {cast n 'portal' down $key2; #echo {cast n 'portal' down $key2}}
+#alias portal3 {cast n 'portal' down $key3; #echo {cast n 'portal' down $key3}}
+#alias portal_dt {cast n 'portal' down $key_dt; #echo {cast n 'portal' down $key_dt}}
+#alias portal_vt {cast n 'portal' down $key_vt; #echo {cast n 'portal' down $key_vt}}
+#alias portal_lb {cast n 'portal' down $key_lb; #echo {cast n 'portal' down $key_lb}}
+#alias portal_cave {cast n 'portal' down $key_cave; #echo {cast n 'portal' down $key_cave}}
+#alias portal_brolg {cast n 'portal' down $key_brolg; #echo {cast n 'portal' down $key_brolg}}
+#alias portal_khuzur {cast n 'portal' down $key_khuzur; #echo {cast n 'portal' down $key_khuzur}}
+#alias portal_epriest {cast n 'portal' down $key_epriest; #echo {cast n 'portal' down $key_epriest}}
+#alias portal_moria {cast n 'portal' down $key_moria; #echo {cast n 'portal' down $key_moria}}
 
 
 #action {key: '%w'} {
@@ -132,6 +132,9 @@
 }
 
 #alias keys {
+  #echo {<f437AED>\$key1<099>        set to: <f7C4DFF>$key1<099> };
+  #echo {<f437AED>\$key2<099>        set to: <f7C4DFF>$key2<099> };
+  #echo {<f437AED>\$key3<099>        set to: <f7C4DFF>$key3<099> };
   #echo {<f437AED>\$key_dt<099>      set to: <f7C4DFF>$key_dt<099> };
   #echo {<f437AED>\$key_vt<099>      set to: <f7C4DFF>$key_vt<099> };
   #echo {<f437AED>\$key_lb<099>      set to: <f7C4DFF>$key_lb<099> };

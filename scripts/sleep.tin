@@ -1,0 +1,89 @@
+#alias {b} {
+  #if { "%0" == "" } {
+    cast 'sleep' $target; #echo {cast 'sleep' $target}
+  };
+  #else {
+    cast 'sleep' %0; #echo {cast 'sleep' %0}
+  };
+}
+
+#alias {b1} {
+  #if { "%0" == "" } {
+    cast 'sleep' 1.$target; #echo {cast 'sleep' 1.$target}
+  };
+  #else {
+    cast 'sleep' 1.%0; #echo {cast 'sleep' 1.%0}
+  };
+}
+
+#alias {b2} {
+  #if { "%0" == "" } {
+    cast 'sleep' 2.$target; #echo {cast 'sleep' 2.$target}
+  };
+  #else {
+    cast 'sleep' 2.%0; #echo {cast 'sleep' 2.%0}
+  };
+}
+
+#alias {b3} {
+  #if { "%0" == "" } {
+    cast 'sleep' 3.$target; #echo {cast 'sleep' 3.$target}
+  };
+  #else {
+    cast 'sleep' 3.%0; #echo {cast 'sleep' 3.%0}
+  };
+}
+
+#alias {b4} {
+  #if { "%0" == "" } {
+    cast 'sleep' 4.$target; #echo {cast 'sleep' 4.$target}
+  };
+  #else {
+    cast 'sleep' 4.%0; #echo {cast 'sleep' 4.%0}
+  };
+}
+
+#alias {b5} {
+  #if { "%0" == "" } {
+    cast 'sleep' 5.$target; #echo {cast 'sleep' 5.$target}
+  };
+  #else {
+    cast 'sleep' 5.%0; #echo {cast 'sleep' 5.%0}
+  };
+}
+
+#alias {b6} {
+  #if { "%0" == "" } {
+    cast 'sleep' 6.$target; #echo {cast 'sleep' 6.$target}
+  };
+  #else {
+    cast 'sleep' 6.%0; #echo {cast 'sleep' 6.%0}
+  };
+}
+
+#alias {b7} {
+  #if { "%0" == "" } {
+    cast 'sleep' 7.$target; #echo {cast 'sleep' 7.$target}
+  };
+  #else {
+    cast 'sleep' 7.%0; #echo {cast 'sleep' 7.%0}
+  };
+}
+
+#alias {bl} {
+  #if { "%0" == "" } {
+    cast c 'sleep' $target; #echo {cast c 'sleep' $target}
+  };
+  #else {
+    cast c 'sleep' %0; #echo {cast c 'sleep' %0}
+  };
+}
+
+#alias {qb} {
+  #if { "%0" == "" } {
+    cast q 'sleep' $target; #echo {cast q 'sleep' $target}
+  };
+  #else {
+    cast q 'sleep' %0; #echo {cast q 'sleep' %0}
+  };
+}

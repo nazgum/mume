@@ -65,13 +65,14 @@
 #read scripts/highlights.tin
 #read scripts/prompt.tin
 #read scripts/azra.tin
+#read scripts/who.tin
 #read subs/time.tin
 #read subs/keys.tin
 #read subs/lockpicks.tin
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/nireth.tin
+#read chars/itzit.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4242}

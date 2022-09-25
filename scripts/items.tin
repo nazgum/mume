@@ -21,7 +21,7 @@
 #alias {root} {remove 2.ring; get rootring $bag; wear ring; put ring $bag}
 #alias {arda} {remove 2.ring; get arda $bag; wear arda; put ring $bag}
 #alias {icy} {remove 2.ring; get icyring $bag; wear ring; put ring $bag}
-#alias {wooden} {remove 2.ring; get woodenring $bag; wear woodenring; put ring $bag}
+#alias {wooden} {remove 2.ring; put ring $bag; get woodenring $bag; wear woodenring}
 #alias {pow} {use small-pouch}
 #alias {stun} {use small-pouch}
 #alias {reload} {get small-pouch $bag; wear small-pouch}

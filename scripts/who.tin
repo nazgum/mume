@@ -1,0 +1,20 @@
+#var {players}
+
+#gag {^%1 players on.}
+#gag {^%1 allies and visible Ainur on.}
+
+#action {^%1 players on.} {
+  #script {ruby scripts/who.rb};
+  
+  #echo {};
+  #echo {%1 visible players online.};
+  #echo {$players accounts logged in recently.};
+}
+
+#action {^%1 allies and visible Ainur on.} {
+  #script {ruby scripts/who.rb};
+  
+  #echo {};
+  #echo {%1 visible players online.};
+  #echo {$players accounts logged in recently.};
+}

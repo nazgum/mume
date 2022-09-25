@@ -23,6 +23,7 @@
 #nop Artifacts
 #highlight {the Dragonhelm} {<f970b16>}
 #highlight {the Morgul blade} {<f970b16>}
+#highlight {a strange black helmet} {<f970b16>}
 #highlight {the black sheath} {<f970b16>}
 #highlight {the great black scimitar} {<f970b16>}
 #highlight {a crown of bones} {<f970b16>}
@@ -180,10 +181,11 @@
 #highlight {%w-%w vials of preserved blood} {<fa4390b>}
 
 #nop Draughts
-#highlight {a flask of orkish draught} {<fa4390b>}
-#highlight {%w flasks of orkish draught} {<fa4390b>}
-#highlight {a scorched leather flask} {<fa4390b>}
-#highlight {%w scorched leather flasks} {<fa4390b>}
+#highlight {a flask of orkish draught} {<f008ec4>}
+#highlight {%w flasks of orkish draught} {<f008ec4>}
+#highlight {a scorched leather flask} {<f008ec4>}
+#highlight {%w scorched leather flasks} {<f008ec4>}
+
 
 #nop Scrolls, Rocks, Pouches, Gear that affects fights
 #highlight {a wooden ring} {<f008ec4>}

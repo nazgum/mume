@@ -1,8 +1,9 @@
 #var {players}
 
 #gag {^%1 allies and visible Ainur on.}
+#gag {^%1 allies on.}
 
-#action {^%1 allies and visible Ainur on.} {
+#action {^%1 allies } {
   #script {ruby scripts/who.rb};
   
   #echo {};

@@ -2,16 +2,8 @@
 
 #gag {^%1 allies and visible Ainur on.}
 #gag {^%1 allies on.}
-
-#action {^%1 allies and visible Ainur on.} {
-  who_count %1;
-}
-
-#action {^%1 allies on.} {
-  who_count %1;
-}
-
-#alias {who_count} {
+ 
+#action {^%1 allies{ and visible Ainur|} on.$} {
   #script {ruby scripts/who.rb};
   
   #echo {};

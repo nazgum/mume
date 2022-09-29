@@ -1,4 +1,4 @@
 require 'open-uri'
 
-puts URI.open("http://nazgum.com/mume/player-count.txt").read
+puts URI.open("https://nazgum.com/mume/player-count.txt").read
 

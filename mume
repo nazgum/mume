@@ -71,7 +71,7 @@
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/atzot.tin
+#read chars/itzit.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4242}

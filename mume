@@ -59,7 +59,6 @@
 #read scripts/doors.tin
 #read scripts/locate.tin
 #read scripts/leader.tin
-#nop read scripts/mixing.tin
 #read scripts/spell_timers.tin
 #read scripts/xp.tin
 #read scripts/highlights.tin
@@ -72,7 +71,7 @@
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/itzit.tin
+#read chars/atzot.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4242}

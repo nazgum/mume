@@ -18,3 +18,8 @@
   #echo {%1 visible players online.};
   #echo {$players accounts logged in recently.};
 }
+
+#alias {acc} {
+  #script {ruby scripts/who.rb};
+  #echo {$players accounts logged in recently.};
+}

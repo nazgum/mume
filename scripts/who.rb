@@ -1,4 +1,2 @@
-require 'open-uri'
-
-count = URI.open("https://nazgum.com/mume/player-count.txt").read.to_i
+count = File.open("/home/nazgum/mume/scripts/player-count.txt") {|f| f.read }
 puts "#var {players} {#{count}}"

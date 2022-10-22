@@ -13,23 +13,22 @@
   #var {battle} {off};
   #showme {$prompt_data} {0};
   
-  #UNMACRO {^,} {#echo {n}; n};
-  #UNMACRO {^o} {#echo {s}; s};
-  #UNMACRO {^e} {#echo {e}; e};
-  #UNMACRO {^a} {#echo {w}; w};
-  #UNMACRO {^.} {#echo {u}; u};
-  #UNMACRO {^;} {#echo {d}; d};
+  #UNMACRO {^,};
+  #UNMACRO {^o};
+  #UNMACRO {^e};
+  #UNMACRO {^a};
+  #UNMACRO {^u};
+  #UNMACRO {^i};
+  #UNMACRO {^.};
+  #UNMACRO {^;};
   
-  #UNMACRO {^y} {#echo {f}; f};
-  #UNMACRO {^'} {#echo {f}; f};
+  #UNMACRO {^y};
+  #UNMACRO {^p};
   
-  #UNMACRO {^j} {od};
-  #UNMACRO {^q} {ud};
-  #UNMACRO {^k} {cd};
-  #UNMACRO {^x} {ld};
-  
-  #UNMACRO {^u} {kt};
-  #UNMACRO {^i} {g};
+  #UNMACRO {^q};
+  #UNMACRO {^j};
+  #UNMACRO {^k};
+  #UNMACRO {^x};
 }
 
 #alias {enableBattle} {
@@ -40,17 +39,16 @@
   #MACRO {^o} {#echo {s}; s};
   #MACRO {^e} {#echo {e}; e};
   #MACRO {^a} {#echo {w}; w};
+  #MACRO {^u} {#echo {h}; h};
+  #MACRO {^i} {#echo {g}; g};
   #MACRO {^.} {#echo {u}; u};
   #MACRO {^;} {#echo {d}; d};
   
   #MACRO {^y} {#echo {f}; f};
-  #MACRO {^'} {#echo {f}; f};
+  #MACRO {^p} {#echo {f}; f};
   
+  #MACRO {^q} {cd};
   #MACRO {^j} {od};
-  #MACRO {^q} {ud};
-  #MACRO {^k} {cd};
-  #MACRO {^x} {ld};
-  
-  #MACRO {^u} {kt};
-  #MACRO {^i} {g};
+  #MACRO {^k} {kt};
+  #MACRO {^x} {escape};
 }

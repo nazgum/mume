@@ -30,14 +30,15 @@
     cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
+#alias {g} {bh}
 #alias {h} {bh}
 
 #alias {b} {
   #if { "%0" == "" } {
-    cast 'silence' $target; #echo {cast 'silence' $target}
+    cast 'charm' $target; #echo {cast 'charm' $target}
   };
   #else {
-    cast 'silence' %0; #echo {cast 'silence' %0}
+    cast 'charm' %0; #echo {cast 'charm' %0}
   };
 }
 
@@ -46,10 +47,9 @@
 #alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
 #alias {cc} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use garnet-ring}
 
-#alias {1h} {remove buckler; wield axe 1; get staff $bag; wear staff; put buckler $bag}
-#alias {2h} {remove staff; wield warsword; get buckler $bag; wear buckler; put staff $bag}
+#alias {1h} {wield 1; wear tower}
+#alias {2h} {remove tower; wield 2}
 #alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
-#alias {circ} { remove helmet; get crown $bag; wear crown; put helmet $bag }
 
 
 #alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}

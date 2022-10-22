@@ -16,6 +16,15 @@
   };
 }
 
+#alias {b} {
+  #if { "%0" == "" } {
+    backstab $target; #echo {backstab $target}
+  };
+  #else {
+    backstab %0; #echo {backstab %0}
+  };
+}
+
 #var {bag} {pack}
 
 #alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}

@@ -1,22 +1,12 @@
-#read scripts/blind.tin
-
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'blind' $target; #echo {cast 'blind' $target}
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
   };
   #else {
-    cast 'blind' %0; #echo {cast 'blind' %0}
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
-
-#alias {h} {
-  #if { "%0" == "" } {
-    cast 'hold' $target; #echo {cast 'hold' $target}
-  };
-  #else {
-    cast 'hold' %0; #echo {cast 'hold' %0}
-  };
-}
+#alias {h} {g}
 
 #alias {b} {
   #if { "%0" == "" } {
@@ -28,10 +18,18 @@
 }
 
 
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue nazgum}
+#alias {^6$} {k $mount}
+#alias {^7$} {k $mount}
+#alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
+#alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
+
+
 #var {bag} {pack}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
-#alias {reload} {get all.bolt $bag; put all.bolt case}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
-#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
-#alias {curec} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use emerald-ring}

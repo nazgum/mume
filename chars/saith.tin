@@ -1,5 +1,3 @@
-#read scripts/blind.tin
-
 #var {bag} {pack}
 #var {basher} {followers}
 #var {protector} {followers}
@@ -24,31 +22,38 @@
   };
 }
 
-#alias {g} {
+#alias {burn} {
   #if { "%0" == "" } {
-    cast 'smother' $target; #echo {cast 'smother' $target}
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
   };
   #else {
-    cast 'smother' %0; #echo {cast 'smother' %0}
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
+#alias {g} {burn}
 
-#alias {b} {
+#alias {h} {
   #if { "%0" == "" } {
-    cast 'blind' $target; #echo {cast 'blind' $target}
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
   };
   #else {
-    cast 'blind' %0; #echo {cast 'blind' %0}
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
   };
 }
+#alias {bolt} {h}
 
-#unalias {str}
+#alias {charm} {
+  #if { "%0" == "" } {
+    cast 'charm' $target; #echo {cast 'charm' $target}
+  };
+  #else {
+    cast 'charm' %0; #echo {cast 'charm' %0}
+  };
+}
+#alias {b} {charm}
 
-#alias {^.$} {shoot $target; #echo {shoot $target}}
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sword; put pipe $bag }
-#alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
-#alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
-#alias {circ} { remove helmet; get crown $bag; wear crown; put helmet $bag }
+#alias {pipe} {wield pipe; rest; smoke pipe; st; wield scourge }
+#alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
 
 #alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}

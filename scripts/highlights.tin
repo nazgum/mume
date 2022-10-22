@@ -55,6 +55,8 @@
 #highlight {a fell blade} {<f7C4DFF>}
 #highlight {a black runed dagger} {<f7C4DFF>} 
 #highlight {a blackened spear} {<f7C4DFF>} 
+#highlight {a wicked Durbûk-hai axe} {<f7C4DFF>}
+#highlight {an elven longbow} {<f7C4DFF>} 
 #highlight {a burnished hewing-spear} {<f7C4DFF>}
 #highlight {a great warsword} {<f7C4DFF>}
 #highlight {a steel claymore} {<f7C4DFF>}
@@ -77,6 +79,7 @@
 #highlight {a necklace} {<f7C4DFF>}
 #highlight {a coarse dusky robe} {<f7C4DFF>}
 #highlight {a pitch-black robe} {<f7C4DFF>}
+#highlight {a black, hooded cloak} {<f7C4DFF>}
 #highlight {a crossbow} {<f7C4DFF>}
 #highlight {a metal-cased bolt} {<f7C4DFF>}
 #highlight {%w metal-cased bolts} {<f7C4DFF>}
@@ -105,10 +108,9 @@
 #highlight {a golden ruby ring} {<faf249f>}
 #highlight {a golden garnet ring} {<faf249f>}
 #highlight {a golden emerald ring} {<faf249f>}
-#highlight {a mighty dwarven axe} {<faf249f>}
 #highlight {a blackened dwarven axe} {<faf249f>}
 #highlight {a darkened orkish axe} {<faf249f>}
-#highlight {a wicked Durbûk-hai axe} {<faf249f>}
+#highlight {a mighty dwarven axe} {<faf249f>}
 #highlight {a pair of black arm wrappings} {<faf249f>}
 #highlight {a yew longbow} {<faf249f>}
 #highlight {an embellished longbow} {<faf249f>}
@@ -132,7 +134,6 @@
 #highlight {an archer's wrist guard} {<faf249f>}
 #highlight {a lambent amulet} {<faf249f>}
 #highlight {a fine grey cloak} {<faf249f>}
-#highlight {a black, hooded cloak} {<faf249f>}
 #highlight {a soot-black bear hide} {<faf249f>}
 #highlight {an enhanced herbal kit} {<faf249f>}
 #highlight {a strange set of lock picks} {<faf249f>}
@@ -202,14 +203,15 @@
 #highlight {a pale blue stone} {<f008ec4>}
 #nop old color fb84b1c
 
-#nop Spells
-#highlight {- armour} {<f9ece6a>}
-#highlight {- shield} {<f9ece6a>}
-#highlight {- detect magic} {<f9ece6a>}
-#highlight {- breath of briskness} {<f9ece6a>}
-#highlight {- strength} {<f9ece6a>}
-#highlight {- shroud} {<f9ece6a>}
-#highlight {- sanctuary} {<f9ece6a>}
+#nop Spells  f9ece6a
+#highlight {- armour} {<f888888>}
+#highlight {- shield} {<f888888>}
+#highlight {- detect magic} {<f888888>}
+#highlight {- breath of briskness} {<f888888>}
+#highlight {- strength} {<f888888>}
+#highlight {- shroud} {<f888888>}
+#highlight {- sanctuary} {<f888888>}
+#highlight {- shadow-veil} {<f970b16>}
 
 #nop Spells Down
 #highlight {^Your magical shield wears off.} {<faf249f>}

@@ -31,6 +31,8 @@
 #alias {swap} {rm vial; wear 2.vial}
 #alias {scorch} {get scorched $bag; quaff flask}
 #alias {scorched} {get scorched $bag; quaff flask}
-#alias {morgul} {get sheath $bag; wear sheath; draw}
-#alias {morg} {get sheath $bag; wear sheath; draw}
-#alias {nomorg} {draw; rm 2.sheath; put sheath $bag}
+#alias {morgul} {draw sheath}
+#alias {morg} {draw sheath}
+#alias {nomorg} {draw blade}
+#alias {eqmorg} {get sheath $bag; wear sheath}
+#alias {himorg} {remove sheath; put sheath $bag}

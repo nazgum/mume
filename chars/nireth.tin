@@ -25,11 +25,10 @@
   };
 }
 
-#var {bag} {pack}
+#var {bag} {quiver}
 
 #alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
 #alias {reload} {get all.bolt $bag; put all.bolt case}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
-#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}

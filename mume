@@ -58,6 +58,7 @@
 #read scripts/battle.tin
 #read scripts/doors.tin
 #read scripts/locate.tin
+#read scripts/id.tin
 #read scripts/leader.tin
 #read scripts/spell_timers.tin
 #read scripts/xp.tin

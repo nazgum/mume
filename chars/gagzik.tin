@@ -1,11 +1,4 @@
-#alias {h} {
-  #if { "%0" == "" } {
-    cast q 'shocking grasp' $target; #echo {cast q 'shocking grasp' $target}
-  };
-  #else {
-    cast q 'shocking grasp' %0; #echo {cast q 'shocking grasp' %0}
-  };
-}
+#read scripts/blind.tin
 
 #alias {g} {
   #if { "%0" == "" } {
@@ -13,6 +6,15 @@
   };
   #else {
     cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
 
@@ -32,9 +34,8 @@
 #alias {^5$} {of rescue gagzik}
 
 #alias {^.$} {bash $target; #echo {bash $target}}
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe $bag }
-#alias {fur} { remove cloak; get grisly-fur $bag; wear grisly-fur; put cloak $bag }
-#alias {cloak} { remove grisly-fur; get cloak $bag; wear cloak; put grisly-fur $bag }
-#alias {robe} { remove jerkin; get robe $bag; wear robe; put jerkin $bag }
-#alias {shirt} { remove robe; get jerkin $bag; wear jerkin; put robe $bag }
-#alias {jerkin} { remove robe; get jerkin $bag; wear jerkin; put robe $bag }
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
+#alias {cloak} { remove cloak; get cloak $bag; wear cloak; put cloak $bag }
+#alias {crown} { remove cap; get crown $bag; wear crown; put cap $bag }
+#alias {hood} { remove crown; get cap $bag; wear cap; put crown $bag }
+#alias {robe} { remove robe; get robe $bag; wear robe; put robe $bag }

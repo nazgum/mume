@@ -8,18 +8,17 @@
     cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
-
 #alias {g} {burn}
 
-#alias {bb} {
+#alias {dispel} {
   #if { "%0" == "" } {
-    cast 'black breath' $target; #echo {cast 'black breath' $target}
+    cast 'dispel evil' $target; #echo {cast 'dispel evil' $target}
   };
   #else {
-    cast 'black breath' %0; #echo {cast 'black breath' %0}
+    cast 'dispel evil' %0; #echo {cast 'dispel evil' %0}
   };
 }
-#alias {h} {bb}
+#alias {h} {dispel}
 
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
@@ -27,12 +26,8 @@
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue itzit}
-#alias {^6$} {k $mount}
-#alias {^7$} {k $mount}
-#alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
-#alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 
-#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^.$} {bash $target; #echo {bash $target}}
 
 #alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
 #alias {robe} { remove robe; get robe pack; wear robe; put robe pack }

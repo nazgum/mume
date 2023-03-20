@@ -1,5 +1,3 @@
-#read scripts/blind.tin
-
 #alias {burn} {
   #if { "%0" == "" } {
     cast 'burning hands' $target; #echo {cast 'burning hands' $target}
@@ -20,14 +18,10 @@
 }
 #alias {h} {dispel}
 
-
-#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {of bash}
-#alias {^5$} {of rescue itzit}
+#unalias {str}
 
 #alias {^.$} {bash $target; #echo {bash $target}}
 
 #alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
 #alias {robe} { remove robe; get robe pack; wear robe; put robe pack }
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe $bag }

@@ -1,9 +1,9 @@
 #alias {g} {
   #if { "%0" == "" } {
-    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
+    cast 'call lightning' $target; #echo {cast 'call lightning' $target}
   };
   #else {
-    cast q 'lightning bolt' %0; #echo {cast q 'lightning bolt' %0}
+    cast 'call lightning' %0; #echo {cast 'call lightning' %0}
   };
 }
 

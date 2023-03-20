@@ -1,26 +1,4 @@
 #var {bag} {pack}
-#var {basher} {followers}
-#var {protector} {followers}
-
-#alias {basher} {
-  #if { "%0" == "" } {
-    #echo {basher set to: <049>$basher<099>}
-  };
-  #else {
-    #var {basher} {%0};
-    #echo {basher set to: <049>$basher<099>}
-  };
-}
-
-#alias {protector} {
-  #if { "%0" == "" } {
-    #echo {protector set to: <049>$protector<099>}
-  };
-  #else {
-    #var {protector} {%0};
-    #echo {protector set to: <049>$protector<099>}
-  };
-}
 
 #alias {h} {
   #if { "%0" == "" } {
@@ -31,16 +9,8 @@
   };
 }
 
+#alias {^.$} {bash $target; #echo {bash $target}}
+
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
 #alias {cloak} { remove grisly-fur; get cloak pack; wear cloak; put grisly-fur pack }
 #alias {fur} { remove cloak; get grisly-fur pack; wear grisly-fur; put cloak pack }
-
-
-#alias {^.$} {bash $target; #echo {bash $target}}
-
-#alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
-#alias {^2$} {of kill $target; #echo {of kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {order $basher bash; #echo {order $basher bash}}
-#alias {^5$} {order $protector rescue pugzuk; #echo {order $protector rescue pugzuk}}
-

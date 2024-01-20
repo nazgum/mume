@@ -2,10 +2,10 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+    cast 'hold' $target; #echo {cast 'hold' $target}
   };
   #else {
-    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+    cast 'hold' %0; #echo {cast 'hold' %0}
   };
 }
 

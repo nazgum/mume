@@ -49,7 +49,7 @@
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {d}  {u}  {32}
 
-#split
+#split 0 0
 
 #nop gameplay scripts
 #read scripts/target.tin
@@ -60,10 +60,8 @@
 #read scripts/locate.tin
 #read scripts/id.tin
 #read scripts/leader.tin
-#read scripts/spell_timers.tin
-#read scripts/xp.tin
-#read scripts/highlights.tin
-#read scripts/prompt.tin
+#read scripts/spell-timers.tin
+#read scripts/highlights-dark.tin
 #read scripts/azra.tin
 #read scripts/who.tin
 #read subs/time.tin
@@ -72,7 +70,7 @@
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/gagzik.tin
+#read chars/itzit.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4242}

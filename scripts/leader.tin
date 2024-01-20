@@ -1,10 +1,8 @@
 #var {leader} {none}
 #var {assister} {none}
-#var {auto_ride} {on}
 #var {auto_ass} {on}
 
 #alias {auto} {
-  #echo {auto ride: <049>$auto_ride<099>};
   #echo {auto assist: <049>$auto_ass<099>}
 }
 
@@ -15,30 +13,23 @@
   #echo {auto assist: <049>$auto_ass<099>}
 }
 
-#alias {autoride} {
-  #if {("%1" == "on") || ("%1" == "off")} {#var {auto_ride} {%1}};
-  #elseif {"$auto_ride" == "off"} {#var {auto_ride} {on}};
-  #else {#var {auto_ride} {off}};
-  #echo {auto ride: <049>$auto_ride<099>}
-}
-
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {<f437AED>\$leader<099> set to: <f7C4DFF>$leader<099>}
+    #echo {<fE5C890>\$leader<099> set to: <fE5C890>$leader<099>}
   };
   #else {
     #var {leader} {%0};
-    #echo {<f437AED>\$leader<099> set to: <f7C4DFF>$leader<099>}
+    #echo {<fE5C890>\$leader<099> set to: <fE5C890>$leader<099>}
   };
 }
 
 #alias {assister} {
   #if { "%0" == "" } {
-    #echo {<f437AED>\$assister<099> set to: <f7C4DFF>$assister<099>}
+    #echo {<fE5C890>\$assister<099> set to: <fE5C890>$assister<099>}
   };
   #else {
     #var {assister} {%0};
-    #echo {<f437AED>\$assister<099> set to: <f7C4DFF>$assister<099>}
+    #echo {<fE5C890>\$assister<099> set to: <fE5C890>$assister<099>}
   };
 }
 
@@ -46,9 +37,4 @@
   #if { "$auto_ass" == "on" } { assist }
 }
 
-#action {^$leader dismounts} { #if { "$auto_ride" == "on" }  { lead } }
-#action {^$leader picks up} { #if { "$auto_ride" == "on" }  { ride } }
-#action {^$leader grabs on} { #if { "$auto_ride" == "on" }  { ride } }
-
 #action {%w tells you 'trans'} {gr %1 trans}
-

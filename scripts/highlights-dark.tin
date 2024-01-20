@@ -4,25 +4,34 @@
 #highlight {(satisfactory)} {<f73daca>}
 #highlight {(used)} {<f73daca>}
 #highlight {(worn)} {<f73daca>}
-#highlight {(neglected)} {<f565f89>}
-#highlight {(marred)} {<f565f89>}
-#highlight {(unavailing)} {<f565f89>}
-#highlight {(deteriorating)} {<f565f89>}
-#highlight {(worn out)} {<f565f89>}
+#highlight {(neglected)} {<f6E78A4>}
+#highlight {(marred)} {<f6E78A4>}
+#highlight {(unavailing)} {<f6E78A4>}
+#highlight {(deteriorating)} {<f6E78A4>}
+#highlight {(worn out)} {<f6E78A4>}
 
-#nop Artifacts
+#nop Artifacts + God-Tier Items
 #highlight {the Dragonhelm} {<ff7768e>}
 #highlight {the Morgul blade} {<ff7768e>}
+#highlight {a strange black helmet} {<f970b16>}
 #highlight {the black sheath} {<ff7768e>}
 #highlight {the great black scimitar} {<ff7768e>}
 #highlight {a crown of bones} {<ff7768e>}
 #highlight {the black buckler} {<ff7768e>}
 #highlight {a dark curved sword} {<ff7768e>}
 #highlight {the Axe of Durin} {<ff7768e>}
+#highlight {the broad Elven blade} {<ff7768e>}
+#highlight {the slender Elven sword} {<ff7768e>}
+#highlight {the Elven shortsword with a runic inscription} {<ff7768e>}
+#highlight {the gleaming broadsword} {<ff7768e>}
+#highlight {the silvery broadsword} {<ff7768e>}
+#highlight {the Hammer of Belegost} {<ff7768e>}
+#highlight {a huge, black mace} {<ff7768e>}
 #highlight {a large visored helmet} {<ff7768e>}
 #highlight {a crude orkish horn} {<ff7768e>}
 #highlight {a soft pair of padded boots} {<ff7768e>}
 #highlight {a wooden ring} {<ff7768e>}
+#highlight {a pitch-black robe} {<ff7768e>}
 
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
@@ -133,38 +142,67 @@
 #highlight {a mildew covered vial} {<ff7768e>}
 #highlight {a foetid green vial} {<ff7768e>}
 
+#nop Poison Ingr
+#highlight {a sickly green mushroom} {<f8AC364>}
+#highlight {%w sickly green mushrooms} {<f8AC364>}
+#highlight {a bright red mushroom} {<f8AC364>}
+#highlight {%w bright red mushrooms} {<f8AC364>}
+#highlight {a grey fluid-sack} {<f8AC364>}
+#highlight {%w grey fluid-sacks} {<f8AC364>}
+#highlight {a small fluid-sack} {<f8AC364>}
+#highlight {%w small fluid-sacks} {<f8AC364>}
+#highlight {a short, moist tail} {<f8AC364>}
+#highlight {%w short, moist tails} {<f8AC364>}
+#highlight {some short, black fur} {<f8AC364>}
+#highlight {%w piles of short, black fur} {<f8AC364>}
+#highlight {a few inkberries} {<f8AC364>}
+#highlight {%w piles of inkberries} {<f8AC364>}
+#highlight {a hemlock plant} {<f8AC364>}
+#highlight {%w hemlock plants} {<f8AC364>}
+#highlight {a long, sticky bit of flesh} {<f8AC364>}
+#highlight {%w long, sticky bits of flesh} {<f8AC364>}
+
 #nop Draughts
 #highlight {a flask of orkish draught} {<ff7768e>}
 #highlight {%w flasks of orkish draught} {<ff7768e>}
 #highlight {a scorched leather flask} {<ff7768e>}
 #highlight {%w scorched leather flasks} {<ff7768e>}
 
-#nop Herbs
-#highlight {%1 handfuls of narrow leaves} {<fcfc9c2>}
-#highlight {%1 short, moist tails} {<fcfc9c2>}
-#highlight {%1 piles of short, black fur} {<fcfc9c2>}
-#highlight {%1 vials of preserved blood} {<fcfc9c2>}
-#highlight {%1 handfuls of clover} {<fcfc9c2>}
-#highlight {%1 man-like roots} {<fcfc9c2>}
-#highlight {%1 piles of grey-green leaves} {<fcfc9c2>}
-#highlight {%1 scented crushed leaves} {<fcfc9c2>}
-#highlight {%1 clusters of hard, round, black berries} {<fcfc9c2>}
-#highlight {%1 piles of sweet-smelling dried mauve petals} {<fcfc9c2>}
-#highlight {A low, many-branched shrub covers the ground here.} {<fcfc9c2>}
+#nop Orc + Dark Draught Ingr
+#highlight {a black, corrupted flower} {<fE5C890>}
+#highlight {%w black, corrupted flowers} {<fE5C890>}
+#highlight {a handful of narrow leaves} {<fE5C890>}
+#highlight {%w handfuls of narrow leaves} {<fE5C890>}
+#highlight {a vial of preserved blood} {<fE5C890>}
+#highlight {%w vials of preserved blood} {<fE5C890>}
+#highlight {%w-%w vials of preserved blood} {<fE5C890>}
+
+# nop Herb cols <fcfc9c2>
 
 #nop Scrolls
-#highlight {^a %w scroll} {<fff9e64>}
-#highlight {^an %w scroll} {<fff9e64>}
-#highlight {^%w %w scrolls} {<fff9e64>}
+#highlight {a wooden ring} {<fff9e64>}
+#highlight {an icy ring} {<fff9e64>}
+#highlight {a root ring} {<fff9e64>}
+#highlight {a %w scroll} {<fff9e64>}
+#highlight {an %w scroll} {<fff9e64>}
+#highlight {%w %w scrolls} {<fff9e64>}
+#highlight {a %w %w scroll} {<fff9e64>}
+#highlight {%w %w %W scrolls} {<fff9e64>}
+#highlight {a twisted rock fragment} {<fff9e64>}
+#highlight {a small pouch} {<fff9e64>}
+#highlight {%w small pouches} {<fff9e64>}
+#highlight {a pale blue stone} {<fff9e64>}
 
 #nop Spells
 #highlight {- armour} {<f9ece6a>}
 #highlight {- shield} {<f9ece6a>}
 #highlight {- detect magic} {<f9ece6a>}
 #highlight {- breath of briskness} {<f9ece6a>}
+#highlight {- sense-life} {<f9ece6a>}
 #highlight {- strength} {<f9ece6a>}
 #highlight {- shroud} {<f9ece6a>}
 #highlight {- sanctuary} {<f9ece6a>}
+#highlight {- shadow-veil} {<f9ece6a>}
 
 #nop Spells Down
 #highlight {^Your magical shield wears off.} {<ff7768e>}

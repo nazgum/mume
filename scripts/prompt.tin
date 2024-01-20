@@ -13,4 +13,4 @@
 }
 
 #nop Gag blank lines.
-#gag {^{(?:[\s]*)}$}
+#nop #gag {^{(?:[\s]*)}$}

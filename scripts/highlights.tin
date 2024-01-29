@@ -56,6 +56,7 @@
 #highlight {a black runed dagger} {<f7C4DFF>} 
 #highlight {a blackened spear} {<f7C4DFF>} 
 #highlight {a wicked Durbûk-hai axe} {<f7C4DFF>}
+#highlight {a mighty dwarven axe} {<f7C4DFF>}
 #highlight {an elven longbow} {<f7C4DFF>} 
 #highlight {a burnished hewing-spear} {<f7C4DFF>}
 #highlight {a great warsword} {<f7C4DFF>}
@@ -110,7 +111,6 @@
 #highlight {a golden emerald ring} {<faf249f>}
 #highlight {a blackened dwarven axe} {<faf249f>}
 #highlight {a darkened orkish axe} {<faf249f>}
-#highlight {a mighty dwarven axe} {<faf249f>}
 #highlight {a pair of black arm wrappings} {<faf249f>}
 #highlight {a yew longbow} {<faf249f>}
 #highlight {an embellished longbow} {<faf249f>}
@@ -240,7 +240,7 @@
 
 #nop Item Effects
 #highlight {some sort of liquid is smeared on it} {<f4E9A06>}
-#highlight {it has a soft glowing aura} {<f888888>}
+#highlight {it has a soft glowing aura} {<f849BA2>}
 
 #nop Notice
 #highlight {sleeping} {<f7C4DFF>}

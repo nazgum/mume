@@ -1,0 +1,81 @@
+#var {macros} {off}
+
+#MACRO {^=} {
+  #if {"$macros" == "on"} {
+    disableMacros;
+  };
+  #else {
+    enableMacros;
+  }
+}
+
+#alias {disableMacros} {
+  #var {macros} {off};
+  #echo {<f008ec4>\#SPEED OFF<099>};
+  
+  #UNMACRO {^n};
+  #UNMACRO {^s};
+  #UNMACRO {^e};
+  #UNMACRO {^w};
+  #UNMACRO {^u};
+  #UNMACRO {^d};
+  #UNMACRO {^c};
+  #UNMACRO {^o};
+  
+  #UNMACRO {^k};
+  #UNMACRO {^h};
+  #UNMACRO {^g};
+  #UNMACRO {^b};
+  #UNMACRO {^f};
+  #UNMACRO {^,};
+  #UNMACRO {^.};
+  
+  #UNMACRO {^p};
+  #UNMACRO {^y};
+  #UNMACRO {^r};
+  #UNMACRO {^l};
+  #UNMACRO {^a};
+  #UNMACRO {^i};
+  #UNMACRO {^t};
+  #UNMACRO {^q};
+  #UNMACRO {^j};
+  #UNMACRO {^x};
+  #UNMACRO {^v};
+  #UNMACRO {^z};
+}
+
+#alias {enableMacros} {
+  #var {macros} {on};
+  #echo {<f970b16>\#SPEED MODE<099>};
+  #showme {$prompt_data} {0};
+  
+  #MACRO {^n} {#echo {n}; n};
+  #MACRO {^s} {#echo {s}; s};
+  #MACRO {^e} {#echo {e}; e};
+  #MACRO {^w} {#echo {w}; w};
+  #MACRO {^u} {#echo {u}; u};
+  #MACRO {^d} {#echo {d}; d};
+  #MACRO {^c} {#echo {c}; c};
+  #MACRO {^o} {#echo {o}; o};
+
+  #MACRO {^k} {#echo {k}; k};
+  #MACRO {^h} {#echo {h}; h};
+  #MACRO {^g} {#echo {g}; g};
+  #MACRO {^b} {#echo {b}; b};
+  #MACRO {^f} {#echo {f}; f};
+  #MACRO {^,} {#echo {,}; ,};
+  #MACRO {^.} {#echo {.}; .};
+
+  #MACRO {^p} {disableMacros};
+  #MACRO {^y} {disableMacros};
+  #MACRO {^r} {disableMacros};
+  #MACRO {^l} {disableMacros};
+  #MACRO {^a} {disableMacros};
+  #MACRO {^i} {disableMacros};
+  #MACRO {^t} {disableMacros};
+  #MACRO {^q} {disableMacros};
+  #MACRO {^j} {disableMacros};
+  #MACRO {^x} {disableMacros};
+  #MACRO {^v} {disableMacros};
+  #MACRO {^z} {disableMacros};
+}

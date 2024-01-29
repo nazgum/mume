@@ -15,21 +15,21 @@
 
 #alias {leader} {
   #if { "%0" == "" } {
-    #echo {<fE5C890>\$leader<099> set to: <fE5C890>$leader<099>}
+    #echo {<f0074D5>\$leader<099> set to: <f0074D5>$leader<099>}
   };
   #else {
     #var {leader} {%0};
-    #echo {<fE5C890>\$leader<099> set to: <fE5C890>$leader<099>}
+    #echo {<f0074D5>\$leader<099> set to: <f0074D5>$leader<099>}
   };
 }
 
 #alias {assister} {
   #if { "%0" == "" } {
-    #echo {<fE5C890>\$assister<099> set to: <fE5C890>$assister<099>}
+    #echo {<f0074D5>\$assister<099> set to: <f0074D5>$assister<099>}
   };
   #else {
     #var {assister} {%0};
-    #echo {<fE5C890>\$assister<099> set to: <fE5C890>$assister<099>}
+    #echo {<f0074D5>\$assister<099> set to: <f0074D5>$assister<099>}
   };
 }
 

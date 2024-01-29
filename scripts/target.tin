@@ -13,10 +13,10 @@
 
 #alias {setTarget} {
   #if {"%1" == ""} {
-    #echo {<fE5C890>\$target<099> set to: <fE5C890>$target<099>}
+    #echo {<f0074D5>\$target<099> set to: <f0074D5>$target<099>}
   } {
     #var {target} {%0};
-    #echo {<fE5C890>\$target<099> set to: <fE5C890>$target<099>}
+    #echo {<f0074D5>\$target<099> set to: <f0074D5>$target<099>}
   }
 }
 
@@ -28,10 +28,10 @@
 
 #alias {setMount} {
   #if {"%1" == ""} {
-    #echo {<fE5C890>\$mount<099> set to: <fE5C890>$mount<099>}
+    #echo {<f0074D5>\$mount<099> set to: <f0074D5>$mount<099>}
   } {
     #var {mount} {%0};
-    #echo {<fE5C890>\$mount<099> set to: <fE5C890>$mount<099>}
+    #echo {<f0074D5>\$mount<099> set to: <f0074D5>$mount<099>}
   }
 }
 
@@ -42,7 +42,7 @@
 
 #alias {mt} {
   #var {mount} {$target};
-  #echo {<fE5C890>\$mount<099> set to: <fE5C890>$mount<099>}
+  #echo {<f0074D5>\$mount<099> set to: <f0074D5>$mount<099>}
 }
 
 #alias {k} {

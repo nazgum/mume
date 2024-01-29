@@ -53,15 +53,13 @@
 
 #nop gameplay scripts
 #read scripts/target.tin
-#read scripts/rent.tin
 #read scripts/items.tin
-#read scripts/battle.tin
 #read scripts/doors.tin
 #read scripts/locate.tin
 #read scripts/id.tin
 #read scripts/leader.tin
 #read scripts/spell-timers.tin
-#read scripts/highlights-dark.tin
+#read scripts/highlights.tin
 #read scripts/azra.tin
 #read scripts/who.tin
 #read subs/time.tin
@@ -70,7 +68,8 @@
 #read subs/herbalkit.tin
 #read subs/herbs.tin
 #read hidden/ignore.tin
-#read chars/doend.tin
+#read scripts/macro.tin
+#read chars/lilura.tin
 
 #event {PROGRAM START} {
   #session {mume} {localhost} {4242}

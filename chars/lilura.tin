@@ -22,7 +22,7 @@
   };
 }
 
-#alias {mm} {
+#alias {magicmissile} {
   #if { "%0" == "" } {
     cast 'magic missile' $target; #echo {cast 'magic missile' $target}
   };
@@ -30,8 +30,7 @@
     cast 'magic missile' %0; #echo {cast 'magic missile' %0}
   };
 }
-#alias {g} {mm}
-#alias {h} {mm}
+#alias {h} {magicmissile}
 
 #alias {b} {
   #if { "%0" == "" } {

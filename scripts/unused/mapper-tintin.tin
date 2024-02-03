@@ -1,0 +1,64 @@
+#nop map create 100000
+#nop map read maps/arda.map
+#nop map goto 1
+#nop map flag vtmap on
+#nop map flag unicodegraphics on
+#nop map flag terrain on
+#nop map offset 2 -57 18 -3
+#nop draw cyan boxed rounded box 1 -58 19 -1
+#nop draw cyan boxed rounded box 19 -58 -1 -1
+
+#nop map terrain cavern <abb>*<088> DENSE FADEOUT
+#nop map terrain tunnel <abb>*<088> 
+#nop map terrain field <fda>_ DENSE
+#nop map terrain forest <029>⍋  SPARSE NARROW FADEOUT
+#nop map terrain hills <bcb>⌒  SPARSE
+#nop map terrain mountains <bbc>◮ DENSE WIDE FADEOUT
+
+
+#EVENT {IAC SB GMCP Room.Info IAC SE} {
+    #variable gmcp[room][info] {%0};
+    
+    #echo {room info};
+    
+    #map set roomarea $gmcp[room][info][area];
+    #map set roomname $gmcp[room][info][name];
+    #map set roomterr $gmcp[room][info][environment];
+    
+    
+    #nop show room name above map;
+    #nop show {<029>$gmcp[room][info][name]<099>} {0} {-40};
+    #nop draw CALIGN tile 0 -39 1 -1 { <029>$gmcp[room][info][name]<099> };
+    
+    #nop draw cyan boxed rounded tile 1 -58 16 -1;
+    #nop map map 13 55 draw 2 -57 15 -2;
+    #nop draw cyan boxed rounded map 1 -58 15 -3 {}; 
+    
+    #draw CALIGN tile 20 -57 21 -2 { <029>$gmcp[room][info][name]<099> };
+    #draw CALIGN tile 21 -57 22 -2 { <049>Env: <099> $gmcp[room][info][environment]<099>  <049>Area:<099> $gmcp[room][info][area]};
+    
+    #var {room_exits} {};
+    #foreach {n;e;s;w;u;d} {dir} {
+    	#cat {room_exits} {*gmcp[room][info][exits][$dir] };
+	};
+    #replace {room_exits} {e } {East };
+    #replace {room_exits} {w } {West };
+	#replace {room_exits} {n } {North };
+	#replace {room_exits} {s } {South };
+	#replace {room_exits} {u } {Up };
+	#replace {room_exits} {d } {Down };
+	#replace {room_exits} {  } { };
+    #draw CALIGN tile 22 -57 23 -2 { <049>Exits: <099> $room_exits };
+}
+
+#EVENT {IAC SB GMCP Room.UpdateExits IAC SE} {
+    #variable gmcp[room][update_exits] {%0};
+}
+
+#EVENT {IAC SB GMCP Room.Chars IAC SE} {
+    #variable gmcp[room][chars] {%0};
+}
+
+#EVENT {IAC SB GMCP Event.Moved IAC SE} {
+    #variable gmcp[event][moved] {%0};
+}

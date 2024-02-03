@@ -1,0 +1,20 @@
+#EVENT {SESSION CONNECTED}
+{
+    #variable TELNET[IAC]  \xFF;
+    #variable TELNET[DONT] \xFE;
+    #variable TELNET[DO]   \xFD;
+    #variable TELNET[WONT] \xFC;
+    #variable TELNET[WILL] \xFB;
+    #variable TELNET[SB]   \xFA;
+    #variable TELNET[SE]   \xF0;
+    #variable TELNET[GMCP] \xC9;
+    #nop Turn telnet debug on to see telnet debugging information.;
+    #nop config {debug telnet} {on};
+}
+
+#EVENT {IAC WILL GMCP} {
+    #send {$TELNET[IAC]$TELNET[DO]$TELNET[GMCP]\};
+    #send {$TELNET[IAC]$TELNET[SB]$TELNET[GMCP]Core.Supports.Set [ "Room 1", "Char 1"] $TELNET[IAC]$TELNET[SE]\};
+}
+
+

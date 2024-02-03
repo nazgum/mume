@@ -1,0 +1,6 @@
+#nop prettier mapper messages
+#sub {^Welcome to MMapper!   Type _help for help.} {<099><ff7768e>Welcome to MMapper!<099>}
+#sub {^MUME closed the connection.} {<099><ff7768e>MUME closed the connection.<099>}
+#sub {^You can type _connect to reconnect again.} {<099><ff7768e>You can type _connect to reconnect again.<099>}
+#sub {^MMapper is not connected to MUME. Please type _connect to play.} {<099><ff7768e>MMapper is not connected to MUME. Please type _connect to play.<099>}
+#sub {^Connection refused!} {<099><ff7768e>Connection refused!<099>}

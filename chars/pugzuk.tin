@@ -1,5 +1,14 @@
 #var {bag} {pack}
 
+#alias {g} {
+  #if { "%0" == "" } {
+    cast q 'harm' $target; #echo {cast q 'harm' $target}
+  };
+  #else {
+    cast q 'harm' %0; #echo {cast q 'harm' %0}
+  };
+}
+
 #alias {h} {
   #if { "%0" == "" } {
     cast 'harm' $target; #echo {cast 'harm' $target}

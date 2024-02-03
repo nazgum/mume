@@ -1,1 +1,0 @@
-#action {^Takhr the orkish warden tells you 'I will not store %1.'} {get all.key all; drop all.key; rent}

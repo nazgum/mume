@@ -1,8 +1,0 @@
-#alias {arr} {
-  #if { "%0" == "" } {
-    get bolt case; wield bolt; poison; dra; put bolt case
-  };
-  #else {
-    get %0.bolt case; wield bolt; poison; dra; put bolt case
-  };
-}

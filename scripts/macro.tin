@@ -1,17 +1,32 @@
 #var {macros} {off}
 
-#MACRO {^=} {
-  #if {"$macros" == "on"} {
-    disableMacros;
-  };
-  #else {
-    enableMacros;
-  }
+#alias {enableMacros} {
+  #var {macros} {on};
+  #echo {<fff9e64>\# SPEED ON<099>                                                };
+  #send {\n};
+  
+  #MACRO {^n} {#echo {\nn}; n};
+  #MACRO {^s} {#echo {\ns}; s};
+  #MACRO {^e} {#echo {\ne}; e};
+  #MACRO {^w} {#echo {\nw}; w};
+  #MACRO {^u} {#echo {\nu}; u};
+  #MACRO {^d} {#echo {\nd}; d};
+  #MACRO {^c} {#echo {\nc}; c};
+  #MACRO {^o} {#echo {\no}; o};
+
+  #MACRO {^k} {#echo {\nk}; k};
+  #MACRO {^h} {#echo {\nh}; h};
+  #MACRO {^g} {#echo {\ng}; g};
+  #MACRO {^b} {#echo {\nb}; b};
+  #MACRO {^f} {#echo {\nf}; f};
+  #MACRO {^,} {#echo {\n,}; ,};
+  #MACRO {^.} {#echo {\n.}; .};
 }
 
 #alias {disableMacros} {
   #var {macros} {off};
-  #echo {<f008ec4>\#SPEED OFF<099>};
+  #echo {<fD4382A>\# SPEED OFF<099>                                          };
+  #send {\n};
   
   #UNMACRO {^n};
   #UNMACRO {^s};
@@ -29,53 +44,23 @@
   #UNMACRO {^f};
   #UNMACRO {^,};
   #UNMACRO {^.};
-  
-  #UNMACRO {^p};
-  #UNMACRO {^y};
-  #UNMACRO {^r};
-  #UNMACRO {^l};
-  #UNMACRO {^a};
-  #UNMACRO {^i};
-  #UNMACRO {^t};
-  #UNMACRO {^q};
-  #UNMACRO {^j};
-  #UNMACRO {^x};
-  #UNMACRO {^v};
-  #UNMACRO {^z};
 }
 
-#alias {enableMacros} {
-  #var {macros} {on};
-  #echo {<f970b16>\#SPEED MODE<099>};
-  #showme {$prompt_data} {0};
-  
-  #MACRO {^n} {#echo {n}; n};
-  #MACRO {^s} {#echo {s}; s};
-  #MACRO {^e} {#echo {e}; e};
-  #MACRO {^w} {#echo {w}; w};
-  #MACRO {^u} {#echo {u}; u};
-  #MACRO {^d} {#echo {d}; d};
-  #MACRO {^c} {#echo {c}; c};
-  #MACRO {^o} {#echo {o}; o};
-
-  #MACRO {^k} {#echo {k}; k};
-  #MACRO {^h} {#echo {h}; h};
-  #MACRO {^g} {#echo {g}; g};
-  #MACRO {^b} {#echo {b}; b};
-  #MACRO {^f} {#echo {f}; f};
-  #MACRO {^,} {#echo {,}; ,};
-  #MACRO {^.} {#echo {.}; .};
-
-  #MACRO {^p} {disableMacros};
-  #MACRO {^y} {disableMacros};
-  #MACRO {^r} {disableMacros};
-  #MACRO {^l} {disableMacros};
-  #MACRO {^a} {disableMacros};
-  #MACRO {^i} {disableMacros};
-  #MACRO {^t} {disableMacros};
-  #MACRO {^q} {disableMacros};
-  #MACRO {^j} {disableMacros};
-  #MACRO {^x} {disableMacros};
-  #MACRO {^v} {disableMacros};
-  #MACRO {^z} {disableMacros};
+#alias {toggleMacros} {
+  #if {"$macros" == "on"} {
+    disableMacros;
+  } {
+    enableMacros;
+  }
 }
+
+#macro {^=} {
+	toggleMacros;
+	
+	#if {"$macros" == "on"} {
+		#sub {^%1>$} {<fff9e64>\#<099> %1>};
+	  } {
+		#unsub {^%1>$};
+	  }
+}
+

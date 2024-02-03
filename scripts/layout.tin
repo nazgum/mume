@@ -1,0 +1,19 @@
+#nop screen height/row: 35  width/col: 160
+#nop left        30
+#nop right     40
+#nop middle 90
+
+#nop split 0 0 30 40
+
+#screen clear all
+#screen scrollregion 0 1 -2 -40
+#screen inputregion -1 1 -1 -40
+
+
+#EVENT {SCROLLED MOUSE WHEEL UP} {
+	#buffer {up} {5};
+}
+
+#EVENT {SCROLLED MOUSE WHEEL DOWN} {
+	#buffer {down} {5};
+}

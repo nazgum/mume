@@ -2,11 +2,11 @@
 
 #alias {door} {
   #if { "%0" == "" } {
-    #echo {<f0074D5>\$door<099> set to: <f0074D5>$door<099>}
+    #echo {<f05A5DA>\$door<099> set to: <f05A5DA>$door<099>}
   };
   #else {
     #var {door} {%0};
-    #echo {<f0074D5>\$door<099> set to: <f0074D5>$door<099>}
+    #echo {<f05A5DA>\$door<099> set to: <f05A5DA>$door<099>}
   };
 }
 

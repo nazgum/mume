@@ -11,6 +11,7 @@
 #highlight {(worn out)} {<f6E78A4>}
 
 #nop Artifacts + God-Tier Items
+#highlight {the black sword} {<ff7768e>}
 #highlight {the Dragonhelm} {<ff7768e>}
 #highlight {the Morgul blade} {<ff7768e>}
 #highlight {a strange black helmet} {<f970b16>}
@@ -51,6 +52,7 @@
 #highlight {a black runed dagger} {<fbb9af7>} 
 #highlight {a blackened spear} {<fbb9af7>} 
 #highlight {a burnished hewing-spear} {<fbb9af7>}
+#highlight {an ornate, steel-shafted warhammer} {<fbb9af7>}
 #highlight {a great warsword} {<fbb9af7>}
 #highlight {a steel claymore} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
@@ -116,7 +118,6 @@
 #highlight {a golden topaz ring} {<f7aa2f7>}
 #highlight {a nimble blade} {<f7aa2f7>}
 #highlight {a slender dagger} {<f7aa2f7>}
-#highlight {an ornate, steel-shafted warhammer} {<f7aa2f7>}
 #highlight {a black amulet} {<f7aa2f7>}
 #highlight {a smoky obsidian amulet} {<f7aa2f7>}
 #highlight {a scorched, grisly fur} {<f7aa2f7>}
@@ -232,6 +233,7 @@
 #nop Item Effects
 #highlight {some sort of liquid is smeared on it} {<f9ece6a>}
 #highlight {it has a soft glowing aura} {<fc9d2f6>}
+#highlight {it emits a faint humming sound} {<fc9d2f6>}
 
 #nop Notice
 #highlight {sleeping} {<fcfc9c2>}

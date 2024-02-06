@@ -21,6 +21,14 @@ sideSession;
 	#show { <069>Lang  :<099> $char[lang] } 5 -38;
 	#show { <069>Age   :<099> $char[age] } 5 -20;
 	
+	#format {char[stats][str]} {%.2s} {$char[stats][str]};
+	#format {char[stats][con]} {%.2s} {$char[stats][con]};
+	#format {char[stats][dex]} {%.2s} {$char[stats][dex]};
+	#format {char[stats][per]} {%.2s} {$char[stats][per]};
+	#format {char[stats][int]} {%.2s} {$char[stats][int]};
+	#format {char[stats][wis]} {%.2s} {$char[stats][wis]};
+	#format {char[stats][wil]} {%.2s} {$char[stats][wil]};
+	
 	#show { <069>Str:<099> $char[stats][str] } 7 -38;
 	#show { <069>Con:<099> $char[stats][con] } 7 -29;
 	#show { <069>Dex:<099> $char[stats][dex] } 7 -20;
@@ -32,10 +40,10 @@ sideSession;
 
 #alias {sideSession} {
 	#draw <059> boxed rounded tile 10 -39 12 -1;
-	#draw <059> corner 10 -11 10 -2 { Session };
+	#draw <059> corner 10 -13 10 -2 { Session };
 	
-	#show { <069>Xp:<099> $gained_xp } 11 -38;
-	#show { <069>Tp:<099> $gained_tp } 11 -20;
+	#show { <069>Xp:<099> $session_xp } 11 -38;
+	#show { <069>Tp:<099> $session_tp } 11 -20;
 }
 
 #alias {sideInfo} {
@@ -46,14 +54,17 @@ sideSession;
 	
 	#format {gmcp[room][info][area]} {%.8s} {$gmcp[room][info][area]};
 	
+	#format {side_target} {%.8s} {$target};
+	#format {side_mount} {%.8s} {$mount};
+	
 	#show { <069>Pos   :<099> $char[position] } 14 -38;
 	#show { <069>Terrain:<099> $gmcp[room][info][environment] } 14 -20;
 	#show { <069>Spell :<099> $char[spell-effort] } 15 -38;
 	#show { <069>Alert  :<099> $char[alert] } 15 -20;
 	#show { <069>Mood  :<099> $char[mood] } 16 -38;
 	#show { <069>Flee   :<099> $char[wimpy] } 16 -20;
-	#show { <069>Target:<099> <f05A5DA>$target<099> } 17 -38;
-	#show { <069>Mount  :<099> <f05A5DA>$mount<099> } 17 -20;
+	#show { <069>Target:<099> <f05A5DA>$side_target<099> } 17 -38;
+	#show { <069>Mount  :<099> <f05A5DA>$side_mount<099> } 17 -20;
 	
 	#nop show { <069>Weapon :<099> <f7aa2f7>an engraved broadsword<099> } 19 -38;
 	#nop show { <069>Door  :<099> <f05A5DA>$door<099> } 15 -38;	
@@ -70,12 +81,16 @@ sideSession;
     	#format {char[race]} {%.8s} {$gmcp[char][status][race]};
     };
     #if {&{gmcp[char][status][subrace]}} { 
-    	#format {char[tribe]} {%.9s} {$gmcp[char][status][subrace]};
+    	#var {char[tribe]} {$gmcp[char][status][subrace]};
     };
     
     #if {"$gmcp[char][status][race]" == "Black Númenórean"} {
     	#var {char[race]} {BN};
 		#var {char[tribe]} {Númenór};
+	};
+	
+	#if {"$gmcp[char][status][subrace]" == "Tarkhnarb Orc"} {
+    	#var {char[tribe]} {Tark};
 	};
 		
     #if {&{gmcp[char][status][subclass]}} { 
@@ -144,7 +159,7 @@ sideSession;
 	#var {char[stats][per]} {%7};
 }
 
-#action {^You are %1 years, } {
+#action {^You are %1 years} {
 	#var {char[age]} {%1};
 }
 

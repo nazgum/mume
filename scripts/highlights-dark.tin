@@ -1,3 +1,9 @@
+#nop green:   f8AC364
+#nop red:        ff7768e
+#nop orange: ffca878
+#nop purple:  fbb9af7
+#nop yellow:  fE5C890
+
 #nop Equipment State
 #highlight {(flawless)} {<f2ac3de>}
 #highlight {(well-maintained)} {<f73daca>}
@@ -10,11 +16,17 @@
 #highlight {(deteriorating)} {<f6E78A4>}
 #highlight {(worn out)} {<f6E78A4>}
 
+#nop Legendary Items
+#highlight {a soft pair of padded boots} {<fE5C890>}
+#highlight {a wooden ring} {<fE5C890>}
+#highlight {a pitch-black robe} {<fE5C890>}
+#highlight {a smelly piece of worm hide} {<fE5C890>}
+
 #nop Artifacts + God-Tier Items
 #highlight {the black sword} {<ff7768e>}
 #highlight {the Dragonhelm} {<ff7768e>}
 #highlight {the Morgul blade} {<ff7768e>}
-#highlight {a strange black helmet} {<f970b16>}
+#highlight {a strange black helmet} {<ff7768e>}
 #highlight {the black sheath} {<ff7768e>}
 #highlight {the great black scimitar} {<ff7768e>}
 #highlight {a crown of bones} {<ff7768e>}
@@ -30,9 +42,6 @@
 #highlight {a huge, black mace} {<ff7768e>}
 #highlight {a large visored helmet} {<ff7768e>}
 #highlight {a crude orkish horn} {<ff7768e>}
-#highlight {a soft pair of padded boots} {<ff7768e>}
-#highlight {a wooden ring} {<ff7768e>}
-#highlight {a pitch-black robe} {<ff7768e>}
 
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
@@ -42,11 +51,12 @@
 #highlight {a small crystal phial} {<fcfc9c2>}
 
 #nop Spell Save Items
-#highlight {an old length of iron chain} {<fff9e64>}
-#highlight {a necklace} {<fff9e64>}
-#highlight {an icy ring} {<fff9e64>}
-#highlight {a root ring} {<fff9e64>}
-#highlight {a coarse dusky robe} {<fff9e64>}
+#highlight {an old length of iron chain} {<ffca878>}
+#highlight {a necklace} {<ffca878>}
+#highlight {an icy ring} {<ffca878>}
+#highlight {a root ring} {<ffca878>}
+#highlight {a coarse dusky robe} {<ffca878>}
+
 
 #nop Important Gear
 #highlight {a black runed dagger} {<fbb9af7>} 
@@ -57,10 +67,8 @@
 #highlight {a steel claymore} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
 #highlight {an ancient dwarven shield} {<fbb9af7>}
-#highlight {a smelly piece of worm hide} {<fbb9af7>}
 #highlight {a bejewelled oak staff} {<fbb9af7>}
 #highlight {a pale blue stone} {<fbb9af7>}
-#highlight {a small pouch} {<fbb9af7>}
 #highlight {a copper ring} {<fbb9af7>}
 #highlight {a frayed tunic} {<fbb9af7>}
 #highlight {a grey tunic} {<fbb9af7>}
@@ -72,6 +80,9 @@
 #highlight {a black-thorned wristband} {<fbb9af7>}
 #highlight {a wide silvery wristband} {<fbb9af7>}
 #highlight {a supple pair of leather gloves} {<fbb9af7>}
+#highlight {a gleaming belt} {<fbb9af7>}
+#highlight {a golden belt} {<fbb9af7>}
+#highlight {a belt of fell hide} {<fbb9af7>}
 
 #nop Good Gear
 #highlight {a ceremonial dagger} {<f7aa2f7>}
@@ -90,9 +101,6 @@
 #highlight {a tower shield} {<f7aa2f7>}
 #highlight {a leaf-embossed shield} {<f7aa2f7>}
 #highlight {a spiked horsehide buckler} {<f7aa2f7>}
-#highlight {a gleaming belt} {<f7aa2f7>}
-#highlight {a golden belt} {<f7aa2f7>}
-#highlight {a belt of fell hide} {<f7aa2f7>}
 #highlight {a broad silver belt} {<f7aa2f7>}
 #highlight {a red ruby} {<f7aa2f7>}
 #highlight {a golden ruby ring} {<f7aa2f7>}
@@ -116,8 +124,6 @@
 #highlight {an iron ring} {<f7aa2f7>}
 #highlight {a ruby ring} {<f7aa2f7>}
 #highlight {a golden topaz ring} {<f7aa2f7>}
-#highlight {a nimble blade} {<f7aa2f7>}
-#highlight {a slender dagger} {<f7aa2f7>}
 #highlight {a black amulet} {<f7aa2f7>}
 #highlight {a smoky obsidian amulet} {<f7aa2f7>}
 #highlight {a scorched, grisly fur} {<f7aa2f7>}
@@ -136,12 +142,17 @@
 #highlight {a pair of white chain mail sleeves} {<f7aa2f7>}
 #highlight {a pair of white chain mail leggings} {<f7aa2f7>}
 
+#highlight {a silvan satchel} {<f7aa2f7>}
+#highlight {a lightning-shaped pendant} {<f7aa2f7>}
+
 #nop Poisons
-#highlight {a green stinking vial} {<ff7768e>}
-#highlight {a dark violet vial} {<ff7768e>}
-#highlight {a dirty reddish vial} {<ff7768e>}
-#highlight {a mildew covered vial} {<ff7768e>}
-#highlight {a foetid green vial} {<ff7768e>}
+#highlight {a nimble blade} {<f8AC364>}
+#highlight {a slender dagger} {<f8AC364>}
+#highlight {a green stinking vial} {<f8AC364>}
+#highlight {a dark violet vial} {<f8AC364>}
+#highlight {a dirty reddish vial} {<f8AC364>}
+#highlight {a mildew covered vial} {<f8AC364>}
+#highlight {a foetid green vial} {<f8AC364>}
 
 #nop Poison Ingr
 #highlight {a sickly green mushroom} {<f8AC364>}
@@ -181,7 +192,6 @@
 # nop Herb cols <fcfc9c2>
 
 #nop Scrolls
-#highlight {a wooden ring} {<fff9e64>}
 #highlight {an icy ring} {<fff9e64>}
 #highlight {a root ring} {<fff9e64>}
 #highlight {a %w scroll} {<fff9e64>}
@@ -190,8 +200,8 @@
 #highlight {a %w %w scroll} {<fff9e64>}
 #highlight {%w %w %W scrolls} {<fff9e64>}
 #highlight {a twisted rock fragment} {<fff9e64>}
-#highlight {a small pouch} {<fff9e64>}
-#highlight {%w small pouches} {<fff9e64>}
+#highlight {a small pouch} {<ffca878>}
+#highlight {%w small pouches} {<ffca878>}
 #highlight {a pale blue stone} {<fff9e64>}
 
 #nop Spells
@@ -204,6 +214,7 @@
 #highlight {- shroud} {<f9ece6a>}
 #highlight {- sanctuary} {<f9ece6a>}
 #highlight {- shadow-veil} {<f9ece6a>}
+#highlight {- shadow-link} {<f9ece6a>}
 
 #nop Spells Down
 #highlight {^Your magical shield wears off.} {<ff7768e>}
@@ -231,7 +242,7 @@
 
 
 #nop Item Effects
-#highlight {some sort of liquid is smeared on it} {<f9ece6a>}
+#highlight {some sort of liquid is smeared on it} {<f8AC364>}
 #highlight {it has a soft glowing aura} {<fc9d2f6>}
 #highlight {it emits a faint humming sound} {<fc9d2f6>}
 

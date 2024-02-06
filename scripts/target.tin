@@ -18,6 +18,7 @@
     #var {target} {%0};
     #echo {<f05A5DA>\$target<099> set to: <f05A5DA>$target<099>}
   }
+  sideInfo;
 }
 
 #alias {de} {
@@ -33,6 +34,7 @@
     #var {mount} {%0};
     #echo {<f05A5DA>\$mount<099> set to: <f05A5DA>$mount<099>}
   }
+  sideInfo;
 }
 
 #alias {mo} { setMount %0 }

@@ -1,3 +1,4 @@
 #EVENT {IAC SB GMCP Room.Info IAC SE} {
     #variable gmcp[room][info] {%0};
+    sideInfo;
 }

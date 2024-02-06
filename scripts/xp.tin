@@ -30,9 +30,9 @@
   #var {old_tp} {%2};
   #var {needed_xp} {%3};
   #var {needed_tp} {%4};
-  #nop xpgain;
+  xpgain;
   sideSession;
-  #line gag 3;
+  #line gag 1;
 }
 
 #var {gained_xp} {0}

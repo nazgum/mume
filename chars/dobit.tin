@@ -1,0 +1,19 @@
+#unalias {str}
+
+#alias {g} {ear}
+
+#alias {bolt} {
+  #if { "%0" == "" } {
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+  };
+  #else {
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+  };
+}
+#alias {h} {bolt}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+
+#alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
+#alias {robe} { remove robe; get robe pack; wear robe; put robe pack }
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe $bag }

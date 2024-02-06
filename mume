@@ -48,6 +48,7 @@
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {d}  {u}  {32}
 
+#read scripts/mmapper.tin;
 #read scripts/gmcp.tin
 
 #event {PROGRAM START} {
@@ -73,7 +74,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/lilura.tin;
+	#read chars/itzit.tin;
 }
 
 #event {SESSION DISCONNECTED} {

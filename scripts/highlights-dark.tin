@@ -59,6 +59,7 @@
 
 
 #nop Important Gear
+#highlight {a nimble blade} {<fbb9af7>}
 #highlight {a black runed dagger} {<fbb9af7>} 
 #highlight {a blackened spear} {<fbb9af7>} 
 #highlight {a burnished hewing-spear} {<fbb9af7>}
@@ -85,6 +86,7 @@
 #highlight {a belt of fell hide} {<fbb9af7>}
 
 #nop Good Gear
+#highlight {a slender dagger} {<f7aa2f7>}
 #highlight {a ceremonial dagger} {<f7aa2f7>}
 #highlight {an enruned robe} {<f7aa2f7>}
 #highlight {a wightblade} {<f7aa2f7>}
@@ -94,6 +96,7 @@
 #highlight {a ragged, blackened cloak} {<f7aa2f7>}
 #highlight {a roughly stitched cloak} {<f7aa2f7>}
 #highlight {a russet cloak} {<f7aa2f7>}
+#highlight {a forest green cloak} {<f7aa2f7>}
 #highlight {a black cape} {<f7aa2f7>}
 #highlight {a bright red amulet} {<f7aa2f7>}
 #highlight {an opaque amulet} {<f7aa2f7>}
@@ -141,13 +144,10 @@
 #highlight {a white chain mail jerkin} {<f7aa2f7>}
 #highlight {a pair of white chain mail sleeves} {<f7aa2f7>}
 #highlight {a pair of white chain mail leggings} {<f7aa2f7>}
-
 #highlight {a silvan satchel} {<f7aa2f7>}
 #highlight {a lightning-shaped pendant} {<f7aa2f7>}
 
 #nop Poisons
-#highlight {a nimble blade} {<f8AC364>}
-#highlight {a slender dagger} {<f8AC364>}
 #highlight {a green stinking vial} {<f8AC364>}
 #highlight {a dark violet vial} {<f8AC364>}
 #highlight {a dirty reddish vial} {<f8AC364>}

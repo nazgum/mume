@@ -123,8 +123,8 @@
 	#line {gag}
 }
 
-#action {^ Your focus sharpens as you share an enslaved % link to the wraith-world.$} {spellTimerSet shadow-link}
-#action {^Your link to the wraith-world disappears.$} {spellTimerUnset shadow-link}
+#action {^Your focus sharpens as you share} {spellTimerSet shadow link}
+#action {^Your link to the wraith-world disappears.$} {spellTimerUnset shadow link}
 #action {^- shadow-link$} {
 	spellTimerStatus shadow link;
 	#line {gag}

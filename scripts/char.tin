@@ -84,7 +84,7 @@ sideSession;
     	#var {char[tribe]} {$gmcp[char][status][subrace]};
     };
     
-    #if {"$gmcp[char][status][race]" == "Black Númenórean"} {
+    #regexp {$gmcp[char][status][race]} {^Black{.*}} {
     	#var {char[race]} {BN};
 		#var {char[tribe]} {Númenór};
 	};

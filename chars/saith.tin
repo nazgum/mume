@@ -1,26 +1,4 @@
 #var {bag} {pack}
-#var {basher} {followers}
-#var {protector} {followers}
-
-#alias {basher} {
-  #if { "%0" == "" } {
-    #echo {basher set to: <049>$basher<099>}
-  };
-  #else {
-    #var {basher} {%0};
-    #echo {basher set to: <049>$basher<099>}
-  };
-}
-
-#alias {protector} {
-  #if { "%0" == "" } {
-    #echo {protector set to: <049>$protector<099>}
-  };
-  #else {
-    #var {protector} {%0};
-    #echo {protector set to: <049>$protector<099>}
-  };
-}
 
 #alias {burn} {
   #if { "%0" == "" } {
@@ -42,21 +20,6 @@
 }
 #alias {bolt} {h}
 
-#alias {charm} {
-  #if { "%0" == "" } {
-    cast 'charm' $target; #echo {cast 'charm' $target}
-  };
-  #else {
-    cast 'charm' %0; #echo {cast 'charm' %0}
-  };
-}
-#alias {b} {charm}
-
 #alias {pipe} {wield pipe; rest; smoke pipe; st; wield scourge }
 #alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
 
-#alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
-#alias {^2$} {of kill $target; #echo {of kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {order $basher bash; #echo {order $basher bash}}
-#alias {^5$} {order $protector rescue saith; #echo {order $protector rescue saith}}

@@ -2,10 +2,10 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'hold' $target; #echo {cast 'hold' $target}
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
-    cast 'hold' %0; #echo {cast 'hold' %0}
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
   };
 }
 

@@ -1,56 +1,24 @@
 #read scripts/sleep.tin
 
-#alias {sleep} {
+#alias {g} {
   #if { "%0" == "" } {
-    cast 'sleep' $target; #echo {cast 'sleep' $target}
+    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
   };
   #else {
-    cast 'sleep' %0; #echo {cast 'sleep' %0}
+    cast q 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
   };
 }
-#alias {b} {sleep}
 
-#alias {charm} {
+#alias {h} {
   #if { "%0" == "" } {
-    cast 'charm' $target; #echo {cast 'charm' $target}
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
   };
   #else {
-    cast 'charm' %0; #echo {cast 'charm' %0}
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
   };
 }
-#alias {ch} {charm}
-
 
 #var {bag} {sable}
-#var {basher} {followers}
-#var {protector} {followers}
-
-#alias {basher} {
-  #if { "%0" == "" } {
-    #echo {basher set to: <049>$basher<099>}
-  };
-  #else {
-    #var {basher} {%0};
-    #echo {basher set to: <049>$basher<099>}
-  };
-}
-
-#alias {protector} {
-  #if { "%0" == "" } {
-    #echo {protector set to: <049>$protector<099>}
-  };
-  #else {
-    #var {protector} {%0};
-    #echo {protector set to: <049>$protector<099>}
-  };
-}
 
 #alias {reload} {get all.bolt sable; put all.bolt case}
-
 #alias {^.$} {shoot $target; #echo {shoot $target}}
-
-#alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
-#alias {^2$} {of kill $target; #echo {of kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {order $basher bash; #echo {order $basher bash}}
-#alias {^5$} {order $protector rescue nemisa; #echo {order $protector rescue nemisa}}

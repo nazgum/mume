@@ -1,26 +1,5 @@
 #var {bag} {pack}
-#var {basher} {followers}
-#var {protector} {followers}
-
-#alias {basher} {
-  #if { "%0" == "" } {
-    #echo {basher set to: <049>$basher<099>}
-  };
-  #else {
-    #var {basher} {%0};
-    #echo {basher set to: <049>$basher<099>}
-  };
-}
-
-#alias {protector} {
-  #if { "%0" == "" } {
-    #echo {protector set to: <049>$protector<099>}
-  };
-  #else {
-    #var {protector} {%0};
-    #echo {protector set to: <049>$protector<099>}
-  };
-}
+#var {shld} {leaf}
 
 #alias {magicmissile} {
   #if { "%0" == "" } {
@@ -32,27 +11,28 @@
 }
 #alias {h} {magicmissile}
 
-#alias {b} {
-  #if { "%0" == "" } {
-    cast 'charm' $target; #echo {cast 'charm' $target}
-  };
-  #else {
-    cast 'charm' %0; #echo {cast 'charm' %0}
-  };
-}
-
 
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
 #alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
 #alias {cc} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use garnet-ring}
 
-#alias {1h} {wield 1; remove buckler; wear tower}
-#alias {2h} {remove tower; wield 2; wear buckler}
+#alias {bla} {
+	wield wightblade;
+	#if {"$shld" != "leaf"} {rm buckler; wear leaf-embossed; #var {shld} {leaf} };
+}
+#alias {orn} {
+	wield ornate;
+	#if {"$shld" != "leaf"} {rm buckler; wear leaf-embossed; #var {shld} {leaf} };
+}
+#alias {war} {
+	#if {"$shld" != "buck"} {rm shield; wear buckler; #var {shld} {buck} };
+	wield warsword;
+}
+
+#alias {leaf} {rm buckler; wear leaf-embossed; #var {shld} {leaf}}
+#alias {buck} {rm leaf-embossed; wear buckler; #var {shld} {buck}}
+
+#alias {1h} {orn}
+#alias {2h} {war}
 #alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
 #alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
-
-#alias {^1$} {order $basher bash $target; #echo {order $basher bash $target}}
-#alias {^2$} {of kill $target; #echo {of kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {order $basher bash; #echo {order $basher bash}}
-#alias {^5$} {order $protector rescue lilura; #echo {order $protector rescue lilura}}

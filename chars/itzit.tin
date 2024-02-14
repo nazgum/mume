@@ -34,5 +34,9 @@
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
 
-#alias {cloak} { remove cloak; get cloak pack; wear cloak; put cloak pack }
-#alias {robe} { remove robe; get robe pack; wear robe; put robe pack }
+#alias {tunic} { remove robe; get tunic pack; wear tunic; put robe pack }
+#alias {robe} { remove tunic; get robe pack; wear robe; put tunic pack }
+#alias {robe2} { remove robe; get robe pack; wear robe; put robe pack }
+
+#alias {power} {rm hood;rm tunic;put hood pack; put tunic pack;get crown pack;get dusky pack;wear crown; wear dusky}
+#alias {dodge} {rm crown;rm robe;put crown pack; put robe pack;get hood pack;get tunic pack;wear hood; wear tunic}

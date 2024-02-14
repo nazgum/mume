@@ -10,13 +10,16 @@
 sideSession;
 
 #alias {sideChar} {
-	#draw <059> boxed rounded tile 1 -24 9 -1;
-	#draw <059> corner 1 -11 1 -5 { Char };
+	#draw <059> boxed rounded tile 1 -39 9 -1;
+	#draw <059> corner 1 -10 1 -5 { Char };
 
-	#show { <069>Name  :<099> $char[name] } 2 -23;
-	#show { <069>Race  :<099> $char[race] } 3 -23;
-	#show { <069>Class :<099> $char[class] } 4 -23;
-	#show { <069>Level :<099> $char[level] } 5 -23;
+	#show { <069>Name  :<099> $char[name] } 2 -38;
+	#show { <069>Race  :<099> $char[race] } 3 -38;
+	#show { <069>Tribe :<099> $char[tribe] } 3 -20;
+	#show { <069>Class :<099> $char[class] } 4 -38;
+	#show { <069>Level :<099> $char[level] } 4 -20;
+	#show { <069>Lang  :<099> $char[lang] } 5 -38;
+	#show { <069>Age   :<099> $char[age] } 5 -20;
 	
 	#format {char[stats][str]} {%.2s} {$char[stats][str]};
 	#format {char[stats][con]} {%.2s} {$char[stats][con]};
@@ -26,34 +29,45 @@ sideSession;
 	#format {char[stats][wis]} {%.2s} {$char[stats][wis]};
 	#format {char[stats][wil]} {%.2s} {$char[stats][wil]};
 	
-	#show { <069>S:<099>$char[stats][str] <069>C:<099>$char[stats][con] <069>D:<099>$char[stats][dex] <069>P:<099>$char[stats][per]} 7 -23;
-	#show { <069>I:<099>$char[stats][int] <069>W:<099>$char[stats][wis] <069>W:<099>$char[stats][wil] } 8 -23;
+	#show { <069>Str:<099> $char[stats][str] } 7 -38;
+	#show { <069>Con:<099> $char[stats][con] } 7 -29;
+	#show { <069>Dex:<099> $char[stats][dex] } 7 -20;
+	#show { <069>Per:<099> $char[stats][per] } 7 -11;
+	#show { <069>Int:<099> $char[stats][int] } 8 -38;
+	#show { <069>Wis:<099> $char[stats][wis] } 8 -29;
+	#show { <069>Wil:<099> $char[stats][wil] } 8 -20;
 };
 
 #alias {sideSession} {
-	#draw <059> boxed rounded tile 10 -24 12 -1;
+	#draw <059> boxed rounded tile 10 -39 12 -1;
 	#draw <059> corner 10 -13 10 -2 { Session };
 	
-	#show { <069>Xp:<099> $session_xp } 11 -23;
-	#show { <069>Tp:<099> $session_tp } 11 -11;
+	#show { <069>Xp:<099> $session_xp } 11 -38;
+	#show { <069>Tp:<099> $session_tp } 11 -20;
 }
 
 #alias {sideInfo} {
-	#draw <059> boxed rounded tile 13 -24 20 -1;
+	#draw <059> boxed rounded tile 13 -39 18 -1;
 	#draw <059> corner 13 -10 13 -2 { Info };
 	
 	#format {gmcp[room][info][environment]} {%.8s} {$gmcp[room][info][environment]};
+	
 	#format {gmcp[room][info][area]} {%.8s} {$gmcp[room][info][area]};
 	
 	#format {side_target} {%.8s} {$target};
 	#format {side_mount} {%.8s} {$mount};
 	
-	#show { <069>Terrain :<099> $gmcp[room][info][environment] } 14 -23;
-	#show { <069>Pos     :<099> $char[position] } 15 -23;
-	#show { <069>Mood    :<099> $char[mood] } 16 -23;
-	#show { <069>Flee    :<099> $char[wimpy] } 17 -23;
-	#show { <069>Target  :<099> <f05A5DA>$side_target<099> } 18 -23;
-	#show { <069>Mount   :<099> <f05A5DA>$side_mount<099> } 19 -23;
+	#show { <069>Pos   :<099> $char[position] } 14 -38;
+	#show { <069>Terrain:<099> $gmcp[room][info][environment] } 14 -20;
+	#show { <069>Spell :<099> $char[spell-effort] } 15 -38;
+	#show { <069>Alert  :<099> $char[alert] } 15 -20;
+	#show { <069>Mood  :<099> $char[mood] } 16 -38;
+	#show { <069>Flee   :<099> $char[wimpy] } 16 -20;
+	#show { <069>Target:<099> <f05A5DA>$side_target<099> } 17 -38;
+	#show { <069>Mount  :<099> <f05A5DA>$side_mount<099> } 17 -20;
+	
+	#nop show { <069>Weapon :<099> <f7aa2f7>an engraved broadsword<099> } 19 -38;
+	#nop show { <069>Door  :<099> <f05A5DA>$door<099> } 15 -38;	
 }
 
 #EVENT {IAC SB GMCP Char.StatusVars IAC SE} {
@@ -64,18 +78,19 @@ sideSession;
     };
     
     #if {&{gmcp[char][status][race]}} { 
-    	#format {char[race]} {%.16s} {$gmcp[char][status][race]};
+    	#format {char[race]} {%.8s} {$gmcp[char][status][race]};
     };
     #if {&{gmcp[char][status][subrace]}} { 
-    	#var {char[race]} {$gmcp[char][status][subrace]};
+    	#var {char[tribe]} {$gmcp[char][status][subrace]};
     };
     
-    #if {"$gmcp[char][status][subrace]" == "null"} {
-    	#format {char[race]} {%.16s} {$gmcp[char][status][race]};
+    #regexp {$gmcp[char][status][race]} {^Black{.*}} {
+    	#var {char[race]} {BN};
+		#var {char[tribe]} {Númenór};
 	};
-    
-    #if {"$gmcp[char][status][subrace]" == "Tarkhnarb Orc"} {
-    	#var {char[race]} {Orc};
+	
+	#if {"$gmcp[char][status][subrace]" == "Tarkhnarb Orc"} {
+    	#var {char[tribe]} {Tark};
 	};
 		
     #if {&{gmcp[char][status][subclass]}} { 

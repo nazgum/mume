@@ -2,12 +2,12 @@
 
 #alias {shoes} { remove boots; wear shoes }
 #alias {boots} { remove shoes; wear boots }
-#alias {cloak} { remove mantle; get cloak $bag; wear cloak; put mantle $bag }
+#alias {cloak} { remove scorched; get cloak $bag; wear cloak; put scorched $bag }
 #alias {crown} { remove helmet; get crown $bag; wear crown; put helmet $bag }
 #alias {twisted} {crown}
 #alias {helmet} { remove crown; get helmet $bag; wear helmet; put crown $bag }
 #alias {helm} {helmet}
-#alias {fur} { remove cloak; get mantle $bag; wear mantle; put cloak $bag }
+#alias {fur} { remove cloak; get scorched $bag; wear scorched; put cloak $bag }
 #alias {tunic} { remove robe; get tunic $bag; wear tunic; put robe $bag }
 #alias {robe} { remove tunic; get robe $bag; wear robe; put tunic $bag }
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }

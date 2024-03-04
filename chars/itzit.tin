@@ -1,5 +1,8 @@
 #read scripts/blind.tin
 
+#var {bag} {pack}
+#var {shirt} {tunic}
+
 #alias {burn} {
   #if { "%0" == "" } {
     cast 'burning hands' $target; #echo {cast 'burning hands' $target}
@@ -32,11 +35,25 @@
 #alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 #alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 
-#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^.$} {bash $target; #echo {bash $target}}
 
-#alias {tunic} { remove robe; get tunic pack; wear tunic; put robe pack }
-#alias {robe} { remove tunic; get robe pack; wear robe; put tunic pack }
-#alias {robe2} { remove robe; get robe pack; wear robe; put robe pack }
+#alias {tunic} {
+	#if {"$shirt" == "tunic"} {rm tunic; wear tunic; };
+	#if {"$shirt" != "tunic"} {rm robe; get tunic $bag; wear tunic; put robe $bag; };
+	#var {shirt} {tunic}
+}
+#alias {pitch} {
+	#if {"$shirt" == "tunic"} {rm tunic; get pitch-black $bag; wear pitch-black; put tunic $bag; };
+	#if {"$shirt" == "dusky"} {rm dusky; get pitch-black $bag; wear pitch-black; put dusky $bag; };
+	#var {shirt} {pitch}
+}
+#alias {dusky} {
+	#if {"$shirt" == "tunic"} {rm tunic; get dusky $bag; wear dusky; put tunic $bag; };
+	#if {"$shirt" == "pitch"} {rm pitch-black; get dusky $bag; wear dusky; put pitch-black $bag; };
+	#var {shirt} {dusky}
+}
+#alias {coarse} {dusky}
+#alias {robe} {dusky}
 
-#alias {power} {rm hood;rm tunic;put hood pack; put tunic pack;get crown pack;get dusky pack;wear crown; wear dusky}
-#alias {dodge} {rm crown;rm robe;put crown pack; put robe pack;get hood pack;get tunic pack;wear hood; wear tunic}
+#alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
+#alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}

@@ -20,32 +20,34 @@
 #highlight {a soft pair of padded boots} {<f9B6CF3>}
 #highlight {a wooden ring} {<f9B6CF3>}
 #highlight {a pitch-black robe} {<f9B6CF3>}
+#highlight {a pure white robe} {<f9B6CF3>}
 #highlight {a grey tunic} {<f9B6CF3>}
 #highlight {a finely woven hood} {<f9B6CF3>}
 #highlight {a frayed tunic} {<f9B6CF3>}
 #highlight {a tainted grey hood} {<f9B6CF3>}
 #highlight {a smelly piece of worm hide} {<f9B6CF3>}
 
-#nop Artifacts + God-Tier Items
-#highlight {the black sword} {<ff7768e>}
-#highlight {the Dragonhelm} {<ff7768e>}
-#highlight {the Morgul blade} {<ff7768e>}
-#highlight {a strange black helmet} {<ff7768e>}
-#highlight {the black sheath} {<ff7768e>}
-#highlight {the great black scimitar} {<ff7768e>}
-#highlight {a crown of bones} {<ff7768e>}
-#highlight {the black buckler} {<ff7768e>}
-#highlight {a dark curved sword} {<ff7768e>}
-#highlight {the Axe of Durin} {<ff7768e>}
-#highlight {the broad Elven blade} {<ff7768e>}
-#highlight {the slender Elven sword} {<ff7768e>}
-#highlight {the Elven shortsword with a runic inscription} {<ff7768e>}
-#highlight {the gleaming broadsword} {<ff7768e>}
-#highlight {the silvery broadsword} {<ff7768e>}
-#highlight {the Hammer of Belegost} {<ff7768e>}
-#highlight {a huge, black mace} {<ff7768e>}
-#highlight {a large visored helmet} {<ff7768e>}
-#highlight {a crude orkish horn} {<ff7768e>}
+#nop Artifacts + God-Tier Items  - red: ff7768e  yellow: fE5C890
+#highlight {the black sword} {<fE5C890>}
+#highlight {the Dragonhelm} {<fE5C890>}
+#highlight {the Morgul blade} {<fE5C890>}
+#highlight {a strange black helmet} {<fE5C890>}
+#highlight {the fine silvery morningstar} {<fE5C890>}
+#highlight {the black sheath} {<fE5C890>}
+#highlight {the great black scimitar} {<fE5C890>}
+#highlight {a crown of bones} {<fE5C890>}
+#highlight {the black buckler} {<fE5C890>}
+#highlight {a dark curved sword} {<fE5C890>}
+#highlight {the Axe of Durin} {<fE5C890>}
+#highlight {the broad Elven blade} {<fE5C890>}
+#highlight {the slender Elven sword} {<fE5C890>}
+#highlight {the Elven shortsword with a runic inscription} {<fE5C890>}
+#highlight {the gleaming broadsword} {<fE5C890>}
+#highlight {the silvery broadsword} {<fE5C890>}
+#highlight {the Hammer of Belegost} {<fE5C890>}
+#highlight {a huge, black mace} {<fE5C890>}
+#highlight {a large visored helmet} {<fE5C890>}
+#highlight {a crude orkish horn} {<fE5C890>}
 
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
@@ -70,6 +72,7 @@
 #highlight {an ornate, steel-shafted warhammer} {<fbb9af7>}
 #highlight {a great warsword} {<fbb9af7>}
 #highlight {a steel claymore} {<fbb9af7>}
+#highlight {a narrow runed awlpike} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
 #highlight {an ancient dwarven shield} {<fbb9af7>}
 #highlight {a bejewelled oak staff} {<fbb9af7>}
@@ -88,6 +91,7 @@
 #highlight {a gleaming belt} {<fbb9af7>}
 #highlight {a golden belt} {<fbb9af7>}
 #highlight {a belt of fell hide} {<fbb9af7>}
+#highlight {an elven longbow} {<fbb9af7>}
 
 #nop Good Gear
 #highlight {a slender dagger} {<f7aa2f7>}
@@ -114,7 +118,7 @@
 #highlight {a golden garnet ring} {<f7aa2f7>}
 #highlight {a mighty dwarven axe} {<fff9e64>}
 #highlight {a blackened dwarven axe} {<f7aa2f7>}
-#highlight {a darkened orkish axe} {<f7aa2f7>}
+#highlight {a darkened orkish axe} {<f4c82e5>} 
 #highlight {a wicked Durbûk-hai axe} {<f7aa2f7>}
 #highlight {a crossbow} {<f7aa2f7>}
 #highlight {a pair of black arm wrappings} {<f7aa2f7>}

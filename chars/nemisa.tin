@@ -1,11 +1,9 @@
-#read scripts/sleep.tin
-
 #alias {g} {
   #if { "%0" == "" } {
-    cast q 'lightning bolt' $target; #echo {cast q 'lightning bolt' $target}
+    cast f 'lightning bolt' $target; #echo {cast f 'lightning bolt' $target}
   };
   #else {
-    cast q 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    cast f 'lightning bolt' %0; #echo {cast f 'lightning bolt' %0}
   };
 }
 
@@ -20,5 +18,6 @@
 
 #var {bag} {sable}
 
+#alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
 #alias {reload} {get all.bolt sable; put all.bolt case}
 #alias {^.$} {shoot $target; #echo {shoot $target}}

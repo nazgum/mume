@@ -9,7 +9,7 @@
 #alias {th} { setTarget *hobbit* }
 #alias {tm} { setTarget *man* }
 #alias {to} { setTarget *orc* }
-#alias {tc} { setTarget *troll* }
+#alias {tl} { setTarget *troll* }
 
 #alias {setTarget} {
   #if {"%1" == ""} {

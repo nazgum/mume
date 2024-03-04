@@ -112,18 +112,18 @@
 #alias tp_moria {cast 'teleport' $key_moria; #echo {cast 'teleport' $key_moria}}
 
 
-#alias portal {cast n 'portal' down $key; #echo {cast n 'portal' down $key}}
-#alias portal1 {cast n 'portal' down $key1; #echo {cast n 'portal' down $key1}}
-#alias portal2 {cast n 'portal' down $key2; #echo {cast n 'portal' down $key2}}
-#alias portal3 {cast n 'portal' down $key3; #echo {cast n 'portal' down $key3}}
-#alias portal_dt {cast n 'portal' down $key_dt; #echo {cast n 'portal' down $key_dt}}
-#alias portal_vt {cast n 'portal' down $key_vt; #echo {cast n 'portal' down $key_vt}}
-#alias portal_lb {cast n 'portal' down $key_lb; #echo {cast n 'portal' down $key_lb}}
-#alias portal_cave {cast n 'portal' down $key_cave; #echo {cast n 'portal' down $key_cave}}
-#alias portal_brolg {cast n 'portal' down $key_brolg; #echo {cast n 'portal' down $key_brolg}}
-#alias portal_khuzur {cast n 'portal' down $key_khuzur; #echo {cast n 'portal' down $key_khuzur}}
-#alias portal_epriest {cast n 'portal' down $key_epriest; #echo {cast n 'portal' down $key_epriest}}
-#alias portal_moria {cast n 'portal' down $key_moria; #echo {cast n 'portal' down $key_moria}}
+#alias portal {cast n 'portal' $key; #echo {cast n 'portal' down $key}}
+#alias portal1 {cast n 'portal' $key1; #echo {cast n 'portal' down $key1}}
+#alias portal2 {cast n 'portal' $key2; #echo {cast n 'portal' down $key2}}
+#alias portal3 {cast n 'portal' $key3; #echo {cast n 'portal' down $key3}}
+#alias portal_dt {cast n 'portal' $key_dt; #echo {cast n 'portal' down $key_dt}}
+#alias portal_vt {cast n 'portal' $key_vt; #echo {cast n 'portal' down $key_vt}}
+#alias portal_lb {cast n 'portal' $key_lb; #echo {cast n 'portal' down $key_lb}}
+#alias portal_cave {cast n 'portal' $key_cave; #echo {cast n 'portal' down $key_cave}}
+#alias portal_brolg {cast n 'portal' $key_brolg; #echo {cast n 'portal' down $key_brolg}}
+#alias portal_khuzur {cast n 'portal' $key_khuzur; #echo {cast n 'portal' down $key_khuzur}}
+#alias portal_epriest {cast n 'portal' $key_epriest; #echo {cast n 'portal' down $key_epriest}}
+#alias portal_moria {cast n 'portal' $key_moria; #echo {cast n 'portal' down $key_moria}}
 
 
 #action {key: '%w'} {

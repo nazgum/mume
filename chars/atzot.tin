@@ -1,3 +1,21 @@
+#alias {g} {
+  #if { "%0" == "" } {
+    cast f 'shocking grasp' $target; #echo {cast f 'shocking grasp' $target}
+  };
+  #else {
+    cast f 'shocking grasp' %0; #echo {cast f 'shocking grasp' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
 #alias {bt} {
   #if { "%0" == "" } {
     bash $target; #echo {bash $target}
@@ -8,6 +26,8 @@
 }
 
 #alias {^.$} {bash $target; #echo {bash $target}}
+
+#alias {b} {bash}
 
 
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }

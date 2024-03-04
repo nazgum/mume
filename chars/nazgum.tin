@@ -1,13 +1,3 @@
-#alias {g} {
-  #if { "%0" == "" } {
-    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
-  };
-  #else {
-    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
-  };
-}
-#alias {h} {g}
-
 #alias {b} {
   #if { "%0" == "" } {
     back $target; #echo {back $target}
@@ -17,17 +7,14 @@
   };
 }
 
-
-#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {of bash}
-#alias {^5$} {of rescue nazgum}
-#alias {^6$} {k $mount}
-#alias {^7$} {k $mount}
-#alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
-#alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
-
+#alias {h} {
+  #if { "%0" == "" } {
+    bash $target; #echo {bash $target}
+  };
+  #else {
+    cast bash %0; #echo {bash %0}
+  };
+}
 
 #var {bag} {pack}
 

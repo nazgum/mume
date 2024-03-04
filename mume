@@ -52,7 +52,7 @@
 #read scripts/gmcp.tin
 
 #event {PROGRAM START} {
-	#session {mume} {localhost} {4242};
+	#session {mume} {localhost} {4000};
 	
 	#read scripts/layout.tin;
 	#read scripts/rooms.tin;
@@ -74,7 +74,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/atzot.tin;
+	#read chars/nemisa.tin;
 }
 
 #event {SESSION DISCONNECTED} {

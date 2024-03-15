@@ -1,5 +1,4 @@
 #var {leader} {none}
-#var {assister} {none}
 #var {auto_ass} {on}
 
 #alias {auto} {
@@ -23,17 +22,7 @@
   };
 }
 
-#alias {assister} {
-  #if { "%0" == "" } {
-    #echo {<f05A5DA>\$assister<099> set to: <f05A5DA>$assister<099>}
-  };
-  #else {
-    #var {assister} {%0};
-    #echo {<f05A5DA>\$assister<099> set to: <f05A5DA>$assister<099>}
-  };
-}
-
-#action {^$assister joins} { 
+#action {^$leader joins} { 
   #if { "$auto_ass" == "on" } { assist }
 }
 

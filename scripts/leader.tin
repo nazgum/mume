@@ -22,7 +22,7 @@
   };
 }
 
-#action {^$leader joins} { 
+#action {joins $leader's fight.} { 
   #if { "$auto_ass" == "on" } { assist }
 }
 

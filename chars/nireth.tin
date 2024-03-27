@@ -1,9 +1,9 @@
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'call lightning' $target; #echo {cast 'call lightning' $target}
+    cast f 'lightning bolt' $target; #echo {cast f 'lightning bolt' $target}
   };
   #else {
-    cast 'call lightning' %0; #echo {cast 'call lightning' %0}
+    cast f 'lightning bolt' %0; #echo {cast f 'lightning bolt' %0}
   };
 }
 
@@ -25,7 +25,7 @@
   };
 }
 
-#var {bag} {quiver}
+#var {bag} {sable}
 
 #alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
 #alias {reload} {get all.bolt $bag; put all.bolt case}

@@ -1,7 +1,5 @@
 #read scripts/blind.tin
 
-#var {shirt} {robe}
-
 #alias {g} {
   #if { "%0" == "" } {
     cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
@@ -29,27 +27,12 @@
   };
 }
 
-#alias {tunic} {
-	#if {"$shirt" == "tunic"} {rm tunic; wear tunic; };
-	#if {"$shirt" != "tunic"} {rm robe; get tunic $bag; wear tunic; put robe $bag; };
-	#var {shirt} {tunic}
-}
-#alias {pitch} {
-	#if {"$shirt" == "tunic"} {rm tunic; get pitch-black $bag; wear pitch-black; put tunic $bag; };
-	#if {"$shirt" == "dusky"} {rm dusky; get pitch-black $bag; wear pitch-black; put dusky $bag; };
-	#var {shirt} {pitch}
-}
-#alias {dusky} {
-	#if {"$shirt" == "tunic"} {rm tunic; get dusky $bag; wear dusky; put tunic $bag; };
-	#if {"$shirt" == "pitch"} {rm pitch-black; get dusky $bag; wear dusky; put pitch-black $bag; };
-	#var {shirt} {dusky}
-}
-#alias {coarse} {dusky}
-#alias {robe} {dusky}
-
 #alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
 #alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
 #alias {cloak} { remove cloak; get cloak $bag; wear cloak; put cloak $bag }
+
+#alias {tunic} {rm robe; get tunic $bag; wear tunic; put robe $bag}
+#alias {robe} {rm tunic; get robe $bag; wear robe; put tunic $bag}

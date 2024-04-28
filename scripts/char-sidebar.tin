@@ -1,0 +1,200 @@
+#var char[session][xp] {0}
+#var char[session][tp] {0}
+
+#var char[mood] {wimpy};
+#var char[alert] {normal};
+#var char[spell-effort] {normal};
+#var char[wimpy] {500};
+#var char[position] {standing};
+
+sideSession;
+
+#alias {sideChar} {
+	#draw <059> boxed rounded tile 1 -24 9 -1;
+	#draw <059> corner 1 -11 1 -5 { Char };
+
+	#show { <069>Name  :<099> $char[name] } 2 -23;
+	#show { <069>Race  :<099> $char[race] } 3 -23;
+	#show { <069>Class :<099> $char[class] } 4 -23;
+	#show { <069>Level :<099> $char[level] } 5 -23;
+	
+	#format {char[stats][str]} {%.2s} {$char[stats][str]};
+	#format {char[stats][con]} {%.2s} {$char[stats][con]};
+	#format {char[stats][dex]} {%.2s} {$char[stats][dex]};
+	#format {char[stats][per]} {%.2s} {$char[stats][per]};
+	#format {char[stats][int]} {%.2s} {$char[stats][int]};
+	#format {char[stats][wis]} {%.2s} {$char[stats][wis]};
+	#format {char[stats][wil]} {%.2s} {$char[stats][wil]};
+	
+	#show { <069>S:<099>$char[stats][str] <069>C:<099>$char[stats][con] <069>D:<099>$char[stats][dex] <069>P:<099>$char[stats][per]} 7 -23;
+	#show { <069>I:<099>$char[stats][int] <069>W:<099>$char[stats][wis] <069>W:<099>$char[stats][wil] } 8 -23;
+};
+
+#alias {sideSession} {
+	#draw <059> boxed rounded tile 10 -24 12 -1;
+	#draw <059> corner 10 -13 10 -2 { Session };
+	
+	#show { <069>Xp:<099> $session_xp } 11 -23;
+	#show { <069>Tp:<099> $session_tp } 11 -11;
+}
+
+#alias {sideInfo} {
+	#draw <059> boxed rounded tile 13 -24 20 -1;
+	#draw <059> corner 13 -10 13 -2 { Info };
+	
+	#format {gmcp[room][info][environment]} {%.8s} {$gmcp[room][info][environment]};
+	#format {gmcp[room][info][area]} {%.8s} {$gmcp[room][info][area]};
+	
+	#format {side_target} {%.8s} {$target};
+	#format {side_mount} {%.8s} {$mount};
+	
+	#show { <069>Terrain :<099> $gmcp[room][info][environment] } 14 -23;
+	#show { <069>Pos     :<099> $char[position] } 15 -23;
+	#show { <069>Mood    :<099> $char[mood] } 16 -23;
+	#show { <069>Flee    :<099> $char[wimpy] } 17 -23;
+	#show { <069>Target  :<099> <f05A5DA>$side_target<099> } 18 -23;
+	#show { <069>Track   :<099> <f05A5DA>$side_mount<099> } 19 -23;
+}
+
+#EVENT {IAC SB GMCP Char.StatusVars IAC SE} {
+    #var gmcp[char][status] {%0};
+    
+    #if {&{gmcp[char][status][name]}} { 
+    	#var {char[name]} {$gmcp[char][status][name]};
+    };
+    
+    #if {&{gmcp[char][status][race]}} { 
+    	#format {char[race]} {%.16s} {$gmcp[char][status][race]};
+    };
+    #if {&{gmcp[char][status][subrace]}} { 
+    	#var {char[race]} {$gmcp[char][status][subrace]};
+    };
+    
+    #if {"$gmcp[char][status][subrace]" == "null"} {
+    	#format {char[race]} {%.16s} {$gmcp[char][status][race]};
+	};
+    
+    #if {"$gmcp[char][status][subrace]" == "Tarkhnarb Orc"} {
+    	#var {char[race]} {Orc};
+	};
+		
+    #if {&{gmcp[char][status][subclass]}} { 
+    	#format {char[class]} {%.8s} {$gmcp[char][status][subclass]};
+    };
+    #if {&{gmcp[char][status][level]}} { 
+    	#format {char[level]} {%.4s} {$gmcp[char][status][level]};
+    };
+    
+    sideChar;
+};
+
+#EVENT {IAC SB GMCP Char.Vitals IAC SE}
+{
+    #var gmcp[char][vitals] {%0};
+    
+    #if {&{gmcp[char][vitals][mood]}} { 
+    	#var char[mood] {$gmcp[char][vitals][mood]};
+
+		#if {"$char[mood]" == "aggressive"} {
+			#var char[mood] {aggro};
+		};
+    };
+    
+    #if {&{gmcp[char][vitals][spell-effort]}} { 
+    	#var char[spell-effort] {$gmcp[char][vitals][spell-effort]};
+    };
+    
+    #if {&{gmcp[char][vitals][alertness]}} { 
+    	#format {char[alert]} {%.8s} {$gmcp[char][vitals][alertness]};
+    	
+    	#if {"$char[alert]" != "normal"} {
+    		#var char[alert] {<119>$char[alert]<099>};
+    	};
+    };
+    #if {&{gmcp[char][vitals][position]}} { 
+    	#format {char[position]} {%.8s} {$gmcp[char][vitals][position]};
+    	
+    	#if "$char[position]" == "sitting" { #var char[position {<119>sitting<099>} };
+    	#if "$char[position]" == "stunned" { #var char[position {<119>stunned<099>} };
+    	#if "$char[position]" == "incapaci" { #var char[position {<119>incap<099>} };
+    	#if "$char[position]" == "dying" { #var char[position {<119>dying<099>} };
+    };
+    
+    #if {&{gmcp[char][vitals][xp]}} {
+    	#var {char[xp]} {$gmcp[char][vitals][xp]};
+    };
+    #if {&{gmcp[char][vitals][tp]}} {
+    	#var {char[tp]} {$gmcp[char][vitals][tp]};
+    };
+    
+    sideSession;
+    sideInfo;
+}
+
+
+#action {^Reconnecting.} {info}
+
+#action {^Your base abilities are: Str:%1 Int:%2 Wis:%3 Dex:%4 Con:%5 Wil:%6 Per:%7.} {
+	#var {char[stats][str]} {%1};
+	#var {char[stats][int]} {%2};
+	#var {char[stats][wis]} {%3};
+	#var {char[stats][dex]} {%4};
+	#var {char[stats][con]} {%5};
+	#var {char[stats][wil]} {%6};
+	#var {char[stats][per]} {%7};
+}
+
+#action {^You are %1 years} {
+	#var {char[age]} {%1};
+}
+
+#action {^Perception: %1 Alertness: %2.} {
+	#format {char[alert]} {%.8s} {%2};
+    	
+    #if {"$char[alert]" != "normal"} {
+    	#var char[alert] {<119>$char[alert]<099>};
+    };
+}
+
+#action {^Your mood is %1. You will flee if your hit points go below %2.} {
+	#var char[mood] {%1};
+	#var char[wimpy] {%2};
+
+	#if {"$char[mood]" == "aggressive"} {
+    	#var char[mood] {aggro};
+    };
+}
+
+#action {^You are speaking %1.$} {
+	#var {char[lang]} {%1};
+	sideChar;
+	sideInfo;
+}
+
+#alias 0 {cha wim 0; #var char[wimpy] 0; sideInfo};
+#alias 20 {cha wim 20; #var char[wimpy] 20; sideInfo};
+#alias 40 {cha wim 40; #var char[wimpy] 40; sideInfo};
+#alias 60 {cha wim 60; #var char[wimpy] 60; sideInfo};
+#alias 80 {cha wim 80; #var char[wimpy] 80; sideInfo};
+#alias 100 {cha wim 100; #var char[wimpy] 100; sideInfo};
+#alias 120 {cha wim 120; #var char[wimpy] 120; sideInfo};
+#alias 140 {cha wim 140; #var char[wimpy] 140; sideInfo};
+#alias 160 {cha wim 160; #var char[wimpy] 160; sideInfo};
+#alias 180 {cha wim 180; #var char[wimpy] 180; sideInfo};
+#alias 200 {cha wim 200; #var char[wimpy] 200; sideInfo};
+#alias 220 {cha wim 220; #var char[wimpy] 220; sideInfo};
+#alias 240 {cha wim 240; #var char[wimpy] 240; sideInfo};
+#alias 260 {cha wim 260; #var char[wimpy] 260; sideInfo};
+#alias 280 {cha wim 280; #var char[wimpy] 280; sideInfo};
+#alias 300 {cha wim 300; #var char[wimpy] 300; sideInfo};
+#alias 320 {cha wim 320; #var char[wimpy] 320; sideInfo};
+#alias 340 {cha wim 340; #var char[wimpy] 340; sideInfo};
+#alias 360 {cha wim 360; #var char[wimpy] 360; sideInfo};
+#alias 380 {cha wim 380; #var char[wimpy] 380; sideInfo};
+#alias 400 {cha wim 400; #var char[wimpy] 400; sideInfo};
+#alias 420 {cha wim 420; #var char[wimpy] 420; sideInfo};
+#alias 440 {cha wim 440; #var char[wimpy] 440; sideInfo};
+#alias 460 {cha wim 460; #var char[wimpy] 460; sideInfo};
+#alias 480 {cha wim 480; #var char[wimpy] 480; sideInfo};
+#alias 500 {cha wim 500; #var char[wimpy] 500; sideInfo};
+

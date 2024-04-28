@@ -1,6 +1,36 @@
 #var {bag} {pack}
 
-#alias {^.$} {bash $target; #echo {bash $target}}
+#alias {bh} {
+  #if { "%0" == "" } {
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+  };
+  #else {
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+  };
+}
+#alias {g} {bh}
 
-#alias {g} {shoot $target; #echo {shoot $target}}
-#alias {arr} {get all.arrow all.corpse; get all.arrow; put all.arrow quiver}
+#alias {colspray} {
+  #if { "%0" == "" } {
+    cast 'colour spray' $target; #echo {cast 'colour spray' $target}
+  };
+  #else {
+    cast 'colour spray' %0; #echo {cast 'colour spray' %0}
+  };
+}
+#alias {h} {colspray}
+
+#var {bag} {sable}
+#unalias {str}
+
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
+#alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
+
+#alias {jerkin} {rm robe; get jerkin $bag; wear jerkin; put robe $bag}
+#alias {robe} {rm jerkin; get robe $bag; wear robe; put jerkin $bag}
+
+#alias {^1$} {of bash $target; #echo {of bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {order rawr bash; #echo {order rawr bash}}
+#alias {^5$} {order rawr rescue durb; #echo {order rawr rescue durb}}

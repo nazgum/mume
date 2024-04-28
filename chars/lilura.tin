@@ -1,38 +1,25 @@
+#read scripts/sleep.tin
 #var {bag} {pack}
-#var {shld} {leaf}
 
-#alias {magicmissile} {
+#alias {shock} {
   #if { "%0" == "" } {
-    cast 'magic missile' $target; #echo {cast 'magic missile' $target}
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
   };
   #else {
-    cast 'magic missile' %0; #echo {cast 'magic missile' %0}
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
-#alias {h} {magicmissile}
+#alias {g} {shock}
+#alias {h} {shock}
 
-
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
-#alias {remp} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
-#alias {cc} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use garnet-ring}
-
-#alias {bla} {
-	wield wightblade;
-	#if {"$shld" != "leaf"} {rm buckler; wear leaf-embossed; #var {shld} {leaf} };
-}
-#alias {orn} {
-	wield ornate;
-	#if {"$shld" != "leaf"} {rm buckler; wear leaf-embossed; #var {shld} {leaf} };
-}
-#alias {war} {
-	#if {"$shld" != "buck"} {rm shield; wear buckler; #var {shld} {buck} };
-	wield warsword;
-}
-
-#alias {leaf} {rm buckler; wear leaf-embossed; #var {shld} {leaf}}
-#alias {buck} {rm leaf-embossed; wear buckler; #var {shld} {buck}}
-
-#alias {1h} {orn}
-#alias {2h} {war}
+#alias {remp} { remove ring; get emerald-ring $bag; wear ring; put ring $bag; use emerald-ring}
+#alias {curec} { remove ring; get garnet-ring $bag; wear ring; put ring $bag; use garnet-ring}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield ornate; put pipe $bag }
 #alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
 #alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
+
+#alias {^1$} {of bash $target; #echo {of bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {order rawr bash; #echo {order rawr bash}}
+#alias {^5$} {order rawr rescue lilura; #echo {order rawr rescue lilura}}

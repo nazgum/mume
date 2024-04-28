@@ -3,7 +3,7 @@
 #alias {enableMacros} {
   #var {macros} {on};
   #echo {<fff9e64>\# SPEED ON<099>                                                };
-  #send {\n};
+  #nop send {\n};
   
   #MACRO {^n} {#echo {\nn}; n};
   #MACRO {^s} {#echo {\ns}; s};
@@ -26,7 +26,7 @@
 #alias {disableMacros} {
   #var {macros} {off};
   #echo {<039>\# SPEED OFF<099>                                          };
-  #send {\n};
+  #nop send {\n};
   
   #UNMACRO {^n};
   #UNMACRO {^s};

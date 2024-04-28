@@ -1,146 +1,23 @@
-#var {key} {none}
-#var {key1} {none}
-#var {key2} {none}
-#var {key3} {none}
-#var {key_dt} {none}
-#var {key_vt} {none}
-#var {key_brolg} {none}
-#var {key_cave} {none}
-#var {key_khuzur} {none}
-#var {key_epriest} {none}
-#var {key_lb} {none}
-#var {key_moria} {none}
+#alias {key} { #var {loc[%1]} {%2}; }
+#alias {keys} {#var loc; }
 
-
-#alias {key} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key<099> set to: <f05A5DA>$key<099>} };
-  #else { #var {key} {%0}; #echo {<f05A5DA>\$key<099> set to: <f05A5DA>$key<099>} };
+#alias {clearkeys} {
+  #var loc {};
+  #echo {<f05A5DA>Port keys have been cleared.<099>};
+  #send {\n};
 }
 
-#alias {key1} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key1<099> set to: <f05A5DA>$key1<099>} };
-  #else { #var {key1} {%0}; #echo {<f05A5DA>\$key1<099> set to: <f05A5DA>$key1<099>} };
+#alias tp {
+  #if { "%0" == "" } { #echo {<f05A5DA>Teleport requires a port key.<099>}; };
+  #else { cast 'teleport' $loc[%1]; #echo {cast 'teleport' $loc[%1]} };
 }
 
-#alias {key2} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key2<099> set to: <f05A5DA>$key2<099>} };
-  #else { #var {key2} {%0}; #echo {<f05A5DA>\$key2<099> set to: <f05A5DA>$key2<099>} };
+#alias scry {
+  #if { "%0" == "" } { #echo {<f05A5DA>Scry requires a port key.<099>}; };
+  #else { cast 'scry' $loc[%1]; #echo {cast 'scry' $loc[%1]} };
 }
 
-#alias {key3} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key3<099> set to: <f05A5DA>$key3<099>} };
-  #else { #var {key3} {%0}; #echo {<f05A5DA>\$key3<099> set to: <f05A5DA>$key3<099>} };
-}
-
-#alias {key_dt} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_dt<099> set to: <f05A5DA>$key_dt<099>} };
-  #else { #var {key_dt} {%0}; #echo {<f05A5DA>\$key_dt<099> set to: <f05A5DA>$key_dt<099>} };
-}
-
-#alias {key_vt} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_vt<099> set to: <f05A5DA>$key_vt<099>} };
-  #else { #var {key_vt} {%0}; #echo {<f05A5DA>\$key_vt<099> set to: <f05A5DA>$key_vt<099>} };
-}
-
-#alias {key_lb} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_lb<099> set to: <f05A5DA>$key_lb<099>} };
-  #else { #var {key_lb} {%0}; #echo {<f05A5DA>\$key_lb<099> set to: <f05A5DA>$key_lb<099>} };
-}
-
-#alias {key_cave} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_cave<099> set to: <f05A5DA>$key_cave<099>} };
-  #else { #var {key_cave} {%0}; #echo {<f05A5DA>\$key_cave<099> set to: <f05A5DA>$key_cave<099>} };
-}
-
-#alias {key_brolg} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_brolg<099> set to: <f05A5DA>$key_brolg<099>} };
-  #else { #var {key_brolg} {%0}; #echo {<f05A5DA>\$key_brolg<099> set to: <f05A5DA>$key_brolg<099>} };
-}
-
-#alias {key_khuzur} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_khuzur<099> set to: <f05A5DA>$key_khuzur<099>} };
-  #else { #var {key_khuzur} {%0}; #echo {<f05A5DA>\$key_khuzur<099> set to: <f05A5DA>$key_khuzur<099>} };
-}
-
-#alias {key_epriest} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_epriest<099> set to: <f05A5DA>$key_epriest<099>} };
-  #else { #var {key_epriest} {%0}; #echo {<f05A5DA>\$key_epriest<099> set to: <f05A5DA>$key_epriest<099>} };
-}
-
-#alias {key_moria} {
-  #if { "%0" == "" } { #echo {<f05A5DA>\$key_moria<099> set to: <f05A5DA>$key_moria<099>} };
-  #else { #var {key_moria} {%0}; #echo {<f05A5DA>\$key_moria<099> set to: <f05A5DA>$key_moria<099>} };
-}
-
-#alias scry {cast n 'scry' $key; #echo {cast n 'scry' $key}}
-#alias scry1 {cast n 'scry' $key1; #echo {cast n 'scry' $key1}}
-#alias scry2 {cast n 'scry' $key2; #echo {cast n 'scry' $key2}}
-#alias scry3 {cast n 'scry' $key3; #echo {cast n 'scry' $key3}}
-#alias scry_dt {cast n 'scry' $key_dt; #echo {cast n 'scry' $key_dt}}
-#alias scry_vt {cast n 'scry' $key_vt; #echo {cast n 'scry' $key_vt}}
-#alias scry_lb {cast n 'scry' $key_lb; #echo {cast n 'scry' $key_lb}}
-#alias scry_cave {cast n 'scry' $key_cave; #echo {cast n 'scry' $key_cave}}
-#alias scry_brolg {cast n 'scry' $key_brolg; #echo {cast n 'scry' $key_brolg}}
-#alias scry_khuzur {cast n 'scry' $key_khuzur; #echo {cast n 'scry' $key_khuzur}}
-#alias scry_epriest {cast n 'scry' $key_epriest; #echo {cast n 'scry' $key_epriest}}
-#alias scry_moria {cast n 'scry' $key_moria; #echo {cast n 'scry' $key_moria}}
-
-#alias wr {cast n 'watch room' $key; #echo {cast n 'watch room' $key}}
-#alias wr1 {cast n 'watch room' $key1; #echo {cast n 'watch room' $key1}}
-#alias wr2 {cast n 'watch room' $key2; #echo {cast n 'watch room' $key2}}
-#alias wr3 {cast n 'watch room' $key3; #echo {cast n 'watch room' $key3}}
-#alias wr_dt {cast n 'watch room' $key_dt; #echo {cast n 'watch room' $key_dt}}
-#alias wr_vt {cast n 'watch room' $key_vt; #echo {cast n 'watch room' $key_vt}}
-#alias wr_lb {cast n 'watch room' $key_lb; #echo {cast n 'watch room' $key_lb}}
-#alias wr_cave {cast n 'watch room' $key_cave; #echo {cast n 'watch room' $key_cave}}
-#alias wr_brolg {cast n 'watch room' $key_brolg; #echo {cast n 'watch room' $key_brolg}}
-#alias wr_khuzur {cast n 'watch room' $key_khuzur; #echo {cast n 'watch room' $key_khuzur}}
-#alias wr_epriest {cast n 'watch room' $key_epriest; #echo {cast n 'watch room' $key_epriest}}
-#alias wr_moria {cast n 'watch room' $key_moria; #echo {cast n 'watch room' $key_moria}}
-
-#alias tp {cast 'teleport' $key; #echo {cast 'teleport' $key}}
-#alias tp1 {cast 'teleport' $key1; #echo {cast 'teleport' $key1}}
-#alias tp2 {cast 'teleport' $key2; #echo {cast 'teleport' $key2}}
-#alias tp3 {cast 'teleport' $key3; #echo {cast 'teleport' $key3}}
-#alias tp_dt {cast 'teleport' $key_dt; #echo {cast 'teleport' $key_dt}}
-#alias tp_vt {cast 'teleport' $key_vt; #echo {cast 'teleport' $key_vt}}
-#alias tp_lb {cast 'teleport' $key_lb; #echo {cast 'teleport' $key_lb}}
-#alias tp_cave {cast 'teleport' $key_cave; #echo {cast 'teleport' $key_cave}}
-#alias tp_brolg {cast 'teleport' $key_brolg; #echo {cast 'teleport' $key_brolg}}
-#alias tp_khuzur {cast 'teleport' $key_khuzur; #echo {cast 'teleport' $key_khuzur}}
-#alias tp_epriest {cast 'teleport' $key_epriest; #echo {cast 'teleport' $key_epriest}}
-#alias tp_moria {cast 'teleport' $key_moria; #echo {cast 'teleport' $key_moria}}
-
-
-#alias portal {cast n 'portal' $key; #echo {cast n 'portal' down $key}}
-#alias portal1 {cast n 'portal' $key1; #echo {cast n 'portal' down $key1}}
-#alias portal2 {cast n 'portal' $key2; #echo {cast n 'portal' down $key2}}
-#alias portal3 {cast n 'portal' $key3; #echo {cast n 'portal' down $key3}}
-#alias portal_dt {cast n 'portal' $key_dt; #echo {cast n 'portal' down $key_dt}}
-#alias portal_vt {cast n 'portal' $key_vt; #echo {cast n 'portal' down $key_vt}}
-#alias portal_lb {cast n 'portal' $key_lb; #echo {cast n 'portal' down $key_lb}}
-#alias portal_cave {cast n 'portal' $key_cave; #echo {cast n 'portal' down $key_cave}}
-#alias portal_brolg {cast n 'portal' $key_brolg; #echo {cast n 'portal' down $key_brolg}}
-#alias portal_khuzur {cast n 'portal' $key_khuzur; #echo {cast n 'portal' down $key_khuzur}}
-#alias portal_epriest {cast n 'portal' $key_epriest; #echo {cast n 'portal' down $key_epriest}}
-#alias portal_moria {cast n 'portal' $key_moria; #echo {cast n 'portal' down $key_moria}}
-
-
-#action {key: '%w'} {
-  #var {key} {%1};
-  #echo {<f05A5DA>\$key<099> set to: <f05A5DA>$key<099>}
-}
-
-#alias keys {
-  #echo {<f05A5DA>\$key1<099>        set to: <f05A5DA>$key1<099> };
-  #echo {<f05A5DA>\$key2<099>        set to: <f05A5DA>$key2<099> };
-  #echo {<f05A5DA>\$key3<099>        set to: <f05A5DA>$key3<099> };
-  #echo {<f05A5DA>\$key_dt<099>      set to: <f05A5DA>$key_dt<099> };
-  #echo {<f05A5DA>\$key_vt<099>      set to: <f05A5DA>$key_vt<099> };
-  #echo {<f05A5DA>\$key_lb<099>      set to: <f05A5DA>$key_lb<099> };
-  #echo {<f05A5DA>\$key_cave<099>    set to: <f05A5DA>$key_cave<099> };
-  #echo {<f05A5DA>\$key_brolg<099>   set to: <f05A5DA>$key_brolg<099> };
-  #echo {<f05A5DA>\$key_khuzur<099>  set to: <f05A5DA>$key_khuzur<099> };
-  #echo {<f05A5DA>\$key_epriest<099> set to: <f05A5DA>$key_epriest<099> };
-  #echo {<f05A5DA>\$key_moria<099>   set to: <f05A5DA>$key_moria<099> };
+#alias portal {
+  #if { "%0" == "" } { #echo {<f05A5DA>Portal requires a port key.<099>}; };
+  #else { cast 'portal' $loc[%1]; #echo {cast 'portal' $loc[%1]} };
 }

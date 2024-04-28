@@ -1,25 +1,35 @@
-#var {bag} {pack}
+#read scripts/blind.tin
 
-#alias {burn} {
+#unalias str
+
+#var {bag} {sable}
+
+#alias {smother} {
   #if { "%0" == "" } {
-    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+    cast 'smother' $target; #echo {cast 'smother' $target}
   };
   #else {
-    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+    cast 'smother' %0; #echo {cast 'smother' %0}
   };
 }
-#alias {g} {burn}
+#alias {g} {smother}
 
-#alias {h} {
+#alias {harm} {
   #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+    cast 'harm' $target; #echo {cast 'harm' $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
-#alias {bolt} {h}
+#alias {h} {harm}
 
-#alias {pipe} {wield pipe; rest; smoke pipe; st; wield scourge }
-#alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield warsword }
+#alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
+#alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
 
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue saith}

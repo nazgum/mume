@@ -1,3 +1,5 @@
+#read scripts/blind.tin
+
 #var {bag} {pack}
 
 #alias {burn} {
@@ -9,7 +11,16 @@
   };
 }
 
-#alias {g} {burn}
+#alias {drain} {
+  #if { "%0" == "" } {
+    cast 'energy drain' $target; #echo {cast 'energy drain' $target}
+  };
+  #else {
+    cast 'energy drain' %0; #echo {cast 'energy drain' %0}
+  };
+}
+
+#alias {g} {drain}
 
 #alias {bb} {
   #if { "%0" == "" } {
@@ -32,12 +43,4 @@
 #alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 #alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 
-#alias {^.$} {bash $target; #echo {bash $target}}
-
-
-#alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
-#alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
-#alias {cloak} {rm grisly; get cloak $bag; wear cloak; put grisly $bag}
-#alias {fur} {rm cloak; get grisly $bag; wear grisly; put cloak $bag}
-#alias {tunic} {rm robe; get tunic $bag; wear tunic; put robe $bag}
-#alias {robe} {rm tunic; get robe $bag; wear robe; put tunic $bag}
+#alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}

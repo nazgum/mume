@@ -4,11 +4,13 @@
 #nop middle 90
 
 #nop split 0 0 30 40
+#nop split 3 0 0 0 1
 
 #screen clear all
-#screen scrollregion 0 1 -2 -40
-#screen inputregion -1 1 -1 -40
+#nop screen scrollregion 0 1 -2 -1
+#nop screen inputregion -1 1 -1 -1
 
+#split 0 0 0 0 1
 
 #EVENT {SCROLLED MOUSE WHEEL UP} {
 	#buffer {up} {5};

@@ -1,3 +1,14 @@
+#alias {smother} {
+  #if { "%0" == "" } {
+    cast 'smother' $target; #echo {cast 'smother' $target}
+  };
+  #else {
+    cast 'smother' %0; #echo {cast 'smother' %0}
+  };
+}
+#alias {g} {smother}
+#alias {h} {smother}
+
 #alias {bt} {
   #if { "%0" == "" } {
     bash $target; #echo {bash $target}
@@ -11,4 +22,5 @@
 
 #alias {b} {bash}
 
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; draw axe; put pipe pack }
+#alias {bl} {draw staff; use staff; draw axe}

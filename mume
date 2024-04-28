@@ -49,15 +49,15 @@
 #PATHDIR          {d}  {u}  {32}
 
 #read scripts/mmapper.tin;
-#read scripts/gmcp.tin
+#nop read scripts/gmcp.tin
 
 #event {PROGRAM START} {
 	#session {mume} {localhost} {4000};
 	
 	#read scripts/layout.tin;
-	#read scripts/rooms.tin;
+	#nop read scripts/rooms.tin;
 	#read scripts/xp.tin;
-	#read scripts/char.tin;
+	#nop read scripts/char.tin;
 	#read scripts/target.tin;
 	#read scripts/items.tin;
 	#read scripts/doors.tin;
@@ -74,7 +74,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/nireth.tin;
+	#read chars/itzit.tin;
 }
 
 #event {SESSION DISCONNECTED} {

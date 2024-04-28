@@ -36,3 +36,5 @@
 #alias {nomorg} {draw blade}
 #alias {eqmorg} {get sheath $bag; wear sheath}
 #alias {himorg} {remove sheath; put sheath $bag}
+
+#alias {dropkeys} {get all.key all;drop all.key}

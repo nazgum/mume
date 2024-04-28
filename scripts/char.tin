@@ -53,7 +53,7 @@ sideSession;
 	#show { <069>Mood    :<099> $char[mood] } 16 -23;
 	#show { <069>Flee    :<099> $char[wimpy] } 17 -23;
 	#show { <069>Target  :<099> <f05A5DA>$side_target<099> } 18 -23;
-	#show { <069>Mount   :<099> <f05A5DA>$side_mount<099> } 19 -23;
+	#show { <069>Track   :<099> <f05A5DA>$side_mount<099> } 19 -23;
 }
 
 #EVENT {IAC SB GMCP Char.StatusVars IAC SE} {

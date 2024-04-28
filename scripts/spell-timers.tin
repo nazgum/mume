@@ -130,6 +130,13 @@
 	#line {gag}
 }
 
+#action {^A spectral energy courses through your veins.} {spellTimerSet spectral health}
+#action {^The spectral energy sustaining your health wanes.$} {spellTimerUnset spectral health}
+#action {^- spectral health$} {
+	spellTimerStatus spectral health;
+	#line {gag}
+}
+
 #action {^You feel your muscles relax and your pulse slow as the strength that welled within you subsides.$} {spellTimerSet tiredness}
 #action {^You feel your muscles regain some of their former energy.$} {spellTimerUnset tiredness}
 #action {^- tiredness$} {

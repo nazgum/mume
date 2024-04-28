@@ -9,7 +9,7 @@
 #highlight {(well-maintained)} {<f73daca>}
 #highlight {(satisfactory)} {<f73daca>}
 #highlight {(used)} {<f73daca>}
-#highlight {(worn)} {<f73daca>}
+#highlight {(worn)} {<f6E78A4>}
 #highlight {(neglected)} {<f6E78A4>}
 #highlight {(marred)} {<f6E78A4>}
 #highlight {(unavailing)} {<f6E78A4>}
@@ -55,6 +55,7 @@
 #highlight {an ancient, jewelled helmet} {<fcfc9c2>}
 #highlight {a sapphire ring} {<fcfc9c2>}
 #highlight {a small crystal phial} {<fcfc9c2>}
+#highlight {an iron sapphire ring} {<fcfc9c2>}
 
 #nop Spell Save Items
 #highlight {an old length of iron chain} {<ffca878>}
@@ -65,6 +66,8 @@
 
 
 #nop Important Gear
+#highlight {a Dúnadan blade} {<fbb9af7>}
+#highlight {a massive dwarven waraxe} {<fbb9af7>}
 #highlight {a nimble blade} {<fbb9af7>}
 #highlight {a black runed dagger} {<fbb9af7>} 
 #highlight {a blackened spear} {<fbb9af7>} 
@@ -93,6 +96,8 @@
 #highlight {an elven longbow} {<fbb9af7>}
 
 #nop Good Gear
+#highlight {a double edged eket} {<f7aa2f7>}
+#highlight {an engraved warhammer} {<f7aa2f7>}
 #highlight {a slender dagger} {<f7aa2f7>}
 #highlight {a ceremonial dagger} {<f7aa2f7>}
 #highlight {an enruned robe} {<f7aa2f7>}
@@ -115,6 +120,7 @@
 #highlight {a red ruby} {<f7aa2f7>}
 #highlight {a golden ruby ring} {<f7aa2f7>}
 #highlight {a golden garnet ring} {<f7aa2f7>}
+#highlight {a golden emerald ring} {<f7aa2f7>}
 #highlight {a mighty dwarven axe} {<fff9e64>}
 #highlight {a blackened dwarven axe} {<f7aa2f7>}
 #highlight {a darkened orkish axe} {<f4c82e5>} 

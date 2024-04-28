@@ -2,63 +2,6 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'energy drain' $target; #echo {cast 'energy drain' $target}
-  };
-  #else {
-    cast 'energy drain' %0; #echo {cast 'energy drain' %0}
-  };
-}
-
-#alias {h} {
-  #if { "%0" == "" } {
-    cast 'dispel evil' $target; #echo {cast 'dispel evil' $target}
-  };
-  #else {
-    cast 'dispel evil' %0; #echo {cast 'dispel evil' %0}
-  };
-}
-
-#alias {psy} {
-  #if { "%0" == "" } {
-    cast 'poison' $target psylonia; #echo {cast 'poison' $target psylonia}
-  };
-  #else {
-    cast 'poison' %0 psylonia; #echo {cast 'poison' %0 psylonia}
-  };
-}
-
-#alias {arach} {
-  #if { "%0" == "" } {
-    cast 'poison' $target arachnia; #echo {cast 'poison' $target arachnia}
-  };
-  #else {
-    cast 'poison' %0 arachnia; #echo {cast 'poison' %0 arachnia}
-  };
-}
-
-#alias {venom} {
-  #if { "%0" == "" } {
-    cast 'poison' $target venom; #echo {cast 'poison' $target venom}
-  };
-  #else {
-    cast 'poison' %0 venom; #echo {cast 'poison' %0 venom}
-  };
-}
-#alias {ven} {venom}
-
-#alias {curse} {
-  #if { "%0" == "" } {
-    cast 'curse' $target; #echo {cast 'curse' $target}
-  };
-  #else {
-    cast 'curse' %0; #echo {cast 'curse' %0}
-  };
-}
-#alias {curs} {curse}
-#alias {crs} {curse}
-
-#alias {sm} {
-  #if { "%0" == "" } {
     cast 'smother' $target; #echo {cast 'smother' $target}
   };
   #else {
@@ -66,30 +9,12 @@
   };
 }
 
-#alias {de} {
+#alias {h} {
   #if { "%0" == "" } {
-    cast 'dispel evil' $target; #echo {cast 'dispel evil' $target}
+    cast 'harm' $target; #echo {cast 'harm' $target}
   };
   #else {
-    cast 'dispel evil' %0; #echo {cast 'dispel evil' %0}
-  };
-}
-
-#alias {qd} {
-  #if { "%0" == "" } {
-    cast q 'dispel evil' $target; #echo {cast q 'dispel evil' $target}
-  };
-  #else {
-    cast q 'dispel evil' %0; #echo {cast q 'dispel evil' %0}
-  };
-}
-
-#alias {dr} {
-  #if { "%0" == "" } {
-    use staff $target; #echo {use staff $target}
-  };
-  #else {
-    use staff %0; #echo {use staff %0}
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
 

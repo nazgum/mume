@@ -1,3 +1,5 @@
+#unalias {str}
+
 #alias {smother} {
   #if { "%0" == "" } {
     cast 'smother' $target; #echo {cast 'smother' $target}
@@ -8,6 +10,9 @@
 }
 #alias {g} {smother}
 #alias {h} {smother}
+
+#alias {1} {use phial $target}
+#alias {2} {use phial}
 
 #alias {bt} {
   #if { "%0" == "" } {

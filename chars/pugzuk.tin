@@ -1,22 +1,16 @@
 #var {bag} {pack}
 
-#alias {g} {
+#alias {energydrain} {
   #if { "%0" == "" } {
-    cast q 'harm' $target; #echo {cast q 'harm' $target}
+    cast n 'energy drain' $target; #echo {cast n 'energy drain' $target}
   };
   #else {
-    cast q 'harm' %0; #echo {cast q 'harm' %0}
+    cast n 'energy drain' %0; #echo {cast n 'energy drain' %0}
   };
 }
 
-#alias {h} {
-  #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
-  };
-  #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
-  };
-}
+#alias {g} {energydrain}
+#alias {h} {energydrain}
 
 #alias {^.$} {bash $target; #echo {bash $target}}
 

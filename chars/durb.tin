@@ -1,4 +1,4 @@
-#var {bag} {pack}
+#var {bag} {sable}
 
 #alias {bh} {
   #if { "%0" == "" } {
@@ -20,17 +20,24 @@
 }
 #alias {h} {colspray}
 
-#var {bag} {sable}
+#alias {charm} {
+  #if { "%0" == "" } {
+    cast t 'charm' $target; #echo {cast t 'charm' $target}
+  };
+  #else {
+    cast t 'charm' %0; #echo {cast t 'charm' %0}
+  };
+}
+#alias {b} {charm}
+
 #unalias {str}
 
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
-#alias {cloak} {remove cloak; get cloak $bag; wear cloak; put cloak $bag}
+#alias {pipe} {get pipe $bag; sheath; wield pipe; rest; smoke pipe; st; draw; put pipe $bag }
 
-#alias {jerkin} {rm robe; get jerkin $bag; wear jerkin; put robe $bag}
-#alias {robe} {rm jerkin; get robe $bag; wear robe; put jerkin $bag}
-
-#alias {^1$} {of bash $target; #echo {of bash $target}}
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {order rawr bash; #echo {order rawr bash}}
 #alias {^5$} {order rawr rescue durb; #echo {order rawr rescue durb}}
+
+#alias {^.$} {of assist; order rawr bash; #echo {order rawr bash}}

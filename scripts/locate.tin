@@ -19,10 +19,10 @@
 
 #alias scry {
   #if { "%0" == "" } { #echo {<f05A5DA>Scry requires a port key.<099>}; };
-  #else { cast 'scry' $loc[%1]; #echo {cast 'scry' $loc[%1]} };
+  #else { cast n 'scry' $loc[%1]; #echo {cast n 'scry' $loc[%1]} };
 }
 
 #alias portal {
   #if { "%0" == "" } { #echo {<f05A5DA>Portal requires a port key.<099>}; };
-  #else { cast 'portal' $loc[%1]; #echo {cast 'portal' $loc[%1]} };
+  #else { cast n 'portal' $loc[%1]; #echo {cast n 'portal' $loc[%1]} };
 }

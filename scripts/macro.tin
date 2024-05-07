@@ -2,7 +2,7 @@
 
 #alias {enableMacros} {
   #var {macros} {on};
-  #echo {<fff9e64>\# SPEED ON<099>                                                };
+  #echo {<fff9e64>\# SPEED ON<099> };
   #nop send {\n};
   
   #MACRO {^n} {#echo {\nn}; n};
@@ -25,7 +25,7 @@
 
 #alias {disableMacros} {
   #var {macros} {off};
-  #echo {<039>\# SPEED OFF<099>                                          };
+  #echo {<039>\# SPEED OFF<099> };
   #nop send {\n};
   
   #UNMACRO {^n};

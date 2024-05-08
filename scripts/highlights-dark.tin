@@ -64,11 +64,10 @@
 #highlight {a root ring} {<ffca878>}
 #highlight {a coarse dusky robe} {<ffca878>}
 
-#nop Power Weapons
-#highlight {an ornate, steel-shafted warhammer} {<f4c82e5>}
-#highlight {a darkened orkish axe} {<f4c82e5>} 
+#nop Power Weapons (f4c82e5)
+#highlight {an ornate, steel-shafted warhammer} {<f59A0EB>}
+#highlight {a darkened orkish axe} {<f59A0EB>} 
 #highlight {a mighty dwarven axe} {<f59A0EB>}
-
 
 #nop Important Gear
 #highlight {a Dúnadan blade} {<fbb9af7>}

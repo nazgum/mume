@@ -9,16 +9,7 @@
   };
 }
 #alias {g} {bh}
-
-#alias {colspray} {
-  #if { "%0" == "" } {
-    cast 'colour spray' $target; #echo {cast 'colour spray' $target}
-  };
-  #else {
-    cast 'colour spray' %0; #echo {cast 'colour spray' %0}
-  };
-}
-#alias {h} {colspray}
+#alias {h} {bh}
 
 #alias {charm} {
   #if { "%0" == "" } {
@@ -38,6 +29,6 @@
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {order rawr bash; #echo {order rawr bash}}
-#alias {^5$} {order rawr rescue durb; #echo {order rawr rescue durb}}
+#alias {^5$} {order followers rescue durb; #echo {order followers rescue durb}}
 
-#alias {^.$} {of assist; order rawr bash; #echo {order rawr bash}}
+#alias {^.$} {order followers assist; order rawr bash; #echo {order assist & bash}}

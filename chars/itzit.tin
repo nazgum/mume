@@ -42,5 +42,7 @@
 #alias {^7$} {k $mount}
 #alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
 #alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
+#alias {^.$} {order rawr assist; order rawr bash; #echo {order rawr assist & bash}}
 
 #alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}
+#alias {robe} {rm robe; get robe $bag; wear robe; put robe $bag}

@@ -26,3 +26,8 @@
   #if { "%0" == "" } { #echo {<f05A5DA>Portal requires a port key.<099>}; };
   #else { cast n 'portal' $loc[%1]; #echo {cast n 'portal' $loc[%1]} };
 }
+
+#alias path {
+  #if { "%0" == "" } { #echo {<f05A5DA>Find the Path requires a port key.<099>}; };
+  #else { cast n 'find the path' $loc[%1]; #echo {cast n 'find the path' $loc[%1]} };
+}

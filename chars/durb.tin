@@ -1,4 +1,4 @@
-#var {bag} {sable}
+#var {bag} {pack}
 
 #alias {bh} {
   #if { "%0" == "" } {

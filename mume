@@ -74,7 +74,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/itzit.tin;
+	#read chars/gagzik.tin;
 }
 
 #event {SESSION DISCONNECTED} {

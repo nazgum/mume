@@ -1,5 +1,14 @@
-#read scripts/sleep.tin
 #var {bag} {pack}
+
+#alias {fireball} {
+  #if { "%0" == "" } {
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
+  };
+  #else {
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
+  };
+}
+#alias {g} {fireball}
 
 #alias {shock} {
   #if { "%0" == "" } {
@@ -9,11 +18,18 @@
     cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
-#alias {g} {shock}
 #alias {h} {shock}
 
-#alias {remp} { remove ring; get emerald-ring $bag; wear ring; put ring $bag; use emerald-ring}
-#alias {curec} { remove ring; get garnet-ring $bag; wear ring; put ring $bag; use garnet-ring}
+#alias {charm} {
+  #if { "%0" == "" } {
+    cast t 'charm' $target; #echo {cast t 'charm' $target}
+  };
+  #else {
+    cast t 'charm' %0; #echo {cast t 'charm' %0}
+  };
+}
+#alias {b} {charm}
+
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield ornate; put pipe $bag }
 #alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
 #alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
@@ -22,4 +38,4 @@
 #alias {^2$} {of kill $target; #echo {of kill $target}}
 #alias {^3$} {of assist}
 #alias {^4$} {order rawr bash; #echo {order rawr bash}}
-#alias {^5$} {order rawr rescue lilura; #echo {order rawr rescue lilura}}
+#alias {^5$} {order followers rescue lilura; #echo {order followers rescue lilura}}

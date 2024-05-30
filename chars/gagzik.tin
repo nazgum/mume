@@ -11,19 +11,10 @@
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast 'hold' $target; #echo {cast 'hold' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
-  };
-}
-
-#alias {str} {
-  #if { "%0" == "" } {
-    cast t 'strength'; #echo {cast t 'strength'}
-  };
-  #else {
-    cast t 'strength' %0; #echo {cast t 'strength' %0}
+    cast 'hold' %0; #echo {cast 'hold' %0}
   };
 }
 

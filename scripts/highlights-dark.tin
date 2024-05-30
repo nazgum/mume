@@ -193,6 +193,7 @@
 #nop Draughts
 #highlight {a flask of orkish draught} {<ff7768e>}
 #highlight {%w flasks of orkish draught} {<ff7768e>}
+#highlight {a small metal flask} {<ff7768e>}
 #highlight {a scorched leather flask} {<ff7768e>}
 #highlight {%w scorched leather flasks} {<ff7768e>}
 
@@ -216,6 +217,9 @@
 #highlight {a %w %w scroll} {<fff9e64>}
 #highlight {%w %w %W scrolls} {<fff9e64>}
 #highlight {a twisted rock fragment} {<fff9e64>}
+#highlight {%w twisted rock fragments} {<fff9e64>}
+#highlight {a softly glowing green cup} {<fff9e64>}
+#highlight {%w softly glowing green cups} {<fff9e64>}
 #highlight {a small pouch} {<ffca878>}
 #highlight {%w small pouches} {<ffca878>}
 #highlight {a pale blue stone} {<fff9e64>}

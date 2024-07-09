@@ -8,7 +8,7 @@
     cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
-#alias {g} {fireball}
+#alias {h} {fireball}
 
 #alias {shock} {
   #if { "%0" == "" } {
@@ -18,7 +18,7 @@
     cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
-#alias {h} {shock}
+#alias {g} {shock}
 
 #alias {charm} {
   #if { "%0" == "" } {

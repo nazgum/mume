@@ -57,6 +57,8 @@
 #highlight {a small crystal phial} {<fcfc9c2>}
 #highlight {an iron sapphire ring} {<fcfc9c2>}
 #highlight {a large, shimmering pearl} {<fcfc9c2>}
+#highlight {a bejewelled oak staff} {<fcfc9c2>}
+#highlight {a reinforced oak staff} {<fcfc9c2>}
 
 #nop Spell Save Items
 #highlight {an old length of iron chain} {<ffca878>}
@@ -81,7 +83,6 @@
 #highlight {a narrow runed awlpike} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
 #highlight {an ancient dwarven shield} {<fbb9af7>}
-#highlight {a bejewelled oak staff} {<fbb9af7>}
 #highlight {an ebony tunic} {<fbb9af7>}
 #highlight {a pale blue stone} {<fbb9af7>}
 #highlight {a copper ring} {<fbb9af7>}

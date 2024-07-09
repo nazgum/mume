@@ -8,8 +8,16 @@
     cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
-#alias {g} {bh}
-#alias {h} {bh}
+
+
+#alias {shock} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
 
 #alias {charm} {
   #if { "%0" == "" } {
@@ -19,6 +27,9 @@
     cast t 'charm' %0; #echo {cast t 'charm' %0}
   };
 }
+
+#alias {g} {bh}
+#alias {h} {bh}
 #alias {b} {charm}
 
 #unalias {str}

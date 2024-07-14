@@ -1,20 +1,20 @@
-#read scripts/blind.tin
+#nop read scripts/blind.tin
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+    cast 'smother' $target; #echo {cast 'smother' $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    cast 'smother' %0; #echo {cast 'smother' %0}
   };
 }
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'hold' $target; #echo {cast 'hold' $target}
+    cast 'harm' $target; #echo {cast 'harm' $target}
   };
   #else {
-    cast 'hold' %0; #echo {cast 'hold' %0}
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
 
@@ -27,3 +27,11 @@
 
 #alias {tunic} {rm robe; get tunic $bag; wear tunic; put robe $bag}
 #alias {robe} {rm tunic; get robe $bag; wear robe; put tunic $bag}
+
+#unalias {str}
+
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue gagzik}

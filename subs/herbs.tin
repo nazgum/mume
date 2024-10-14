@@ -11,3 +11,5 @@
 #sub {needlelike leaves} {%0 (rosemary, skillful)}
 #sub {clusters of hard, round, black berries} {%0 (juniper, clearthoughts)}
 #sub {A low, many-branched shrub covers the ground here.} {%0 (thyme, clearthoughts)}
+#sub {A small plant grows here, with long, pointed leaves and flowers at its top.} {%0 (athelas)}
+#sub {A bushy plant grows here, with tall clusters of yellow flowers.} {%0 (foxtail)}

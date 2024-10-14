@@ -1,0 +1,44 @@
+#var {bag} {pack}
+
+#alias {fireball} {
+  #if { "%0" == "" } {
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
+  };
+  #else {
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
+  };
+}
+#alias {h} {fireball}
+
+#alias {shock} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+#alias {g} {shock}
+
+#alias {charm} {
+  #if { "%0" == "" } {
+    cast t 'charm' $target; #echo {cast t 'charm' $target}
+  };
+  #else {
+    cast t 'charm' %0; #echo {cast t 'charm' %0}
+  };
+}
+#alias {h} {charm}
+#alias {b} {bash}
+#alias {^.$} {bash $target; #echo {bash $target}}
+
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield ornate; put pipe $bag }
+#alias {cloak} {remove mantle; get cloak $bag; wear cloak; put mantle $bag}
+#alias {fur} {remove cloak; get mantle $bag; wear mantle; put cloak $bag}
+#alias {mantle} {remove cloak; get mantle $bag; wear mantle; put cloak $bag}
+
+#alias {^1$} {of bash $target; #echo {of bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {order rawr bash; #echo {order rawr bash}}
+#alias {^5$} {order followers rescue ilfang; #echo {order followers rescue ilfang}}

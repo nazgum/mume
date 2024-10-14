@@ -2,31 +2,30 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'smother' $target; #echo {cast 'smother' $target}
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
   };
   #else {
-    cast 'smother' %0; #echo {cast 'smother' %0}
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
   };
 }
 
 #alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
 #alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
+#alias {cloak} {remove grisly-fur; get cloak $bag; wear cloak; put grisly-fur $bag}
+#alias {fur} {remove cloak; get grisly-fur $bag; wear grisly-fur; put cloak $bag}
 
-#alias {^.$} {shoot $target; #echo {shoot $target}}
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
-#alias {cloak} { remove cloak; get cloak $bag; wear cloak; put cloak $bag }
-
-#alias {tunic} {rm robe; get tunic $bag; wear tunic; put robe $bag}
-#alias {robe} {rm tunic; get robe $bag; wear robe; put tunic $bag}
+#alias {^.$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
+#alias {candle} {get candle all; wield candle; use candle; dra axe; drop candle}
 
 #unalias {str}
 

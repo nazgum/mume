@@ -1,3 +1,5 @@
+#var loc {};
+
 #alias {key} { #var {loc[%1]} {%2}; }
 #alias {keys} {#var loc; }
 
@@ -11,6 +13,7 @@
   #var {key} {%1};
   #echo {<f05A5DA>\$key<099> set to: <f05A5DA>$key<099>}
 }
+
 
 #alias tp {
   #if { "%0" == "" } { #echo {<f05A5DA>Teleport requires a port key.<099>}; };

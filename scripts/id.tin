@@ -1,73 +1,21 @@
-#var {id_ruby} {none}
-#var {id_belt} {none}
-#var {id_cloak} {none}
-#var {id_shield} {none}
-#var {id_ring} {none}
-#var {id_pouch} {none}
-#var {id_scroll} {none}
-#var {id_misc} {none}
+#var id {};
+#var id_key;
 
-#alias {id_ruby} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_ruby<099> set to: <f7C4DFF>$id_ruby<099>} };
-  #else { #var {id_ruby} {%0}; #echo {<f437AED>\$id_ruby<099> set to: <f7C4DFF>$id_ruby<099>} };
+#alias {id} { #var {id[%1]} {%2}; }
+#alias {ids} {#var id; }
+
+#alias {clearids} {
+  #var id {};
+  #echo {<f05A5DA>ID keys have been cleared.<099>};
+  #send {\n};
 }
 
-#alias {id_belt} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_belt<099> set to: <f7C4DFF>$id_belt<099>} };
-  #else { #var {id_belt} {%0}; #echo {<f437AED>\$id_belt<099> set to: <f7C4DFF>$id_belt<099>} };
+#action {Its magical key is '%w'.} {
+  #var {id_key} {%1};
+  #echo {<f05A5DA>\$id_key<099> set to: <f05A5DA>$id_key<099>}
 }
 
-#alias {id_cloak} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_cloak<099> set to: <f7C4DFF>$id_cloak<099>} };
-  #else { #var {id_cloak} {%0}; #echo {<f437AED>\$id_cloak<099> set to: <f7C4DFF>$id_cloak<099>} };
-}
-
-#alias {id_shield} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_shield<099> set to: <f7C4DFF>$id_shield<099>} };
-  #else { #var {id_shield} {%0}; #echo {<f437AED>\$id_shield<099> set to: <f7C4DFF>$id_shield<099>} };
-}
-
-#alias {id_ring} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_ring<099> set to: <f7C4DFF>$id_ring<099>} };
-  #else { #var {id_ring} {%0}; #echo {<f437AED>\$id_ring<099> set to: <f7C4DFF>$id_ring<099>} };
-}
-
-#alias {id_pouch} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_pouch<099> set to: <f7C4DFF>$id_pouch<099>} };
-  #else { #var {id_pouch} {%0}; #echo {<f437AED>\$id_pouch<099> set to: <f7C4DFF>$id_pouch<099>} };
-}
-
-#alias {id_scroll} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_scroll<099> set to: <f7C4DFF>$id_scroll<099>} };
-  #else { #var {id_scroll} {%0}; #echo {<f437AED>\$id_scroll<099> set to: <f7C4DFF>$id_scroll<099>} };
-}
-
-#alias {id_misc} {
-  #if { "%0" == "" } { #echo {<f437AED>\$id_misc<099> set to: <f7C4DFF>$id_misc<099>} };
-  #else { #var {id_misc} {%0}; #echo {<f437AED>\$id_misc<099> set to: <f7C4DFF>$id_misc<099>} };
-}
-
-#alias loc_ruby {cast 'locate' $id_ruby; #echo {cast 'locate' $id_ruby}}
-#alias loc_belt {cast 'locate' $id_belt; #echo {cast 'locate' $id_belt}}
-#alias loc_cloak {cast 'locate' $id_cloak; #echo {cast 'locate' $id_cloak}}
-#alias loc_shield {cast 'locate' $id_shield; #echo {cast 'locate' $id_shield}}
-#alias loc_ring {cast 'locate' $id_ring; #echo {cast 'locate' $id_ring}}
-#alias loc_pouch {cast 'locate' $id_pouch; #echo {cast 'locate' $id_pouch}}
-#alias loc_scroll {cast 'locate' $id_scroll; #echo {cast 'locate' $id_scroll}}
-#alias loc_misc {cast 'locate' $id_misc; #echo {cast 'locate' $id_misc}}
-
-#alias ids {
-  #echo {<f437AED>\$id_ruby<099>      set to: <f7C4DFF>$id_ruby<099> };
-  #echo {<f437AED>\$id_belt<099>      set to: <f7C4DFF>$id_belt<099> };
-  #echo {<f437AED>\$id_cloak<099>     set to: <f7C4DFF>$id_cloak<099> };
-  #echo {<f437AED>\$id_shield<099>    set to: <f7C4DFF>$id_shield<099> };
-  #echo {<f437AED>\$id_ring<099>      set to: <f7C4DFF>$id_ring<099> };
-  #echo {<f437AED>\$id_pouch<099>     set to: <f7C4DFF>$id_pouch<099> };
-  #echo {<f437AED>\$id_scroll<099>    set to: <f7C4DFF>$id_scroll<099> };
-  #echo {<f437AED>\$id_misc<099>      set to: <f7C4DFF>$id_misc<099> };
-}
-
-#action {Its magical key is %w.} {
-  #var {key} {%1};
-  #echo {<f437AED>\$key<099> set to: <f7C4DFF>$key<099>}
+#alias find {
+  #if { "%0" == "" } { #echo {<f05A5DA>Find requires an ID key.<099>}; };
+  #else { cast n 'locate' $id[%1]; #echo {cast n 'locate' $id[%1]} };
 }

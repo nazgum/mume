@@ -45,7 +45,7 @@
 #highlight {the gleaming broadsword} {<fE5C890>}
 #highlight {the silvery broadsword} {<fE5C890>}
 #highlight {the Hammer of Belegost} {<fE5C890>}
-#highlight {a huge, black mace} {<fE5C890>}
+#highlight {the huge, black mace} {<fE5C890>}
 #highlight {a large visored helmet} {<fE5C890>}
 #highlight {a crude orkish horn} {<fE5C890>}
 
@@ -94,12 +94,14 @@
 #highlight {a black-thorned wristband} {<fbb9af7>}
 #highlight {a wide silvery wristband} {<fbb9af7>}
 #highlight {a supple pair of leather gloves} {<fbb9af7>}
+#highlight {a tainted grey cloak} {<fbb9af7>} 
 #highlight {a gleaming belt} {<fbb9af7>}
 #highlight {a golden belt} {<fbb9af7>}
 #highlight {a belt of fell hide} {<fbb9af7>}
 #highlight {an elven longbow} {<fbb9af7>}
 
 #nop Good Gear
+#highlight {a battle axe} {<f7aa2f7>}
 #highlight {a double edged eket} {<f7aa2f7>}
 #highlight {a steel claymore} {<f7aa2f7>}
 #highlight {an engraved warhammer} {<f7aa2f7>}
@@ -142,7 +144,7 @@
 #highlight {a shining pair of greaves} {<f7aa2f7>}
 #highlight {an iron ring} {<f7aa2f7>}
 #highlight {a banded ring} {<f7aa2f7>}
-#highlight {a ruby ring} {<f7aa2f7>}
+#highlight {an ancient ruby ring} {<f7aa2f7>}
 #highlight {a golden topaz ring} {<f7aa2f7>}
 #highlight {a black amulet} {<f7aa2f7>}
 #highlight {a smoky obsidian amulet} {<f7aa2f7>}

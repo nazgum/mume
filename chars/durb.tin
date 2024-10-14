@@ -34,7 +34,7 @@
 
 #unalias {str}
 
-#alias {pipe} {get pipe $bag; sheath; wield pipe; rest; smoke pipe; st; draw; put pipe $bag }
+#alias {pipe} {get pipe $bag; draw pipe; rest; smoke pipe; st; draw; put pipe $bag }
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}

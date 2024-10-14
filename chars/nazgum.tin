@@ -1,40 +1,25 @@
-#alias {1} {
+#alias {blackb} {
   #if { "%0" == "" } {
-    bash $target; #echo {bash $target}
+    cast 'black breath' $target; #echo {cast 'black breath' $target}
   };
   #else {
-    bash %0; #echo {bash %0}
+    cast 'black breath' %0; #echo {cast 'black breath' %0}
   };
 }
-
-#alias {b} {
-  #if { "%0" == "" } {
-    back $target; #echo {back $target}
-  };
-  #else {
-    back %0; #echo {back %0}
-  };
-}
+#alias h {blackb}
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast q 'black breath' $target; #echo {cast q 'black breath' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
-  };
-}
-
-#alias {h} {
-  #if { "%0" == "" } {
-    bash $target; #echo {bash $target}
-  };
-  #else {
-    bash %0; #echo {bash %0}
+    cast q 'black breath' %0; #echo {cast q 'black breath' %0}
   };
 }
 
 #var {bag} {pack}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^b$} {back $target; #echo {back $target}}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+#alias {arr} {get %1.arrow quiver; wield arrow; poison; wield dagger; put arrow quiver}

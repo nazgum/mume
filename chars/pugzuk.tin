@@ -1,19 +1,31 @@
 #var {bag} {pack}
 
-#alias {energydrain} {
+#alias {g} {
   #if { "%0" == "" } {
-    cast n 'energy drain' $target; #echo {cast n 'energy drain' $target}
+    cast 'chill touch' $target; #echo {cast 'chill touch' $target}
   };
   #else {
-    cast n 'energy drain' %0; #echo {cast n 'energy drain' %0}
+    cast 'chill touch' %0; #echo {cast 'chill touch' %0}
   };
 }
 
-#alias {g} {energydrain}
-#alias {h} {energydrain}
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
 
 #alias {^.$} {bash $target; #echo {bash $target}}
 
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
 #alias {cloak} { remove grisly-fur; get cloak pack; wear cloak; put grisly-fur pack }
 #alias {fur} { remove cloak; get grisly-fur pack; wear grisly-fur; put cloak pack }
+
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue pugzuk}

@@ -53,6 +53,7 @@
 
 #event {PROGRAM START} {
 	#session {mume} {localhost} {4000};
+        #nop session {cf} {carrionfields.net} {4449};
 	
 	#read scripts/layout.tin;
 	#nop read scripts/rooms.tin;
@@ -74,7 +75,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/gagzik.tin;
+	#read chars/nireth.tin;
 }
 
 #event {SESSION DISCONNECTED} {

@@ -1,34 +1,28 @@
 #alias {g} {
   #if { "%0" == "" } {
-    cast f 'lightning bolt' $target; #echo {cast f 'lightning bolt' $target}
+    cast 'chill touch' $target; #echo {cast 'chill touch' $target}
   };
   #else {
-    cast f 'lightning bolt' %0; #echo {cast f 'lightning bolt' %0}
+    cast 'chill touch' %0; #echo {cast 'chill touch' %0}
   };
 }
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
   };
   #else {
-    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
 
-#alias {b} {
-  #if { "%0" == "" } {
-    backstab $target; #echo {backstab $target}
-  };
-  #else {
-    backstab %0; #echo {backstab %0}
-  };
-}
+#var {bag} {pack}
 
-#var {bag} {sable}
-
-#alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
+#alias {barr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
+#alias {arr} {get %1.arrow quiver; wield arrow; poison; wield dagger; put arrow quiver}
 #alias {reload} {get all.bolt $bag; put all.bolt case}
 
 #alias {^.$} {shoot $target; #echo {shoot $target}}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+
+#alias {opal} {remove ring; get opal-ring $bag; wear ring; put ring $bag}

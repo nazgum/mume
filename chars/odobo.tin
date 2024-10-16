@@ -1,0 +1,27 @@
+#var {bag} {pack}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    bash $target; #echo {bash $target}
+  };
+  #else {
+    bash %0; #echo {bash %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    kill $target; #echo {kill $target}
+  };
+  #else {
+    kill %0; #echo {kill %0}
+  };
+}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {b} {bash}
+
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
+#alias {cloak} { remove grisly-fur; get cloak pack; wear cloak; put grisly-fur pack }
+#alias {fur} { remove cloak; get grisly-fur pack; wear grisly-fur; put cloak pack }
+#alias {reload} {get all.arrow pack; put all.arrow quiver}

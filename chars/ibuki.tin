@@ -1,0 +1,39 @@
+#read scripts/blind.tin
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+  };
+  #else {
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'harm' $target; #echo {cast 'harm' $target}
+  };
+  #else {
+    cast 'harm' %0; #echo {cast 'harm' %0}
+  };
+}
+
+#var bag sable-pouch
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {pipe} {get pipe pouch; wield pipe; rest; smoke pipe; st; draw dagger; put pipe pouch }
+#alias {candle} {get candle all; wield candle; use candle; dra axe; drop candle}
+
+#unalias {str}
+
+#alias {^1$} {order one kill $target; #echo {order one kill $target}}
+#alias {^2$} {of kill $target}
+#alias {^3$} {of assist}
+#alias {^4$} {order rawr bash; #echo {order rawr bash}}
+#alias {^5$} {of rescue ibuki}
+#alias {^y$} {order two kill $target; #echo {order two kill $target}}
+
+
+#highlight {- Star of Eärendil} {<f7aa2f7>}
+#highlight {The guiding light of the Star of Eärendil renews hope within you.} {<f6e78a4>}
+#highlight {The lingering effects of the Star of Eärendil dwindle as you leave its gaze.} {<f6e78a4>}

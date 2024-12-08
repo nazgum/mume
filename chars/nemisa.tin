@@ -21,4 +21,6 @@
 #alias {cloak} {rm cloak; wear 2.cloak}
 #alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
 #alias {reload} {get all.bolt sable; put all.bolt case}
+
 #alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^b$} {back $target; #echo {back $target}}

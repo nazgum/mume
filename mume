@@ -75,7 +75,7 @@
 	#read subs/herbs.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/odobo.tin;
+	#read chars/ibuki.tin;
 }
 
 #event {SESSION DISCONNECTED} {

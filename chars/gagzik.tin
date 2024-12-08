@@ -1,4 +1,4 @@
-#nop read scripts/blind.tin
+#read scripts/blind.tin
 
 #alias {g} {
   #if { "%0" == "" } {
@@ -11,10 +11,10 @@
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'black breath' $target; #echo {cast 'black breath' $target}
+    cast 'harm' $target; #echo {cast 'harm' $target}
   };
   #else {
-    cast 'black breath' %0; #echo {cast 'black breath' %0}
+    cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
 
@@ -24,7 +24,7 @@
 #alias {fur} {remove cloak; get grisly-fur $bag; wear grisly-fur; put cloak $bag}
 
 #alias {^.$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
+#alias {pipe} {get pipe $bag; draw pipe; rest; smoke pipe; st; draw sword; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra axe; drop candle}
 
 #unalias {str}

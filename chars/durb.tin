@@ -1,4 +1,4 @@
-#var {bag} {pack}
+#var {bag} {sable}
 
 #alias {bh} {
   #if { "%0" == "" } {
@@ -32,9 +32,7 @@
 #alias {h} {bh}
 #alias {b} {charm}
 
-#unalias {str}
-
-#alias {pipe} {get pipe $bag; draw pipe; rest; smoke pipe; st; draw; put pipe $bag }
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {of kill $target; #echo {of kill $target}}

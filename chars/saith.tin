@@ -4,17 +4,16 @@
 
 #var {bag} {sable}
 
-#alias {smother} {
+#alias {g} {
   #if { "%0" == "" } {
-    cast 'smother' $target; #echo {cast 'smother' $target}
+    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
   };
   #else {
-    cast 'smother' %0; #echo {cast 'smother' %0}
+    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
   };
 }
-#alias {g} {smother}
 
-#alias {harm} {
+#alias {h} {
   #if { "%0" == "" } {
     cast 'harm' $target; #echo {cast 'harm' $target}
   };
@@ -22,8 +21,15 @@
     cast 'harm' %0; #echo {cast 'harm' %0}
   };
 }
-#alias {h} {harm}
 
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield warsword }
-#alias {cloak} {remove fur; get cloak $bag; wear cloak; put fur $bag}
-#alias {fur} {remove cloak; get fur $bag; wear fur; put cloak $bag}
+#alias {^.$} {use staff $target; #echo {use staff $target}}
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^y$} {cast 'smother' $target; #echo {cast 'smother' $target}}
+
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sword; put pipe $bag }
+
+#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
+#alias {^2$} {of kill $target; #echo {of kill $target}}
+#alias {^3$} {of assist}
+#alias {^4$} {of bash}
+#alias {^5$} {of rescue saith}

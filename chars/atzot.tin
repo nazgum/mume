@@ -1,6 +1,6 @@
 #unalias {str}
 
-#alias {smother} {
+#alias {h} {
   #if { "%0" == "" } {
     cast 'smother' $target; #echo {cast 'smother' $target}
   };
@@ -24,8 +24,6 @@
 }
 
 #alias {^.$} {bash $target; #echo {bash $target}}
-
 #alias {b} {bash}
-
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; draw axe; put pipe pack }
-#alias {bl} {draw staff; use staff; draw axe}
+#alias {bl} {use quartzite-ring}

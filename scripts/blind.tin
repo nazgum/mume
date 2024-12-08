@@ -70,15 +70,6 @@
   };
 }
 
-#alias {bl} {
-  #if { "%0" == "" } {
-    cast c 'blind' $target; #echo {cast c 'blind' $target}
-  };
-  #else {
-    cast c 'blind' %0; #echo {cast c 'blind' %0}
-  };
-}
-
 #alias {qb} {
   #if { "%0" == "" } {
     cast q 'blind' $target; #echo {cast q 'blind' $target}

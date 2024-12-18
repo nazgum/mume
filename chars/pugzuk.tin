@@ -2,10 +2,10 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'chill touch' $target; #echo {cast 'chill touch' $target}
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
   };
   #else {
-    cast 'chill touch' %0; #echo {cast 'chill touch' %0}
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
 
@@ -20,12 +20,6 @@
 
 #alias {^.$} {bash $target; #echo {bash $target}}
 
-#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield axe; put pipe pack }
+#alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe pack }
 #alias {cloak} { remove grisly-fur; get cloak pack; wear cloak; put grisly-fur pack }
 #alias {fur} { remove cloak; get grisly-fur pack; wear grisly-fur; put cloak pack }
-
-#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {of bash}
-#alias {^5$} {of rescue pugzuk}

@@ -1,5 +1,5 @@
-#alias {STARE} {push forostar e;push mittalmar c; push andustar n; push orrostar se;push hyarrostar sw;push hyarnustar w} {default}
-#alias {STARN} {push forostar n;push mittalmar c;push orrostar e;push hyarrostar se;push hyarnustar sw;push andustar w} {default}
-#alias {STARSE} {push mittalmar c; push forostar se;push orrostar sw;push hyarrostar w;push andustar e;push hyarnustar n} {default}
-#alias {STARSW} {push forostar sw;push mittalmar c; push andustar se;push orrostar w;push hyarrostar n;push hyarnustar e} {default}
-#alias {STARW} {push forostar w;push mittalmar c;push orrostar n;push andustar sw;push hyarnustar se;push hyarrostar e} {default}
+#alias {azra1} {push forostar e;push mittalmar c; push andustar n; push orrostar se;push hyarrostar sw;push hyarnustar w} {default}
+#alias {azra2} {push forostar n;push mittalmar c;push orrostar e;push hyarrostar se;push hyarnustar sw;push andustar w} {default}
+#alias {azra3} {push mittalmar c; push forostar se;push orrostar sw;push hyarrostar w;push andustar e;push hyarnustar n} {default}
+#alias {azra4} {push forostar sw;push mittalmar c; push andustar se;push orrostar w;push hyarrostar n;push hyarnustar e} {default}
+#alias {azra5} {push forostar w;push mittalmar c;push orrostar n;push andustar sw;push hyarnustar se;push hyarrostar e} {default}

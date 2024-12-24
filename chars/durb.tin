@@ -1,36 +1,6 @@
-#var {bag} {sable}
+#var {bag} {pack}
 
-#alias {bh} {
-  #if { "%0" == "" } {
-    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
-  };
-  #else {
-    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
-  };
-}
-
-
-#alias {shock} {
-  #if { "%0" == "" } {
-    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
-  };
-  #else {
-    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
-  };
-}
-
-#alias {charm} {
-  #if { "%0" == "" } {
-    cast t 'charm' $target; #echo {cast t 'charm' $target}
-  };
-  #else {
-    cast t 'charm' %0; #echo {cast t 'charm' %0}
-  };
-}
-
-#alias {g} {bh}
-#alias {h} {bh}
-#alias {b} {charm}
+#unalias str
 
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield axe; put pipe $bag }
 
@@ -39,5 +9,5 @@
 #alias {^3$} {of assist}
 #alias {^4$} {order rawr bash; #echo {order rawr bash}}
 #alias {^5$} {order followers rescue durb; #echo {order followers rescue durb}}
-
+#alias {^y$} {of cast f 'lightning bolt' $target}
 #alias {^.$} {order followers assist; order rawr bash; #echo {order assist & bash}}

@@ -20,7 +20,7 @@
 
 #var bag sable-pouch
 
-#alias {pipe} {get pipe 2.sable-pouch; wield pipe; rest; smoke pipe; st; draw sword; put pipe 2.sable-pouch }
+#alias {pipe} {get pipe 2.sable-pouch; wield pipe; rest; smoke pipe; st; wield spear; put pipe 2.sable-pouch }
 #alias {candle} {get candle all; wield candle; use candle; dra sword; drop candle}
 
 #nop #unalias {str}

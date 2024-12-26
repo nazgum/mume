@@ -20,6 +20,8 @@
 
 #alias {^.$} {bash $target; #echo {bash $target}}
 
+#alias {str} {remove ring; get topaz-ring $bag; wear topaz-ring; put ring $bag; use topaz-ring}
+
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe pack }
 #alias {cloak} { remove grisly-fur; get cloak pack; wear cloak; put grisly-fur pack }
 #alias {fur} { remove cloak; get grisly-fur pack; wear grisly-fur; put cloak pack }

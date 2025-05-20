@@ -13,8 +13,8 @@
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra dagger; drop candle}
 #alias {can} {candle}
-#alias {rock} {get rock all; use rock $door}
-#alias {mana} {remove ring; get ruby-ring $bag; wear ring; put ring $bag}
+#alias {rock} {get rock all; use rock $door; get rock}
+#alias {mana} {remove ring; get golden-ruby-ring $bag; wear ring; put ring $bag}
 #alias {copper} {remove ring; get copperring $bag; wear ring; put ring $bag}
 #alias {iron} {remove ring; get ironring $bag; wear ring; put ring $bag}
 #alias {ruby} {remove ring; get rubyring $bag; wear ring; put ring $bag}

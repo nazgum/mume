@@ -1,24 +1,22 @@
 #read scripts/blind.tin
 
-#unalias str
-
 #var {bag} {sable}
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+    cast f 'fireball' $target; #echo {cast f 'fireball' $target}
   };
   #else {
-    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+    cast f 'fireball' %0; #echo {cast f 'fireball' %0}
   };
 }
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'harm' $target; #echo {cast 'harm' $target}
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
   };
   #else {
-    cast 'harm' %0; #echo {cast 'harm' %0}
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
 

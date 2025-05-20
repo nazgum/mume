@@ -1,0 +1,33 @@
+#alias {g} {
+  #if { "%0" == "" } {
+    cast f 'lightning bolt' $target; #echo {cast f 'lightning bolt' $target}
+  };
+  #else {
+    cast f 'lightning bolt' %0; #echo {cast f 'lightning bolt' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'lightning bolt' $target; #echo {cast 'lightning bolt' $target}
+  };
+  #else {
+    cast 'lightning bolt' %0; #echo {cast 'lightning bolt' %0}
+  };
+}
+
+#var {bag} {sable}
+
+#alias {cloak} {rm cloak; wear 2.cloak}
+#alias {arr} {get %1.bolt case; wield bolt; poison; wield dagger; put bolt case}
+#alias {reload} {get all.bolt sable; put all.bolt case}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield pweapon; put pipe $bag }
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+#alias {^b$} {back $target; #echo {back $target}}
+
+#alias {^1$} {bow;sho;dra}
+#alias {^2$} {bow;sho;sho;dra}
+#alias {^3$} {bow;sho;sho;sho;dra}
+#alias {^4$} {bow;sho;sho;sho;sho;sho;dra}
+#alias {^5$} {bow;sho;sho;sho;sho;sho;dra}

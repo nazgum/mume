@@ -1,0 +1,29 @@
+#var bag pack
+
+#unalias {str}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast f 'fireball' $target; #echo {cast f 'fireball' $target}
+  };
+  #else {
+    cast f 'fireball' %0; #echo {cast f 'fireball' %0}
+  };
+}
+
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'fireball' $target; #echo {cast 'fireball' $target}
+  };
+  #else {
+    cast 'fireball' %0; #echo {cast 'fireball' %0}
+  };
+}
+
+
+#alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe $bag }
+
+#highlight {- Star of Eärendil} {<f7aa2f7>}
+#highlight {The guiding light of the Star of Eärendil renews hope within you.} {<f6e78a4>}
+#highlight {The lingering effects of the Star of Eärendil dwindle as you leave its gaze.} {<f6e78a4>}

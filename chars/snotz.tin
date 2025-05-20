@@ -1,0 +1,7 @@
+#var {bag} {pack}
+
+#alias {b} {back $target; #echo {back $target}}
+#alias {y} {escape}
+
+#alias {reload} {get all.bolt sable; put all.bolt case}
+#alias {^.$} {shoot $target; #echo {shoot $target}}

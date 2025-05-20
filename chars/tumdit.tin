@@ -1,17 +1,11 @@
-#alias {g} {
-  #if { "%0" == "" } {
-    cast f 'dispel evil' $target; #echo {cast f 'dispel evil' $target}
-  };
-  #else {
-    cast f 'dispel evil' %0; #echo {cast f 'dispel evil' %0}
-  };
-}
+#var {bag} {pack}
 
-#alias {h} {
-  #if { "%0" == "" } {
-    cast 'dispel evil' $target; #echo {cast 'dispel evil' $target}
-  };
-  #else {
-    cast 'dispel evil' %0; #echo {cast 'dispel evil' %0}
-  };
-}
+#alias {h} {bash $target; #echo {bash $target}}
+#alias {g} {bash $target; #echo {bash $target}}
+#alias {b} {bash}
+#alias {^.$} {bash $target; #echo {bash $target}}
+
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sword; put pipe $bag }
+#alias {cloak} {remove mantle; get cloak $bag; wear cloak; put mantle $bag}
+#alias {fur} {remove cloak; get mantle $bag; wear mantle; put cloak $bag}
+#alias {mantle} {remove cloak; get mantle $bag; wear mantle; put cloak $bag}

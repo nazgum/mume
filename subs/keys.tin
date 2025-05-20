@@ -80,7 +80,7 @@
 #sub {^a wooden key$} {%0 [secret, treevillage]}
 #sub {^a bright steel key$} {%0 [grille, behind panel at wheels]}
 #sub {^A slightly bent bone key lies here in the dust.$} {%0 [stonedoor, silver bracer]}
-#sub {^a bent bone key$} {%0 [stonedoor, silver bracer]}
+#sub {^a bent bone key$} {%0 [redeye, silver bracer]}
 #sub {^a square stone key$} {%0 [force, amon othar]}
 #sub {^a huge iron key$} {%0 [steeldoor, shaghosh]}
 #sub {^a black bonekey$} {%0 [door, nagrorh]}
@@ -114,13 +114,13 @@
 #sub {^a slimy metal key$} {%0 [irondoors, shaghosh area]}
 #sub {^a castle key$} {%0 [irondoor, malardils castle]}
 #sub {^a metal key$} {%0 [oakendoor, necro]}
-#sub {^a black metal key$} {%0 [towerdoor, ABR tower, guards]}
+#sub {^a black metal key$} {%0 [hc, abr tower]}
 #sub {^a small iron key$} {%0 [chest, illusionist]}
 #sub {^a twisted iron key$} {%0 [irondoor, bw]}
 #sub {^a polished copper key$} {%0 [door, dt or vt]}
 #sub {^a dirty stone key$} {%0 [floor, 2h-axe eregion]}
 #sub {^an old ornate key$} {%0 [sarcophagus, dunland vellum]}
-#sub {^a crude metal key$} {%0 [metaldoor, filthy]}
+#sub {^a crude metal key$} {%0 [brolg, filthy]}
 #sub {^a rusted key$} {%0 [cryptdoor, old wight]}
 #sub {^a small twisted root$} {%0 [wall, ferny]}
 #sub {^a dirty key$} {%0 [trapdoor, bandit leader]}

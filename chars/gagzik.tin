@@ -24,10 +24,8 @@
 #alias {fur} {remove cloak; get grisly-fur $bag; wear grisly-fur; put cloak $bag}
 
 #alias {^.$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {pipe} {get pipe $bag; draw pipe; rest; smoke pipe; st; draw sword; put pipe $bag }
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra axe; drop candle}
-
-#unalias {str}
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}

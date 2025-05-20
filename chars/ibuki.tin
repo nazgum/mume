@@ -2,10 +2,10 @@
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast f 'lightning bolt' $target; #echo {cast f 'lightning bolt' $target}
+    cast 'curse' $target; #echo {cast 'curse' $target}
   };
   #else {
-    cast f 'lightning bolt' %0; #echo {cast f 'lightning bolt' %0}
+    cast 'curse' %0; #echo {cast 'curse' %0}
   };
 }
 
@@ -18,12 +18,13 @@
   };
 }
 
-#var bag sable-pouch
+#var bag pack
 
-#alias {pipe} {get pipe 2.sable-pouch; wield pipe; rest; smoke pipe; st; wield spear; put pipe 2.sable-pouch }
-#alias {candle} {get candle all; wield candle; use candle; dra sword; drop candle}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield spear; put pipe $bag }
+#alias {candle} {get candle all; wield candle; use candle; dra spear; drop candle}
+#alias {robe} {rm robe; get robe $bag; wear robe; put robe $bag}
 
-#nop #unalias {str}
+#unalias {str}
 
 #alias {^1$} {order one kill $target; #echo {order one kill $target}}
 #alias {^2$} {of kill $target}

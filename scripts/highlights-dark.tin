@@ -56,6 +56,7 @@
 #highlight {a sapphire ring} {<fcfc9c2>}
 #highlight {a small crystal phial} {<fcfc9c2>}
 #highlight {an iron sapphire ring} {<fcfc9c2>}
+#highlight {a banded sapphire ring} {<fcfc9c2>}
 #highlight {a large, shimmering pearl} {<fcfc9c2>}
 #highlight {a bejewelled oak staff} {<fcfc9c2>}
 #highlight {a reinforced oak staff} {<fcfc9c2>}
@@ -72,6 +73,7 @@
 #highlight {a darkened orkish axe} {<f59A0EB>} 
 #highlight {a mighty dwarven axe} {<f59A0EB>}
 #highlight {an ashen blade} {<f59A0EB>}
+#highlight {a fell blade} {<f59A0EB>}
 
 #nop Important Gear
 #highlight {a Dúnadan blade} {<fbb9af7>}
@@ -83,14 +85,17 @@
 #highlight {a great warsword} {<fbb9af7>}
 #highlight {a narrow runed awlpike} {<fbb9af7>}
 #highlight {an elven hunting-spear} {<fbb9af7>}
+#highlight {a steel-tipped spear} {<fbb9af7>}
 #highlight {a defiled dwarven shield} {<fbb9af7>}
 #highlight {an ancient dwarven shield} {<fbb9af7>}
 #highlight {an ebony tunic} {<fbb9af7>}
 #highlight {a pale blue stone} {<fbb9af7>}
+#highlight {a deep blue stone} {<fbb9af7>}
 #highlight {a copper ring} {<fbb9af7>}
 #highlight {a mithril circlet} {<fbb9af7>}
 #highlight {a twisted crown} {<fbb9af7>}
 #highlight {a slim silvery wristband} {<fbb9af7>}
+#highlight {a black metal wristband} {<fbb9af7>}
 #highlight {an archaic copper wristband} {<fbb9af7>}
 #highlight {a tarnished copper wristband} {<fbb9af7>}
 #highlight {a black-thorned wristband} {<fbb9af7>}
@@ -113,7 +118,6 @@
 #highlight {an enruned robe} {<f7aa2f7>}
 #highlight {a wightblade} {<f7aa2f7>}
 #highlight {an engraved broadsword} {<f7aa2f7>}
-#highlight {a fell blade} {<f7aa2f7>}
 #highlight {a war mattock} {<f7aa2f7>}
 #highlight {a ragged, blackened cloak} {<f7aa2f7>}
 #highlight {a roughly stitched cloak} {<f7aa2f7>}
@@ -133,6 +137,7 @@
 #highlight {a golden emerald ring} {<f7aa2f7>}
 #highlight {a blackened dwarven axe} {<f7aa2f7>}
 #highlight {a wicked Durbûk-hai axe} {<f7aa2f7>}
+#highlight {a steel-shafted mattock} {<f7aa2f7>}
 #highlight {a crossbow} {<f7aa2f7>}
 #highlight {a pair of black arm wrappings} {<f7aa2f7>}
 #highlight {a yew longbow} {<f7aa2f7>}
@@ -272,6 +277,7 @@
 #highlight {it has a soft glowing aura} {<fc9d2f6>}
 #highlight {it emits a faint humming sound} {<fc9d2f6>}
 #highlight {The opal in your staff shimmers with dark hues.} {<f9e71f3>}
+#highlight {A shimmering golden aura briefly surrounds you.} {<ffdad01>}
 
 #nop Notice
 #highlight {sleeping} {<fcfc9c2>}
@@ -285,3 +291,11 @@
 
 #nop special
 #highlight {A pair of tiny eyes gleam at you from the shadows.} {<fc9d2f6>}
+
+#nop fleeing
+#highlight {You flee west.} {reverse white bold}
+#highlight {You flee east.} {reverse white bold}
+#highlight {You flee north.} {reverse white bold}
+#highlight {You flee south.} {reverse white bold}
+#highlight {You flee up.} {reverse white bold}
+#highlight {You flee down.} {reverse white bold}

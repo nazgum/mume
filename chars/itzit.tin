@@ -1,4 +1,4 @@
-#read scripts/blind.tin
+#nop read scripts/blind.tin
 
 #var {bag} {pack}
 
@@ -11,16 +11,16 @@
   };
 }
 
-#alias {drain} {
+#alias {fbb} {
   #if { "%0" == "" } {
-    cast 'energy drain' $target; #echo {cast 'energy drain' $target}
+    cast f 'black breath' $target; #echo {cast f 'black breath' $target}
   };
   #else {
-    cast 'energy drain' %0; #echo {cast 'energy drain' %0}
+    cast f 'black breath' %0; #echo {cast f 'black breath' %0}
   };
 }
 
-#alias {g} {drain}
+#alias {g} {fbb}
 
 #alias {bb} {
   #if { "%0" == "" } {
@@ -32,6 +32,8 @@
 }
 #alias {h} {bb}
 
+#alias b {bash $target}
+
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
@@ -40,10 +42,15 @@
 #alias {^5$} {of rescue itzit}
 #alias {^6$} {k $mount}
 #alias {^7$} {k $mount}
-#alias {^8$} {order rawr kill $mount; #echo {order rawr kill $mount}}
-#alias {^9$} {order rawr kill $mount; #echo {order rawr kill $mount}}
-#alias {^.$} {order rawr assist; order rawr bash; #echo {order rawr assist & bash}}
+#alias {^8$} {of k $mount}
+#alias {^9$} {of k $mount}
+#nop alias {^.$} {order rawr assist; order rawr bash; #echo {order rawr assist & bash}}
+#alias {^.$} {bash $target}
 
 #alias {cloak} {rm mantle; get cloak $bag; wear cloak; put mantle $bag}
 #alias {fur} {rm cloak; get mantle $bag; wear mantle; put cloak $bag}
 #alias {robe} {rm robe; get robe $bag; wear robe; put robe $bag}
+#alias {circ} {rm hood; get crown $bag; wear crown; put hood $bag}
+#alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
+#alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
+#alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }

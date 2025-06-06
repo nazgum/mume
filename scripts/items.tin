@@ -11,7 +11,7 @@
 #alias {tunic} { remove robe; get tunic $bag; wear tunic; put robe $bag }
 #alias {robe} { remove tunic; get robe $bag; wear robe; put tunic $bag }
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
-#alias {candle} {get candle all; wield candle; use candle; dra dagger; drop candle}
+#alias {candle} {get candle all; wield candle; use candle; dra dagger}
 #alias {can} {candle}
 #alias {rock} {get rock all; use rock $door; get rock}
 #alias {mana} {remove ring; get golden-ruby-ring $bag; wear ring; put ring $bag}

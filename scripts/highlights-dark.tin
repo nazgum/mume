@@ -48,6 +48,7 @@
 #highlight {the huge, black mace} {<fE5C890>}
 #highlight {a large visored helmet} {<fE5C890>}
 #highlight {a crude orkish horn} {<fE5C890>}
+#highlight {a small elven bag} {<fE5C890>}
 
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
@@ -73,6 +74,7 @@
 #highlight {a darkened orkish axe} {<f59A0EB>} 
 #highlight {a mighty dwarven axe} {<f59A0EB>}
 #highlight {an ashen blade} {<f59A0EB>}
+#highlight {an ornamented sabre} {<f59A0EB>}
 #highlight {a fell blade} {<f59A0EB>}
 
 #nop Important Gear
@@ -160,6 +162,7 @@
 #highlight {a scorched, grisly fur} {<f7aa2f7>}
 #highlight {an imposing, golden mantle} {<f7aa2f7>}
 #highlight {an archer's wrist guard} {<f7aa2f7>}
+#highlight {a bowman's arm guard} {<f7aa2f7>}
 #highlight {a lambent amulet} {<f7aa2f7>}
 #highlight {a fine grey cloak} {<f7aa2f7>}
 #highlight {a black, hooded cloak} {<f7aa2f7>}
@@ -205,6 +208,7 @@
 #highlight {a flask of orkish draught} {<ff7768e>}
 #highlight {%w flasks of orkish draught} {<ff7768e>}
 #highlight {a small metal flask} {<ff7768e>}
+#highlight {%w small metal flasks} {<ff7768e>}
 #highlight {a scorched leather flask} {<ff7768e>}
 #highlight {%w scorched leather flasks} {<ff7768e>}
 

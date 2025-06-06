@@ -31,3 +31,5 @@
 #alias {^3$} {of assist}
 #alias {^4$} {of bash}
 #alias {^5$} {of rescue saith}
+
+#unalias str

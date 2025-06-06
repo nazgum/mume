@@ -151,3 +151,6 @@
 #sub {^a key$} {%0 [secret, smugglers south bree]}
 #sub {^an intricate steel key$} {%0 [umuk's chest]}
 #sub {^a very rusty key$} {%0 [gate, nobleman near tharbad]}
+#sub {^a burnished iron key$} {%0 [abr tunnels]}
+#sub {^A burnished iron key has been left here.$} {%0 [abr tunnels]}
+#sub {^a long, rusky key$} {%0 [abr tunnels]}

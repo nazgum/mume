@@ -1,7 +1,17 @@
 #var {bag} {pack}
 
-#alias {b} {back $target; #echo {back $target}}
-#alias {y} {escape}
+#alias {^b$} {back $target; #echo {back $target}}
+#alias {y} {recover}
 
-#alias {reload} {get all.bolt sable; put all.bolt case}
 #alias {^.$} {shoot $target; #echo {shoot $target}}
+
+#alias 1 {bow;sho;draw}
+#alias 2 {bow;sho;sho;draw}
+#alias 3 {bow;sho;sho;sho;draw}
+#alias 4 {bow;sho;sho;sho;sho;draw}
+#alias 5 {bow;sho;sho;sho;sho;sho;draw}
+
+#alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}
+
+#alias {arch} {get all.guard $bag;wear all.guard}
+#alias {def} {rm all.guard; put all.guard $bag}

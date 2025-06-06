@@ -11,6 +11,15 @@
   };
 }
 
+#alias {qbb} {
+  #if { "%0" == "" } {
+    cast q 'black breath' $target; #echo {cast q 'black breath' $target}
+  };
+  #else {
+    cast q 'black breath' %0; #echo {cast q 'black breath' %0}
+  };
+}
+
 #alias {fbb} {
   #if { "%0" == "" } {
     cast f 'black breath' $target; #echo {cast f 'black breath' $target}
@@ -19,8 +28,6 @@
     cast f 'black breath' %0; #echo {cast f 'black breath' %0}
   };
 }
-
-#alias {g} {fbb}
 
 #alias {bb} {
   #if { "%0" == "" } {
@@ -32,7 +39,9 @@
 }
 #alias {h} {bb}
 
-#alias b {bash $target}
+#alias {g} {fbb}
+
+#alias b {bash}
 
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
@@ -54,3 +63,5 @@
 #alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
 #alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
+
+#ALIAS {candle} {get candle all; wield candle; use candle; wield blade}

@@ -9,7 +9,7 @@
   };
 }
 #alias {h} {bash}
-#alias {g} {fireball}
+#alias {g} {bash}
 #alias {b} {bash}
 #alias {^.$} {bash $target; #echo {bash $target}}
 
@@ -23,3 +23,5 @@
 #alias {^3$} {of assist}
 #alias {^4$} {order rawr bash; #echo {order rawr bash}}
 #alias {^5$} {order followers rescue ilfang; #echo {order followers rescue ilfang}}
+
+#alias {^y} {order shaman cast 'lightning bolt' $target}

@@ -17,4 +17,4 @@
 
 #sub {On the shrub, there are %w piles of splayed leaves.} {%0 (coriander, thistle-tea)}
 #sub {%w splayed leaves.} {%0 (coriander, thistle-tea)}
-
+#sub {several splayed leaves} {%0 (coriander, thistle-tea)}

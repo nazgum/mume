@@ -54,7 +54,7 @@
 #alias {^8$} {of k $mount}
 #alias {^9$} {of k $mount}
 #nop alias {^.$} {order rawr assist; order rawr bash; #echo {order rawr assist & bash}}
-#alias {^.$} {bash $target}
+#alias {^.$} {bash $target; #echo {bash $target}}
 
 #alias {cloak} {rm mantle; get cloak $bag; wear cloak; put mantle $bag}
 #alias {fur} {rm cloak; get mantle $bag; wear mantle; put cloak $bag}

@@ -52,7 +52,7 @@
 #nop read scripts/gmcp.tin
 
 #event {PROGRAM START} {
-	#session {mume} {localhost} {4242};
+	#session {mume} {localhost} {4000};
         #nop session {cf} {carrionfields.net} {4449};
 	
 	#read scripts/layout.tin;
@@ -73,9 +73,10 @@
 	#read subs/lockpicks.tin;
 	#read subs/herbalkit.tin;
 	#read subs/herbs.tin;
+	#read scripts/herb-actions.tin;
 	#read hidden/ignore.tin;
 	#read scripts/macro.tin;
-	#read chars/ilfang.tin;
+	#read chars/sorath.tin;
 }
 
 #event {SESSION DISCONNECTED} {

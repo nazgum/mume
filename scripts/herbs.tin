@@ -1,0 +1,17 @@
+#nop auto pickup plants
+#class {herbs} {open}
+
+#action {^On the shrub, there are some grey-green leaves.} {get sage}
+#action {^On the shrub, there are %w piles of grey-green leaves.} {get all.sage}
+#action {^On the shrub, there are %w piles of splayed leaves.} {get all.coriander}
+#action {^On the shrub, there are %w piles of blackberries.} {get all.blackberries} 
+#action {^A blooming water-lily floats on the surface of the water.} {get water-lily;crush water-lily}
+#action {^A low, many-branched shrub covers the ground here.} {get shrub;crush shrub}
+#action {^A small plant grows here, with long, pointed leaves and flowers at its top.} {get athelas}
+#action {^A bushy plant grows here, with tall clusters of yellow flowers.} {get foxtail}
+#action {^There are %w handfuls of clover here.} {get all.clover}
+#action {^On the plant, there are three clusters of hard, round, black berries.} {get all.juniper}
+#action {^A thin, hairy plant, with small, oval leaves, grows here.} {get plant;crush plant}
+
+#class {herbs} {close}
+#class {herbs} {save}

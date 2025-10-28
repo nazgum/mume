@@ -13,6 +13,7 @@
 #alias {pipe} {get pipe all; wield pipe; rest; smoke pipe; st; wield blade; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra dagger}
 #alias {can} {candle}
+#alias {eye} {get eye all; wield eye; use eye $target; dra dagger}
 #alias {rock} {get rock all; use rock $door; get rock}
 #alias {mana} {remove ring; get golden-ruby-ring $bag; wear ring; put ring $bag}
 #alias {copper} {remove ring; get copperring $bag; wear ring; put ring $bag}
@@ -26,6 +27,7 @@
 #alias {stun} {use small-pouch}
 #alias {reload} {get small-pouch $bag; wear small-pouch}
 #alias {str} {remove ring; get topaz-ring $bag; wear topaz-ring; put ring $bag; use topaz-ring}
+#alias {remr} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
 #alias {kit} {rm vial; wear kit}
 #alias {vial} {rm kit; wear vial}
 #alias {swap} {rm vial; wear 2.vial}

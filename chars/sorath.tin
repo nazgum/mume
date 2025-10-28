@@ -1,0 +1,23 @@
+#var bag pack
+
+#alias {h} {
+  #if { "%0" == "" } {
+    bash $target; #echo {bash $target}
+  };
+  #else {
+    bash
+  };
+}
+
+#alias {^.$} {shoot $target; #echo {shoot $target}}
+
+#alias 1 {bow;sho;swo}
+#alias 2 {bow;sho;sho;swo}
+#alias 3 {bow;sho;sho;sho;swo}
+#alias 4 {bow;sho;sho;sho;sho;swo}
+#alias 5 {bow;#6 .;swo;reco}
+
+#alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}
+
+#alias {pbs} {rm necklace;get pale $bag; wear pale;use pale;rm pale;put pale $bag;wear necklace}
+

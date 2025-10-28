@@ -31,6 +31,7 @@
 #highlight {the black sword} {<fE5C890>}
 #highlight {the Dragonhelm} {<fE5C890>}
 #highlight {the Morgul blade} {<fE5C890>}
+#highlight {a black runed sceptre} {<fE5C890>}
 #highlight {a strange black helmet} {<fE5C890>}
 #highlight {the fine silvery morningstar} {<fE5C890>}
 #highlight {the black sheath} {<fE5C890>}
@@ -42,13 +43,12 @@
 #highlight {the broad Elven blade} {<fE5C890>}
 #highlight {the slender Elven sword} {<fE5C890>}
 #highlight {the Elven shortsword with a runic inscription} {<fE5C890>}
+#highlight {the polished Elven shortsword} {<fE5C890>}
 #highlight {the gleaming broadsword} {<fE5C890>}
 #highlight {the silvery broadsword} {<fE5C890>}
 #highlight {the Hammer of Belegost} {<fE5C890>}
 #highlight {the huge, black mace} {<fE5C890>}
 #highlight {a large visored helmet} {<fE5C890>}
-#highlight {a crude orkish horn} {<fE5C890>}
-#highlight {a small elven bag} {<fE5C890>}
 
 #nop Focus
 #highlight {a metal-shod staff} {<fcfc9c2>}
@@ -57,6 +57,7 @@
 #highlight {a sapphire ring} {<fcfc9c2>}
 #highlight {a small crystal phial} {<fcfc9c2>}
 #highlight {an iron sapphire ring} {<fcfc9c2>}
+#highlight {a ruby sapphire ring} {<fcfc9c2>}
 #highlight {a banded sapphire ring} {<fcfc9c2>}
 #highlight {a large, shimmering pearl} {<fcfc9c2>}
 #highlight {a bejewelled oak staff} {<fcfc9c2>}
@@ -68,6 +69,7 @@
 #highlight {an icy ring} {<ffca878>}
 #highlight {a root ring} {<ffca878>}
 #highlight {a coarse dusky robe} {<ffca878>}
+#highlight {a lightning-shaped pendant} {<ffca878>}
 
 #nop Power Weapons (f4c82e5)
 #highlight {an ornate, steel-shafted warhammer} {<f59A0EB>}
@@ -127,7 +129,6 @@
 #highlight {a forest green cloak} {<f7aa2f7>}
 #highlight {a black cape} {<f7aa2f7>}
 #highlight {a bright red amulet} {<f7aa2f7>}
-#highlight {an opaque amulet} {<f7aa2f7>}
 #highlight {a bejewelled shield} {<f7aa2f7>}
 #highlight {a tower shield} {<f7aa2f7>}
 #highlight {a leaf-embossed shield} {<f7aa2f7>}
@@ -150,9 +151,9 @@
 #highlight {a shining chain mail shirt} {<f7aa2f7>}
 #highlight {a shining pair of chain mail sleeves} {<f7aa2f7>}
 #highlight {a shining pair of chain mail leggings} {<f7aa2f7>}
-#highlight {a shining breastplate} {<f7aa2f7>}
-#highlight {a shining pair of vambraces} {<f7aa2f7>}
-#highlight {a shining pair of greaves} {<f7aa2f7>}
+#highlight {a shining breastplate} {<fB8D5FF>}
+#highlight {a shining pair of vambraces} {<fB8D5FF>}
+#highlight {a shining pair of greaves} {<fB8D5FF>}
 #highlight {an iron ring} {<f7aa2f7>}
 #highlight {a banded ring} {<f7aa2f7>}
 #highlight {an ancient ruby ring} {<f7aa2f7>}
@@ -163,19 +164,27 @@
 #highlight {an imposing, golden mantle} {<f7aa2f7>}
 #highlight {an archer's wrist guard} {<f7aa2f7>}
 #highlight {a bowman's arm guard} {<f7aa2f7>}
-#highlight {a lambent amulet} {<f7aa2f7>}
 #highlight {a fine grey cloak} {<f7aa2f7>}
 #highlight {a black, hooded cloak} {<f7aa2f7>}
 #highlight {a soot-black bear hide} {<f7aa2f7>}
 #highlight {an enhanced herbal kit} {<f7aa2f7>}
 #highlight {a strange set of lock picks} {<f7aa2f7>}
 #highlight {a black horn shortbow} {<f7aa2f7>}
-#highlight {a white chain mail coif} {<f7aa2f7>}
-#highlight {a white chain mail jerkin} {<f7aa2f7>}
-#highlight {a pair of white chain mail sleeves} {<f7aa2f7>}
-#highlight {a pair of white chain mail leggings} {<f7aa2f7>}
+#highlight {a white chain mail coif} {<fc6c9cD>}
+#highlight {a white chain mail jerkin} {<fc6c9cD>}
+#highlight {a pair of white chain mail sleeves} {<fc6c9cD>}
+#highlight {a pair of white chain mail leggings} {<fc6c9cD>}
 #highlight {a silvan satchel} {<f7aa2f7>}
-#highlight {a lightning-shaped pendant} {<f7aa2f7>}
+
+#nop Usable Items
+#highlight {a pale blue stone} {<fE46EBF>}
+#highlight {a golden quartzite ring} {<fE46EBF>}
+#highlight {a crude orkish horn} {<fE46EBF>}
+#highlight {a small elven bag} {<fE46EBF>}
+#highlight {a lambent amulet} {<fE46EBF>}
+#highlight {an opaque amulet} {<fE46EBF>}
+#highlight {a rough wooden horn} {<fE46EBF>}
+
 
 #nop Poisons
 #highlight {a green stinking vial} {<f8AC364>}
@@ -237,7 +246,6 @@
 #highlight {%w softly glowing green cups} {<fff9e64>}
 #highlight {a small pouch} {<ffca878>}
 #highlight {%w small pouches} {<ffca878>}
-#highlight {a pale blue stone} {<fff9e64>}
 
 #nop Spells
 #highlight {- armour} {<f9ece6a>}
@@ -274,6 +282,13 @@
 #highlight {^You feel a hidden presence.} {<ff7768e>}
 #highlight {^You feel weaker.} {<ff7768e>}
 #highlight {^You failed to control an %1.} {<ff7768e>}
+
+#nop Poisoned!
+#highlight {^Your body turns numb as the poison speeds to your brain!} {reverse <fb06> bold b white}
+#highlight {^You suddenly feel a terrible headache!} {reverse <fb06> bold b white}
+#highlight {^The venom enters your body!} {reverse <fb06> bold b white}
+#highlight {^A hot flush overwhelms your brain and makes you dizzy.} {reverse <fb06> bold b white}
+#highlight {^The drowsiness completely overwhelms you.} {reverse <fb06> bold b white}
 
 
 #nop Item Effects

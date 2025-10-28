@@ -1,11 +1,9 @@
-#read scripts/blind.tin
-
 #alias {g} {
   #if { "%0" == "" } {
-    cast 'burning hands' $target; #echo {cast 'burning hands' $target}
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
   };
   #else {
-    cast 'burning hands' %0; #echo {cast 'burning hands' %0}
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
 
@@ -18,17 +16,23 @@
   };
 }
 
+#alias {b} {
+  #if { "%0" == "" } {
+    cast 'energy drain' $target; #echo {cast 'energy drain' $target}
+  };
+  #else {
+    cast 'energy drain' %0; #echo {cast 'energy drain' %0}
+  };
+}
+
 #alias {crown} {rm hood; get crown $bag; wear crown; put hood $bag}
 #alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
 #alias {cloak} {remove grisly-fur; get cloak $bag; wear cloak; put grisly-fur $bag}
 #alias {fur} {remove cloak; get grisly-fur $bag; wear grisly-fur; put cloak $bag}
+#alias {robe2} { remove robe; get robe $bag; wear robe; put robe $bag }
 
-#alias {^.$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
 #alias {candle} {get candle all; wield candle; use candle; dra axe; drop candle}
 
-#alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
-#alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
-#alias {^3$} {of assist}
-#alias {^4$} {of bash}
-#alias {^5$} {of rescue gagzik}
+#alias {^1$} {c;ls}
+#alias {^2$} {us;o}

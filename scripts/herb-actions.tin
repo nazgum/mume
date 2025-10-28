@@ -1,0 +1,25 @@
+#var {herbs_enabled} {1}
+
+#alias {herbs on} {
+  #class {herbs} {read} {scripts/herbs.tin};
+  #var {herbs_enabled} {1};
+  #echo {Herb collection: ON}
+}
+#alias {herbs off} {
+  #class {herbs} {kill};
+  #var {herbs_enabled} {0};
+  #echo {Herb collection: OFF}
+}
+
+#alias {herbs} {
+  #if {$herbs_enabled} {
+    #class {herbs} {kill};
+    #var {herbs_enabled} {0};
+    #echo {Herb collection: OFF}
+  }
+  {
+    #class {herbs} {read} {scripts/herbs.tin};
+    #var {herbs_enabled} {1};
+    #echo {Herb collection: ON}
+  }
+}

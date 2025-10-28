@@ -41,8 +41,6 @@
 
 #alias {g} {fbb}
 
-#alias b {bash}
-
 
 #alias {^1$} {order rawr bash $target; #echo {order rawr bash $target}}
 #alias {^2$} {order rawr kill $target; #echo {order rawr kill $target}}
@@ -64,4 +62,4 @@
 #alias {hood} {rm crown; get hood $bag; wear hood; put crown $bag}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sweapon; put pipe $bag }
 
-#ALIAS {candle} {get candle all; wield candle; use candle; wield blade}
+#alias {candle} {get candle all; wield candle; use candle; wield blade}

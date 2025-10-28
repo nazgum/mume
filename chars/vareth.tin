@@ -1,28 +1,29 @@
 #var bag pack
-
-#unalias {str}
+#unalias str
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast f 'fireball' $target; #echo {cast f 'fireball' $target}
+    cast f 'shocking grasp' $target; #echo {cast f 'shocking grasp' $target}
   };
   #else {
-    cast f 'fireball' %0; #echo {cast f 'fireball' %0}
+    cast f 'shocking grasp' %0; #echo {cast f 'shocking grasp' %0}
   };
 }
 
 #alias {h} {
   #if { "%0" == "" } {
-    cast 'fireball' $target; #echo {cast 'fireball' $target}
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
   };
   #else {
-    cast 'fireball' %0; #echo {cast 'fireball' %0}
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
   };
 }
 
 
 #alias {cloak} {rm cloak; get cloak $bag; wear cloak; put cloak $bag}
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield cweapon; put pipe $bag }
+#alias {curec} {remove ring; get garnet-ring $bag; wear garnet-ring; put ring $bag; use garnet-ring}
+#alias {rempoi} {remove ring; get emerald-ring $bag; wear emerald-ring; put ring $bag; use emerald-ring}
 
 #highlight {- Star of Eärendil} {<f7aa2f7>}
 #highlight {The guiding light of the Star of Eärendil renews hope within you.} {<f6e78a4>}

@@ -1,5 +1,23 @@
 #unalias {str}
 
+#alias {h} {
+  #if { "%0" == "" } {
+    cast 'shocking grasp' $target; #echo {cast 'shocking grasp' $target}
+  };
+  #else {
+    cast 'shocking grasp' %0; #echo {cast 'shocking grasp' %0}
+  };
+}
+
+#alias {g} {
+  #if { "%0" == "" } {
+    cast f 'shocking grasp' $target; #echo {cast f 'shocking grasp' $target}
+  };
+  #else {
+    cast f 'shocking grasp' %0; #echo {cast f 'shocking grasp' %0}
+  };
+}
+
 #alias {1} {use phial $target}
 #alias {2} {use phial}
 

@@ -1,13 +1,13 @@
-#read scripts/blind.tin
+#read scripts/sleep.tin
 
-#var {bag} {sable}
+#var {bag} {pack}
 
 #alias {g} {
   #if { "%0" == "" } {
-    cast f 'fireball' $target; #echo {cast f 'fireball' $target}
+    cast f 'shocking grasp' $target; #echo {cast f 'shocking grasp' $target}
   };
   #else {
-    cast f 'fireball' %0; #echo {cast f 'fireball' %0}
+    cast f 'shocking grasp' %0; #echo {cast f 'shocking grasp' %0}
   };
 }
 
@@ -19,10 +19,6 @@
     cast 'fireball' %0; #echo {cast 'fireball' %0}
   };
 }
-
-#alias {^.$} {use staff $target; #echo {use staff $target}}
-#alias {^.$} {shoot $target; #echo {shoot $target}}
-#alias {^y$} {cast 'smother' $target; #echo {cast 'smother' $target}}
 
 #alias {pipe} {get pipe $bag; wield pipe; rest; smoke pipe; st; wield sword; put pipe $bag }
 

@@ -1,20 +1,53 @@
-#sub {scented crushed leaves} {%0 (thyme, clearthoughts)}
-#sub {grey-green leaves} {%0 (sage, clearthoughts, healing)}
-#sub {dried mauve petals} {%0 (mauve, clearthoughts)}
-#sub {yellow petals} {%0 (foxtail, healing)}
-#sub {long, slender green leaves} {%0 (athelas, healing, thistle-tea)}
-#sub {grey-brown powder} {%0 (cardamom, orc-balm)}
-#sub {white petals} {%0 (water-lily, antidote, orc-balm)}
-#sub {grey petals} {%0 (figwort, antidote)}
-#sub {foul-smelling root$} {%0 (valerian, thistle-tea, drake-slumber)}
-#sub {foul-smelling roots$} {%0 (valerian, thistle-tea, drake-slumber)}
-#sub {pungent red powder} {%0 (paprika, strength)}
-#sub {needlelike leaves} {%0 (rosemary, skillful)}
-#sub {clusters of hard, round, black berries} {%0 (juniper, clearthoughts)}
-#sub {A low, many-branched shrub covers the ground here.} {%0 (thyme, clearthoughts)}
-#sub {A small plant grows here, with long, pointed leaves and flowers at its top.} {%0 (athelas, healing, thistle-tea)}
-#sub {A bushy plant grows here, with tall clusters of yellow flowers.} {%0 (foxtail, healing)}
+#nop plants displayed on ground
+#sub {^On the shrub, there are some grey-green leaves.} {%0 <fc9d2f6>(sage: soothing, clearthoughts, healing)<099>}
+#sub {^On the shrub, there are %w piles of grey-green leaves.} {%0 <fc9d2f6>(sage: soothing, clearthoughts, healing)<099>}
+#sub {^On the shrub, there are %w piles of splayed leaves.} {%0 <fc9d2f6>(coriander: thistle-tea)<099>}
+#sub {^On the shrub, there are %w piles of blackberries.} {%0 <fc9d2f6>(blackberries: antidote)<099>}
+#sub {^A blooming water-lily floats on the surface of the water.} {%0 <fc9d2f6>(water-lily: soothing)<099>}
+#sub {^A low, many-branched shrub covers the ground here.} {%0 <fc9d2f6>(thyme: soothing, clearthoughts)<099>}
+#sub {^A small plant grows here, with long, pointed leaves and flowers at its top.} {%0 <fc9d2f6>(athelas: antidote, healing, thistle-tea)<099>}
+#sub {^A bushy plant grows here, with tall clusters of yellow flowers.} {%0 <fc9d2f6>(foxtail: healing)<099>}
+#sub {^There are %w handfuls of clover here.} {%0 <fc9d2f6>(clover: walking)<099>}
+#sub {^On the plant, there are three clusters of hard, round, black berries.} {%0 <fc9d2f6>(juniper: walking, clearthoughts)<099>}
+#sub {^A thin, hairy plant, with small, oval leaves, grows here.} {%0 <fc9d2f6>(marjoram: walking)<099>}
 
-#sub {On the shrub, there are %w piles of splayed leaves.} {%0 (coriander, thistle-tea)}
-#sub {%w splayed leaves.} {%0 (coriander, thistle-tea)}
-#sub {several splayed leaves} {%0 (coriander, thistle-tea)}
+#nop inventory display
+#sub {^scented crushed leaves} {%0 <fc9d2f6>(thyme: clearthoughts)<099>}
+#sub {^some grey-green leaves} {%0 <fc9d2f6>(sage: soothing, clearthoughts, healing)<099>}
+#sub {^%w piles of grey-green leaves} {%0 <fc9d2f6>(sage: soothing, clearthoughts, healing)<099>}
+#sub {^a dozen piles of grey-green leaves} {%0 <fc9d2f6>(sage: soothing, clearthoughts, healing)<099>}
+#sub {^a handful of clover} {%0 <fc9d2f6>(clover: walking)<099>}
+#sub {^a dozen handfuls of clover} {%0 <fc9d2f6>(clover: walking)<099>}
+#sub {^%w handfuls of clover} {%0 <fc9d2f6>(clover: walking)<099>}
+#sub {^dried mauve petals} {%0 <fc9d2f6>(mauve: clearthoughts)<099>}
+#sub {^yellow petals} {%0 <fc9d2f6>(foxtail: healing)<099>}
+#sub {^some long, slender green leaves} {%0 <fc9d2f6>(athelas: antidote, healing, thistle-tea)<099>}
+#sub {^%w piles of long, slender green leaves} {%0 <fc9d2f6>(athelas: antidote, healing, thistle-tea)<099>}
+#sub {^a small plant, with long leaves} {%0 <fc9d2f6>(athelas: antidote, healing, thistle-tea)<099>}
+#sub {^a water lily} {%0 <fc9d2f6>(water-lily: antidote, soothing)<099>}
+#sub {^%w water lilies} {%0 <fc9d2f6>(water-lily: antidote, soothing)<099>}
+#sub {^some white petals} {%0 <fc9d2f6>(water-lily: antidote, soothing)<099>}
+#sub {^%w piles of white petals} {%0 <fc9d2f6>(water-lily: antidote, soothing)<099>}
+#sub {^grey petals} {%0 <fc9d2f6>(figwort: antidote)<099>}
+#sub {^%w piles of grey petals} {%0 <fc9d2f6>(figwort: antidote)<099>}
+#sub {^foul-smelling root$} {%0 <fc9d2f6>(valerian: thistle-tea, drake-slumber)<099>}
+#sub {^foul-smelling roots$} {%0 <fc9d2f6>(valerian: thistle-tea, drake-slumber)<099>}
+#sub {^pungent red powder} {%0 <fc9d2f6>(paprika: strength)<099>}
+#sub {^a cluster of hard, round, black berries} {%0 <fc9d2f6>(juniper: walking, clearthoughts)<099>}
+#sub {^%w clusters of hard, round, black berries} {%0 <fc9d2f6>(juniper: walking, clearthoughts)<099>}
+#sub {^%w splayed leaves.} {%0 <fc9d2f6>(coriander: thistle-tea)<099>}
+#sub {^several splayed leaves} {%0 <fc9d2f6>(coriander: thistle-tea)<099>}
+#sub {^a mashed honey-wax mixture} {%0 <fc9d2f6>(honeycomb: soothing)<099>}
+#sub {^%w mashed honey-wax mixtures} {%0 <fc9d2f6>(honeycomb: soothing)<099>}
+#sub {^a number of blackberries} {%0  <fc9d2f6>(blackberries: antidote)<099>}
+#sub {^%w piles of blackberries} {%0  <fc9d2f6>(blackberries: antidote)<099>}
+#sub {^a many-branched shrub} {%0  <fc9d2f6>(thyme: soothing, clearthougths)<099>}
+#sub {^some scented crushed leaves} {%0  <fc9d2f6>(thyme: soothing, clearthougths)<099>}
+#sub {^%w piles of scented crushed leaves} {%0  <fc9d2f6>(thyme: soothing, clearthougths)<099>}
+#sub {^several cloves} {%0  <fc9d2f6>(cloves: walking)<099>}
+#sub {^%w piles of cloves} {%0  <fc9d2f6>(cloves: walking)<099>}
+#sub {^some grey-brown powder} {%0  <fc9d2f6>(cardamom)<099>}
+#sub {^a pinch of pale-green, crushed leaves} {%0  <fc9d2f6>(marjoram: walking)<099>}
+#sub {^%w pinches of pale-green, crushed leaves} {%0  <fc9d2f6>(marjoram: walking)<099>}
+#sub {^some yellow petals} {%0  <fc9d2f6>(foxtail: healing)<099>}
+
